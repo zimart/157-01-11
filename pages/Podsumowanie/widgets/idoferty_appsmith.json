@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "defaultText": "{{appsmith.URL.queryParams.id_oferta}}",
   "dynamicBindingPathList": [
@@ -42,7 +42,7 @@
   "mobileRightColumn": 59,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
+  "originalBottomRow": 5,
   "originalTopRow": 0,
   "parentColumnSpace": 20.21875,
   "parentId": "0",

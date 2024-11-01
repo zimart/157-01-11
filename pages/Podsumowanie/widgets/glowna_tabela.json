@@ -64,10 +64,10 @@
     "opiszrabatami_en",
     "id_wiersz"
   ],
-  "columnUpdatedAt": 1.73005112538E12,
+  "columnUpdatedAt": 1730051125380,
   "columnWidthMap": {
     "Ilosc": 72,
-    "Produkt": 273,
+    "Produkt": 260,
     "cenanetto": 114,
     "customColumn1": 64,
     "customColumn2": 64,
@@ -323,8 +323,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 96,
-  "originalTopRow": 28,
+  "originalBottomRow": 95,
+  "originalTopRow": 27,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {

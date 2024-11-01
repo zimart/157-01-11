@@ -25,14 +25,14 @@
   },
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
-  "color": "#C2DAF0",
+  "color": "#F5D1D1",
   "embedSetting": {
     "height": "720px",
     "showNavigationBar": false,
     "width": "1024px"
   },
   "evaluationVersion": 2,
-  "icon": "frame",
+  "icon": "workflows",
   "pages": [
     {
       "id": "Zaloguj",
