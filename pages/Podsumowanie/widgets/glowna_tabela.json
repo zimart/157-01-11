@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 95,
+  "bottomRow": 96,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -232,16 +232,7 @@
       "key": "primaryColumns.customColumn2.isCellVisible"
     },
     {
-      "key": "primaryColumns.customColumn2.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn4.buttonColor"
-    },
-    {
       "key": "primaryColumns.customColumn5.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn5.buttonColor"
     },
     {
       "key": "primaryColumns.customColumn4.label"
@@ -323,8 +314,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 95,
-  "originalTopRow": 27,
+  "originalBottomRow": 96,
+  "originalTopRow": 28,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
@@ -571,7 +562,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#1e3a8a",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "columnType": "iconButton",
@@ -644,7 +635,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#b91c1c",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "columnType": "iconButton",
@@ -684,7 +675,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "0px",
       "boxShadow": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#15803d",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "columnType": "iconButton",
@@ -1441,7 +1432,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 27,
+  "topRow": 28,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

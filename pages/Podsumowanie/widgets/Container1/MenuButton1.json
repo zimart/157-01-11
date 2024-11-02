@@ -16,6 +16,9 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -29,9 +32,9 @@
   "isLoading": false,
   "isVisible": true,
   "key": "7ji0dknpn3",
-  "label": "WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII",
-  "leftColumn": 17,
-  "menuColor": "#2d8e65",
+  "label": "{{i18n.translate(\"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII\")}}",
+  "leftColumn": 16,
+  "menuColor": "#ef4444",
   "menuItems": {
     "menuItem1": {
       "id": "menuItem1",
@@ -73,7 +76,7 @@
   "parentRowSpace": 10,
   "placement": "CENTER",
   "renderMode": "CANVAS",
-  "rightColumn": 38,
+  "rightColumn": 37,
   "sourceData": [],
   "topRow": 2,
   "type": "MENU_BUTTON_WIDGET",

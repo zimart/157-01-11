@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 15,
   "boxShadow": "none",
   "defaultOptionValue": "polski",
   "dynamicBindingPathList": [
@@ -23,9 +23,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -53,9 +50,11 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{i18n.selectLanguage();}}",
+  "onOptionChange": "{{i18n.selectLanguage();\npobierzwarunkipl.run()}}",
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -65,7 +64,7 @@
   "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{Constants.languageOptions.map(item => ({ name: item, code: item.toLowerCase()}))}}",
-  "topRow": 5,
+  "topRow": 11,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "gqjz3uhllk",

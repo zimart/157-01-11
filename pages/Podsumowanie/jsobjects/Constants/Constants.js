@@ -29,7 +29,17 @@ export default {
 		"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII":"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII",
 		"Klienci":"Klienci",
 		"ZAPISZ SZCZEGÓŁY OFERTY":"ZAPISZ SZCZEGÓŁY OFERTY",
-		"Warunki płatności":"Warunki płatności"
+		"Warunki płatności":"Warunki płatności",
+		"Wróć do ofert":"Wróć do ofert",
+		"Zapisane dane oferty z dnia":"Zapisane dane oferty z dnia",
+		"Suma netto po rabacie":"Suma netto po rabacie",
+		"Suma podatku":"Suma podatku",
+		"Do zapłaty brutto":"Do zapłaty brutto",
+		"Waluta dokumentu":"Waluta dokumenu",
+		"Numer konta bankowego":"Numer konta bankowego",
+		"Wymagana kwota zadatku":"Wymagana kwota zaadatku",
+		"Data ważności oferty":"Data ważności oferty",
+	
 	
 				
 	},

@@ -1,0 +1,92 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 15,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton1.label"
+    },
+    {
+      "key": "groupButtons.groupButton2.label"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "user",
+      "id": "groupButton1",
+      "index": 0,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "{{i18n.translate(\"Klienci\")}}",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Klienci', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton2": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "rotate-document",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "{{i18n.translate(\"Wróć do ofert\")}}",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Oferty', {\n  id_klienta: appsmith.store.id_klienta\n}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "eplf9pla9m",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 58,
+  "mobileTopRow": 4,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "originalBottomRow": 15,
+  "originalTopRow": 11,
+  "parentColumnSpace": 20.25,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 14,
+  "topRow": 11,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "0bjgq2rq6h",
+  "widgetName": "ButtonGroup1"
+}

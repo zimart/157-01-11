@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 37,
   "boxShadow": "none",
   "buttonColor": "#b91c1c",
   "buttonVariant": "PRIMARY",
@@ -9,6 +9,9 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicTriggerPathList": [
@@ -21,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "ufu47vxd4q",
-  "leftColumn": 52,
+  "leftColumn": 0,
   "minWidth": 120,
   "mobileBottomRow": 126,
   "mobileLeftColumn": 48,
@@ -29,8 +32,8 @@
   "mobileTopRow": 122,
   "needsErrorInfo": false,
   "onClick": "{{zmiendaneoferty.run().then(() => {\n  dane_oferty_main.run();\n  warunki.run();\n});}}",
-  "originalBottomRow": 148,
-  "originalTopRow": 144,
+  "originalBottomRow": 39,
+  "originalTopRow": 35,
   "parentColumnSpace": 20.5625,
   "parentId": "4dusi33tfp",
   "parentRowSpace": 10,
@@ -39,9 +42,9 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "text": "ZAPISZ SZCZEGÓŁY OFERTY",
-  "topRow": 21,
+  "rightColumn": 13,
+  "text": "{{i18n.translate(\"ZAPISZ SZCZEGÓŁY OFERTY\")}}",
+  "topRow": 33,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "7uaw1ggcjc",

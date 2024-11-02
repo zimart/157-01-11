@@ -12,6 +12,9 @@
     },
     {
       "key": "buttonColor"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,7 +46,7 @@
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
   "rightColumn": 10,
-  "text": "DODAJ POZYCJĘ/MONTAŻ",
+  "text": "{{i18n.translate(\"DODAJ POZYCJĘ\")}}/{{i18n.translate(\"MONTAŻ\")}}",
   "topRow": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
