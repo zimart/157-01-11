@@ -129,6 +129,14 @@
     {
       "id": "User-page",
       "isDefault": false
+    },
+    {
+      "id": "User_auth",
+      "isDefault": false
+    },
+    {
+      "id": "Klienci-B2B",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
