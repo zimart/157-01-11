@@ -2,9 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 14,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( warunki.data[0].warunkiplatnosci||\"Wymagany zadatek w wysokości wykazanej poniżej przy przyjęciu zamówienia\"))(MultiSelect1.options, MultiSelect1.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( warunki.data[0].warunkiplatnosci||\"Erfordeliche Anzahlung unten (Wymagany zadatek w wysokości wykazanej poniżej przy przyjęciu zamówienia),\"))(MultiSelect2.options, MultiSelect2.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,16 +17,16 @@
       "key": "sourceData"
     },
     {
-      "key": "defaultOptionValue"
-    },
-    {
       "key": "isVisible"
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
-  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
@@ -34,17 +35,13 @@
       "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Select1.selectedOptionLabel===\"Polski\"}}",
-  "key": "jhfm4w0rcr",
+  "isVisible": "{{Select1.selectedOptionLabel===\"Deutch\"}}",
+  "key": "yeyxqqs3iv",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "{{i18n.translate(\"Warunki płatności\")}}",
@@ -54,16 +51,15 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 7,
+  "mobileBottomRow": 14,
   "mobileLeftColumn": 30,
   "mobileRightColumn": 50,
-  "mobileTopRow": 0,
+  "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onOptionChange": "",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 7,
-  "originalTopRow": 0,
+  "originalBottomRow": 14,
+  "originalTopRow": 7,
   "parentColumnSpace": 20.25,
   "parentId": "4dusi33tfp",
   "parentRowSpace": 10,
@@ -72,11 +68,11 @@
   "responsiveBehavior": "fill",
   "rightColumn": 50,
   "serverSideFiltering": false,
-  "shouldScrollContents": true,
-  "sourceData": "{{pobierzwarunkipl.data.map( (obj) =>{ return  {'label': obj.warunki_pl, 'value': obj.warunki_pl } })}}",
-  "topRow": 0,
+  "sourceData": "{{pobierzwarunkide.data.map( (obj) =>{ return  {'label': obj.warunki_pl, 'value': obj.warunki_pl } })}}",
+  "topRow": 7,
+  "topRowBeforeCollapse": 0,
   "type": "MULTI_SELECT_WIDGET_V2",
   "version": 1,
-  "widgetId": "m8y5njzkxv",
-  "widgetName": "MultiSelect1"
+  "widgetId": "pdx9wcc8r5",
+  "widgetName": "MultiSelect2"
 }

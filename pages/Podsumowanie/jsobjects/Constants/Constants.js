@@ -22,7 +22,14 @@ export default {
 		"Brutto":"Brutto",
 		"Podatek VAT":"Podatek VAT",
 		"Montaż":"Montaż",
-		"Pilot 1-kanałowy ręczny":"Pilot 1-kanałowy ręczny"
+		"Pilot 1-kanałowy ręczny":"Pilot 1-kanałowy ręczny",
+		"Opis oferty":"Opis oferty",
+		"DODAJ POZYCJĘ":"DODAJ POZYCJĘ",
+		"MONTAŻ":"MONTAŻ",
+		"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII":"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII",
+		"Klienci":"Klienci",
+		"ZAPISZ SZCZEGÓŁY OFERTY":"ZAPISZ SZCZEGÓŁY OFERTY",
+		"Warunki płatności":"Warunki płatności"
 	
 				
 	},

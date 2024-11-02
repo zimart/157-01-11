@@ -223,7 +223,7 @@ doc.addPage();
 const finalY3 = doc.lastAutoTable.finalY; // The y position where the table ends			
 	
 
-doc.text(textpdfdlugi.text, 15, finalY3 + 10);		
+doc.text(textpdfdlugipl.text, 15, finalY3 + 10);		
 	
 
 	

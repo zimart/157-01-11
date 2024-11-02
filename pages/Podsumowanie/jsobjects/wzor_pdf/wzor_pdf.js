@@ -6,7 +6,6 @@ const data2 = glowna_tabela.tableData;
 const numer = idoferty_appsmith.text;
 const Roboto = Input1.text;
 
-
 // Custom headers
 const columns = [
 //{ header: 'Lp', dataKey: 'Lp' },
@@ -22,8 +21,6 @@ const columns = [
 { header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
 { header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
 ];	
-	
-	
 	
 const columns2 = [
 { header: 'szczegoly', dataKey: 'szczegoly' }
@@ -52,7 +49,6 @@ vatkwota: (item.razemnetto*(item.vat/100)).toFixed(2),
 Brutto: (item.brutto/ currencyRate).toFixed(2)
 }));	
 	
-
 	
 doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
 doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
@@ -65,7 +61,7 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setLineWidth(1.5);
       doc.line(15, 15, 170, 15);
 	
-	        doc.setDrawColor(247, 247, 247);
+	    doc.setDrawColor(247, 247, 247);
 	    doc.setLineWidth(8);
       doc.line(15, 46, 198, 46);
 	
@@ -86,8 +82,9 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setFontSize("10")
 //	   doc.text (ponizej.text, 15, 84);
 //	   doc.text (dziekujemy.text, 15, 80);
-	
-Cell_3(doc, {
+
+//tabela-opis-oferty	
+CellHookData_3(doc, {
 theme: 'grid',
 	headStyles: { 
 		fillColor:  [255, 255, 255] ,
@@ -97,7 +94,7 @@ theme: 'grid',
 							 fontSize: 10,
 							 fontStyle: 'bold',
 							},
-	startY: 70,
+	startY: 80,
 	columnStyles: { europe: { halign: 'left',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -147,14 +144,15 @@ columns: [
 ]
 
 });
+//koniec-tabeli-opis-oferty	
 	
+//ustalenie-po-pierwszej-tabeli-po-opisie-oferty
 const finalY1 = doc.lastAutoTable.finalY; // The y position where the table ends	
  doc.setFontSize("10");
  doc.text (walutatekst.text, 15, finalY1+8);	
-
 	
 	
-// Add a table with auto columns
+// tabela-glowna
 CellHookData_3(doc, {
 	theme: 'grid',
 	headStyles: { fillColor:  [247, 247, 247] ,
@@ -164,7 +162,7 @@ CellHookData_3(doc, {
 							 fontSize: 9,
 							 fontStyle: 'bold',
 							},
-	startY: finalY1+50,
+	startY: finalY1+10,
 	columnStyles: { europe: { halign: 'center',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -211,22 +209,81 @@ valign: 'middle'
      //   doc.addImage(base64Img, 'JPEG', data.settings.margin.left, 15, 10, 10)
       },
 });
+// koniec tabeli glownej
 	
-
-	// Add a table with auto columns
-//default_1(doc,tabela_glowna.tableData);
-
-// Add text below the table
+// ustalenie final2-po tabeli glownej-i cena netto
 const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
 doc.text("tutaj netto", 15, finalY2 + 10);
-doc.addPage();
+//doc.addPage();
 //doc.text(textpdfdlugi.text, 15, finalY2 + 30);	
 	
-const finalY3 = doc.lastAutoTable.finalY; // The y position where the table ends			
+//const finalY3 = doc.lastAutoTable.finalY; // The y position where the table ends			
 	
 
-doc.text(textpdfdlugi.text, 15, finalY3 + 10);		
+//doc.text(textpdfdlugi.text, 15, finalY2 + 30);		
 	
+//tabela-opis-z-danymi
+CellHookData_3(doc, {
+theme: 'grid',
+	headStyles: { 
+		fillColor:  [255, 255, 255] ,
+           // lineColor: 'black',
+							 lineWidth: 0,
+            //lineColor: 'black'
+							 fontSize: 10,
+							 fontStyle: 'bold',
+							},
+	startY: finalY2+30,
+	columnStyles: { europe: { halign: 'left',valign: 'middle' },
+             Produkt: {
+       //fontStyle: 'bold',
+							 halign: 'left',
+							 valign: 'middle',
+							 lineWidth: 0,
+      },
+								
+								},
+	styles: { cellPadding: 1, fontSize: 10,
+					 textColor:0,
+					 //font: 'Amiri',
+					 font: 'Roboto',
+					//  font:'Helvetica',
+           // lineColor: 'black',
+					 cellWidth: 'auto',
+					overflow: 'linebreak',
+//					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
+//fillColor: 255,
+//textColor: Color? = 20
+//cellWidth: 'auto'|'wrap'|number = 'auto'
+minCellWidth: 5,
+minCellHeight:5,
+//minCellHeight: number = 0
+halign: 'left',
+valign: 'middle',
+//	halign: 'left'|'center'|'right' = 'left'
+//valign: 'top'|'middle'|'bottom' = 'top'
+//fontSize: number = 10
+//cellPadding: Padding = 10
+//lineColor: Color = 10
+lineWidth: border = 0 // If 0, no border is drawn
+				
+					
+					
+					
+					},		
+	
+	// European countries centered
+body: [
+  { opis: textpdfdlugipl.text },
+ 
+],
+columns: [
+  { header: i18n.translate("_"), dataKey: 'opis' },
+ 
+]
+
+});
+//koniec-tabeli-opis-opis-z-danymi	
 
 	
 return doc.output("dataurlstring");
