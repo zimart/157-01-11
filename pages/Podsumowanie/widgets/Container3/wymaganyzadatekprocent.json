@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fs65bs2u18",
-  "label": "Wymagany % zadatku",
+  "label": "{{i18n.translate(\"Wymagany % zadatku\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

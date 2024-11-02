@@ -19,9 +19,6 @@
       "key": "defaultOptionValue"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "labelText"
     }
   ],
@@ -29,9 +26,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,7 +37,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Select1.selectedOptionLabel===\"Polski\"}}",
+  "isVisible": true,
   "key": "jhfm4w0rcr",
   "labelAlignment": "left",
   "labelPosition": "Top",

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 387,
+  "bottomRow": 393,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 132,
   "needsErrorInfo": false,
-  "originalBottomRow": 387,
-  "originalTopRow": 382,
+  "originalBottomRow": 393,
+  "originalTopRow": 388,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "{{i18n.translate(\"Serdecznie dziękujemy za zainteresowanie naszą ofertą handlową. Mamy nadzieję, że dokonają Państwo trafnego wyboru.\")}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 382,
+  "topRow": 388,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

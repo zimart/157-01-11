@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultOptionValue": "polski",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( appsmith.store.jezyk))(Select1.options, Select1.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,7 +16,7 @@
       "key": "sourceData"
     },
     {
-      "key": "placeholderText"
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -50,7 +50,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{i18n.selectLanguage();\npobierzwarunkipl.run()}}",
+  "onOptionChange": "{{i18n.selectLanguage();\npobierzwarunkipl.run();\nstoreValue('jezyk', Select1.selectedOptionValue);}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 15,
@@ -58,7 +58,7 @@
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"Język\")}}",
+  "placeholderText": "",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 50,

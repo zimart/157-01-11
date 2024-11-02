@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "152c73l0jg",
-  "label": "Ważność oferty - dni",
+  "label": "{{i18n.translate(\"Ważność oferty - dni\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

@@ -29,7 +29,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fs65bs2u18",
-  "label": "Sugerowany zadatek {{Select6.selectedOptionLabel}}",
+  "label": "{{i18n.translate(\"Sugerowany zadatek\")}}{{Select6.selectedOptionLabel}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
