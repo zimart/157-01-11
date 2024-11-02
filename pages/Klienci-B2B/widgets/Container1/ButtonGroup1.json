@@ -69,7 +69,7 @@
       "itemType": "BUTTON",
       "label": "KLIENCI",
       "menuItems": {},
-      "onClick": "{{navigateTo('Klienci', {}, 'SAME_WINDOW');}}",
+      "onClick": "{{navigateTo('Klienci-B2B', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "usd7qc7gj6"

@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "wzor_pdf.BuildPDF",
     "name": "BuildPDF",
     "pageId": "Podsumowanie",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

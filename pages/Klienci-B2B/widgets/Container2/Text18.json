@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 387,
+  "bottomRow": 10,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -14,6 +14,9 @@
     },
     {
       "key": "text"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -22,34 +25,34 @@
   "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": false,
-  "key": "meqdv5n5nd",
-  "leftColumn": 30,
+  "isVisible": true,
+  "key": "wrv9phhdgm",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 136,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 22,
-  "mobileTopRow": 132,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 6,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "originalBottomRow": 387,
-  "originalTopRow": 382,
+  "originalBottomRow": 10,
+  "originalTopRow": 4,
   "overflow": "NONE",
-  "parentColumnSpace": 20.5625,
-  "parentId": "0",
+  "parentColumnSpace": 20.25,
+  "parentId": "9iu3ac7cpl",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 15,
   "shouldTruncate": false,
-  "text": "{{i18n.translate(\"Serdecznie dziękujemy za zainteresowanie naszą ofertą handlową. Mamy nadzieję, że dokonają Państwo trafnego wyboru.\")}}",
+  "text": "{{daneuzytkownik.data[0].nazwafirmy||\"\"}} \n{{daneuzytkownik.data[0].ulicainumer||\"\"}}\n{{daneuzytkownik.data[0].kod||\"\"}} {{daneuzytkownik.data[0].miejscowosc||\"\"}}\n",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 382,
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 4,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "j5dycb5agc",
-  "widgetName": "dziekujemy"
+  "widgetId": "cj2nar4lug",
+  "widgetName": "Text18"
 }

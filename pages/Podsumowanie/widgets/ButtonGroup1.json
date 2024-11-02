@@ -24,6 +24,29 @@
     },
     {
       "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonuwbp9bml37.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonl2hi55xmzi.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton1.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButtonuwbp9bml37.label"
+    },
+    {
+      "key": "groupButtons.groupButtonuwbp9bml37.isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButton1.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButtonuwbp9bml37.isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -32,6 +55,9 @@
     },
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonuwbp9bml37.onClick"
     }
   ],
   "groupButtons": {
@@ -42,7 +68,7 @@
       "id": "groupButton1",
       "index": 0,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": "{{Input8.text===\"Admin\"}}",
       "label": "{{i18n.translate(\"Klienci\")}}",
       "menuItems": {},
       "onClick": "{{navigateTo('Klienci', {}, 'SAME_WINDOW');}}",
@@ -62,6 +88,38 @@
       "onClick": "{{navigateTo('Oferty', {\n  id_klienta: appsmith.store.id_klienta\n}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
       "widgetId": ""
+    },
+    "groupButtonl2hi55xmzi": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonl2hi55xmzi",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Do something",
+      "menuItems": {},
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "d80ziwm31u"
+    },
+    "groupButtonuwbp9bml37": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "user",
+      "id": "groupButtonuwbp9bml37",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": "{{Input8.text===\"B2B\"}}",
+      "itemType": "BUTTON",
+      "label": "{{i18n.translate(\"Klienci\")}}",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Klienci-B2B', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "xvl66ygx5d"
     }
   },
   "isCanvas": false,

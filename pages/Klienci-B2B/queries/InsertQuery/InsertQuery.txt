@@ -18,5 +18,5 @@ VALUES (
 	'{{insert_form.formData.nazwiskoklient}}',
 	'{{insert_form.formData.ulica}}',
 	'{{insert_form.formData.numer}}',
-	'{{insert_form.formData.kod}}'),
-	'{{userdane.text}}';
+	'{{insert_form.formData.kod}}',
+	'{{userdane.text}}');

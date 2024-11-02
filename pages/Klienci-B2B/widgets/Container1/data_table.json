@@ -27,14 +27,21 @@
     "email1",
     "miejscowosc",
     "customColumn1",
-    "customColumn4"
+    "customColumn4",
+    "accountid",
+    "imie",
+    "nazwiskoklient",
+    "ulica",
+    "numer",
+    "kod",
+    "uzytkownikwlasnosc"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1726931808466,
+  "columnUpdatedAt": 1730588455761,
   "columnWidthMap": {
     "accountname": 267,
     "customColumn1": 176,
@@ -131,6 +138,9 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.uzytkownikwlasnosc.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -203,7 +213,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "accountid",
       "notation": "standard",
       "originalId": "accountid",
@@ -592,6 +602,40 @@
       "label": "Ulica",
       "notation": "standard",
       "originalId": "ulica",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "uzytkownikwlasnosc": {
+      "alias": "uzytkownikwlasnosc",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"uzytkownikwlasnosc\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "uzytkownikwlasnosc",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "uzytkownikwlasnosc",
+      "notation": "standard",
+      "originalId": "uzytkownikwlasnosc",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
