@@ -1,0 +1,10 @@
+UPDATE user_auth SET
+		nazwafirmy = '{{Input5.text}}',
+	  first_name = '',
+		last_name = '',
+		username = '',
+	  logobase = '{{logobase.text}}',
+		telefon = '',
+		nip = '',
+		ulicainumer = ''
+  WHERE id = {{Input15.text}};

@@ -14,7 +14,7 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": false
     },
     "themeSetting": {
@@ -48,10 +48,6 @@
     },
     {
       "id": "Kategorie_oferty",
-      "isDefault": false
-    },
-    {
-      "id": "User_auth",
       "isDefault": false
     },
     {
@@ -129,6 +125,10 @@
     {
       "id": "Warunki2",
       "isDefault": false
+    },
+    {
+      "id": "User-page",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
@@ -145,7 +145,7 @@
       "navStyle": "stacked",
       "orientation": "top",
       "position": "static",
-      "showNavbar": true,
+      "showNavbar": false,
       "showSignIn": false
     },
     "themeSetting": {

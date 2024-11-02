@@ -164,7 +164,7 @@
     }
   ],
   "fieldLimitExceeded": false,
-  "fixedFooter": true,
+  "fixedFooter": false,
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,

@@ -1,13 +1,13 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_cbb30d4a-7927-42fa-9cb7-14dd3b3bad96",
+  "gitSyncId": "67252580698c850488983504_db5f4e64-bf39-4a76-8a3a-72285e514221",
   "unpublishedPage": {
     "customSlug": "klienci",
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 1110,
+          "bottomRow": 9370,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -28,7 +28,7 @@
         }
       }
     ],
-    "name": "Klienci",
-    "slug": "klienci"
+    "name": "User-page",
+    "slug": "user-page"
   }
 }
