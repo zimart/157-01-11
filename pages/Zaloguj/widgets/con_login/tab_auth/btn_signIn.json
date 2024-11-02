@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 19,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "SECONDARY",
@@ -15,7 +15,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -45,8 +49,8 @@
     "click",
     "submit"
   ],
-  "text": "ZALOGUJ",
-  "topRow": 23,
+  "text": "ZALOGUJ JAKO ADMIN",
+  "topRow": 13,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "voz3dh2wjt",

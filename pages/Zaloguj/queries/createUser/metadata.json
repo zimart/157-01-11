@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO user_auth (first_name, last_name, email, password_hash, role)\n  VALUES ('{{inp_firstName.text}}', '{{inp_lastName.text}}', '{{inp_registerEmail.text}}', {{this.params.passwordHash}}, 'Admin')\n;\n\t\n\t",
+      "body": "INSERT INTO user_auth (first_name, last_name, email, password_hash, role, active)\n  VALUES ('{{inp_firstName.text}}', '{{inp_lastName.text}}', '{{inp_registerEmail.text}}', {{this.params.passwordHash}}, 'B2B','NIE')\n;\n\t\n\t",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

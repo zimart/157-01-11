@@ -137,6 +137,10 @@
     {
       "id": "Klienci-B2B",
       "isDefault": false
+    },
+    {
+      "id": "Zaloguj-b2b",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

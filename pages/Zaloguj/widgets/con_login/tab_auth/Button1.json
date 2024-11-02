@@ -1,16 +1,13 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 23,
   "bottomRowBeforeCollapse": 33,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "TERTIARY",
+  "buttonColor": "#831843",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    {
-      "key": "buttonColor"
-    },
     {
       "key": "borderRadius"
     }
@@ -30,7 +27,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "znvhxerwor",
-  "leftColumn": 0,
+  "leftColumn": 34,
   "minWidth": 120,
   "mobileBottomRow": 23,
   "mobileLeftColumn": 22,
@@ -50,7 +47,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "text": "Rejestruj",
-  "topRow": 29,
+  "topRow": 19,
   "topRowBeforeCollapse": 29,
   "type": "BUTTON_WIDGET",
   "version": 1,
