@@ -204,6 +204,15 @@
     },
     {
       "key": "schema.__root_schema__.children.kod.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.uzytkownikwlasnosc.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.uzytkownikwlasnosc.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.uzytkownikwlasnosc.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -460,6 +469,27 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ulica",
           "position": 5
+        },
+        "uzytkownikwlasnosc": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "uzytkownikwlasnosc",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.uzytkownikwlasnosc))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "uzytkownikwlasnosc",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Uzytkownikwlasnosc",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "uzytkownikwlasnosc",
+          "position": 9
         }
       },
       "dataType": "object",

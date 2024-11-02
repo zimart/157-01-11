@@ -1,11 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
-  "bottomRowBeforeCollapse": 16,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "TERTIARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -15,12 +14,12 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "text"
     }
   ],
   "dynamicPropertyPathList": [
     {
-      "key": "isVisible"
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -29,36 +28,33 @@
     }
   ],
   "iconAlign": "left",
-  "iconName": "document-share",
+  "iconName": "user",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{wybierzjezykpdf.selectedOptionValue===\"niemiecki\"}}",
-  "key": "ufu47vxd4q",
+  "isVisible": true,
+  "key": "6xs3qefgwv",
   "leftColumn": 0,
   "minWidth": 120,
-  "mobileBottomRow": 20,
-  "mobileLeftColumn": 3,
-  "mobileRightColumn": 19,
-  "mobileTopRow": 16,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 12,
+  "mobileTopRow": 4,
   "needsErrorInfo": false,
-  "onClick": "{{pdf_niem_z_rab_kalk_pobierz.BuildPDF();}}",
-  "originalBottomRow": 20,
-  "originalTopRow": 16,
-  "parentColumnSpace": 6.9375,
-  "parentId": "c6v5y6fyw0",
+  "onClick": "{{storeValue('user', userdane.text).then(() => {\n  navigateTo('User-page', {\n    userid: appsmith.store.user\n  }, 'SAME_WINDOW');\n});}}",
+  "parentColumnSpace": 20.25,
+  "parentId": "uraeas4nkk",
   "parentRowSpace": 10,
-  "placement": "CENTER",
+  "placement": "START",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 64,
-  "text": "PDF/niemiecki z rabatami",
-  "topRow": 16,
-  "topRowBeforeCollapse": 12,
+  "rightColumn": 10,
+  "text": "{{daneuzytkownik.data[0].first_name||\"Nieznajomy\"}} {{daneuzytkownik.data[0].last_name}}",
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "8ayt4eeal0",
-  "widgetName": "Button17"
+  "widgetId": "vitrz9hh2c",
+  "widgetName": "Button2"
 }

@@ -1,1 +1,1 @@
-SELECT first_name,last_name,id FROM user_auth WHERE email = {{appsmith.store.uzytkownik}};
+SELECT * FROM user_auth WHERE email = {{appsmith.store.uzytkownik}};
