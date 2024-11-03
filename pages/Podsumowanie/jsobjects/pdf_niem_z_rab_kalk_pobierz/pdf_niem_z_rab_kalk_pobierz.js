@@ -57,7 +57,7 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	
     //  doc.setFont ("Helvetica");
 	    doc.addImage(Text13.text,'PNG',175,15,20,20);
-	    doc.setDrawColor(255,152,0);
+	    doc.setDrawColor(akcent.text);
 	    doc.setLineWidth(1.5);
       doc.line(15, 15, 170, 15);
 	
@@ -71,7 +71,7 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	
 	    doc.setFontSize("11");
 	    doc.text ("ANGEBOT", 16, 48);
-	    doc.text (numeroferty.text, 35, 48);
+	    doc.text (numeroferty.text, 32, 48);
 	   // doc.text (Text21.text, 175, 48);
 	    
 	
@@ -80,8 +80,8 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.text(klientdane.text, 15, 63);
 	 
 	    doc.setFontSize("10")
-//	   doc.text (ponizej.text, 15, 84);
-//	   doc.text (dziekujemy.text, 15, 80);
+	   doc.text ("Vielen Dank für Ihre Interesse an unserem Angebot. Wir hoffen, dass Sie die richtige Entscheidung treffen.", 15, 80);
+     doc.text ("Nachfolgend finden Sie Details zu unserem Angebot.", 15, 84);
 
 //tabela-opis-oferty	
 CellHookData_3(doc, {
@@ -94,7 +94,7 @@ theme: 'grid',
 							 fontSize: 10,
 							 fontStyle: 'bold',
 							},
-	startY: 80,
+	startY: 90,
 	columnStyles: { europe: { halign: 'left',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -139,7 +139,7 @@ body: [
  
 ],
 columns: [
-  { header: i18n.translate("Opis oferty"), dataKey: 'opis' },
+  { header: "Angebotsbeschreibung:", dataKey: 'opis' },
  
 ]
 
@@ -213,7 +213,12 @@ valign: 'middle'
 	
 // ustalenie final2-po tabeli glownej-i cena netto
 const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
-doc.text("tutaj netto", 15, finalY2 + 10);
+doc.text("Gesamt Netto - Währung:", 15, finalY2 + 10);
+doc.text(Select6.selectedOptionLabel, 50, finalY2 + 10);
+doc.text(nettopdf.text, 15, finalY2 + 15);
+doc.text("Summe Steuer", 15, finalY2 + 20);
+	
+
 //doc.addPage();
 //doc.text(textpdfdlugi.text, 15, finalY2 + 30);	
 	

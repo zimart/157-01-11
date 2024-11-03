@@ -1,6 +1,7 @@
 UPDATE klienci SET
 		accountname = '{{update_form.fieldState.accountname.isVisible ? update_form.formData.accountname : update_form.sourceData.accountname}}',
 		phone = '{{update_form.fieldState.phone.isVisible ? update_form.formData.phone : update_form.sourceData.phone}}',
+		
     email1 = '{{update_form.fieldState.email1.isVisible ? update_form.formData.email1 : update_form.sourceData.email1}}',
 		imie = '{{update_form.fieldState.imie.isVisible ? update_form.formData.imie : update_form.sourceData.imie}}',
 		miejscowosc = '{{update_form.fieldState.miejscowosc.isVisible ? update_form.formData.miejscowosc : update_form.sourceData.miejscowosc}}',

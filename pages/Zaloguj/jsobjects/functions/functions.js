@@ -1,6 +1,6 @@
 export default {
 
-	defaultTab: 'B2B',
+	defaultTab: 'Sign In',
 
 	setDefaultTab: (newTab) => {
 		this.defaultTab = newTab;

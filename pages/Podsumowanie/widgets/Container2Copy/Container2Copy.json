@@ -1,15 +1,15 @@
 {
   "animateLoading": true,
   "backgroundColor": "#f4f4f5",
-  "borderColor": "#E0DEDE",
+  "borderColor": "{{appsmith.theme.colors.backgroundColor}}",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 10,
+  "bottomRow": 12,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 100,
+      "bottomRow": 120,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",
@@ -26,7 +26,7 @@
       "flexLayers": [],
       "isLoading": false,
       "isVisible": true,
-      "key": "fyn3dbjxyh",
+      "key": "xij914ftno",
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
@@ -34,26 +34,29 @@
       "minWidth": 450,
       "mobileBottomRow": 100,
       "mobileLeftColumn": 0,
-      "mobileRightColumn": 226.1875,
+      "mobileRightColumn": 308.4375,
       "mobileTopRow": 0,
       "needsErrorInfo": false,
       "parentColumnSpace": 1,
-      "parentId": "q5hsk0hze2",
+      "parentId": "b1ud6i5i38",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
-      "rightColumn": 226.1875,
+      "rightColumn": 308.4375,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "khrdg6vqia",
-      "widgetName": "Canvas13"
+      "widgetId": "9b22b9w9nx",
+      "widgetName": "Canvas6Copy"
     }
   ],
   "containerStyle": "card",
   "dynamicBindingPathList": [
     {
       "key": "boxShadow"
+    },
+    {
+      "key": "borderColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -62,17 +65,17 @@
   "isCanvas": true,
   "isLoading": false,
   "isVisible": true,
-  "key": "p9hwlgceg6",
+  "key": "aweo0yd1c6",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 10,
   "minWidth": 450,
   "mobileBottomRow": 10,
   "mobileLeftColumn": 0,
-  "mobileRightColumn": 11,
+  "mobileRightColumn": 15,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 10,
+  "originalBottomRow": 12,
   "originalTopRow": 0,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -84,6 +87,6 @@
   "topRow": 0,
   "type": "CONTAINER_WIDGET",
   "version": 1,
-  "widgetId": "q5hsk0hze2",
-  "widgetName": "Container4"
+  "widgetId": "b1ud6i5i38",
+  "widgetName": "Container2Copy"
 }

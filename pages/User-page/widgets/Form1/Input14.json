@@ -26,7 +26,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "x35xvlsqbo",
-  "label": "Akcent kolor w formacie RGB ()",
+  "label": "Akcent kolor w formacie hex - domyślnie #ff9800",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

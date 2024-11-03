@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 44,
+  "bottomRow": 4,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "TERTIARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -12,6 +12,14 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -19,34 +27,34 @@
       "key": "onClick"
     }
   ],
+  "iconAlign": "left",
+  "iconName": "user",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "key": "6xs3qefgwv",
-  "leftColumn": 15,
+  "leftColumn": 0,
   "minWidth": 120,
-  "mobileBottomRow": 55,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 12,
-  "mobileTopRow": 51,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{zapiszlogo.run()}}",
-  "originalBottomRow": 44,
-  "originalTopRow": 40,
+  "onClick": "{{storeValue('user', userdane.text).then(() => {\n  navigateTo('User-page', {\n    userid: appsmith.store.user\n  }, 'SAME_WINDOW');\n});}}",
   "parentColumnSpace": 20.25,
-  "parentId": "3nptwm86f7",
+  "parentId": "9b22b9w9nx",
   "parentRowSpace": 10,
-  "placement": "CENTER",
+  "placement": "START",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 27,
-  "text": "ZAPISZ LOGO",
-  "topRow": 40,
+  "rightColumn": 7,
+  "text": "{{daneuzytkownik.data[0].first_name}} {{daneuzytkownik.data[0].last_name}} ",
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "vkt0tla6dm",
-  "widgetName": "Button3"
+  "widgetId": "2k6asycfv9",
+  "widgetName": "Button1Copy"
 }
