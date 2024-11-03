@@ -51,7 +51,7 @@
   "mobileRightColumn": 30,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onBlur": "",
+  "onBlur": "{{showModal(LanguageLoading.name).then(() => \n \n\tupdateopismainkurs.run())\n.then(() =>\n\tprzelicz_main_js.przelicz_glowna())\n\t\t\t.then(() =>\n\tcloseModal(LanguageLoading.name)\n \n);}}",
   "onTextChanged": "{{}}",
   "parentColumnSpace": 20.25,
   "parentId": "7tq308teo6",
