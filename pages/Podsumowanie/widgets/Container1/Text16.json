@@ -17,6 +17,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -27,8 +30,8 @@
   ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
-  "fontStyle": "",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
   "isLoading": false,
   "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
   "key": "cavtlzzmgo",
@@ -53,7 +56,7 @@
   "shouldTruncate": false,
   "text": "Kurs oferty: {{dane_oferty_main.data[0].kurseuro || \"Zapisz kurs\"}} Obecny kurs : {{kursnbp.data.rates[0].no}} - {{kursnbp.data.rates[0].mid}}",
   "textAlign": "RIGHT",
-  "textColor": "#231F20",
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
   "topRow": 7,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
