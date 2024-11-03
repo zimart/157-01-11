@@ -29,9 +29,6 @@
       "key": "groupButtons.groupButtonuwbp9bml37.buttonColor"
     },
     {
-      "key": "groupButtons.groupButtonl2hi55xmzi.buttonColor"
-    },
-    {
       "key": "groupButtons.groupButton1.isVisible"
     },
     {
@@ -39,6 +36,12 @@
     },
     {
       "key": "groupButtons.groupButtonuwbp9bml37.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton216b54ywur.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButton216b54ywur.label"
     }
   ],
   "dynamicPropertyPathList": [
@@ -47,6 +50,9 @@
     },
     {
       "key": "groupButtons.groupButtonuwbp9bml37.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButton216b54ywur.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -58,6 +64,9 @@
     },
     {
       "key": "groupButtons.groupButtonuwbp9bml37.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton216b54ywur.onClick"
     }
   ],
   "groupButtons": {
@@ -89,20 +98,22 @@
       "placement": "CENTER",
       "widgetId": ""
     },
-    "groupButtonl2hi55xmzi": {
+    "groupButton216b54ywur": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "id": "groupButtonl2hi55xmzi",
+      "iconName": "log-out",
+      "id": "groupButton216b54ywur",
       "index": 3,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Do something",
+      "label": "{{i18n.translate(\"Wyloguj\")}}",
       "menuItems": {},
+      "onClick": "{{removeValue(appsmith.store.token).then(() => {\n  removeValue(appsmith.store.uzytkownik);\n  navigateTo('Zaloguj', {}, 'SAME_WINDOW');\n});}}",
       "placement": "CENTER",
       "variant": "filled",
-      "widgetId": "d80ziwm31u"
+      "widgetId": "z8gfheab6p"
     },
     "groupButtonuwbp9bml37": {
       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -114,7 +125,7 @@
       "isSeparator": false,
       "isVisible": "{{Input8.text===\"B2B\"}}",
       "itemType": "BUTTON",
-      "label": "{{i18n.translate(\"Klienci\")}}",
+      "label": "{{i18n.translate(\"Klienci-B2B\")}}",
       "menuItems": {},
       "onClick": "{{navigateTo('Klienci-B2B', {}, 'SAME_WINDOW');}}",
       "placement": "CENTER",
@@ -126,7 +137,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "eplf9pla9m",
-  "leftColumn": 50,
+  "leftColumn": 44,
   "minWidth": 450,
   "mobileBottomRow": 8,
   "mobileLeftColumn": 34,

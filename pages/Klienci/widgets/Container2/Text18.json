@@ -44,7 +44,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 15,
   "shouldTruncate": false,
   "text": "{{daneuzytkownik.data[0].nazwafirmy||\"\"}} \n{{daneuzytkownik.data[0].ulicainumer||\"\"}}\n{{daneuzytkownik.data[0].kod||\"\"}} {{daneuzytkownik.data[0].miejscowosc||\"\"}}",
   "textAlign": "LEFT",

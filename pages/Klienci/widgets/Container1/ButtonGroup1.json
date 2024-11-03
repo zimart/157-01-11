@@ -15,6 +15,14 @@
     },
     {
       "key": "groupButtons.groupButton2.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonk9gn653l3y.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButtonk9gn653l3y.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -25,7 +33,7 @@
       "key": "groupButtons.groupButton2.onClick"
     },
     {
-      "key": "groupButtons.groupButtonm38e4u77rv.onClick"
+      "key": "groupButtons.groupButtonk9gn653l3y.onClick"
     }
   ],
   "groupButtons": {
@@ -57,29 +65,29 @@
       "placement": "CENTER",
       "widgetId": ""
     },
-    "groupButtonm38e4u77rv": {
-      "buttonColor": "#ef4444",
+    "groupButtonk9gn653l3y": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
-      "iconName": "user",
-      "id": "groupButtonm38e4u77rv",
+      "iconName": "log-out",
+      "id": "groupButtonk9gn653l3y",
       "index": 2,
       "isDisabled": false,
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "KLIENCI",
+      "label": "WYLOGUJ",
       "menuItems": {},
-      "onClick": "{{navigateTo('Klienci', {}, 'SAME_WINDOW');}}",
+      "onClick": "{{removeValue(appsmith.store.token).then(() => {\n  removeValue(appsmith.store.uzytkownik);\n  navigateTo('Zaloguj', {}, 'SAME_WINDOW');\n});}}",
       "placement": "CENTER",
       "variant": "filled",
-      "widgetId": "usd7qc7gj6"
+      "widgetId": "vu7cnz4wi6"
     }
   },
   "isCanvas": false,
   "isLoading": false,
   "isVisible": true,
   "key": "8ne99aoj6j",
-  "leftColumn": 38,
+  "leftColumn": 35,
   "minWidth": 450,
   "mobileBottomRow": 5,
   "mobileLeftColumn": 31,

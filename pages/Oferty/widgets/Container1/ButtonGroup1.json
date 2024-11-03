@@ -21,6 +21,15 @@
     },
     {
       "key": "groupButtons.groupButtonxcjy05f0nl.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButtonebmjpnsx7b.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonxcjy05f0nl.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonr58juedwfj.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -29,6 +38,9 @@
     },
     {
       "key": "groupButtons.groupButtonxcjy05f0nl.isVisible"
+    },
+    {
+      "key": "groupButtons.groupButtonebmjpnsx7b.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,6 +55,9 @@
     },
     {
       "key": "groupButtons.groupButtonxcjy05f0nl.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonebmjpnsx7b.onClick"
     }
   ],
   "groupButtons": {
@@ -74,8 +89,25 @@
       "placement": "CENTER",
       "widgetId": ""
     },
+    "groupButtonebmjpnsx7b": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "log-out",
+      "id": "groupButtonebmjpnsx7b",
+      "index": 4,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "WYLOGUJ",
+      "menuItems": {},
+      "onClick": "{{removeValue(appsmith.store.token).then(() => {\n  removeValue(appsmith.store.uzytkownik);\n  navigateTo('Zaloguj', {}, 'SAME_WINDOW');\n});}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "kwbmpcaqvc"
+    },
     "groupButtonr58juedwfj": {
-      "buttonColor": "#dd4b34",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "iconName": "user",
       "id": "groupButtonr58juedwfj",
@@ -92,7 +124,7 @@
       "widgetId": "872wnfctvp"
     },
     "groupButtonxcjy05f0nl": {
-      "buttonColor": "#dd4b34",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
       "buttonType": "SIMPLE",
       "iconName": "user",
       "id": "groupButtonxcjy05f0nl",

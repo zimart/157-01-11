@@ -1,14 +1,20 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "buttonColor": "#1e3a8a",
-  "buttonVariant": "SECONDARY",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
+      "key": "buttonColor"
+    },
+    {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicPropertyPathList": [
@@ -22,7 +28,7 @@
     }
   ],
   "iconAlign": "left",
-  "iconName": "log-out",
+  "iconName": "user",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
@@ -31,26 +37,24 @@
   "leftColumn": 0,
   "minWidth": 120,
   "mobileBottomRow": 4,
-  "mobileLeftColumn": 26,
-  "mobileRightColumn": 42,
+  "mobileLeftColumn": 10,
+  "mobileRightColumn": 26,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onClick": "{{removeValue(appsmith.store.token).then(() => {\n  removeValue(appsmith.store.uzytkownik);\n  navigateTo('Zaloguj', {}, 'SAME_WINDOW');\n});}}",
-  "originalBottomRow": 15,
-  "originalTopRow": 11,
+  "onClick": "{{storeValue('user', userdane.text).then(() => {\n  navigateTo('User-page', {\n    userid: appsmith.store.user\n  }, 'SAME_WINDOW');\n});}}",
   "parentColumnSpace": 20.25,
-  "parentId": "0",
+  "parentId": "yfp9qnmq7g",
   "parentRowSpace": 10,
-  "placement": "CENTER",
+  "placement": "START",
   "recaptchaType": "V3",
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 9,
-  "text": "wyloguj",
-  "topRow": 11,
+  "rightColumn": 7,
+  "text": "{{daneuzytkownik.data[0].first_name}} {{daneuzytkownik.data[0].last_name}} ",
+  "topRow": 0,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "1f5gv4bopd",
-  "widgetName": "Button23"
+  "widgetId": "ex4zgkvfl6",
+  "widgetName": "Button1Copy"
 }
