@@ -4,9 +4,9 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 187,
-  "bottomRowBeforeCollapse": 192,
+  "bottomRowBeforeCollapse": 187,
   "boxShadow": "none",
-  "defaultText": "{{(netto.text*(Input7.text/100)).toFixed(2)}}",
+  "defaultText": "{{((netto.text*(Input7.text/100))*narzutpdf.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -42,8 +42,8 @@
   "mobileRightColumn": 19,
   "mobileTopRow": 169,
   "needsErrorInfo": false,
-  "originalBottomRow": 192,
-  "originalTopRow": 185,
+  "originalBottomRow": 188,
+  "originalTopRow": 181,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 180,
-  "topRowBeforeCollapse": 185,
+  "topRowBeforeCollapse": 180,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "55lm4bvbbx",

@@ -31,22 +31,22 @@ const columns3 = [
 ];	
 
 const currencyRate = kursinput.text; // Example currency rate for conversion
-
+const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.Ilosc,
 //Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
 Produkt: item.Produkt,
 Ilosc: item.Ilosc,
-cenanetto: (item.cenanetto / currencyRate).toFixed(2),// Convert price using currency rate
+cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
 Opis: item.opiszrabatami,
 Rabatprocent: item.rabatogolny,
-Rabat: (item.kwotarabatogolny/currencyRate).toFixed(2),
-nettopo: (item.cenaporabacie / currencyRate).toFixed(2),
-razemnetto: (item.razemnetto/ currencyRate).toFixed(2),
+Rabat: ((item.kwotarabatogolny/currencyRate)*narzuty).toFixed(2),
+nettopo: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2),
+razemnetto: ((item.razemnetto/ currencyRate)*narzuty).toFixed(2),
 vat: item.vat,
-vatkwota: (item.razemnetto*(item.vat/100)).toFixed(2),
-Brutto: (item.brutto/ currencyRate).toFixed(2)
+vatkwota: ((item.razemnetto*(item.vat/100))*narzuty).toFixed(2),
+Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 }));	
 	
 	
@@ -210,9 +210,10 @@ valign: 'middle'
       },
 });
 // koniec tabeli glownej
-	
+const narzuty2 = narzutpdf.text;
 // ustalenie final2-po tabeli glownej-i cena netto
 const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
+
 doc.text("Gesamt Netto - Währung:", 15, finalY2 + 10);
 doc.text(Select6.selectedOptionLabel, 50, finalY2 + 10);
 doc.text(nettopdf.text, 15, finalY2 + 15);

@@ -4,9 +4,9 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 179,
-  "bottomRowBeforeCollapse": 184,
+  "bottomRowBeforeCollapse": 179,
   "boxShadow": "none",
-  "defaultText": "{{(sumanettoporabacie.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2)||\" \"}}",
+  "defaultText": "{{((sumanettoporabacie.data[0][\"SUM (razemnetto)\"]/kursinput.text)*narzutpdf.text).toFixed(2)||\" \"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -42,8 +42,8 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 168,
   "needsErrorInfo": false,
-  "originalBottomRow": 175,
-  "originalTopRow": 168,
+  "originalBottomRow": 180,
+  "originalTopRow": 173,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 172,
-  "topRowBeforeCollapse": 177,
+  "topRowBeforeCollapse": 172,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "lpqtbaf370",

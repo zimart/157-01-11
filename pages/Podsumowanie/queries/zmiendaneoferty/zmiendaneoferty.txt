@@ -9,7 +9,7 @@ UPDATE oferty SET
 		wymaganyzadatekprocent = '{{wymaganyzadatekprocent.text}}',
 		datawaznosci='{{dniwaznosc.text}}',
 		warunkiplatnosci = '{{MultiSelect1.selectedOptionValues}}',
-	
+	  narzut = '{{narzut.text}}',
 		wymaganyzadatek ='{{wymaganyzadatek.text}}',
 		sumanetto = '{{(netto.text).toFixed(2)}}',
 		sumabrutto = '{{bruttozad.text}}',
