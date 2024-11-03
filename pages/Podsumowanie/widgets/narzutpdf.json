@@ -3,65 +3,60 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 161,
+  "bottomRowBeforeCollapse": 166,
   "boxShadow": "none",
-  "defaultText": "0",
+  "defaultText": "{{((narzut.text/100)+1).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "iconName": "add-to-artifact",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "g2zkug3prh",
-  "label": "Narzut",
+  "label": "narzutpdf",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 40,
+  "leftColumn": 41,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 14,
-  "mobileLeftColumn": 10,
-  "mobileRightColumn": 30,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 161,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 154,
   "needsErrorInfo": false,
-  "onBlur": "",
-  "onTextChanged": "{{}}",
-  "parentColumnSpace": 20.25,
-  "parentId": "7tq308teo6",
+  "originalBottomRow": 167,
+  "originalTopRow": 160,
+  "parentColumnSpace": 20.5625,
+  "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 45,
+  "rightColumn": 49,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 0,
+  "topRow": 154,
+  "topRowBeforeCollapse": 159,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "mojl3wdjos",
-  "widgetName": "narzut"
+  "widgetId": "480to67w4x",
+  "widgetName": "narzutpdf"
 }

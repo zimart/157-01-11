@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -17,9 +17,6 @@
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -33,34 +30,34 @@
   "fontSize": "0.875rem",
   "fontStyle": "BOLD",
   "isLoading": false,
-  "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
-  "key": "cavtlzzmgo",
-  "leftColumn": 40,
+  "isVisible": "{{narzut.text>0}}",
+  "key": "827un55g3v",
+  "leftColumn": 8,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 11,
-  "mobileLeftColumn": 38,
-  "mobileRightColumn": 54,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "originalBottomRow": 12,
-  "originalTopRow": 7,
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
   "overflow": "NONE",
-  "parentColumnSpace": 20.5625,
+  "parentColumnSpace": 20.25,
   "parentId": "7tq308teo6",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 61,
+  "rightColumn": 22,
   "shouldTruncate": false,
-  "text": "Kurs oferty: {{dane_oferty_main.data[0].kurseuro || \"Zapisz kurs\"}} Obecny kurs : {{kursnbp.data.rates[0].no}} - {{kursnbp.data.rates[0].mid}}",
+  "text": "UWAGA - USTAWIONY NARZUT {{narzut.text}} %",
   "textAlign": "RIGHT",
-  "textColor": "{{appsmith.theme.colors.primaryColor}}",
-  "topRow": 7,
+  "textColor": "#b91c1c",
+  "topRow": 2,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "j8cimtjxcf",
-  "widgetName": "Text16"
+  "widgetId": "ikbbg0ru8c",
+  "widgetName": "Text26"
 }
