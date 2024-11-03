@@ -461,7 +461,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( (currentRow.cenanetto/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( ((currentRow.cenanetto/kursinput.text)*((narzut.text/100)+1)).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

@@ -7,7 +7,7 @@ UPDATE oferty SET
 		kurswgtabeli = '{{kurstabela.text}}',
 		komentarz = '{{opisoferty.text}}',
 		wymaganyzadatekprocent = '{{wymaganyzadatekprocent.text}}',
-		datawaznosci='',
+		datawaznosci='{{dniwaznosc.text}}',
 		warunkiplatnosci = '{{MultiSelect1.selectedOptionValues}}',
 	
 		wymaganyzadatek ='{{wymaganyzadatek.text}}',
