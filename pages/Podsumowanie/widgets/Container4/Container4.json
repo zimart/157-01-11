@@ -3,7 +3,7 @@
   "backgroundColor": "#f4f4f5",
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
-  "borderWidth": "0",
+  "borderWidth": "1",
   "bottomRow": 10,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [

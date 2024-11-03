@@ -1,7 +1,8 @@
 {
   "animateLoading": true,
+  "borderColor": "#f4f4f5",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 8,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -16,48 +17,43 @@
       "key": "text"
     },
     {
-      "key": "isVisible"
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": "{{Select1.selectedOptionLabel===\"Deutch\"}}",
-  "key": "bbkkunzpog",
-  "leftColumn": 0,
+  "isVisible": true,
+  "key": "otwb72mo8v",
+  "leftColumn": 14,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 17,
-  "mobileTopRow": 18,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 18,
-  "originalTopRow": 18,
+  "originalBottomRow": 8,
+  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 10.40625,
-  "parentId": "u0g0i1vh5r",
+  "parentColumnSpace": 20.21875,
+  "parentId": "wzkisttv5i",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 26,
   "shouldTruncate": false,
-  "text": "{{glowna_tabela.triggeredRow.opiszrabatami_de}}",
+  "text": "{{dane_oferty_main.data[0].numeroferty ||\"\"}} \n{{dane_oferty_main.data[0].klient ||\"\"}}\n{{adresklienta.data[0].ulica ||\"\"}} {{adresklienta.data[0].numer ||\"\"}}\n{{adresklienta.data[0].kod ||\"\"}} {{adresklienta.data[0].miejscowosc||\"\"}}",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 18,
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "daya4ztjai",
-  "widgetName": "Text19"
+  "widgetId": "1onwb8oo9s",
+  "widgetName": "klient"
 }

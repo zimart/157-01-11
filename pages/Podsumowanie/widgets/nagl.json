@@ -1,13 +1,16 @@
 {
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 172,
+  "bottomRow": 171,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -27,7 +30,7 @@
   "mobileRightColumn": 22,
   "mobileTopRow": 118,
   "needsErrorInfo": false,
-  "originalBottomRow": 172,
+  "originalBottomRow": 171,
   "originalTopRow": 161,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
@@ -37,7 +40,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 18,
   "shouldTruncate": false,
-  "text": "SIGMA SYSTEMY OSŁONOWE\nul.Czerteż 208, 38-500 Sanok\nTEL/FAX: +48 13 46 34 100 | email:biuro@sigma.sanok.pl | www.sigma.sanok.pl\nNIP: PL6871014735\nNR BDO 000474735",
+  "text": "{{daneuzytkownik.data[0].nazwafirmy||\"uzupełnij dane\"}}\n{{daneuzytkownik.data[0].ulicainumer||\"\"}} {{daneuzytkownik.data[0].kod||\"\"}} {{daneuzytkownik.data[0].miejscowosc||\"\"}}\ntel:{{daneuzytkownik.data[0].telefonfirma||\"\"}} | {{daneuzytkownik.data[0].strona||\"\"}}\nVAT ID: {{daneuzytkownik.data[0].nip||\"\"}}\nBDO:{{daneuzytkownik.data[0].bdo||\"\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 161,

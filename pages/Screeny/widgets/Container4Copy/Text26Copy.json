@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 8,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -16,48 +16,43 @@
       "key": "text"
     },
     {
-      "key": "isVisible"
+      "key": "textColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
-  "fontSize": "1rem",
+  "fontSize": "0.875rem",
   "fontStyle": "",
   "isLoading": false,
-  "isVisible": "{{Select1.selectedOptionLabel===\"Deutch\"}}",
-  "key": "bbkkunzpog",
+  "isVisible": true,
+  "key": "zxx4bsgjqq",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 17,
-  "mobileTopRow": 18,
+  "mobileBottomRow": 4,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 52,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 18,
-  "originalTopRow": 18,
+  "originalBottomRow": 8,
+  "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 10.40625,
-  "parentId": "u0g0i1vh5r",
+  "parentColumnSpace": 20.5625,
+  "parentId": "wzkisttv5i",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 14,
   "shouldTruncate": false,
-  "text": "{{glowna_tabela.triggeredRow.opiszrabatami_de}}",
+  "text": "Witaj: {{daneuzytkownik.data[0].first_name||\"Nieznajomy\"}} {{daneuzytkownik.data[0].last_name||\"\"}} \n{{daneuzytkownik.data[0].nazwafirmy||\"\"}} \n{{daneuzytkownik.data[0].ulicainumer||\"\"}}\n{{daneuzytkownik.data[0].kod||\"\"}} {{daneuzytkownik.data[0].miejscowosc||\"\"}}\n",
   "textAlign": "LEFT",
-  "textColor": "#231F20",
-  "topRow": 18,
+  "textColor": "{{appsmith.theme.colors.primaryColor}}",
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "daya4ztjai",
-  "widgetName": "Text19"
+  "widgetId": "i2sfu7cicp",
+  "widgetName": "Text26Copy"
 }
