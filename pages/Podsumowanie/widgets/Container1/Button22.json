@@ -33,7 +33,7 @@
   "isLoading": false,
   "isVisible": "{{Select6.selectedOptionLabel===\"EUR\"}}",
   "key": "5vgpc2pwr0",
-  "leftColumn": 54,
+  "leftColumn": 60,
   "minWidth": 120,
   "mobileBottomRow": 11,
   "mobileLeftColumn": 15,

@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 312,
-  "bottomRowBeforeCollapse": 369,
+  "bottomRowBeforeCollapse": 312,
   "boxShadow": "none",
   "defaultText": "{{String((sumanettoporabacie.data[0][\"SUM (razemnetto)\"]/kursinput.text).toFixed(2))}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 13,
   "showStepArrows": false,
   "topRow": 305,
-  "topRowBeforeCollapse": 362,
+  "topRowBeforeCollapse": 305,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "jb29pa4m10",

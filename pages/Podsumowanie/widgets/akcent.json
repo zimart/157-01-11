@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 323,
+  "bottomRowBeforeCollapse": 323,
   "boxShadow": "none",
   "defaultText": "{{daneuzytkownik.data[0].akcent||'#ff9800'}}",
   "dynamicBindingPathList": [
@@ -52,6 +53,7 @@
   "rightColumn": 13,
   "showStepArrows": false,
   "topRow": 316,
+  "topRowBeforeCollapse": 316,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "f92dxce520",

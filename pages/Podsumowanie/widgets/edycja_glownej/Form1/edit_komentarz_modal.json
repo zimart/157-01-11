@@ -3,15 +3,18 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 24,
   "boxShadow": "none",
-  "defaultText": "  ",
+  "defaultText": "{{glowna_tabela.triggeredRow.opiszrabatami}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -49,7 +52,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 7,
+  "topRow": 14,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "757yysg18p",
