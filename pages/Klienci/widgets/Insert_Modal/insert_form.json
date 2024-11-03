@@ -164,6 +164,15 @@
     },
     {
       "key": "schema.__root_schema__.children.accountname.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.uzytkownikwlasnosc.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.uzytkownikwlasnosc.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.uzytkownikwlasnosc.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -370,7 +379,7 @@
         "phone": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "accessor": "phone",
-          "allowDialCodeChange": false,
+          "allowDialCodeChange": true,
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
@@ -410,6 +419,28 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ulica",
           "position": 5
+        },
+        "uzytkownikwlasnosc": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "uzytkownikwlasnosc",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.uzytkownikwlasnosc))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "uzytkownikwlasnosc",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Uzytkownikwlasnosc",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "uzytkownikwlasnosc",
+          "position": 9,
+          "sourceData": null
         }
       },
       "dataType": "object",
