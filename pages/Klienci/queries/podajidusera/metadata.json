@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_0c762336-2d58-479a-a4aa-791c4e404768",
-  "id": "Klienci_SelectQuery",
+  "gitSyncId": "67252580698c850488983504_0a91369a-d7a4-430e-bf8b-75d1b57551b9",
+  "id": "Klienci_podajidusera",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM klienci\nWHERE nazwiskoklient like '%{{data_table.searchText || \"\"}}%' AND uzytkownikwlasnosc IS NULL\nORDER BY {{data_table.sortOrder.column || 'accountid'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT username,id FROM user_auth WHERE username={{Select2.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": false
+          "value": true
         }
       ],
       "timeoutInMillisecond": 10000
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "SelectQuery",
+    "name": "podajidusera",
     "pageId": "Klienci",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

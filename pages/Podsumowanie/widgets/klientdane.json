@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 213,
+  "bottomRow": 215,
   "boxShadow": "none",
   "defaultText": "{{dane_oferty_main.data[0].klient ||\"\"}}\n{{adresklienta.data[0].ulica ||\"\"}}{{adresklienta.data[0].numer ||\"\"}}\n{{adresklienta.data[0].kod ||\"\"}} {{adresklienta.data[0].miejscowosc||\"\"}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 11,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 201,
+  "topRow": 203,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "umn980pswx",

@@ -439,8 +439,7 @@
           "label": "Uzytkownikwlasnosc",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "uzytkownikwlasnosc",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         }
       },
       "dataType": "object",
