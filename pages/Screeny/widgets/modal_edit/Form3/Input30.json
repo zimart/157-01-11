@@ -3,69 +3,55 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 17,
+  "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "ocgqaoimtm",
-  "label": "Szerokość",
+  "key": "y5hqo4m5hy",
+  "label": "Dopłata do tkaniny",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 5,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 21,
-  "mobileTopRow": 15,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.edit_tkanina())\n.then(() => \nindeksszer_form.run())\n.then(() => \nwysokosccala_form.wys2())\n.then(() => skrzynka_zapytaj_form.run())\n.then(() => storeValue('calkowita', edit_wysokosc.text))\n.then(() => \npowierzchnian.m2()) \n}}",
-  "onTextChanged": "{{}}",
-  "originalBottomRow": 17,
-  "originalTopRow": 10,
-  "parentColumnSpace": 9.12109375,
+  "originalBottomRow": 25,
+  "originalTopRow": 18,
+  "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 12,
+  "rightColumn": 9,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 10,
+  "topRow": 18,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "qsooyhzw7k",
-  "widgetName": "edit_szerokosc"
+  "widgetId": "8kpwm2wnla",
+  "widgetName": "Input30"
 }
