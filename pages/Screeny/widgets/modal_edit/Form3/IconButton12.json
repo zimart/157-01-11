@@ -1,0 +1,49 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 16,
+  "boxShadow": "none",
+  "buttonColor": "#831843",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "plus",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "8xo8kta8qm",
+  "leftColumn": 40,
+  "minWidth": 50,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onClick": "{{\nremoveValue('edit_sku_value')\n.then(() => \nstoreValue('edit_sku_value', edit_tymczasowy.text))\n.then(() => FORM_danesku.run())\n.then(() => storeValue('edit_cenasystemu', cena_systemu.text).catch(() => {\n  showAlert('blad', 'error')\n}))\n.then(() => storeValue('edit_wymaganynaped', edit_wymaganamocnaped.text))\n.then(() => napedwybrany.run())\n.then(() => cenanapeduwybranego.run())\n.then(() => storeValue('modelnapedu', Input8.text))\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n.then(() => doplata.kolor())\n.then(() => doplata.wkladka())\n\n\n}}",
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
+  "parentColumnSpace": 18.40625,
+  "parentId": "jnoi6scv56",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 44,
+  "topRow": 12,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qybs18hvqf",
+  "widgetName": "IconButton12"
+}

@@ -1,0 +1,1 @@
+SELECT wymaganynaped , cenakatalogowa FROM screeny_cennik where indeks = {{appsmith.store.edit_sku_value}};

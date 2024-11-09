@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
+  "defaultText": "{{appsmith.store.edit_sku_value}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,54 +18,42 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": false,
+  "inputType": "TEXT",
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "ocgqaoimtm",
-  "label": "Szerokość",
+  "key": "y5hqo4m5hy",
+  "label": "SKU",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 5,
+  "leftColumn": 44,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 22,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 21,
-  "mobileTopRow": 15,
+  "mobileBottomRow": 27,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 20,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.tkanina_form())\n.then(() => \nFORM_indeksszer.run())\n.then(() => \nwysokosccala.wys2_form())\n.then(() => FORM_skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', edit_wysokosc.text))\n.then(() => \npowierzchnian.m2_form()) \n}}",
-  "onTextChanged": "{{}}",
   "originalBottomRow": 17,
   "originalTopRow": 10,
-  "parentColumnSpace": 9.12109375,
+  "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 10,
-  "shouldAllowAutofill": false,
+  "rightColumn": 53,
   "showStepArrows": false,
   "topRow": 10,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "qsooyhzw7k",
-  "widgetName": "edit_szerokosc"
+  "widgetId": "a4eipkoyj7",
+  "widgetName": "edit_sku_input"
 }
