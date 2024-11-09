@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67252580698c850488983504_375a0e52-526d-4105-9860-7c8733eaee97",
-  "id": "Screeny_indeksszer_form",
+  "id": "Screeny_FORM_indeksszer",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "indeksszer_form",
+    "name": "FORM_indeksszer",
     "pageId": "Screeny",
     "userSetOnLoad": false
   }

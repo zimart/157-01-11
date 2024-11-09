@@ -3,18 +3,15 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 42,
+  "bottomRow": 24,
   "boxShadow": "none",
-  "defaultText": "{{wysokosccala.wys2_form.data||tabela_screeny_inventory_id.triggeredRow.wysokosc}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -25,8 +22,8 @@
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "ocgqaoimtm",
-  "label": "wysokosccalkowita",
+  "key": "y5hqo4m5hy",
+  "label": "Dopłata do tkaniny",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -36,25 +33,25 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 19,
-  "mobileLeftColumn": 28,
-  "mobileRightColumn": 48,
-  "mobileTopRow": 12,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "originalBottomRow": 42,
-  "originalTopRow": 35,
-  "parentColumnSpace": 9.12109375,
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 9,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 35,
+  "topRow": 17,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "7xnfp5zfpt",
-  "widgetName": "edit_wysokosc"
+  "widgetId": "8kpwm2wnla",
+  "widgetName": "edit_doplatadotkaninyinput"
 }
