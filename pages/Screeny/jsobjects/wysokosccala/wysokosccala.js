@@ -16,8 +16,8 @@ var szerokoscm2 = edit_rodzaj_pomiaru.selectedOptionValue;
 var podana2 = edit_podawana_wysokosc_input.text;
 var skrzynka2 = edit_wartosc_skrzynka.text;
 var szerm332;
-if (szerokoscm2 === '1') { szerm332 = podana2; }
-else if (szerokoscm2 === '2') { szerm332 = podana2 +skrzynka2}
+if (szerokoscm2 === 'Wysokość całkowita') { szerm332 = podana2; }
+else if (szerokoscm2 === 'Wysokość okna') { szerm332 = podana2 +skrzynka2}
 return szerm332;
 }
 	
