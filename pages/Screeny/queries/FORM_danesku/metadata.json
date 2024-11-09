@@ -30,6 +30,6 @@
     "executeOnLoad": false,
     "name": "FORM_danesku",
     "pageId": "Screeny",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

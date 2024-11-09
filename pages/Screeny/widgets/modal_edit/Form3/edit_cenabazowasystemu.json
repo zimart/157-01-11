@@ -5,20 +5,23 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Number(appsmith.store.edit_cenasystemu).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
-  "isDisabled": false,
+  "inputType": "NUMBER",
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -47,6 +50,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 59,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 10,
   "type": "INPUT_WIDGET_V2",

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "670a2c74cb4eb2140bfd1e60_c37e80b2-8791-41d2-8ee1-0cc2964ecd43",
-  "id": "Screeny_FORM_skrzynka_zapytaj",
+  "gitSyncId": "67252580698c850488983504_589a3a39-1586-4400-ba34-aa8a0c0e7d77",
+  "id": "Screeny_FORM_rodzajnapedu",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT wymiar FROM screeny_skrzynki where systemskrzynka = {{edit_system.selectedOptionLabel}} AND {{edit_szerokosc.text}} <= maxwidth AND maxheight >= {{edit_wysokosc.text}}\nORDER BY wysokosc ASC;",
+      "body": "SELECT DISTINCT rodzaj FROM screeny_napedy WHERE seria={{edit_seria_napedu.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "FORM_skrzynka_zapytaj",
+    "executeOnLoad": true,
+    "name": "FORM_rodzajnapedu",
     "pageId": "Screeny",
     "userSetOnLoad": true
   }
