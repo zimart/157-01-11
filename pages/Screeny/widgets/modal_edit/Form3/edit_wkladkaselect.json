@@ -2,9 +2,10 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 24,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].kolor))(edit_kolor.options, edit_kolor.serverSideFiltering) }}",
+  "defaultOptionValue": "-",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,16 +14,16 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultOptionValue"
-    },
-    {
-      "key": "sourceData"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     },
     {
       "key": "onOptionChange"
@@ -37,37 +38,40 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "awmuorqyqr",
+  "isVisible": "{{edit_linia.selectedOptionValue === \"STANDARD\" && edit_szerokosc.text > 1200 }}",
+  "key": "6r95v1j7zh",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Kolor",
+  "labelText": "Wkładka",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 19,
+  "leftColumn": 21,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 29,
-  "mobileLeftColumn": 29,
-  "mobileRightColumn": 49,
-  "mobileTopRow": 22,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 36,
+  "mobileRightColumn": 56,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nFORM_czydoplatakolor.run();\nFORM_doplata.kolor();\nFORM_doplatakolorzapytaj.run();\nFORM_cena_zapytaj.run();\n}}",
-  "optionLabel": "label",
-  "optionValue": "value",
-  "parentColumnSpace": 13.837890625,
-  "parentId": "73uy2fdkul",
+  "onOptionChange": "{{doplata.wkladka();}}",
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 24,
+  "originalTopRow": 17,
+  "parentColumnSpace": 18.6875,
+  "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 31,
+  "rightColumn": 28,
   "serverSideFiltering": false,
-  "sourceData": "{{FORM_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
-  "topRow": 0,
+  "sourceData": "[\n\n  {\n    \"name\": \"-\",\n    \"code\": \"-\"\n  },\n\n  {\n    \"name\": \"NZIP/A\",\n    \"code\": \"NZIP/A\"\n  },\n  {\n    \"name\": \"NZIPS\",\n    \"code\": \"NZIPS\"\n  }\n]",
+  "topRow": 17,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "jg4ag4bs0f",
-  "widgetName": "edit_kolor"
+  "widgetId": "qayex5zln5",
+  "widgetName": "edit_wkladkaselect"
 }

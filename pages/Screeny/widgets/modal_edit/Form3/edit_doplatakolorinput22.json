@@ -3,9 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
+  "bottomRow": 23,
+  "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{wysokosccala.wys2_form.data||tabela_screeny_inventory_id.triggeredRow.wysokosc}}",
+  "defaultText": "{{doplatakolorzapytaj.data[0].doplata||0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,19 +15,37 @@
       "key": "borderRadius"
     },
     {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": false,
+  "inputType": "TEXT",
+  "isDisabled": "{{doplatakolorinput22.text === 4}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "ocgqaoimtm",
-  "label": "wysokosccalkowita",
+  "isVisible": "{{Input17.text===\"tak\"}}",
+  "key": "q37nnhimv1",
+  "label": "Dopłata do koloru %",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -36,25 +55,27 @@
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 19,
-  "mobileLeftColumn": 28,
-  "mobileRightColumn": 48,
-  "mobileTopRow": 12,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 45,
-  "originalTopRow": 38,
-  "parentColumnSpace": 9.12109375,
+  "onTextChanged": "{{doplata.kolor();}}",
+  "originalBottomRow": 23,
+  "originalTopRow": 17,
+  "parentColumnSpace": 19.0009765625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 11,
+  "rightColumn": 6,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 38,
+  "topRow": 17,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "7xnfp5zfpt",
-  "widgetName": "edit_wysokosc"
+  "widgetId": "ei6khos1rd",
+  "widgetName": "edit_doplatakolorinput22"
 }

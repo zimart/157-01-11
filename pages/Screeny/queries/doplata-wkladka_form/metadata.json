@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67252580698c850488983504_3b079200-1384-488b-a070-8e43067cf643",
-  "id": "Screeny_doplata.tkanina_form",
+  "gitSyncId": "67252580698c850488983504_0134e28e-142a-4513-9bdb-1e59adf0a5c1",
+  "id": "Screeny_doplata.wkladka_form",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": true,
-    "fullyQualifiedName": "doplata.tkanina_form",
-    "name": "tkanina_form",
+    "fullyQualifiedName": "doplata.wkladka_form",
+    "name": "wkladka_form",
     "pageId": "Screeny",
     "userSetOnLoad": false
   }
