@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 30,
+  "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "{{Number(appsmith.store.edit_cenanapedu).toFixed(2)}}",
+  "defaultText": "{{Number(appsmith.store.edit_cenanapedu).toFixed(2)||\"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 35,
+  "leftColumn": 57,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,19 +41,19 @@
   "mobileRightColumn": 55,
   "mobileTopRow": 23,
   "needsErrorInfo": false,
-  "originalBottomRow": 30,
-  "originalTopRow": 23,
+  "originalBottomRow": 17,
+  "originalTopRow": 10,
   "parentColumnSpace": 19.2125,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 64,
   "showStepArrows": false,
-  "topRow": 23,
+  "topRow": 10,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "i9mxl89dye",
-  "widgetName": "Input33"
+  "widgetName": "edit_cena_napedu"
 }
