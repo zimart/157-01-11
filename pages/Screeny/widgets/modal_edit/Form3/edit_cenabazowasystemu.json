@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "{{Number(appsmith.store.edit_cenasystemu).toFixed(2)|form_screeny_trigered.data[0].cena}}",
+  "defaultText": "{{Number(appsmith.store.edit_cenasystemu).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

@@ -40,7 +40,7 @@
   ],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": "{{doplatakolorinput22.text === 4}}",
+  "isDisabled": "{{edit_doplatakolorinput22.text === 4}}",
   "isLoading": false,
   "isRequired": false,
   "isVisible": "{{Input17.text===\"tak\"}}",
