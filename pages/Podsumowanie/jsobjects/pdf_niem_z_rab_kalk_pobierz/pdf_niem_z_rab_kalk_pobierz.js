@@ -305,18 +305,23 @@ columns: [
 });
 //koniec-tabeli-opis-opis-z-danymi	
 
-function addFooters() {
-    const pageCount = doc.internal.getNumberOfPages();
-    for(var i = 1; i <= pageCount; i++) {
+//function addFooters() {
+//    const pageCount = doc.internal.getNumberOfPages();
+//    for(var i = 1; i <= pageCount; i++) {
 			
-         doc.setFontSize("8");
+//         doc.setFontSize("8");
+//	doc.setFont("Roboto"); // set font	
+//doc.text(footer, 15, 285);			
+//        //doc.text(String(i), 15, 285);
+//			  
+//    }
+//}	
+	
+doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
 doc.text(footer, 15, 285);			
-        //doc.text(String(i), 15, 285);
-			  
-    }
-}	
-addFooters(doc);
+	
+//addFooters(doc);
 //return doc.output("dataurlstring");
 	download(doc.output(), 'angebot_.pdf');
 //doc.save('table.pdf');
