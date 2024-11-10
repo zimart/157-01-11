@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 61,
+  "bottomRowBeforeCollapse": 61,
   "boxShadow": "none",
   "defaultText": "{{FORM_czydoplatakolor.data[0].czydoplata}}",
   "dynamicBindingPathList": [
@@ -52,6 +53,7 @@
   "rightColumn": 49,
   "showStepArrows": false,
   "topRow": 54,
+  "topRowBeforeCollapse": 54,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "f5fvcdf59q",

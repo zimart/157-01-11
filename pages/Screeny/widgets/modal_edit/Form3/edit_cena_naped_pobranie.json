@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 62,
+  "bottomRowBeforeCollapse": 62,
   "boxShadow": "none",
   "defaultText": "{{FORM_cenanapeduwybranego.data[0].cenakatalogowanaped||tabela_screeny_inventory_id.triggeredRow.price_motor}}",
   "dynamicBindingPathList": [
@@ -52,6 +53,7 @@
   "rightColumn": 40,
   "showStepArrows": false,
   "topRow": 55,
+  "topRowBeforeCollapse": 55,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ukorwtaypt",

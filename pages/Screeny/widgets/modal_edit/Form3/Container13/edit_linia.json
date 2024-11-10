@@ -20,6 +20,9 @@
     },
     {
       "key": "placeholderText"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -43,7 +46,7 @@
   "labelPosition": "Top",
   "labelText": "Linia - {{form_screeny_trigered.data[0].linia}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "",
+  "labelTooltip": "Linia - {{form_screeny_trigered.data[0].linia}}",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

@@ -20,6 +20,9 @@
     },
     {
       "key": "placeholderText"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -46,6 +49,7 @@
   "labelPosition": "Top",
   "labelText": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
   "labelWidth": 5,
   "leftColumn": 47,
   "maxDynamicHeight": 9000,

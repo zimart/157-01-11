@@ -23,6 +23,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,6 +45,7 @@
   "labelPosition": "Top",
   "labelText": "Referencja - {{form_screeny_trigered.data[0].referencja}}",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Referencja - {{form_screeny_trigered.data[0].referencja}}",
   "labelWidth": 5,
   "leftColumn": 56,
   "maxDynamicHeight": 9000,

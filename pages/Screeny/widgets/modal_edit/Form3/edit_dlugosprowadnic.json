@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 55,
+  "bottomRowBeforeCollapse": 55,
   "boxShadow": "none",
   "defaultText": "{{Number(((wysokosccala.wys2_form.data-edit_wartosc_skrzynka.text)*2)/1000).toFixed(2) || \"\"}}",
   "dynamicBindingPathList": [
@@ -58,6 +59,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 48,
+  "topRowBeforeCollapse": 48,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "pa5kqum9kl",

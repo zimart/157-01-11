@@ -26,6 +26,9 @@
     },
     {
       "key": "placeholderText"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -55,6 +58,7 @@
   "labelPosition": "Top",
   "labelText": "Seria napędu - {{form_screeny_trigered.data[0].serianapedu}}",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Seria napędu - {{form_screeny_trigered.data[0].serianapedu}}",
   "labelWidth": 5,
   "leftColumn": 31,
   "maxDynamicHeight": 9000,

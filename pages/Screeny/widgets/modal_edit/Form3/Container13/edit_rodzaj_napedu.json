@@ -23,6 +23,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -49,6 +52,7 @@
   "labelPosition": "Top",
   "labelText": "Rodzaj napędu - {{form_screeny_trigered.data[0].rodzajnapedu}}",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Rodzaj napędu - {{form_screeny_trigered.data[0].rodzajnapedu}}",
   "labelWidth": 5,
   "leftColumn": 39,
   "maxDynamicHeight": 9000,

@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 40,
+  "bottomRowBeforeCollapse": 40,
   "boxShadow": "none",
   "defaultText": "{{Input21.text*edit_Input20.text}}",
   "dynamicBindingPathList": [
@@ -53,6 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 33,
+  "topRowBeforeCollapse": 33,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "evtepsucnu",
