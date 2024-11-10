@@ -17,6 +17,12 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "labelText"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -41,7 +47,7 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Kolor",
+  "labelText": "Kolor - {{form_screeny_trigered.data[0].kolor}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 19,
@@ -59,7 +65,7 @@
   "parentColumnSpace": 13.837890625,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "{{form_screeny_trigered.data[0].kolor}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 31,

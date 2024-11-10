@@ -14,6 +14,12 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,8 +41,9 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Linia",
+  "labelText": "Linia - {{form_screeny_trigered.data[0].linia}}",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -55,7 +62,7 @@
   "parentColumnSpace": 9.12109375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "{{form_screeny_trigered.data[0].linia}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 9,

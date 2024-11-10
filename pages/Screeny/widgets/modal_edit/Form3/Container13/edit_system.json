@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].system))(edit_system.options, edit_system.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,10 +16,13 @@
       "key": "sourceData"
     },
     {
-      "key": "defaultOptionValue"
+      "key": "labelTooltip"
     },
     {
-      "key": "labelTooltip"
+      "key": "labelText"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -44,7 +47,7 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "System",
+  "labelText": "System - {{form_screeny_trigered.data[0].system}}",
   "labelTextSize": "0.875rem",
   "labelTooltip": "Wybierz ponownie system - {{form_screeny_trigered.data[0].system}}",
   "labelWidth": 5,
@@ -65,7 +68,7 @@
   "parentColumnSpace": 9.12109375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "{{form_screeny_trigered.data[0].system}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 19,

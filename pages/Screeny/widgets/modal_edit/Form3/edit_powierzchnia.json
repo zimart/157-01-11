@@ -3,8 +3,8 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
-  "bottomRowBeforeCollapse": 46,
+  "bottomRow": 46,
+  "bottomRowBeforeCollapse": 47,
   "boxShadow": "none",
   "defaultText": "{{powierzchnian.m2_form.data||tabela_screeny_inventory_id.triggeredRow.powierzchnia}}",
   "dynamicBindingPathList": [
@@ -19,7 +19,12 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": true,
@@ -42,8 +47,9 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 28,
   "needsErrorInfo": false,
-  "originalBottomRow": 45,
-  "originalTopRow": 38,
+  "onTextChanged": "{{storeValue('edit_powierzchnia', edit_powierzchnia.text).then(() => {\n  doplata.tkanina_form();\n});}}",
+  "originalBottomRow": 47,
+  "originalTopRow": 40,
   "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
@@ -52,8 +58,8 @@
   "responsiveBehavior": "fill",
   "rightColumn": 8,
   "showStepArrows": false,
-  "topRow": 38,
-  "topRowBeforeCollapse": 39,
+  "topRow": 39,
+  "topRowBeforeCollapse": 40,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "pp1hviirqy",

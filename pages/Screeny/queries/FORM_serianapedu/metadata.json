@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT serianapedu FROM screeny_wyborserii WHERE system = {{edit_system.selectedOptionLabel}};",
+      "body": "SELECT DISTINCT serianapedu FROM screeny_wyborserii WHERE system = {{edit_system.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

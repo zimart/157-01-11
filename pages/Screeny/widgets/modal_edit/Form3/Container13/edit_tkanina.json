@@ -14,12 +14,18 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,13 +53,13 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{form_tkaninawybor.run()}}",
+  "onOptionChange": "{{FORM_tkaninawybor.run();\ndoplata.tkanina_form();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "{{form_screeny_trigered.data[0].tkanina}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 56,

@@ -1,1 +1,0 @@
-SELECT DISTINCT rodzaj FROM screeny_napedy WHERE seria={{edit_seria_napedu.selectedOptionLabel}};

@@ -2,8 +2,8 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
-  "bottomRowBeforeCollapse": 24,
+  "bottomRow": 28,
+  "bottomRowBeforeCollapse": 28,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].wkladka))(edit_wkladkaselect.options, edit_wkladkaselect.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -18,6 +18,12 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -45,7 +51,7 @@
   "key": "6r95v1j7zh",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Wkładka",
+  "labelText": "Wkładka - {{form_screeny_trigered.data[0].wkladka}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 25,
@@ -60,19 +66,19 @@
   "onOptionChange": "{{doplata.wkladka();}}",
   "optionLabel": "name",
   "optionValue": "code",
-  "originalBottomRow": 24,
-  "originalTopRow": 17,
+  "originalBottomRow": 28,
+  "originalTopRow": 21,
   "parentColumnSpace": 18.6875,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "{{form_screeny_trigered.data[0].wkladka}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 34,
   "serverSideFiltering": false,
   "sourceData": "[\n\n  {\n    \"name\": \"-\",\n    \"code\": \"-\"\n  },\n\n  {\n    \"name\": \"NZIP/A\",\n    \"code\": \"NZIP/A\"\n  },\n  {\n    \"name\": \"NZIPS\",\n    \"code\": \"NZIPS\"\n  }\n]",
-  "topRow": 17,
-  "topRowBeforeCollapse": 17,
+  "topRow": 21,
+  "topRowBeforeCollapse": 21,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "qayex5zln5",

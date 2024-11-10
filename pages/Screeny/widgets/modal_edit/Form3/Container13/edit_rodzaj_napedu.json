@@ -17,6 +17,9 @@
     },
     {
       "key": "sourceData"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -59,12 +62,12 @@
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "{{form_screeny_trigered.data[0].rodzajnapedu}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 47,
   "serverSideFiltering": false,
-  "sourceData": "{{form_rodzajnapedu.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
+  "sourceData": "{{FORM_rodzajnapedu.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
