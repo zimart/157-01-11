@@ -6,7 +6,7 @@
   "bottomRow": 23,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{doplatakolorzapytaj.data[0].doplata||0}}",
+  "defaultText": "{{FORM_doplatakolorzapytaj.data[0].doplata||form_screeny_trigered.data[0].doplatakolor}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
