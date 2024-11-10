@@ -32,20 +32,19 @@ return doplatatkanina;
 
 	
 tkanina_form: function () {
-var kosztmetra2 = doplatatkaninam2.text;
+var kosztmetra = doplatatkaninam2.text;
 var powierzchniam2 = appsmith.store.edit_powierzchnia;
 //var skrzynka = Select8.selectedOptionValue;
-var tkaninacos2 = edit_tkanina.selectedOptionValue;
-var doplatatkanina2;
+var tkaninacos = edit_rodzaj_pomiaru.selectedOptionValue;
 //var doplatatkanina = (doplatatkaninam2.text * powierzchnia.text);
 
-if (tkaninacos2 === 'COPACO LUNAR') { doplatatkanina2 = (doplatatkaninam2.text * edit_powierzchnia.text); }
+if (tkaninacos === 'COPACO LUNAR') { doplatatkanina = (doplatatkaninam2.text * powierzchnia_edit.text); }
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput22.text/100));
 //if (szerokoscm === '1') { szerm33 = podana; }
-else doplatatkanina2 = '0';
+else doplatatkanina = '0';
 //if (szerokoscm === '1') { szerm33 = podana; }
 //else if (szerokoscm === '2') { szerm33 = podana ; }
-return doplatatkanina2;
+return doplatatkanina;
 },
 	
 	
