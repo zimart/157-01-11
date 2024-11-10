@@ -39,6 +39,7 @@ export default {
 		"Numer konta bankowego":"Numer konta bankowego",
 		"Wymagana kwota zadatku":"Wymagana kwota zaadatku",
 		"Data ważności oferty":"Data ważności oferty",
+		"Wyloguj":"Wyloguj",
 	
 	
 				

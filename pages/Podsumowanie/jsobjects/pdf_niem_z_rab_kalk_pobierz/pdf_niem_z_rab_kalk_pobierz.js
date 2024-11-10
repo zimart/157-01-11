@@ -319,6 +319,7 @@ columns: [
 	
 doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
+	 doc.addImage(Text28.text,'PNG',15,265,180,15);
 doc.text(footer, 15, 285);			
 	
 //addFooters(doc);
