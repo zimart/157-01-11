@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 23,
-  "bottomRowBeforeCollapse": 23,
+  "bottomRow": 39,
   "boxShadow": "none",
-  "defaultText": "{{Number(doplata.kolor_form.data).toFixed(2)}}",
+  "defaultText": "{{Number(edit_cenasystemu.text+edit_kosztdoplatykolor.text+edit_doplatadotkaninyinput.text+edit_doplatawkladka2.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,55 +15,46 @@
     },
     {
       "key": "defaultText"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": true,
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{edit_czydoplatakolor.text===\"tak\"}}",
-  "key": "2t39cnlom2",
-  "label": "Koszt dopłaty - kolor",
+  "isVisible": true,
+  "key": "c9p1bul6ad",
+  "label": "cenasystemuzdoplatami",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 23,
+  "leftColumn": 3,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 18,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 14,
-  "mobileTopRow": 11,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 26,
+  "mobileRightColumn": 46,
+  "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "originalBottomRow": 23,
-  "originalTopRow": 17,
-  "parentColumnSpace": 18.6884765625,
+  "originalBottomRow": 39,
+  "originalTopRow": 32,
+  "parentColumnSpace": 19.90625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 31,
+  "rightColumn": 11,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 17,
-  "topRowBeforeCollapse": 17,
+  "topRow": 32,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "4p8okjultz",
-  "widgetName": "kosztdoplatykolorCopy"
+  "widgetId": "950rhuy9ot",
+  "widgetName": "systemzdoplatamiCopy"
 }

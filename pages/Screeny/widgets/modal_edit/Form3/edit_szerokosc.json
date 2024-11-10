@@ -14,9 +14,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "label"
-    },
-    {
       "key": "tooltip"
     },
     {
@@ -41,7 +38,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "ocgqaoimtm",
-  "label": "Szerokość -{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
+  "label": "Szerokość",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -56,7 +53,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.tkanina_form())\n.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indeksszer.run())\n.then(() => \t\t\tFORM_skrzynka_zapytaj.run())\n.then(() => FORM_skrotsystem.run())\n.then(() => storeValue('calkowita', edit_wysokosc.text))\n.then(() => \npowierzchnian.m2_form()) \n}}",
+  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.tkanina_form())\n.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indeksszer.run())\n.then(() => \t\t\tFORM_skrzynka_zapytaj.run())\n.then(() => FORM_skrotsystem.run())\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => \npowierzchnian.m2_form()) \n}}",
   "onTextChanged": "{{}}",
   "originalBottomRow": 17,
   "originalTopRow": 10,

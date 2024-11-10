@@ -14,9 +14,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "label"
-    },
-    {
       "key": "placeholderText"
     },
     {
@@ -41,7 +38,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "ln4t6mme1i",
-  "label": "Podawana wysokość - {{tabela_screeny_inventory_id.triggeredRow.concat}}",
+  "label": "Podawana wysokość",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -56,7 +53,7 @@
   "mobileRightColumn": 41,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \n//doplata.wkladka())\n//.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indekswys.run())\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n//.then(() => /\n//doplata.wkladka()\t)\n.then(() => \nFORM_skrzynka_zapytaj.run())\n.then(() => powierzchnian.m2_form())\n//.then(() => resetWidget(\"doplatawkladka2\", true))\n//.then(() => \t\t\tresetWidget(\"wkladkaselect\", true))\n}}\n\t\t\t",
+  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.wkladka_form())\n.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indekswys.run())\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => \ndoplata.wkladka_form()\t)\n.then(() => \nFORM_skrzynka_zapytaj.run())\n.then(() => powierzchnian.m2_form())\n.then(() => resetWidget(\"edit_doplatawkladka2\", true))\n.then(() => \t\t\tresetWidget(\"edit_wkladkaselect\", true))\n}}\n\t\t\t",
   "originalBottomRow": 16,
   "originalTopRow": 10,
   "parentColumnSpace": 18.40625,
