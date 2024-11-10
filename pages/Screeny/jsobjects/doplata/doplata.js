@@ -1,4 +1,5 @@
 export default {
+
 	
 kolor: function () {
 //var wartoscdoplaty = doplatakolorinput.text;
@@ -11,6 +12,7 @@ if (czydoplatakolor === 'tak') { doplatakolor = (cenasystemubaza*(doplatakolorin
 else doplatakolor = '0';
 return doplatakolor;
 },
+	
 	
 tkanina: function () {
 var kosztmetra = doplatatkaninam2.text;
@@ -71,6 +73,18 @@ var doplatawkladkacena2;
 if (edit_wkladkaselect.selectedOptionLabel === 'NZIPS'&& edit_linia.selectedOptionLabel=== 'STANDARD') {doplatawkladkacena2 = (dlugoscprowadnic2 * cenametra)+klipsy; }
 else if (edit_linia.selectedOptionLabel !== 'STANDARD') {doplatawkladkacena2 = 0; }
 return doplatawkladkacena2;
+},
+kolor_form: function () {
+//var wartoscdoplaty = doplatakolorinput.text;
+var cenasystemubaza2 = edit_cenasystemu.text;
+var czydoplatakolor2 = edit_czydoplatakolor.text;
+var doplatakolor2;
+//var skrzynka = Select8.selectedOptionValue;
+if (czydoplatakolor2 === 'tak') { doplatakolor2 = (cenasystemubaza2*(edit_doplatakolorinput22.text/100)); }
+//var doplatakolor = (cenasystemubaza*(doplatakolorinput22.text/100));
+//if (szerokoscm === '1') { szerm33 = podana; }
+else doplatakolor2 = '0';
+return doplatakolor2;
 },
 	
 };

@@ -31,6 +31,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onTextChanged"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,7 +46,7 @@
   "isDisabled": "{{edit_doplatakolorinput22.text === 4}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Input17.text===\"tak\"}}",
+  "isVisible": "{{edit_czydoplatakolor.text===\"tak\"}}",
   "key": "q37nnhimv1",
   "label": "Dopłata do koloru %",
   "labelAlignment": "left",
@@ -60,7 +63,7 @@
   "mobileRightColumn": 26,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onTextChanged": "{{doplata.kolor();}}",
+  "onTextChanged": "{{doplata.kolor_form();}}",
   "originalBottomRow": 23,
   "originalTopRow": 17,
   "parentColumnSpace": 19.0009765625,

@@ -6,7 +6,7 @@
   "bottomRow": 42,
   "bottomRowBeforeCollapse": 42,
   "boxShadow": "none",
-  "defaultText": "{{edit_skrot.text|| \"\"}}-{{Select16.selectedOptionValue|| \"\"}}-{{edit_index_szer.text|| \"\"}}-{{edit_index_wys.text|| \"\"||tabela_screeny_inventory_id.triggeredRow.skugen}}",
+  "defaultText": "{{edit_skrot.text|| \"\"}}-{{Select16.selectedOptionValue|| \"\"}}-{{edit_index_szer.text|| \"\"}}-{{edit_index_wys.text|| \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

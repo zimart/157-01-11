@@ -27,12 +27,12 @@
       "key": "onClick"
     }
   ],
-  "iconName": "plus",
+  "iconName": "repeat",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "{{Select16.isValid;edit_szerokosc.text>0;edit_wysokosc.text>0}}",
   "key": "8xo8kta8qm",
-  "leftColumn": 32,
+  "leftColumn": 33,
   "minWidth": 50,
   "mobileBottomRow": 16,
   "mobileLeftColumn": 40,
@@ -47,7 +47,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "hug",
-  "rightColumn": 36,
+  "rightColumn": 37,
   "topRow": 12,
   "topRowBeforeCollapse": 12,
   "type": "ICON_BUTTON_WIDGET",

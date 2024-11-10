@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_cbbcddff-78f6-43f7-87df-007254e88820",
-  "id": "Screeny_FORM_czydoplatakolor",
+  "gitSyncId": "67252580698c850488983504_bb5a3476-ba10-41b1-9bb2-5f206fbc2d1f",
+  "id": "Screeny_FORM_cena_zapytaj",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT czydoplata FROM screeny_kolor WHERE kolorm = {{edit_kolor.selectedOptionLabel}} and system = {{edit_system.selectedOptionLabel}};",
+      "body": "SELECT cenakatalogowa FROM screeny_cennik WHERE indeks={{appsmith.store.edit_sku_value}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "FORM_czydoplatakolor",
+    "executeOnLoad": false,
+    "name": "FORM_cena_zapytaj",
     "pageId": "Screeny",
     "userSetOnLoad": false
   }

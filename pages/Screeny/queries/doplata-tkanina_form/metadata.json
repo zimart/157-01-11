@@ -26,6 +26,6 @@
     "fullyQualifiedName": "doplata.tkanina_form",
     "name": "tkanina_form",
     "pageId": "Screeny",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -23,9 +23,16 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -46,6 +53,7 @@
   "mobileRightColumn": 57,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onOptionChange": "{{removeValue('edit_sku_value');}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 18.09375,

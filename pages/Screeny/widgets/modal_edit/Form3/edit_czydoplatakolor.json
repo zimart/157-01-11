@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 63,
   "boxShadow": "none",
-  "defaultText": "{{FORM_czydoplatakolor.data[0].}}",
+  "defaultText": "{{FORM_czydoplatakolor.data[0].czydoplata}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

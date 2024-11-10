@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67252580698c850488983504_0134e28e-142a-4513-9bdb-1e59adf0a5c1",
-  "id": "Screeny_doplata.wkladka_form",
+  "gitSyncId": "67252580698c850488983504_aebe1155-1354-4735-8fd3-e30a66669e63",
+  "id": "Screeny_doplata.kolor_form",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,9 +23,9 @@
       }
     ],
     "executeOnLoad": true,
-    "fullyQualifiedName": "doplata.wkladka_form",
-    "name": "wkladka_form",
+    "fullyQualifiedName": "doplata.kolor_form",
+    "name": "kolor_form",
     "pageId": "Screeny",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

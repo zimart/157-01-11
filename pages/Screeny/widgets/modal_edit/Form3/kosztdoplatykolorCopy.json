@@ -33,7 +33,7 @@
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Input17.text===\"tak\"}}",
+  "isVisible": "{{edit_czydoplatakolor.text===\"tak\"}}",
   "key": "2t39cnlom2",
   "label": "Koszt dopłaty - kolor",
   "labelAlignment": "left",

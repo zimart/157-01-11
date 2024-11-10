@@ -70,7 +70,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 32,
+  "rightColumn": 33,
   "serverSideFiltering": false,
   "sourceData": "{{FORM_skrzynka_zapytaj.data.map( (obj) =>{ return  {'label': obj.wymiar, 'value': obj.wymiar } })}}",
   "topRow": 10,

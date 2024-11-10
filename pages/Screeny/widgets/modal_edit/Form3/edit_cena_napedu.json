@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "{{Number(appsmith.store.edit_cenanapedu).toFixed(2)|form_screeny_trigered.data[0].price_motor}}",
+  "defaultText": "{{Number(appsmith.store.edit_cenanapedu).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 57,
+  "leftColumn": 58,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
