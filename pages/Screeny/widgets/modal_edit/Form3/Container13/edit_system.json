@@ -17,6 +17,9 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -43,6 +46,7 @@
   "labelPosition": "Top",
   "labelText": "System",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Wybierz ponownie system - {{form_screeny_trigered.data[0].system}}",
   "labelWidth": 5,
   "leftColumn": 9,
   "maxDynamicHeight": 9000,

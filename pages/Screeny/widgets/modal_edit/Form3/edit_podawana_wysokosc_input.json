@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 16,
   "boxShadow": "none",
-  "defaultText": "{{tabela_screeny_inventory_id.triggeredRow.concat}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,7 +14,13 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "label"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "tooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,13 +41,13 @@
   "isRequired": false,
   "isVisible": true,
   "key": "ln4t6mme1i",
-  "label": "Podawana wysokość",
+  "label": "Podawana wysokość - {{tabela_screeny_inventory_id.triggeredRow.concat}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 20,
+  "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -56,12 +62,14 @@
   "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
+  "placeholderText": "{{tabela_screeny_inventory_id.triggeredRow.concat}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 30,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
+  "tooltip": "Wpisz ponownie wysokość  -{{tabela_screeny_inventory_id.triggeredRow.concat}} ",
   "topRow": 10,
   "type": "INPUT_WIDGET_V2",
   "version": 2,

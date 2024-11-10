@@ -3,9 +3,9 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 24,
-  "bottomRowBeforeCollapse": 7,
+  "bottomRowBeforeCollapse": 24,
   "boxShadow": "none",
-  "defaultOptionValue": "-",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].wkladka))(edit_wkladkaselect.options, edit_wkladkaselect.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,6 +15,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -45,7 +48,7 @@
   "labelText": "Wkładka",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 21,
+  "leftColumn": 39,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -65,11 +68,11 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 48,
   "serverSideFiltering": false,
   "sourceData": "[\n\n  {\n    \"name\": \"-\",\n    \"code\": \"-\"\n  },\n\n  {\n    \"name\": \"NZIP/A\",\n    \"code\": \"NZIP/A\"\n  },\n  {\n    \"name\": \"NZIPS\",\n    \"code\": \"NZIPS\"\n  }\n]",
   "topRow": 17,
-  "topRowBeforeCollapse": 0,
+  "topRowBeforeCollapse": 17,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "qayex5zln5",

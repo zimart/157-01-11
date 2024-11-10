@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 38,
-  "bottomRowBeforeCollapse": 35,
+  "bottomRowBeforeCollapse": 38,
   "boxShadow": "none",
   "defaultText": "{{powierzchnian.m2_form.data||tabela_screeny_inventory_id.triggeredRow.powierzchnia}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 8,
   "showStepArrows": false,
   "topRow": 31,
-  "topRowBeforeCollapse": 28,
+  "topRowBeforeCollapse": 31,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "pp1hviirqy",

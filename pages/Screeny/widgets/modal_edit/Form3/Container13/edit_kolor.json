@@ -53,7 +53,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nFORM_czydoplatakolor.run();\nFORM_doplatakolorzapytaj.run();\nFORM_cena_zapytaj.run();\n}}",
+  "onOptionChange": "{{\nFORM_czydoplatakolor.run();\nFORM_doplatakolorzapytaj.run();\ndoplata.kolor_form();\nFORM_cena_zapytaj.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 13.837890625,

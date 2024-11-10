@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 17,
   "boxShadow": "none",
-  "defaultText": "{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,7 +14,13 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "label"
+    },
+    {
+      "key": "tooltip"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,7 +41,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "ocgqaoimtm",
-  "label": "Szerokość",
+  "label": "Szerokość -{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -57,12 +63,14 @@
   "parentColumnSpace": 9.12109375,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
+  "placeholderText": "{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 10,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
+  "tooltip": "Wpisz ponownie szerokość -{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
   "topRow": 10,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
