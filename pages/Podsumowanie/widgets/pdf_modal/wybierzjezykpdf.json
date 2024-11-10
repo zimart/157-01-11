@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,7 +38,7 @@
   "key": "1xpxdy1xbm",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "{{i18n.translate(\"Język\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,

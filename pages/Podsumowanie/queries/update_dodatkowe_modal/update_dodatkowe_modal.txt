@@ -4,6 +4,10 @@ UPDATE inventory_main SET
     ilosc = '{{edit_ilosc_modal.text}}',
     cenanetto = '{{edit_cena_modal.text}}',
     opisbezrabatow = '{{edit_komentarz_modal.text}}',
-    opiszrabatami = '{{edit_komentarz_modal.text}}'
+    opiszrabatami = '{{edit_komentarz_modal.text}}',
+		opisbezrabatow_de = '{{edit_komentarz_modal.text}}',
+		opiszrabatami_de = '{{edit_komentarz_modal.text}}',
+		opisbezrabatow_en = '{{edit_komentarz_modal.text}}',
+		opiszrabatami_en = '{{edit_komentarz_modal.text}}'
    
   WHERE  	id_main_inv ={{glowna_tabela.triggeredRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

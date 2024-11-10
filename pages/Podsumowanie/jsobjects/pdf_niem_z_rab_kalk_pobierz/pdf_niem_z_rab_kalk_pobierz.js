@@ -31,12 +31,29 @@ const columns2 = [
 const columns3 = [
 { header: 'szczegoly', dataKey: 'szczegoly' }
 ];	
+	
+// Custom headers - kalkulacja z rabatami
+const columns4 = [
+//{ header: 'Lp', dataKey: 'Lp' },
+{ header: 'Produkt', dataKey: 'Produkt' },
+{ header: 'Menge', dataKey: 'Ilosc' },
+//{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
+//{ header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
+//{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
+{ header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
+//{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
+{ header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
+//{ header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
+//{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
+//{ header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
+];		
+	
 
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-Lp:item.Ilosc,
+Lp:item.L,
 //Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
 Produkt: item.Produkt,
 Ilosc: item.Ilosc,
@@ -50,6 +67,24 @@ vat: item.vat,
 vatkwota: ((item.razemnetto*(item.vat/100))*narzuty).toFixed(2),
 Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 }));	
+	
+const data4 = glowna_tabela.tableData.map(item => ({
+//Produkt: item.Produkt +"\n"+item.opiszrabatami,
+//Lp:item.Ilosc,
+//Produkt: item.opiszrabatami_de,
+Produkt: item.Produkt +"\n"+"\n"+item.opiszrabatami_de,
+//Produkt: item.Produkt,
+Ilosc: item.Ilosc,
+cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
+Opis: item.opiszrabatami,
+Rabatprocent: item.rabatogolny,
+Rabat: ((item.kwotarabatogolny/currencyRate)*narzuty).toFixed(2),
+nettopo: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2),
+razemnetto: ((item.razemnetto/ currencyRate)*narzuty).toFixed(2),
+vat: item.vat,
+vatkwota: ((item.razemnetto*(item.vat/100))*narzuty).toFixed(2),
+Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
+}));		
 	
 	
 doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
@@ -77,6 +112,7 @@ doc.addFont("RobotoCondensed-Bold-normal.ttf", "Robotobold", "normal");
 	    doc.setFontSize("10");
 	     doc.setFont("Robotobold"); // set font
 	    doc.text ("ANGEBOT", 16, 48);
+	     doc.text (dataoferty.text, 180,48);
 	    doc.text (numeroferty.text, 32, 48);
 	   // doc.text (Text21.text, 175, 48);
 	    
@@ -320,7 +356,88 @@ columns: [
 doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
 	 doc.addImage(Text28.text,'PNG',15,265,180,15);
-doc.text(footer, 15, 285);			
+   doc.text(footer, 15, 285);			
+	//nowa strona
+	
+	   doc.addPage();
+	    doc.setDrawColor(247, 247, 247);
+	    doc.setLineWidth(8);
+      doc.line(15, 15, 198, 15);
+	    doc.setFontSize("10");
+	     doc.setFont("Robotobold"); // set font
+	    doc.text ("ANGEBOT", 16, 16);
+	    doc.text (dataoferty.text, 180, 16);
+	    doc.text (numeroferty.text, 32, 16);
+   	doc.setFontSize("11");
+	     doc.setFont("Robotobold"); // set font
+	 doc.text ("Positionsberechnung", 15, 25);
+	
+	
+	   // doc.text (Text21.text, 175, 48);
+// tabela-kalkulacja
+CellHookData_3(doc, {
+	theme: 'grid',
+	headStyles: { fillColor:  [247, 247, 247] ,
+           // lineColor: 'black',
+							 lineWidth: 0.1,
+            //lineColor: 'black'
+							 fontSize: 9,
+							 fontStyle: 'bold',
+							},
+	startY: 30,
+	columnStyles: { europe: { halign: 'center',valign: 'middle' },
+             Produkt: {
+       //fontStyle: 'bold',
+							 halign: 'left',
+							 valign: 'middle'
+      },
+								
+								},
+	styles: { cellPadding: 1.2, fontSize: 9,
+					 textColor:0,
+					 //font: 'Amiri',
+					 font: 'Roboto',
+					//  font:'Helvetica',
+           // lineColor: 'black',
+					 cellWidth: 'auto',
+					overflow: 'linebreak',
+//					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
+//fillColor: 255,
+//textColor: Color? = 20
+//cellWidth: 'auto'|'wrap'|number = 'auto'
+minCellWidth: 15,
+minCellHeight:12,
+//minCellHeight: number = 0
+halign: 'center',
+valign: 'middle'
+//	halign: 'left'|'center'|'right' = 'left'
+//valign: 'top'|'middle'|'bottom' = 'top'
+//fontSize: number = 10
+//cellPadding: Padding = 10
+//lineColor: Color = 10
+//lineWidth: border = 0 // If 0, no border is drawn
+					
+					
+					
+					
+					},			
+  columns: columns4,
+  body: data4,
+	 willDrawPage: function (data) {
+      // Header
+      doc.setFontSize(20)
+      doc.setTextColor(40)
+     // if (base64Img) {
+     //   doc.addImage(base64Img, 'JPEG', data.settings.margin.left, 15, 10, 10)
+      },
+});	
+	
+	const finalY5 = doc.lastAutoTable.finalY; // The y position where the table ends
+
+	doc.setFont("Robotobold");
+  doc.text(razemnetto_de.text, 15, finalY5 + 10);
+
+	
 	
 //addFooters(doc);
 //return doc.output("dataurlstring");
