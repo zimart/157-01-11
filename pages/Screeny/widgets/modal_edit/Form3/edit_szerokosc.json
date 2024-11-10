@@ -53,7 +53,7 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \npowierzchnian.m2_form()())\n.then(() => \ndoplata.tkanina_form())\n.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indeksszer.run())\n.then(() => \t\t\tFORM_skrzynka_zapytaj.run())\n.then(() => FORM_skrotsystem.run())\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => \npowierzchnian.m2_form()) \n}}",
+  "onBlur": "{{clearStore()\n.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indeksszer.run())\n.then(() => \t\t\tFORM_skrzynka_zapytaj.run())\n.then(() => FORM_skrotsystem.run())\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => \npowierzchnian.m2_form())\n.then(() => \ndoplata.tkanina_form())}}",
   "onTextChanged": "{{}}",
   "originalBottomRow": 21,
   "originalTopRow": 14,

@@ -931,7 +931,7 @@
       "labelColor": "#FFFFFF",
       "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
-      "onClick": "{{showModal(modal_edit.name).then(() => \nform_screeny_trigered.run())\n.then(() => \n  FORM_system_zapytaj.run())\n.then(() => \n  FORM_kolor_zapytaj.run())\n.then(() => \n  FORM_skrzynka_zapytaj.run())\n.then(() => \n  FORM_serianapedu.run())\n.then(() => \n  form_rodzajnapedu.run())\n.then(() => \n\tFORM_tkaninawybor.run())\n}}",
+      "onClick": "{{showModal(modal_edit.name).then(() => \nform_screeny_trigered.run())\n.then(() => \n  FORM_system_zapytaj.run())\n.then(() => \n  FORM_kolor_zapytaj.run())\n.then(() => \n  FORM_skrzynka_zapytaj.run())\n.then(() => \n  FORM_serianapedu.run())\n.then(() => \n  FORM_rodzajnapedu.run())\n.then(() => \n\tFORM_tkaninawybor.run())\n}}",
       "originalId": "customColumn3",
       "sticky": "left",
       "textSize": "0.875rem",

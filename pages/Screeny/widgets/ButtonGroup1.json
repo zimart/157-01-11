@@ -18,6 +18,12 @@
     },
     {
       "key": "groupButtons.groupButton1.label"
+    },
+    {
+      "key": "groupButtons.groupButtonw839vu9f3h.buttonColor"
+    },
+    {
+      "key": "groupButtons.groupButtonw839vu9f3h.label"
     }
   ],
   "dynamicPropertyPathList": [
@@ -26,6 +32,9 @@
     },
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonw839vu9f3h.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -34,6 +43,9 @@
     },
     {
       "key": "groupButtons.groupButton1.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonw839vu9f3h.onClick"
     }
   ],
   "groupButtons": {
@@ -64,6 +76,23 @@
       "onClick": "{{storeValue('uzytkownik', Input29.text);\nstoreValue('id_oferty', idofertyappsmith.text).then(() => {\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferty,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
       "placement": "CENTER",
       "widgetId": ""
+    },
+    "groupButtonw839vu9f3h": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "iconName": "log-in",
+      "id": "groupButtonw839vu9f3h",
+      "index": 2,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "{{i18n.translate(\"Wyloguj\")}}",
+      "menuItems": {},
+      "onClick": "{{removeValue(appsmith.store.token).then(() => {\n  removeValue(appsmith.store.uzytkownik);\n  navigateTo('Zaloguj', {}, 'SAME_WINDOW');\n});}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "90vhp2h9r4"
     }
   },
   "isCanvas": false,
@@ -85,7 +114,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 18,
+  "rightColumn": 21,
   "topRow": 11,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
