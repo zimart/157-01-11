@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 117,
+  "bottomRow": 120,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -62,9 +62,10 @@
     "opiszrabatami_de",
     "opisbezrabatow_en",
     "opiszrabatami_en",
-    "id_wiersz"
+    "id_wiersz",
+    "komentarz"
   ],
-  "columnUpdatedAt": 1730662709843,
+  "columnUpdatedAt": 1731273050521,
   "columnWidthMap": {
     "Ilosc": 72,
     "Produkt": 260,
@@ -265,6 +266,9 @@
     },
     {
       "key": "primaryColumns.id_wiersz.computedValue"
+    },
+    {
+      "key": "primaryColumns.komentarz.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -774,6 +778,40 @@
       "label": "id_wiersz",
       "notation": "standard",
       "originalId": "id_wiersz",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "komentarz": {
+      "alias": "komentarz",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"komentarz\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "komentarz",
+      "index": 27,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "komentarz",
+      "notation": "standard",
+      "originalId": "komentarz",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1438,7 +1476,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 29,
+  "topRow": 32,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,
