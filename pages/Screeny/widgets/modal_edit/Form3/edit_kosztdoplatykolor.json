@@ -16,24 +16,17 @@
     },
     {
       "key": "defaultText"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{edit_czydoplatakolor.text===\"tak\"}}",
+  "isVisible": true,
   "key": "2t39cnlom2",
   "label": "Koszt dopłaty - kolor",
   "labelAlignment": "left",

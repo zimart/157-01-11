@@ -15,25 +15,18 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{edit_tkanina.selectedOptionValue === \"COPACO LUNAR\"}}",
+  "isVisible": true,
   "key": "lc68vad2ei",
   "label": "Dopłata do tkaniny",
   "labelAlignment": "left",
