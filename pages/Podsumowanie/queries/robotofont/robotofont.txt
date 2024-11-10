@@ -1,1 +1,1 @@
-SELECT base FROM font where nazwa = "Roboto";
+SELECT base,bold FROM font where nazwa = "Roboto";

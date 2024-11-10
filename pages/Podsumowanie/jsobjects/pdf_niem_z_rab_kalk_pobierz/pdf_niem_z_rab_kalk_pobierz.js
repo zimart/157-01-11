@@ -5,6 +5,8 @@ const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
 const numer = idoferty_appsmith.text;
 const Roboto = Input1.text;
+const Robotobold = Input9.text;
+const footer = stopka.text;
 
 // Custom headers
 const columns = [
@@ -53,6 +55,9 @@ Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 doc.addFileToVFS("RobotoCondensed-Regular.ttf", Roboto);
 doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 
+doc.addFileToVFS("RobotoCondensed-Bold-normal.ttf", Robotobold);
+doc.addFont("RobotoCondensed-Bold-normal.ttf", "Robotobold", "normal");
+
      doc.setFont("Roboto"); // set font
 	
     //  doc.setFont ("Helvetica");
@@ -69,16 +74,20 @@ doc.addFont("RobotoCondensed-Regular.ttf", "Roboto", "normal");
 	    doc.setFontSize("9")
       doc.text (nagl.text, 15, 20);
 	
-	    doc.setFontSize("11");
+	    doc.setFontSize("10");
+	     doc.setFont("Robotobold"); // set font
 	    doc.text ("ANGEBOT", 16, 48);
 	    doc.text (numeroferty.text, 32, 48);
 	   // doc.text (Text21.text, 175, 48);
 	    
-	
+	    doc.setFont("Roboto"); // set font
 	    doc.setFontSize("10");
 	    doc.text ("Kunde: ", 15, 58);
+	    doc.setFont("Robotobold"); // set font
 	    doc.text(klientdane.text, 15, 63);
 	 
+	
+	     doc.setFont("Roboto"); // set font
 	    doc.setFontSize("10")
 	   doc.text ("Vielen Dank für Ihre Interesse an unserem Angebot. Wir hoffen, dass Sie die richtige Entscheidung treffen.", 15, 80);
      doc.text ("Nachfolgend finden Sie Details zu unserem Angebot.", 15, 84);
@@ -214,10 +223,15 @@ const narzuty2 = narzutpdf.text;
 // ustalenie final2-po tabeli glownej-i cena netto
 const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
 
-doc.text("Gesamt Netto - Währung:", 15, finalY2 + 10);
-doc.text(Select6.selectedOptionLabel, 50, finalY2 + 10);
-doc.text(nettopdf.text, 15, finalY2 + 15);
-doc.text("Summe Steuer", 15, finalY2 + 20);
+	doc.setFont("Robotobold");
+doc.text(razemnetto_de.text, 15, finalY2 + 10);
+doc.text(podatek_de.text, 15, finalY2 + 15); 
+	doc.setFont("Roboto");
+doc.text("Gesamtbetrag mit MwSt :", 15, finalY2 + 25);
+	
+  doc.setFontSize("13");
+	doc.setFont("Robotobold"); // set font	
+doc.text(razembrutto_de.text, 15, finalY2 + 30);
 	
 
 //doc.addPage();
@@ -291,7 +305,18 @@ columns: [
 });
 //koniec-tabeli-opis-opis-z-danymi	
 
-	
+function addFooters() {
+    const pageCount = doc.internal.getNumberOfPages();
+    for(var i = 1; i <= pageCount; i++) {
+			
+         doc.setFontSize("8");
+	doc.setFont("Roboto"); // set font	
+doc.text(footer, 15, 285);			
+        //doc.text(String(i), 15, 285);
+			  
+    }
+}	
+addFooters(doc);
 //return doc.output("dataurlstring");
 	download(doc.output(), 'angebot_.pdf');
 //doc.save('table.pdf');

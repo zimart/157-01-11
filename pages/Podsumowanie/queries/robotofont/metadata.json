@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT base FROM font where nazwa = \"Roboto\";",
+      "body": "SELECT base,bold FROM font where nazwa = \"Roboto\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
