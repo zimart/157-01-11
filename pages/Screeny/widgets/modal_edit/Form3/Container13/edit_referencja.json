@@ -64,7 +64,7 @@
   "placeholderText": "{{i18n.translate(\"Referencja\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 28,
   "serverSideFiltering": false,
   "sourceData": "{{FORM_tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
   "topRow": 7,

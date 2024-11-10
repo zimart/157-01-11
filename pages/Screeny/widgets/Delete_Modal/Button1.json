@@ -2,11 +2,14 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 21,
   "boxShadow": "none",
-  "buttonColor": "#2E3D49",
-  "buttonVariant": "TERTIARY",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "SECONDARY",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -25,7 +28,7 @@
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "rightColumn": 46,
-  "text": "Cancel",
+  "text": "Anuluj",
   "topRow": 17,
   "type": "BUTTON_WIDGET",
   "version": 1,
