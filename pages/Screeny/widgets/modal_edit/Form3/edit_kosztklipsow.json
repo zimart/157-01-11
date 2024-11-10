@@ -24,7 +24,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "d8dmihog1h",
   "label": "koszt klipsow",
   "labelAlignment": "left",

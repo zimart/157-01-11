@@ -68,7 +68,7 @@
   "parentColumnSpace": 9.12109375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{form_screeny_trigered.data[0].system}}",
+  "placeholderText": "{{i18n.translate(\"Wybierz system\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 19,

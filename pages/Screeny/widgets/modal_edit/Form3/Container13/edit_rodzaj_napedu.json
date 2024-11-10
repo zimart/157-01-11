@@ -20,6 +20,9 @@
     },
     {
       "key": "placeholderText"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -44,7 +47,7 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Rodzaj napędu",
+  "labelText": "Rodzaj napędu - {{form_screeny_trigered.data[0].rodzajnapedu}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 39,
@@ -62,7 +65,7 @@
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{form_screeny_trigered.data[0].rodzajnapedu}}",
+  "placeholderText": "{{i18n.translate(\"Wybierz system\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 47,

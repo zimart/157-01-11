@@ -65,7 +65,7 @@
   "parentColumnSpace": 13.837890625,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{form_screeny_trigered.data[0].kolor}}",
+  "placeholderText": "{{i18n.translate(\"Wybierz kolor\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 31,

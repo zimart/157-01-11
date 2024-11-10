@@ -16,10 +16,10 @@
       "key": "defaultOptionValue"
     },
     {
-      "key": "placeholderText"
+      "key": "labelText"
     },
     {
-      "key": "labelText"
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -62,7 +62,7 @@
   "parentColumnSpace": 9.12109375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{form_screeny_trigered.data[0].linia}}",
+  "placeholderText": "{{i18n.translate(\"Wybierz linię\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 9,

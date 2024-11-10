@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 32,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,7 +33,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "originalBottomRow": 32,
+  "originalBottomRow": 33,
   "originalTopRow": 28,
   "overflow": "NONE",
   "parentColumnSpace": 18.6875,
@@ -41,7 +41,7 @@
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 24,
+  "rightColumn": 28,
   "shouldTruncate": false,
   "text": "Cena systemu z dopłatami : {{edit_systemzdoplatami.text ||\"\"}} PLN | Powierzchnia : {{edit_powierzchnia.text||\"\"}} m2",
   "textAlign": "LEFT",

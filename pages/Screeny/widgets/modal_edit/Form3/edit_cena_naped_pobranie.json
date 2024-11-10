@@ -24,7 +24,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "y5hqo4m5hy",
   "label": "cena napedu",
   "labelAlignment": "left",

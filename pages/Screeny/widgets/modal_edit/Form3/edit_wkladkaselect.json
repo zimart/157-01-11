@@ -63,7 +63,7 @@
   "mobileRightColumn": 56,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onOptionChange": "{{doplata.wkladka();}}",
+  "onOptionChange": "{{doplata.wkladka_form();}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 28,

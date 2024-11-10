@@ -6,7 +6,7 @@
   "bottomRow": 28,
   "bottomRowBeforeCollapse": 28,
   "boxShadow": "none",
-  "defaultText": "{{Number.parseFloat(doplata.tkanina_form.data).toFixed(2)||0}}",
+  "defaultText": "{{Number.parseFloat(doplata.tkanina_form.data).toFixed(2)|0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
