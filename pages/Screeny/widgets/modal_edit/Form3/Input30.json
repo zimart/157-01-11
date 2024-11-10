@@ -3,10 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
-  "bottomRowBeforeCollapse": 28,
+  "bottomRow": 48,
+  "bottomRowBeforeCollapse": 55,
   "boxShadow": "none",
-  "defaultText": "{{Number.parseFloat(doplata.tkanina_form.data).toFixed(2)}}",
+  "defaultText": "{{doplata.kolor_form();}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,45 +19,54 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": true,
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "lc68vad2ei",
-  "label": "Dopłata do tkaniny",
+  "isVisible": false,
+  "key": "xx4706e4we",
+  "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 38,
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 14,
-  "mobileLeftColumn": 23,
-  "mobileRightColumn": 43,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 55,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 60,
+  "mobileTopRow": 48,
   "needsErrorInfo": false,
-  "originalBottomRow": 34,
-  "originalTopRow": 27,
-  "parentColumnSpace": 18.65625,
+  "onTextChanged": "{{storeValue('kosztdoplatykolor', Input30.text);}}",
+  "originalBottomRow": 55,
+  "originalTopRow": 48,
+  "parentColumnSpace": 17.9625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 46,
+  "rightColumn": 60,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 27,
-  "topRowBeforeCollapse": 21,
+  "topRow": 48,
+  "topRowBeforeCollapse": 48,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "otdizuixm1",
-  "widgetName": "edit_doplatadotkaninyinput"
+  "widgetId": "rg925hqghr",
+  "widgetName": "Input30"
 }

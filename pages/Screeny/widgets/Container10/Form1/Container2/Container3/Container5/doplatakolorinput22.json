@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{doplatakolorzapytaj.data[0].doplata||0}}",
+  "defaultText": "{{doplatakolorzapytaj.data[0].doplata}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,9 +18,6 @@
       "key": "isDisabled"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "defaultText"
     }
   ],
@@ -28,9 +25,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -39,11 +33,11 @@
     }
   ],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": "{{doplatakolorinput22.text === 4}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Input17.text===\"tak\"}}",
+  "isVisible": true,
   "key": "q37nnhimv1",
   "label": "Dopłata do koloru %",
   "labelAlignment": "left",

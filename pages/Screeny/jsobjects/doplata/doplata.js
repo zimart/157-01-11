@@ -79,7 +79,7 @@ var cenasystemubaza2 = edit_cenasystemu.text;
 var czydoplatakolor2 = edit_czydoplatakolor.text;
 var doplatakolor2;
 //var skrzynka = Select8.selectedOptionValue;
-if (czydoplatakolor2 === 'tak') { doplatakolor2 = (cenasystemubaza2*(edit_doplatakolorinput22.text/100)); }
+if (czydoplatakolor2 === 'tak') { doplatakolor2 = (edit_cenasystemu.text*(edit_doplatakolorinput22.text/100)); }
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput22.text/100));
 //if (szerokoscm === '1') { szerm33 = podana; }
 else doplatakolor2 = '0';

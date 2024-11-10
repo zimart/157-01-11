@@ -17,6 +17,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -48,7 +51,7 @@
   "mobileTopRow": 98,
   "needsErrorInfo": false,
   "onDropdownOpen": "{{}}",
-  "onOptionChange": "{{tkaninawybor.run();\ndoplata.tkanina();}}",
+  "onOptionChange": "{{removeValue('sku_value');\ntkaninawybor.run();\ndoplata.tkanina();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 105,

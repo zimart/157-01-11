@@ -3,10 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 6,
   "bottomRowBeforeCollapse": 27,
   "boxShadow": "none",
-  "defaultText": "{{FORM_doplatakolorzapytaj.data[0].doplata|0}}",
+  "defaultText": "{{Number.parseFloat(doplata.kolor_form.data).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,70 +15,49 @@
       "key": "borderRadius"
     },
     {
-      "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
-    },
-    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
-    },
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
-  "isDisabled": "{{edit_doplatakolorinput22.text === \"4\"}}",
+  "inputType": "NUMBER",
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{edit_czydoplatakolor.text===\"tak\"}}",
-  "key": "q37nnhimv1",
-  "label": "Dopłata do koloru %",
+  "isVisible": true,
+  "key": "2t39cnlom2",
+  "label": "Koszt dopłaty - kolor",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 22,
+  "leftColumn": 32,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 14,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 26,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 14,
+  "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "onTextChanged": "{{doplata.kolor_form();}}",
-  "originalBottomRow": 34,
+  "originalBottomRow": 33,
   "originalTopRow": 27,
-  "parentColumnSpace": 19.0009765625,
-  "parentId": "jnoi6scv56",
+  "parentColumnSpace": 18.6884765625,
+  "parentId": "s3307hquwf",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 30,
+  "rightColumn": 40,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 27,
+  "topRow": 0,
   "topRowBeforeCollapse": 21,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "ei6khos1rd",
-  "widgetName": "edit_doplatakolorinput22"
+  "widgetId": "4p8okjultz",
+  "widgetName": "edit_kosztdoplatykolor"
 }

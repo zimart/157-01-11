@@ -63,7 +63,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nremoveValue('appsmith.store.edit_sku_value');\nFORM_czydoplatakolor.run();\nFORM_doplatakolorzapytaj.run();\ndoplata.kolor_form();\nFORM_cena_zapytaj.run();\n}}",
+  "onOptionChange": "{{clearStore()\n.then(() => \nFORM_czydoplatakolor.run())\n.then(() => \nFORM_doplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor_form())\n.then(() => \nFORM_cena_zapytaj.run())\t\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 13.837890625,

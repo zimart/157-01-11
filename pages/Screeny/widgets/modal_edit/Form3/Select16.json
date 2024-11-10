@@ -3,7 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 27,
-  "bottomRowBeforeCollapse": 21,
+  "bottomRowBeforeCollapse": 27,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].skrzynka))(Select16.options, Select16.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -75,7 +75,7 @@
   "serverSideFiltering": false,
   "sourceData": "{{FORM_skrzynka_zapytaj.data.map( (obj) =>{ return  {'label': obj.wymiar, 'value': obj.wymiar } })}}",
   "topRow": 20,
-  "topRowBeforeCollapse": 14,
+  "topRowBeforeCollapse": 20,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "g5g3oqxcyu",
