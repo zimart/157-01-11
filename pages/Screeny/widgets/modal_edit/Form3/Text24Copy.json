@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 28,
   "shouldTruncate": false,
-  "text": "Cena systemu z dopłatami : {{edit_systemzdoplatami.text ||\"\"}} PLN | Powierzchnia : {{edit_powierzchnia.text||\"\"}} m2",
+  "text": "Powierzchnia : {{edit_powierzchnia.text||\"\"}} m2",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 37,

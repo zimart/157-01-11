@@ -50,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore()\n.then(() => \nczydoplatakolor.run())\n.then(() => \ndoplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor())\n.then(() => \ncena_zapytaj.run())\t\n}}",
+  "onOptionChange": "{{clearStore()\n.then(() => \nczydoplatakolor.run())\n.then(() => \ndoplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor())\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 180,

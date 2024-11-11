@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 79,
-  "bottomRowBeforeCollapse": 65,
+  "bottomRowBeforeCollapse": 79,
   "boxShadow": "none",
   "defaultText": "{{FORM_danesku.data[0].cenakatalogowa}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 72,
-  "topRowBeforeCollapse": 58,
+  "topRowBeforeCollapse": 72,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "bqv5uq75b9",

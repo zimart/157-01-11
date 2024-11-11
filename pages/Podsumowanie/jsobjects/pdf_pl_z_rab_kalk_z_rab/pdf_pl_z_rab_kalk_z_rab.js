@@ -12,16 +12,16 @@ const footer = stopka.text;
 const columns = [
 //{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
-{ header: 'Menge', dataKey: 'Ilosc' },
+{ header: 'Ilość', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
-{ header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
-{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
-{ header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
+{ header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
+{header: 'Kwota rabatu', dataKey: 'Rabat' } ,// Custom header with currency
+{ header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
-{ header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
-{ header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
-{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
-{ header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
+{ header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
+{ header: 'VAT %', dataKey: 'vat' }, // Custom header with currency
+{ header: 'Kwota podatku', dataKey: 'vatkwota' }, // Custom header with currency
+{ header: 'Do zapłaty', dataKey: 'Brutto' } // Custom header with currency
 ];	
 	
 const columns2 = [
@@ -36,13 +36,13 @@ const columns3 = [
 const columns4 = [
 //{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
-{ header: 'Menge', dataKey: 'Ilosc' },
+{ header: 'Ilość', dataKey: 'Ilosc' },
 //{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 //{ header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
 //{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
-{ header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
+{ header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
-{ header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
+{ header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
 //{ header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
 //{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
 //{ header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
@@ -72,7 +72,7 @@ const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 //Lp:item.Lp +"++$i",
 //Produkt: item.opiszrabatami_de,
-Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
+Produkt: item.Produkt +"\n"+item.opiszrabatami,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
@@ -111,22 +111,22 @@ doc.addFont("RobotoCondensed-Bold-normal.ttf", "Robotobold", "normal");
 	
 	    doc.setFontSize("10");
 	     doc.setFont("Robotobold"); // set font
-	    doc.text ("ANGEBOT", 16, 48);
+	    doc.text ("OFERTA", 16, 48);
 	     doc.text (dataoferty.text, 180,48);
 	    doc.text (numeroferty.text, 32, 48);
 	   // doc.text (Text21.text, 175, 48);
 	    
 	    doc.setFont("Roboto"); // set font
 	    doc.setFontSize("10");
-	    doc.text ("Kunde: ", 15, 58);
+	    doc.text ("Klient: ", 15, 58);
 	    doc.setFont("Robotobold"); // set font
 	    doc.text(klientdane.text, 15, 63);
 	 
 	
 	     doc.setFont("Roboto"); // set font
 	    doc.setFontSize("10")
-	   doc.text ("Vielen Dank für Ihre Interesse an unserem Angebot. Wir hoffen, dass Sie die richtige Entscheidung treffen.", 15, 80);
-     doc.text ("Nachfolgend finden Sie Details zu unserem Angebot.", 15, 84);
+	   doc.text ("Serdecznie dziękujemy za zainteresowanie naszą ofertą handlową. Mamy nadzieję, że dokonają Państwo trafnego wyboru.", 15, 80);
+     doc.text ("Poniżej znajdziecie Państwo szczegóły naszej oferty.", 15, 84);
 
 //tabela-opis-oferty	
 CellHookData_3(doc, {
@@ -184,7 +184,7 @@ body: [
  
 ],
 columns: [
-  { header: "Angebotsbeschreibung:", dataKey: 'opis' },
+  { header: "Opis oferty:", dataKey: 'opis' },
  
 ]
 
@@ -262,10 +262,10 @@ const narzuty2 = narzutpdf.text;
 const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
 
 	doc.setFont("Robotobold");
-doc.text(razemnetto_de.text, 15, finalY2 + 10);
-doc.text(podatek_de.text, 15, finalY2 + 15); 
+doc.text(razemnetto_pl.text, 15, finalY2 + 10);
+doc.text(podatek_pl.text, 15, finalY2 + 15); 
 	doc.setFont("Roboto");
-doc.text("Gesamtbetrag mit MwSt :", 15, finalY2 + 25);
+doc.text("Do zapłaty z podatkiem :", 15, finalY2 + 25);
 	
   doc.setFontSize("13");
 	doc.setFont("Robotobold"); // set font	
@@ -332,11 +332,11 @@ lineWidth: border = 0 // If 0, no border is drawn
 	
 	// European countries centered
 body: [
-  { opis: textpdfdlugide.text },
+  { opis: textpdfdlugipl.text },
  
 ],
 columns: [
-  { header: i18n.translate("_"), dataKey: 'opis' },
+  { header: i18n.translate(" "), dataKey: 'opis' },
  
 ]
 
@@ -357,7 +357,7 @@ columns: [
 	
 doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
-	 doc.addImage(Text28.text,'PNG',15,265,180,15);
+	 doc.addImage(Input10.text,'PNG',15,265,180,15);
    doc.text(footer, 15, 285);			
 	//nowa strona
 	
@@ -367,12 +367,12 @@ doc.setFontSize("8");
       doc.line(15, 15, 198, 15);
 	    doc.setFontSize("10");
 	     doc.setFont("Robotobold"); // set font
-	    doc.text ("ANGEBOT", 16, 16);
+	    doc.text ("OFERTA", 16, 16);
 	    doc.text (dataoferty.text, 180, 16);
 	    doc.text (numeroferty.text, 32, 16);
    	doc.setFontSize("11");
 	     doc.setFont("Robotobold"); // set font
-	 doc.text ("Positionsberechnung", 15, 25);
+	 doc.text ("Kalkulacja pozycji", 15, 25);
 	
 	
 	   // doc.text (Text21.text, 175, 48);
@@ -441,12 +441,12 @@ valign: 'middle'
 
 	doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
-	 doc.addImage(Text28.text,'PNG',15,265,180,15);
+	 doc.addImage(Input10.text,'PNG',15,265,180,15);
    doc.text(footer, 15, 285);	
 	
 //addFooters(doc);
 //return doc.output("dataurlstring");
-	download(doc.output(), 'angebot_.pdf');
+	download(doc.output(), Text29.text);
 //doc.save('table.pdf');
 }
 }

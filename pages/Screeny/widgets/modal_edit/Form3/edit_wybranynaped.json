@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 72,
-  "bottomRowBeforeCollapse": 65,
+  "bottomRowBeforeCollapse": 72,
   "boxShadow": "none",
   "defaultText": "{{FORM_napedwybrany.data[0].model}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 32,
   "showStepArrows": false,
   "topRow": 65,
-  "topRowBeforeCollapse": 58,
+  "topRowBeforeCollapse": 65,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "2uogileoov",

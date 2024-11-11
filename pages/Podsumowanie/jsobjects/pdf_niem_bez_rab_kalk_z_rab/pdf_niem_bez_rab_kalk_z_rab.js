@@ -195,7 +195,7 @@ columns: [
 const finalY1 = doc.lastAutoTable.finalY; // The y position where the table ends	
  doc.setFontSize("10");
  doc.text (walutatekst.text, 15, finalY1+8);	
-	
+	 doc.text (KURSOPIS.text, 35, finalY1+8);
 	
 // tabela-glowna
 CellHookData_3(doc, {

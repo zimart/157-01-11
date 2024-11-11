@@ -5,7 +5,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].kolor))(edit_kolor.options, edit_kolor.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,7 +26,7 @@
       "key": "labelTooltip"
     },
     {
-      "key": "isVisible"
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -36,9 +36,6 @@
     },
     {
       "key": "onOptionChange"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -50,7 +47,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{edit_cenabazowasystemu.isValid}}",
+  "isVisible": true,
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",

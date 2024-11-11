@@ -8,6 +8,7 @@ UPDATE inventory_main SET
 		opisbezrabatow_de = '{{edit_komentarz_modal.text}}',
 		opiszrabatami_de = '{{edit_komentarz_modal.text}}',
 		opisbezrabatow_en = '{{edit_komentarz_modal.text}}',
-		opiszrabatami_en = '{{edit_komentarz_modal.text}}'
+		opiszrabatami_en = '{{edit_komentarz_modal.text}}',
+		komentarz = '{{edit_komentarz_modal.text}}'
    
   WHERE  	id_main_inv ={{glowna_tabela.triggeredRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

@@ -1,6 +1,9 @@
 UPDATE inventory_screeny SET 
     kwotarabatsystem = systemzdoplata*(rabatsystem/100),
-    systemporabacie = systemzdoplata-kwotarabatsystem,
+		doplatakolor = (procentdoplatakolor/100)*cena,
+		
+		systemzdoplata = cena + doplatakolor +doplatawkladka + doplatatkanina,
+		systemporabacie = systemzdoplata-kwotarabatsystem,
     priceall = price_motor - (price_motor*(rabatmotor/100)),
 		cenanetto = systemporabacie + priceall,
 		kwotarabatmotor = price_motor*(rabatmotor/100),

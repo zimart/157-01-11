@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_main SET\n   \n    moc = '{{edit_produkt_modal.text}}',\n    ilosc = '{{edit_ilosc_modal.text}}',\n    cenanetto = '{{edit_cena_modal.text}}',\n    opisbezrabatow = '{{edit_komentarz_modal.text}}',\n    opiszrabatami = '{{edit_komentarz_modal.text}}',\n\t\topisbezrabatow_de = '{{edit_komentarz_modal.text}}',\n\t\topiszrabatami_de = '{{edit_komentarz_modal.text}}',\n\t\topisbezrabatow_en = '{{edit_komentarz_modal.text}}',\n\t\topiszrabatami_en = '{{edit_komentarz_modal.text}}'\n   \n  WHERE  \tid_main_inv ={{glowna_tabela.triggeredRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "UPDATE inventory_main SET\n   \n    moc = '{{edit_produkt_modal.text}}',\n    ilosc = '{{edit_ilosc_modal.text}}',\n    cenanetto = '{{edit_cena_modal.text}}',\n    opisbezrabatow = '{{edit_komentarz_modal.text}}',\n    opiszrabatami = '{{edit_komentarz_modal.text}}',\n\t\topisbezrabatow_de = '{{edit_komentarz_modal.text}}',\n\t\topiszrabatami_de = '{{edit_komentarz_modal.text}}',\n\t\topisbezrabatow_en = '{{edit_komentarz_modal.text}}',\n\t\topiszrabatami_en = '{{edit_komentarz_modal.text}}',\n\t\tkomentarz = '{{edit_komentarz_modal.text}}'\n   \n  WHERE  \tid_main_inv ={{glowna_tabela.triggeredRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
