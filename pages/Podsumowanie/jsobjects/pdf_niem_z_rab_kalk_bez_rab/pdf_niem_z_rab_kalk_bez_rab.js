@@ -51,9 +51,6 @@ const columns4 = [
 
 const currencyRate = kursinput.text; // Example currency rate for conversion
 const narzuty = narzutpdf.text;
-const currencyRate4 = kursinput.text; // Example currency rate for conversion
-const narzuty4 = narzutpdf.text;	
-	
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.L,
@@ -71,8 +68,6 @@ vatkwota: ((item.razemnetto*(item.vat/100))*narzuty).toFixed(2),
 Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 }));	
 	
-
-	
 const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 //Lp:item.Ilosc,
@@ -80,14 +75,14 @@ const data4 = glowna_tabela.tableData.map(item => ({
 Produkt: item.Produkt +"\n"+"\n"+item.opisbezrabatow_de,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
-cenanetto: ((item.cenanetto / currencyRate4)*narzuty4).toFixed(2),// Convert price using currency rate
+cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
 Opis: item.opiszrabatami,
 Rabatprocent: item.rabatogolny,
-Rabat: ((item.kwotarabatogolny/currencyRate4)*narzuty4).toFixed(2),
-nettopo: ((item.cenaporabacie / currencyRate4)*narzuty4).toFixed(2),
-razemnetto: ((item.razemnetto/ currencyRate4)*narzuty4).toFixed(2),
+Rabat: ((item.kwotarabatogolny/currencyRate)*narzuty).toFixed(2),
+nettopo: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2),
+razemnetto: ((item.razemnetto/ currencyRate)*narzuty).toFixed(2),
 vat: item.vat,
-vatkwota: ((item.razemnetto*(item.vat/100))*narzuty4).toFixed(2),
+vatkwota: ((item.razemnetto*(item.vat/100))*narzuty).toFixed(2),
 Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 }));		
 	
@@ -440,7 +435,7 @@ valign: 'middle'
 	const finalY5 = doc.lastAutoTable.finalY; // The y position where the table ends
 
 	doc.setFont("Robotobold");
-  doc.text(razemnetto_de.text, 15, finalY5 + 10);
+ // doc.text(razemnetto_de.text, 15, finalY5 + 10);
 
 	doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	

@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 8,
   "boxShadow": "none",
   "defaultOptionValue": "polski",
   "dynamicBindingPathList": [
@@ -62,7 +62,7 @@
   "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Polski\",\n    \"code\": \"polski\"\n  },\n  {\n    \"name\": \"Niemiecki\",\n    \"code\": \"niemiecki\"\n  },\n  {\n    \"name\": \"Angielski\",\n    \"code\": \"angielski\"\n  }\n]",
-  "topRow": 5,
+  "topRow": 4,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "vozxlwrhuu",

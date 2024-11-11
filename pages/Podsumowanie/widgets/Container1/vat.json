@@ -50,7 +50,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onOptionChange": "{{showModal(LanguageLoading.name).then(() => {\n  przelicz_main_js.przelicz_glowna();\n  zmiendaneoferty.run();\n  closeModal(LanguageLoading.name);\n});}}",
+  "onOptionChange": "{{showModal(LanguageLoading.name)\n.then(() => \nprzelicz_main_js.przelicz_glowna())\n\t.then(() =>\n  zmiendaneoferty.run())\n\t.then(() =>\n\tupdateopismainkurs.run())\n.then(() =>\n  closeModal(LanguageLoading.name));}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 19,

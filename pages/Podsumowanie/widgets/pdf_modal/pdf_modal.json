@@ -29,7 +29,7 @@
       "leftColumn": 0,
       "maxDynamicHeight": 9000,
       "minDynamicHeight": 4,
-      "minHeight": 240,
+      "minHeight": 430,
       "minWidth": 450,
       "mobileBottomRow": 240,
       "mobileLeftColumn": 0,
@@ -64,7 +64,7 @@
   "leftColumn": 9,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 24,
-  "minHeight": 280,
+  "minHeight": 430,
   "mobileBottomRow": 41,
   "mobileLeftColumn": 9,
   "mobileRightColumn": 33,
@@ -81,5 +81,5 @@
   "version": 2,
   "widgetId": "rd53qscmbi",
   "widgetName": "pdf_modal",
-  "width": 456
+  "width": 852
 }

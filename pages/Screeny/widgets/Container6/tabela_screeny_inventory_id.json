@@ -85,7 +85,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731306710376,
+  "columnUpdatedAt": 1731312711478,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -754,7 +754,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.moc ||\"\" + currentRow.concat ||\"\"))}}",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.moc + ' ' + currentRow.komentarz))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1272,7 +1272,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "komentarz",
       "notation": "standard",
       "originalId": "komentarz",

@@ -435,7 +435,7 @@ valign: 'middle'
 	const finalY5 = doc.lastAutoTable.finalY; // The y position where the table ends
 
 	doc.setFont("Robotobold");
-  doc.text(razemnetto_de.text, 15, finalY5 + 10);
+ // doc.text(razemnetto_de.text, 15, finalY5 + 10);
 
 	doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
