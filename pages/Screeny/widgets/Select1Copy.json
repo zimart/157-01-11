@@ -47,7 +47,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{i18n.selectLanguage();\npobierzwarunkipl.run();\nstoreValue('jezyk', Select1.selectedOptionValue);}}",
+  "onOptionChange": "{{i18n.selectLanguage();\nstoreValue('jezyk', Select1.selectedOptionValue);}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 15,

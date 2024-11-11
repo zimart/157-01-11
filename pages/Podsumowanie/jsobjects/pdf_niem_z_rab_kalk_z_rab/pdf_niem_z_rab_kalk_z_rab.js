@@ -54,8 +54,8 @@ const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.L,
-//Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
-Produkt: item.Produkt,
+Produkt: item.Produkt +"\n"+item.komentarz,
+//Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
 Opis: item.opiszrabatami,
@@ -437,7 +437,10 @@ valign: 'middle'
 	doc.setFont("Robotobold");
   doc.text(razemnetto_de.text, 15, finalY5 + 10);
 
-	
+	doc.setFontSize("8");
+	doc.setFont("Roboto"); // set font	
+	 doc.addImage(Text28.text,'PNG',15,265,180,15);
+   doc.text(footer, 15, 285);	
 	
 //addFooters(doc);
 //return doc.output("dataurlstring");

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 53,
+  "bottomRow": 60,
   "bottomRowBeforeCollapse": 60,
   "boxShadow": "none",
   "defaultText": "{{Number(((wysokosccala.wys2_form.data-edit_wartosc_skrzynka.text)*2)/1000).toFixed(2) || \"\"}}",

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 48,
+  "bottomRow": 55,
   "bottomRowBeforeCollapse": 55,
   "boxShadow": "none",
   "defaultText": "{{doplata.kolor_form();}}",

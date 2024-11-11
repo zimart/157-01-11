@@ -77,14 +77,15 @@
     "opisbezrabatow_de",
     "opiszrabatami_de",
     "opisbezrabatow_en",
-    "opiszrabatami_en"
+    "opiszrabatami_en",
+    "komentarz"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731255900562,
+  "columnUpdatedAt": 1731306710376,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -532,6 +533,9 @@
     },
     {
       "key": "primaryColumns.opiszrabatami_en.computedValue"
+    },
+    {
+      "key": "primaryColumns.komentarz.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -1238,6 +1242,40 @@
       "label": "Kolor",
       "notation": "standard",
       "originalId": "kolor",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "komentarz": {
+      "alias": "komentarz",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"komentarz\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "komentarz",
+      "index": 49,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "komentarz",
+      "notation": "standard",
+      "originalId": "komentarz",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

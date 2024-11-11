@@ -15,6 +15,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -54,6 +57,7 @@
   "showStepArrows": false,
   "topRow": 0,
   "type": "INPUT_WIDGET_V2",
+  "validation": "{{edit_cenabazowasystemu.text>0}}",
   "version": 2,
   "widgetId": "p9d18rhqak",
   "widgetName": "edit_cenabazowasystemu"
