@@ -33,7 +33,7 @@
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{wybierzjezykpdf.selectedOptionValue===\"niemiecki\"}}",
+  "isVisible": "{{wybierzjezykpdf.selectedOptionValue===\"deutch\"}}",
   "key": "ufu47vxd4q",
   "leftColumn": 33,
   "minWidth": 120,

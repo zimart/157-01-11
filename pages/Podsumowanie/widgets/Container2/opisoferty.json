@@ -12,6 +12,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -30,7 +33,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "fs65bs2u18",
-  "label": "Opis oferty",
+  "label": "{{i18n.translate(\"Opis oferty\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

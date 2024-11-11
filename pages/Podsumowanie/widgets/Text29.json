@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 271,
+  "bottomRow": 277,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -46,7 +46,7 @@
   "text": "{{i18n.translate(\"Oferta\")}}_{{dane_oferty_main.data[0].dataoferty}}_{{dane_oferty_main.data[0].numeroferty}}_{{dane_oferty_main.data[0].klient}}.pdf",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 266,
+  "topRow": 272,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

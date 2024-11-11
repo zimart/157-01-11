@@ -29,7 +29,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "152c73l0jg",
-  "label": "{{i18n.translate(\"Ważność oferty - dni\")}}",
+  "label": "{{i18n.translate(\"Ważność oferty\")}}- {{i18n.translate(\"dni\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

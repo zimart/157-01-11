@@ -364,7 +364,7 @@ doc.setFontSize("8");
 	
 //addFooters(doc);
 //return doc.output("dataurlstring");
-	download(doc.output(), 'angebot_.pdf');
+	download(doc.output(), Text29.text);
 //doc.save('table.pdf');
 }
 }

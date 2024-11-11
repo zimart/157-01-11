@@ -40,6 +40,18 @@ export default {
 		"Wymagana kwota zadatku":"Wymagana kwota zaadatku",
 		"Data ważności oferty":"Data ważności oferty",
 		"Wyloguj":"Wyloguj",
+		"Oferta":"Oferta",
+		"Podatek VAT":"Podatek VAT",
+		"Narzut":"Narzut",
+		"Rabat":"Rabat",
+		"KURS EURO":"KURS EURO",
+		"Opis oferty":"Opis oferty",
+		"Wymagany":"Wymagany",
+		"zadatek":"zadatek",
+		"Sugerowany":"Sugerowany",
+		"Kwota wymaganego zadatku":"Kwota wymaganego zadatku",
+		"Ważność oferty":"Ważność oferty",
+		"Dni":"Dni",
 	
 	
 				
