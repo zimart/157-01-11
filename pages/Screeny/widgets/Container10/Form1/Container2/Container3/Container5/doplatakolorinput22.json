@@ -19,6 +19,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -39,7 +42,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "q37nnhimv1",
-  "label": "Dopłata do koloru %",
+  "label": "{{i18n.translate(\"Dopłata do koloru %\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

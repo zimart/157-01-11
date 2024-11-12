@@ -32,7 +32,7 @@
   "isLoading": false,
   "isVisible": "{{narzut.text>0}}",
   "key": "827un55g3v",
-  "leftColumn": 6,
+  "leftColumn": 9,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,

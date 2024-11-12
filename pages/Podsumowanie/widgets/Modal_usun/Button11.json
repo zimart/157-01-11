@@ -15,6 +15,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -32,7 +33,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{usun_z_main.run().then(() => {\n  tabela_glowna.run();\n  sumakatalog.run();\n  closeModal('');\n});}}",
+  "onClick": "{{usun_z_main.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n  closeModal(Modal_usun.name);\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "m0queneqow",

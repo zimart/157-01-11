@@ -39,7 +39,12 @@ export default {
 		"Numer konta bankowego":"Numer konta bankowego",
 		"Wymagana kwota zadatku":"Wymagana kwota zaadatku",
 		"Data ważności oferty":"Data ważności oferty",
-	
+	  "Podsumowanie":"Podsumowanie",
+		"Kolor":"Kolor",
+		"Seria napędu":"Seria napędu",
+		"Rodzaj napędu":"Rodzaj napędu",
+		"Tkanina":"Tkanina",
+		"Referencja":"Referencja",
 	
 				
 	},

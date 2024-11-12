@@ -12,6 +12,9 @@
     },
     {
       "key": "accentColor"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -36,7 +39,7 @@
   "key": "pomnq6978w",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Rodzaj napędu",
+  "labelText": "{{i18n.translate(\"Rodzaj napędu\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 30,

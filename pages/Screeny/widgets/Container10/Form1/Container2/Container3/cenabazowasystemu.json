@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 0,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "defaultText": "{{Number(appsmith.store.cenasystemu).toFixed(2)}}",
@@ -19,6 +19,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,7 +38,7 @@
   "isRequired": true,
   "isVisible": "{{sku_input.isValid}}",
   "key": "2t39cnlom2",
-  "label": "Cena bazowa PLN",
+  "label": "{{i18n.translate(\"Cena bazowa PLN\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

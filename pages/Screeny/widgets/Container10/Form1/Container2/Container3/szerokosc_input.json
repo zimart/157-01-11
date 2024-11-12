@@ -15,6 +15,9 @@
     },
     {
       "key": "validation"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,7 +45,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "iyb187w358",
-  "label": "Szerokość",
+  "label": "{{i18n.translate(\"Szerokość\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

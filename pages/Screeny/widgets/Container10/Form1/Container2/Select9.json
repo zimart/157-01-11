@@ -11,6 +11,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -38,7 +41,7 @@
   "key": "ki1dwtwiw3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Tkanina",
+  "labelText": "{{i18n.translate(\"Tkanina\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 38,

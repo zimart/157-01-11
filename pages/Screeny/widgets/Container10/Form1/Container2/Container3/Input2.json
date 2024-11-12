@@ -9,6 +9,9 @@
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -20,7 +23,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "ebj3l9h399",
-  "label": "Ilość",
+  "label": "{{i18n.translate(\"Ilość\")}}",
   "labelAlignment": "left",
   "labelPosition": "Auto",
   "labelStyle": "",

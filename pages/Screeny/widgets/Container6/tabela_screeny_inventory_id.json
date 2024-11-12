@@ -536,6 +536,9 @@
     },
     {
       "key": "primaryColumns.komentarz.computedValue"
+    },
+    {
+      "key": "primaryColumns.ilosc.label"
     }
   ],
   "dynamicPropertyPathList": [
@@ -1137,7 +1140,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Ilość",
+      "label": "{{i18n.translate(\"Ilość\")}}",
       "notation": "standard",
       "originalId": "ilosc",
       "sticky": "",

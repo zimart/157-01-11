@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 35,
+  "bottomRow": 33,
   "boxShadow": "none",
   "buttonColor": "#b91c1c",
   "buttonVariant": "SECONDARY",
@@ -44,7 +44,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 13,
   "text": "{{i18n.translate(\"ZAPISZ SZCZEGÓŁY OFERTY\")}}",
-  "topRow": 31,
+  "topRow": 29,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "7uaw1ggcjc",
