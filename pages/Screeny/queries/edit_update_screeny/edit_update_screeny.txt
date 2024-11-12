@@ -21,6 +21,6 @@ UPDATE inventory_screeny SET
 		doplatatkanina = '{{edit_doplatadotkaninyinput.text}}',
 		wkladka = '{{edit_wkladkaselect.selectedOptionLabel}}',
 		doplatawkladka = '{{edit_doplatawkladka2.text}}',
-		systemzdoplata = '{{edit_systemzdoplatami.text}}'
+	
 		
   WHERE id = {{tabela_screeny_inventory_id.triggeredRow.id}}
