@@ -52,7 +52,7 @@
   "mobileTopRow": 48,
   "needsErrorInfo": false,
   "onTextChanged": "{{storeValue('kosztdoplatykolor', Input30.text);}}",
-  "originalBottomRow": 48,
+  "originalBottomRow": 55,
   "originalTopRow": 48,
   "parentColumnSpace": 17.9625,
   "parentId": "jnoi6scv56",

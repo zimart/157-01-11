@@ -1876,7 +1876,7 @@
       "alias": "rabatsystem",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
+      "cellBackground": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
       "columnType": "number",
       "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem))}}",
       "currencyCode": "USD",
@@ -2525,7 +2525,7 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 62,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
