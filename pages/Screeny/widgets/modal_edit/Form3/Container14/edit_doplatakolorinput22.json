@@ -37,7 +37,7 @@
   ],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": "{{edit_doplatakolorinput22.text ===4}}",
+  "isDisabled": "{{edit_doplatakolorinput22.text === 4}}{{edit_doplatakolorinput22.text===0}}",
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,

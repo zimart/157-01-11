@@ -85,7 +85,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731312711478,
+  "columnUpdatedAt": 1731527350779,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -104,7 +104,7 @@
     "price_motor": 103,
     "procentdoplatakolor": 148,
     "rabatmotor": 151,
-    "rabatsystem": 137,
+    "rabatsystem": 243,
     "seq": 65.99999999999999,
     "skrzynka": 102,
     "skugen": 248,
@@ -307,16 +307,10 @@
       "key": "primaryColumns.procentdoplatakolor.isCellVisible"
     },
     {
-      "key": "primaryColumns.doplatakolor.isCellVisible"
-    },
-    {
       "key": "primaryColumns.doplatawkladka.isCellVisible"
     },
     {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.rabatsystem.isCellVisible"
     },
     {
       "key": "primaryColumns.systemporabacie.isCellVisible"
@@ -329,9 +323,6 @@
     },
     {
       "key": "primaryColumns.price_motor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.rabatmotor.isCellVisible"
     },
     {
       "key": "primaryColumns.priceall.isCellVisible"
@@ -442,9 +433,6 @@
       "key": "primaryColumns.customColumn1.cellBackground"
     },
     {
-      "key": "primaryColumns.rabatsystem.cellBackground"
-    },
-    {
       "key": "primaryColumns.wkladka.cellBackground"
     },
     {
@@ -505,15 +493,6 @@
       "key": "primaryColumns.customColumn3.menuColor"
     },
     {
-      "key": "primaryColumns.customColumn2.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn3.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
-    },
-    {
       "key": "primaryColumns.serianapedu.computedValue"
     },
     {
@@ -539,6 +518,18 @@
     },
     {
       "key": "primaryColumns.ilosc.label"
+    },
+    {
+      "key": "primaryColumns.doplatakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.cellBackground"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.textColor"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -558,16 +549,10 @@
       "key": "primaryColumns.procentdoplatakolor.isCellVisible"
     },
     {
-      "key": "primaryColumns.doplatakolor.isCellVisible"
-    },
-    {
       "key": "primaryColumns.doplatawkladka.isCellVisible"
     },
     {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.rabatsystem.isCellVisible"
     },
     {
       "key": "primaryColumns.systemporabacie.isCellVisible"
@@ -610,6 +595,24 @@
     },
     {
       "key": "primaryColumns.customColumn3.onClick"
+    },
+    {
+      "key": "primaryColumns.doplatakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.cellBackground"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.textColor"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.cellBackground"
+    },
+    {
+      "key": "primaryColumns.rabatmotor.textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -823,7 +826,7 @@
       "alias": "Usuń",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "buttonColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#b91c1c",
       "buttonLabel": "kasuj",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
@@ -867,7 +870,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#1e3a8a",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
@@ -910,7 +913,7 @@
       "allowSameOptionsInNewRow": true,
       "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
       "boxShadow": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonColor": "#008080",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
@@ -1836,19 +1839,19 @@
       "alias": "rabatmotor",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
+      "cellBackground": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
       "columnType": "number",
       "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "RIGHT",
+      "fontStyle": "BOLD",
+      "horizontalAlignment": "CENTER",
       "id": "rabatmotor",
       "index": 19,
       "isCellEditable": true,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "true",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1860,7 +1863,7 @@
       "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  tabela_inventory_id_new.run();\n});}}",
       "originalId": "rabatmotor",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#B71C1C\" : \"#000000\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {
@@ -1873,19 +1876,19 @@
       "alias": "rabatsystem",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
+      "cellBackground": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
       "columnType": "number",
       "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
+      "fontStyle": "BOLD",
       "horizontalAlignment": "CENTER",
       "id": "rabatsystem",
       "index": 9,
       "isCellEditable": true,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "true",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1897,7 +1900,7 @@
       "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  tabela_inventory_id_new.run();\n}).catch(() => {});}}",
       "originalId": "rabatsystem",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#B71C1C\" : \"#000000\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {
@@ -2522,7 +2525,7 @@
     }
   },
   "renderMode": "CANVAS",
-  "rightColumn": 64,
+  "rightColumn": 62,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
