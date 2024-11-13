@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 0,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].wkladka))(edit_wkladkaselect.options, edit_wkladkaselect.serverSideFiltering) }}",

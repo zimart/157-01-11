@@ -3,10 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 0,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{Number(doplata.wkladka_form.data).toFixed(2)||0}}",
+  "defaultText": "{{Number(doplata.wkladka_form.data).toFixed(2)|0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

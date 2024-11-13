@@ -11,6 +11,7 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -28,7 +29,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{edit_js_przelicz.przelicz_screeny();}}",
+  "onClick": "{{showModal(LanguageLoading.name).then(() => {\n  edit_js_przelicz.przelicz_screeny();\n  closeModal(LanguageLoading.name);\n});}}",
   "originalBottomRow": 41,
   "originalTopRow": 37,
   "parentId": "jnoi6scv56",

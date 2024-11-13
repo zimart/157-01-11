@@ -1,26 +1,5 @@
 UPDATE inventory_screeny SET
-    linia = '{{edit_linia.selectedOptionValue}}',
-		system = '{{edit_system.selectedOptionLabel}}',
-		kolor = '{{edit_kolor.selectedOptionValue}}',
-		serianapedu = '{{edit_seria_napedu.selectedOptionLabel}}',
-		rodzajnapedu = '{{edit_rodzaj_napedu.selectedOptionLabel}}',
-		tkanina = '{{edit_tkanina.selectedOptionLabel}}',
-		referencja = '{{edit_referencja.selectedOptionLabel}}',
-		ilosc = '{{edit_ilosc.text}}',
-    wysokosc = '{{edit_wysokosc.text}}',
-		rodzajpomiaru = '{{edit_rodzaj_pomiaru.selectedOptionLabel}}',
-    szerokosc = '{{edit_szerokosc.text}}',
-    ilosc = '{{edit_ilosc.text}}',
-		skrzynka = '{{Select16.selectedOptionValue}}',
-		skugen = '{{edit_sku_input.text}}',
-		cena = '{{edit_cenasystemu.text}}',
-		naped = '{{edit_naped.text}}',
-		price_motor = '{{edit_cena_napedu.text}}',
-		procentdoplatakolor = '{{edit_doplatakolorinput22.text}}',
+   cena = '{{edit_cenasystemu.text}}'
 		
-		doplatatkanina = '{{edit_doplatadotkaninyinput.text}}',
-		wkladka = '{{edit_wkladkaselect.selectedOptionLabel}}',
-		doplatawkladka = '{{edit_doplatawkladka2.text}}',
-	
 		
   WHERE id = {{tabela_screeny_inventory_id.triggeredRow.id}}
