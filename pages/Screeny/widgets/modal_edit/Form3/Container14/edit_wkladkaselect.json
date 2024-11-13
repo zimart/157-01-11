@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 0,
+  "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].wkladka))(edit_wkladkaselect.options, edit_wkladkaselect.serverSideFiltering) }}",
@@ -14,9 +14,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "defaultOptionValue"
     },
     {
@@ -24,6 +21,12 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -32,10 +35,10 @@
       "key": "sourceData"
     },
     {
-      "key": "isVisible"
+      "key": "onOptionChange"
     },
     {
-      "key": "onOptionChange"
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,11 +46,11 @@
       "key": "onOptionChange"
     }
   ],
-  "isDisabled": false,
+  "isDisabled": "{{edit_linia.selectedOptionValue === \"PREMIUM\"; edit_szerokosc.text < 1200 }}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{edit_linia.selectedOptionValue === \"STANDARD\" && edit_szerokosc.text > 1200 }}",
+  "isVisible": true,
   "key": "6r95v1j7zh",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -64,8 +67,8 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onOptionChange": "{{doplata.wkladka_form();}}",
-  "optionLabel": "name",
-  "optionValue": "code",
+  "optionLabel": "label",
+  "optionValue": "value",
   "originalBottomRow": 6,
   "originalTopRow": 0,
   "parentColumnSpace": 18.6875,
@@ -76,7 +79,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 55,
   "serverSideFiltering": false,
-  "sourceData": "[\n\n  {\n    \"name\": \"-\",\n    \"code\": \"-\"\n  },\n\n  {\n    \"name\": \"NZIP/A\",\n    \"code\": \"NZIP/A\"\n  },\n  {\n    \"name\": \"NZIPS\",\n    \"code\": \"NZIPS\"\n  }\n]",
+  "sourceData": "{{FORM_wkladki.data.map( (obj) =>{ return  {'label': obj.wkladka, 'value': obj.wkladka } })}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",

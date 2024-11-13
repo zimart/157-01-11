@@ -57,8 +57,10 @@ var klipsy = kosztklipsow.text;
 //var skrzynka = Select8.selectedOptionValue;
 var dlugoscprowadnic = dlugosprowadnic.text;
 var doplatawkladkacena;
-if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& Select1.selectedOptionLabel=== 'STANDARD') {doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
-else if (Select1.selectedOptionLabel !== 'STANDARD') {doplatawkladkacena = 0; }
+if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& edit_szerokosc.text>1200) {doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
+else doplatawkladkacena = '0';
+
+
 return doplatawkladkacena;
 },
 	
@@ -69,10 +71,11 @@ var klipsy2 = edit_kosztklipsow.text;
 //var skrzynka = Select8.selectedOptionValue;
 var dlugoscprowadnic2 = edit_dlugosprowadnic.text;
 var doplatawkladkacena2;
-if (edit_wkladkaselect.selectedOptionLabel === 'NZIPS'&& edit_linia.selectedOptionLabel=== 'STANDARD') {doplatawkladkacena2 = (dlugoscprowadnic2 * cenametra2)+klipsy2; }
-else if (edit_linia.selectedOptionLabel !== 'STANDARD') {doplatawkladkacena2 = 0; }
+if (edit_wkladkaselect.selectedOptionLabel === 'NZIPS' && edit_szerokosc.text >1200) {doplatawkladkacena2 = (dlugoscprowadnic2 * cenametra2)+klipsy2; }
+else doplatawkladka2 = '0';
 return doplatawkladkacena2;
 },
+	
 kolor_form: function () {
 //var wartoscdoplaty = doplatakolorinput.text;
 var cenasystemubaza2 = edit_cenasystemu.text;

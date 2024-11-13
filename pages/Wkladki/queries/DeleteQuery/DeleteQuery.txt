@@ -1,0 +1,2 @@
+DELETE FROM wkladki
+  WHERE idwkladka = {{data_table.triggeredRow.idwkladka}};

@@ -29,9 +29,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -60,7 +57,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onOptionChange": "{{FORM_system_zapytaj.run().then(() => \nremoveValue('edit_sku_value'))\t}}",
+  "onOptionChange": "{{FORM_system_zapytaj.run().then(() => {\n  removeValue('edit_sku_value');\n  FORM_wkladki.run();\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 17,

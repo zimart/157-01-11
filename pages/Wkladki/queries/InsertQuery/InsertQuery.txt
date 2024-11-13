@@ -1,0 +1,6 @@
+INSERT INTO wkladki (
+	linia,
+	wkladka)
+VALUES (
+	'{{insert_form.formData.linia}}',
+	'{{insert_form.formData.wkladka}}');

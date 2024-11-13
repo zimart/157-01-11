@@ -1,0 +1,4 @@
+UPDATE wkladki SET
+		linia = '{{update_form.fieldState.linia.isVisible ? update_form.formData.linia : update_form.sourceData.linia}}',
+		wkladka = '{{update_form.fieldState.wkladka.isVisible ? update_form.formData.wkladka : update_form.sourceData.wkladka}}'
+WHERE idwkladka = {{data_table.selectedRow.idwkladka}};

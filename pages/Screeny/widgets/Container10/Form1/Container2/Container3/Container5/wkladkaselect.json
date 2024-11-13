@@ -5,7 +5,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "NZIPS",
+  "defaultOptionValue": "-",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,6 +15,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -55,9 +58,9 @@
   "mobileTopRow": 1,
   "needsErrorInfo": false,
   "onOptionChange": "{{doplata.wkladka();}}",
-  "optionLabel": "name",
-  "optionValue": "code",
-  "originalBottomRow": 0,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 7,
   "originalTopRow": 0,
   "parentColumnSpace": 18.6875,
   "parentId": "ikmrmo799q",
@@ -67,7 +70,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 41,
   "serverSideFiltering": false,
-  "sourceData": "[\n\n  {\n    \"name\": \"-\",\n    \"code\": \"-\"\n  },\n\n  {\n    \"name\": \"NZIP/A\",\n    \"code\": \"NZIP/A\"\n  },\n  {\n    \"name\": \"NZIPS\",\n    \"code\": \"NZIPS\"\n  }\n]",
+  "sourceData": "{{wkladki.data.map( (obj) =>{ return  {'label': obj.wkladka, 'value': obj.wkladka } })}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
