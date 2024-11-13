@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 51,
+  "bottomRow": 58,
   "bottomRowBeforeCollapse": 58,
   "boxShadow": "none",
   "defaultText": "{{Number(edit_cenasystemu.text+edit_kosztdoplatykolor.text+edit_doplatadotkaninyinput.text+edit_doplatawkladka2.text).toFixed(2)}}",

@@ -19,6 +19,9 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -28,6 +31,9 @@
     },
     {
       "key": "onTextChanged"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -40,7 +46,7 @@
   "isDisabled": "{{edit_doplatakolorinput22.text === 4}}{{edit_doplatakolorinput22.text===0}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{edit_czydoplatakolor.text=\"tak\"}}",
   "key": "q37nnhimv1",
   "label": "Dopłata do koloru %",
   "labelAlignment": "left",

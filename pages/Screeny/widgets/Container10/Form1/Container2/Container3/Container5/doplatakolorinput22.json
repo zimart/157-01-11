@@ -22,12 +22,18 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -40,7 +46,7 @@
   "isDisabled": "{{doplatakolorinput22.text === 4}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{Input17.text===\"tak\"}}",
   "key": "q37nnhimv1",
   "label": "{{i18n.translate(\"Dopłata do koloru %\")}}",
   "labelAlignment": "left",
