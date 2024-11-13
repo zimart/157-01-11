@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{Number(doplata.kolor.data).toFixed(2)|0}}",
+  "defaultText": "{{Number(doplata.kolor.data).toFixed(2)||\"0\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,14 +19,18 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "true",
   "key": "2t39cnlom2",
   "label": "Koszt dopłaty - kolor",
   "labelAlignment": "left",
