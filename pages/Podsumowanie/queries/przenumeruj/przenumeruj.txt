@@ -1,0 +1,4 @@
+SET @row_number = 0;
+UPDATE inventory_main
+SET seq = (@row_number:=@row_number + 1)
+WHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}};

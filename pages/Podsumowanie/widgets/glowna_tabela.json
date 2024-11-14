@@ -34,7 +34,7 @@
     "customColumn2",
     "customColumn4",
     "customColumn5",
-    "customColumn1",
+    "seq",
     "Produkt",
     "Ilosc",
     "cenanetto",
@@ -65,7 +65,7 @@
     "id_wiersz",
     "komentarz"
   ],
-  "columnUpdatedAt": 1731338813969,
+  "columnUpdatedAt": 1731625743693,
   "columnWidthMap": {
     "Ilosc": 72,
     "Produkt": 260,
@@ -84,6 +84,7 @@
     "opiszrabatami_en": 175,
     "rabatogolny": 84,
     "razemnetto": 186,
+    "seq": 60,
     "vat": 125
   },
   "defaultPageSize": 0,
@@ -193,9 +194,6 @@
       "key": "primaryColumns.cenaporabacie.label"
     },
     {
-      "key": "primaryColumns.customColumn1.computedValue"
-    },
-    {
       "key": "primaryColumns.customColumn2.boxShadow"
     },
     {
@@ -269,6 +267,9 @@
     },
     {
       "key": "primaryColumns.komentarz.computedValue"
+    },
+    {
+      "key": "primaryColumns.seq.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -526,39 +527,6 @@
       "originalId": "cenaporabacie",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "customColumn1": {
-      "alias": "Lp.",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "buttonStyle": "rgb(3, 179, 101)",
-      "columnType": "text",
-      "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "id": "customColumn1",
-      "index": 10,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": true,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Lp.",
-      "labelColor": "#FFFFFF",
-      "notation": "standard",
-      "originalId": "customColumn1",
-      "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -1358,6 +1326,40 @@
       "notation": "standard",
       "originalId": "rodzajmotor",
       "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "seq": {
+      "alias": "seq",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"seq\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "seq",
+      "index": 28,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Lp",
+      "notation": "standard",
+      "originalId": "seq",
+      "sticky": "left",
       "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,

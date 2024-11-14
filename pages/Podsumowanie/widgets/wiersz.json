@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 185,
   "boxShadow": "none",
-  "defaultText": "{{iloscwierszy.data[0].count}}",
+  "defaultText": "{{iloscwierszy.data[0][\"COUNT(id_main_inv)\"]}} ",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,7 +20,7 @@
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,

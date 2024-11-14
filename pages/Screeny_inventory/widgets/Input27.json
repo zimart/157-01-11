@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 266,
   "boxShadow": "none",
-  "defaultText": "{{Total_record_inventory_main3.data[0].COUNT(*)}}",
+  "defaultText": "{{Total_record_inventory_main3.data[0].COUNT(szerokosc)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

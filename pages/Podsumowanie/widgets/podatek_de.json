@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 263,
-  "bottomRowBeforeCollapse": 267,
+  "bottomRowBeforeCollapse": 263,
   "boxShadow": "none",
   "defaultText": "Summe Steuer ({{Input7.text}}%) : {{Number(podatek.text).toFixed(2)}} {{Select6.selectedOptionValue}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 18,
   "showStepArrows": false,
   "topRow": 256,
-  "topRowBeforeCollapse": 260,
+  "topRowBeforeCollapse": 256,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "2w7kf45ngy",

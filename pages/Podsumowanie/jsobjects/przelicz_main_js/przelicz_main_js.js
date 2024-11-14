@@ -15,6 +15,8 @@ sumanettoporabacie.run())
 .then(() => 
 sumabrutto.run())
 .then(() => 
+przenumeruj.run())
+.then(() => 
 closeModal(LanguageLoading.name));
 
 },
