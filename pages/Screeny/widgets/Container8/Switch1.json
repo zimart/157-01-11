@@ -1,6 +1,6 @@
 {
   "accentColor": "#231f20",
-  "alignWidget": "RIGHT",
+  "alignWidget": "LEFT",
   "animateLoading": true,
   "bottomRow": 4,
   "boxShadow": "none",

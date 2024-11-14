@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultText": "{{FORM_doplatakolorzapytaj.data[0].doplata|0}}",
+  "defaultText": "{{FORM_doplatakolorzapytaj.data[0].doplata}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -42,7 +42,7 @@
     }
   ],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": "{{edit_doplatakolorinput22.text === 4}}{{edit_doplatakolorinput22.text===0}}",
   "isLoading": false,
   "isRequired": false,

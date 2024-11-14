@@ -5,7 +5,7 @@ przelicz_screeny: async () => {
 //var skrzynka = Select8.selectedOptionValue;
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 //await showModal(LanguageLoading.name)
-edit_update_screeny.run();
+await edit_update_screeny.run();
 //.then(() => 
 await przeliczpozycje.run();
 //.then(() => 
