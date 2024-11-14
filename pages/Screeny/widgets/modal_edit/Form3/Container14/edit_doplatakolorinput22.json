@@ -19,9 +19,6 @@
     },
     {
       "key": "defaultText"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -43,10 +40,10 @@
   ],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": "{{edit_doplatakolorinput22.text === 4;edit_doplatakolorinput22.text===0}}",
+  "isDisabled": "{{edit_doplatakolorinput22.text === '4'||edit_doplatakolorinput22.text==='0'}}",
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{edit_czydoplatakolor.text=\"tak\"}}",
+  "isVisible": "true",
   "key": "q37nnhimv1",
   "label": "Dopłata do koloru %",
   "labelAlignment": "left",
