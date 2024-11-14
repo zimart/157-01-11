@@ -62,7 +62,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.tkanina())\n.then(() => \nindeksszer.run())\n.then(() => \nwysokosccala.wys2())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => \npowierzchnian.m2()) \n}}",
+  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.tkanina())\n.then(() => \nindeksszer.run())\n.then(() => \nwysokosccala.wys2())\n.then(() => skrzynka_zapytaj.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => \npowierzchnian.m2())\n.then(() => \ndoplatakolorzapytaj.run()) \n}}",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 41,

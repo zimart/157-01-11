@@ -197,9 +197,6 @@
       "key": "borderRadius"
     },
     {
-      "key": "onSubmit"
-    },
-    {
       "key": "sourceData"
     },
     {
@@ -222,8 +219,8 @@
   "leftColumn": 50,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
-  "onSubmit": "{{Update_screeny_kolor1.run(() => {\n            showAlert(\"Successfully updated! Refresh the table to see updates\");\n            \n          }, () => {\n            showAlert(\"Unable to save!\");\n          })}}",
-  "originalBottomRow": 86,
+  "onSubmit": "{{Update_screeny_kolor1.run(() => {\n  showAlert(\"Successfully updated! Refresh the table to see updates\");\n  SelectQuery.run();\n}, () => {\n  showAlert(\"Unable to save!\");\n});}}",
+  "originalBottomRow": 89,
   "originalTopRow": 0,
   "parentColumnSpace": 16.3125,
   "parentId": "0",
