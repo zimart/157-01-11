@@ -34,6 +34,10 @@
     "task": 245
   },
   "columnUpdatedAt": 1726261614889,
+  "columnWidthMap": {
+    "tkanina": 280,
+    "tkanina_main": 224
+  },
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",

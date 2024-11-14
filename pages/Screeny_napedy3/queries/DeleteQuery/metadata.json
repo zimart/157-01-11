@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_3b177199-b697-47e7-9682-0c3b407bfadb",
-  "id": "Screeny_napedy_Query1",
+  "gitSyncId": "67252580698c850488983504_6212dcfb-2cdd-4403-b250-261bb46a5d92",
+  "id": "Screeny_napedy3_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT DISTINCT Rodzaj FROM screeny_napedy;",
+      "body": "DELETE FROM screeny_napedy\n  WHERE id = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "Query1",
-    "pageId": "Screeny_napedy",
+    "executeOnLoad": false,
+    "name": "DeleteQuery",
+    "pageId": "Screeny_napedy3",
     "userSetOnLoad": false
   }
 }

@@ -2,7 +2,7 @@
   "gitSyncId": "67252580698c850488983504_780b27ca-662d-4b3f-b1b0-5288451fba8a",
   "unpublishedPage": {
     "customSlug": "klienci",
-    "isHidden": false,
+    "isHidden": true,
     "layouts": [
       {
         "dsl": {

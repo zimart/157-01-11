@@ -75,10 +75,6 @@
       "isDefault": false
     },
     {
-      "id": "Screeny_napedy",
-      "isDefault": false
-    },
-    {
       "id": "Screeny_cennik",
       "isDefault": false
     },
@@ -140,6 +136,10 @@
     },
     {
       "id": "Wkladki",
+      "isDefault": false
+    },
+    {
+      "id": "Screeny_napedy3",
       "isDefault": false
     }
   ],

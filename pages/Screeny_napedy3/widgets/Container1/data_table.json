@@ -31,6 +31,9 @@
     "typ",
     "opis",
     "niewiem",
+    "indeks",
+    "rabat",
+    "porabacie",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -38,7 +41,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1727628826238,
+  "columnUpdatedAt": 1731609025751,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -69,6 +72,9 @@
   },
   "displayName": "Table",
   "dynamicBindingPathList": [
+    {
+      "key": "tableData"
+    },
     {
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
@@ -115,12 +121,21 @@
       "key": "primaryColumns.niewiem.computedValue"
     },
     {
-      "key": "tableData"
+      "key": "primaryColumns.indeks.computedValue"
+    },
+    {
+      "key": "primaryColumns.rabat.computedValue"
+    },
+    {
+      "key": "primaryColumns.porabacie.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -166,7 +181,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "number",
       "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"cenakatalogowanaped\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -253,12 +268,46 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "indeks": {
+      "alias": "indeks",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"indeks\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "indeks",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "indeks",
+      "notation": "standard",
+      "originalId": "indeks",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "moc": {
       "alias": "moc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
-      "columnType": "text",
+      "columnType": "number",
       "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"moc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
@@ -381,6 +430,74 @@
       "label": "opis",
       "notation": "standard",
       "originalId": "opis",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "porabacie": {
+      "alias": "porabacie",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"porabacie\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "porabacie",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "porabacie",
+      "notation": "standard",
+      "originalId": "porabacie",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "rabat": {
+      "alias": "rabat",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rabat\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rabat",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "rabat",
+      "notation": "standard",
+      "originalId": "rabat",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
