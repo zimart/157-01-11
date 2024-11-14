@@ -57,7 +57,7 @@ var klipsy = kosztklipsow.text;
 //var skrzynka = Select8.selectedOptionValue;
 var dlugoscprowadnic = dlugosprowadnic.text;
 var doplatawkladkacena;
-if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& szerokosc_input.text>1200) {doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
+if (wkladkaselect.selectedOptionLabel === 'NZIPS'&& edit_szerokosc.text>1200) {doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
 else doplatawkladkacena = '0';
 
 
