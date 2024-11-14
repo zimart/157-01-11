@@ -14,6 +14,11 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -32,8 +37,8 @@
   "mobileTopRow": 33,
   "needsErrorInfo": false,
   "onClick": "{{update_dodatkowe_modal.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n  tabela_glowna.run();\n});\ncloseModal(edycja_glownej.name);}}",
-  "originalBottomRow": 22,
-  "originalTopRow": 18,
+  "originalBottomRow": 29,
+  "originalTopRow": 25,
   "parentId": "msds2f0ug2",
   "placement": "CENTER",
   "recaptchaType": "V3",

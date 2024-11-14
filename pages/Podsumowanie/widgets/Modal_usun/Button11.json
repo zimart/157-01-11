@@ -15,7 +15,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -33,7 +37,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 18,
   "needsErrorInfo": false,
-  "onClick": "{{usun_z_main.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n  closeModal(Modal_usun.name);\n});}}",
+  "onClick": "{{usun_z_main.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n\tprzenumeruj.run();\n  closeModal(Modal_usun.name);\n});}}",
   "originalBottomRow": 22,
   "originalTopRow": 18,
   "parentId": "m0queneqow",
