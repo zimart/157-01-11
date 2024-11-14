@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 379,
+  "bottomRow": 381,
   "boxShadow": "none",
   "defaultText": "Zusätzliche Informationen / Vorkehrungen :\nBestellbedingungen\nZahlungsbedingungen : {{i18n.translate(MultiSelect1.selectedOptionLabels[0])||\"\"}} {{i18n.translate(MultiSelect1.selectedOptionValues[1])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[2])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[3])||\"\"}}{{i18n.translate(MultiSelect1.selectedOptionValues[4])||\"\"}}\n\nUm das Angebot zu bestätigen, bitten wir Sie, eine Anzahlung in der unten angegebenen Höhe auf unserem Bankkonto zu leisten als Titel angeben \"ANGEBOT {{numeroferty.text}}\".\n\nErforderlicher Einzahlungsbetrag: {{wymaganyzadatekprocent.text}}% Bruttobestellwert\nEinzahlungsbetrag: {{wymaganyzadatek.text}} {{Select6.selectedOptionLabel}}\nZahlungsmethode: Nach Absprache – bevorzugt BANK TRANSFER\n\nBankkonto:\n{{Select6.selectedOptionLabel}}  - Sigma Systemy Osłonowe\nSantander Bank Polska S.A \n{{numerkonta.data[0].konto}}\n\nAngebot gültig {{dniwaznosc.text}} Tage ab Austellungsdatum ({{dane_oferty_main.data[0].dataoferty}}) oder bis ein neues Angebot ausgestellt wird\n\nPflichten des Auftraggebers :\n- Gerüstvorbereitung ( wenn notig)\n- Vorbereitung der elektrischen Verbindungen\n- Vorbereitung aller für die Montage notwendigen Elemente\n\nDas Angebot wurde vorbereiten von\n{{daneuzytkownik.data[0].first_name}} {{daneuzytkownik.data[0].last_name}} \ntel: {{daneuzytkownik.data[0].telefon}} \ne-mail: {{daneuzytkownik.data[0].email}} \n\nBei Fragen stehen wir Ihnen gerne zur Verfügung.\n\nUm die Bestellung zu bestaetigen, bitte unterschreiben.\n\n(W celu potwierdzenia - akceptacji warunków oferty, prosimy o podpisanie (opięczętowanie) niniejszejszego druku. Jest to równoznaczne z przyjęciem warunków i złożeniem zamówienia)\n\n\n\n\n Unterschrift und Stempel\n(Czytelny podpis Zleceniodawcy)",
   "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
   "mobileRightColumn": 39,
   "mobileTopRow": 261,
   "needsErrorInfo": false,
-  "originalBottomRow": 377,
+  "originalBottomRow": 381,
   "originalTopRow": 285,
   "parentColumnSpace": 20.5625,
   "parentId": "0",

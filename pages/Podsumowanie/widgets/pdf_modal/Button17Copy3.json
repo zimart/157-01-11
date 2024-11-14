@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 24,
+  "bottomRow": 20,
   "bottomRowBeforeCollapse": 24,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -55,7 +55,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 33,
   "text": "PDF/niemiecki bez rabatów + kalkulacja z rabatami",
-  "topRow": 20,
+  "topRow": 16,
   "topRowBeforeCollapse": 20,
   "type": "BUTTON_WIDGET",
   "version": 1,
