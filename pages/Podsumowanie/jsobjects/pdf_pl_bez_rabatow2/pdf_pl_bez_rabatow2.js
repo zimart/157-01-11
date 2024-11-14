@@ -291,7 +291,7 @@ theme: 'grid',
 							 fontSize: 10,
 							 fontStyle: 'bold',
 							},
-	startY: finalY2+30,
+	startY: finalY2+35,
 	columnStyles: { europe: { halign: 'left',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',

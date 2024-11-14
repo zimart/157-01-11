@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11127,
+  "bottomRow": 11129,
   "bottomRowBeforeCollapse": 11141,
   "dynamicBindingPathList": [
     {
@@ -47,7 +47,7 @@
   "text": "{{daneuzytkownik.data[0].logobase}}",
   "textAlign": "LEFT",
   "textColor": "#e0dede",
-  "topRow": 10716,
+  "topRow": 10718,
   "topRowBeforeCollapse": 10730,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",

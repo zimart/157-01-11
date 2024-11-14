@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 19706,
+  "bottomRow": 19708,
   "boxShadow": "none",
   "defaultText": "{{robotofont.data[0].bold}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 10706,
+  "topRow": 10708,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "jzkd84g6qz",

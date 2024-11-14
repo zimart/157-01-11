@@ -1,0 +1,12 @@
+SELECT
+  *
+FROM
+  inventory_main
+WHERE
+  id_wiersz LIKE '%{{Table1.searchText}}%'
+ORDER BY
+  {{Table1.sortOrder.column || 'id_main_inv'}} {{Table1.sortOrder.order !== "desc" ? "" : "DESC"}}
+LIMIT
+  {{Table1.pageSize}}
+OFFSET
+  {{Table1.pageOffset}}

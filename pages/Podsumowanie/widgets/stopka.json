@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 10700,
+  "bottomRow": 10702,
   "boxShadow": "none",
   "defaultText": "Wszelkie prawa zastrzeżone. Ujawnianie niniejszego dokumentu stronom trzecim bez zgody SIGMA SYSTEMY OSŁONOWE jest zabronione.\n{{daneuzytkownik.data[0].first_name}} {{daneuzytkownik.data[0].last_name}} | {{numeroferty.text}} | {{dataoferty.text}} ",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 42,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 10688,
+  "topRow": 10690,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "lctjypqur1",

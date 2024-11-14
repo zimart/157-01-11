@@ -316,8 +316,7 @@
           "label": "Indeks",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "indeks",
-          "position": 8,
-          "sourceData": null
+          "position": 8
         },
         "moc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -382,8 +381,7 @@
           "label": "Niewiem",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "niewiem",
-          "position": 7,
-          "sourceData": null
+          "position": 7
         },
         "opis": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -404,8 +402,7 @@
           "label": "Opis",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "opis",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "porabacie": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -426,8 +423,7 @@
           "label": "Porabacie",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "porabacie",
-          "position": 10,
-          "sourceData": null
+          "position": 10
         },
         "rabat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -448,8 +444,7 @@
           "label": "Rabat",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabat",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         },
         "rodzaj": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
