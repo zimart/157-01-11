@@ -435,7 +435,7 @@
           "isDisabled": false,
           "isRequired": false,
           "isSpellCheck": false,
-          "isVisible": true,
+          "isVisible": false,
           "label": "Uzytkownikwlasnosc",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "uzytkownikwlasnosc",

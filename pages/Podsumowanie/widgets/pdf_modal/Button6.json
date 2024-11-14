@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 33,
   "bottomRowBeforeCollapse": 28,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -55,7 +55,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 33,
   "text": "PDF/ polski z rabatami + kalkulacja z rabatami",
-  "topRow": 24,
+  "topRow": 29,
   "topRowBeforeCollapse": 24,
   "type": "BUTTON_WIDGET",
   "version": 1,

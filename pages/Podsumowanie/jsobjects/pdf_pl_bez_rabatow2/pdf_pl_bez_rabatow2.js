@@ -13,9 +13,9 @@ const columns = [
 //{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Ilość', dataKey: 'Ilosc' },
-{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
-{ header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
-{header: 'Kwota rabatu', dataKey: 'Rabat' } ,// Custom header with currency
+//{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
+//{ header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
+//{header: 'Kwota rabatu', dataKey: 'Rabat' } ,// Custom header with currency
 { header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
 { header: 'Razem netto', dataKey: 'razemnetto' }, // Custom header with currency
