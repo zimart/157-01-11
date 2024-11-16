@@ -10,7 +10,7 @@ const footer = stopka.text;
 
 // Custom headers
 const columns = [
-//{ header: 'Lp', dataKey: 'Lp' },
+{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Menge', dataKey: 'Ilosc' },
 { header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
@@ -34,7 +34,7 @@ const columns3 = [
 	
 // Custom headers - kalkulacja z rabatami
 const columns4 = [
-//{ header: 'Lp', dataKey: 'Lp' },
+{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Menge', dataKey: 'Ilosc' },
 //{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
@@ -53,7 +53,7 @@ const currencyRate = kursinput.text; // Example currency rate for conversion
 const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-//Lp:item.seq+"++$i",
+Lp:item.seq,
 Produkt: item.Produkt +"\n"+item.komentarz,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
@@ -70,7 +70,7 @@ Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 	
 const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-//Lp:item.Lp +"++$i",
+Lp:item.seq,
 //Produkt: item.opiszrabatami_de,
 Produkt: item.Produkt +"\n"+item.opiszrabatami_de,
 //Produkt: item.Produkt,
@@ -161,8 +161,8 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 5,
-minCellHeight:5,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
 valign: 'middle',
@@ -230,8 +230,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 15,
-minCellHeight:12,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'
@@ -313,8 +313,8 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 5,
-minCellHeight:5,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
 valign: 'middle',
@@ -407,8 +407,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 15,
-minCellHeight:12,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'
@@ -446,7 +446,7 @@ valign: 'middle'
 	
 //addFooters(doc);
 //return doc.output("dataurlstring");
-	download(doc.output(), 'angebot_.pdf');
+download(doc.output(), Text29.text);
 //doc.save('table.pdf');
 }
 }

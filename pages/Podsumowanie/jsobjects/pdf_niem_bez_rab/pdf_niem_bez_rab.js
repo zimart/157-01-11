@@ -1,5 +1,4 @@
 export default {
-
 async BuildPDF () {
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
@@ -7,10 +6,9 @@ const numer = idoferty_appsmith.text;
 const Roboto = Input1.text;
 const Robotobold = Input9.text;
 const footer = stopka.text;
-
 // Custom headers
 const columns = [
-//{ header: 'Lp', dataKey: 'Lp' },
+{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Menge', dataKey: 'Ilosc' },
 //{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
@@ -34,7 +32,7 @@ const columns3 = [
 	
 // Custom headers - kalkulacja z rabatami
 const columns4 = [
-//{ header: 'Lp', dataKey: 'Lp' },
+{ header: 'Lp', dataKey: 'Lp' },
 { header: 'Produkt', dataKey: 'Produkt' },
 { header: 'Menge', dataKey: 'Ilosc' },
 //{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
@@ -53,7 +51,7 @@ const currencyRate = kursinput.text; // Example currency rate for conversion
 const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-Lp:item.L,
+Lp:item.seq,
 Produkt: item.Produkt +"\n"+item.komentarz,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
@@ -70,7 +68,7 @@ Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
 	
 const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
-//Lp:item.Ilosc,
+Lp:item.seq,
 //Produkt: item.opiszrabatami_de,
 Produkt: item.Produkt +"\n"+"\n"+item.opisbezrabatow_de,
 //Produkt: item.Produkt,
@@ -228,8 +226,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 15,
-minCellHeight:12,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'

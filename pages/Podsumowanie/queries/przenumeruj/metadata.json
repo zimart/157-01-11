@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SET @row_number = 0;\nUPDATE inventory_main\nSET seq = (@row_number:=@row_number + 1)\nWHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}};",
+      "body": "SET @row_number = 0;\nUPDATE inventory_main\nSET seq = (@row_number:=@row_number + 1)\nWHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}}\nORDER BY rodzajmotor;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
