@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 168,
-  "bottomRowBeforeCollapse": 168,
+  "bottomRowBeforeCollapse": 171,
   "boxShadow": "none",
   "defaultText": "{{((narzut.text/100)+1).toFixed(2)}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 164,
-  "topRowBeforeCollapse": 164,
+  "topRowBeforeCollapse": 167,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "480to67w4x",
