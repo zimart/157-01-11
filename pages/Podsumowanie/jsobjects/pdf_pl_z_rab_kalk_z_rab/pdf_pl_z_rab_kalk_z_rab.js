@@ -161,8 +161,8 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 10,
-minCellHeight:10,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
 valign: 'middle',
@@ -230,8 +230,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 10,
-minCellHeight:10,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'
@@ -291,7 +291,7 @@ theme: 'grid',
 							 fontSize: 10,
 							 fontStyle: 'bold',
 							},
-	startY: finalY2+30,
+	startY: finalY2+35,
 	columnStyles: { europe: { halign: 'left',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -313,8 +313,8 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 10,
-minCellHeight:10,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
 valign: 'middle',
@@ -386,7 +386,7 @@ CellHookData_3(doc, {
 							 fontSize: 9,
 							 fontStyle: 'bold',
 							},
-	startY: 30,
+	startY: 35,
 	columnStyles: { europe: { halign: 'center',valign: 'middle' },
              Produkt: {
        //fontStyle: 'bold',
@@ -407,8 +407,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 10,
-minCellHeight:10,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'
