@@ -356,7 +356,7 @@ columns: [
 //}	
 
 const finalY7 = doc.lastAutoTable.finalY; // The y position where the table ends
- doc.setFontSize("6");
+
 	
 	
 //tabela-rodo

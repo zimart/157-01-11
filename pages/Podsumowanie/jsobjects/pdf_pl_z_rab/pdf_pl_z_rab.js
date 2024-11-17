@@ -355,6 +355,73 @@ columns: [
 //    }
 //}	
 	
+const finalY7 = doc.lastAutoTable.finalY; // The y position where the table ends
+
+	
+	
+//tabela-rodo
+CellHookData_3(doc, {
+theme: 'grid',
+	headStyles: { 
+		fillColor:  [255, 255, 255] ,
+           // lineColor: 'black',
+							 lineWidth: 0,
+            //lineColor: 'black'
+							 fontSize: 6,
+							 //fontStyle: 'bold',
+							},
+	startY: finalY7+10,
+	columnStyles: { europe: { halign: 'left',valign: 'middle' },
+             Produkt: {
+       //fontStyle: 'bold',
+							 halign: 'left',
+							 valign: 'middle',
+							 lineWidth: 0,
+      },
+								
+								},
+	styles: { cellPadding: 1, fontSize: 6,
+					 textColor:0,
+					 //font: 'Amiri',
+					 font: 'Roboto',
+					//  font:'Helvetica',
+           // lineColor: 'black',
+					 cellWidth: 'auto',
+					overflow: 'linebreak',
+//					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
+//fillColor: 255,
+//textColor: Color? = 20
+//cellWidth: 'auto'|'wrap'|number = 'auto'
+minCellWidth: 8,
+minCellHeight:8,
+//minCellHeight: number = 0
+halign: 'left',
+valign: 'middle',
+//	halign: 'left'|'center'|'right' = 'left'
+//valign: 'top'|'middle'|'bottom' = 'top'
+//fontSize: number = 10
+//cellPadding: Padding = 10
+//lineColor: Color = 10
+lineWidth: border = 0 // If 0, no border is drawn
+				
+					
+					
+					
+					},		
+	
+	// European countries centered
+body: [
+  { opis: rodo.text },
+ 
+],
+columns: [
+  { header: i18n.translate(" "), dataKey: 'opis' },
+ 
+]
+
+});
+//koniec-tabeli-opis-rodo		
+	
 doc.setFontSize("8");
 	doc.setFont("Roboto"); // set font	
 	 doc.addImage(Input10.text,'PNG',15,265,180,15);
