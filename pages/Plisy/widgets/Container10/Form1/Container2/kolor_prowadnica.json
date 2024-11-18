@@ -3,8 +3,9 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "RAL 7016",
+  "defaultOptionValue": "RAL9006 Srebrny półmat",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
@@ -17,6 +18,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -25,7 +29,7 @@
       "key": "sourceData"
     },
     {
-      "key": "onOptionChange"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -37,14 +41,14 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{Select1.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
   "key": "q6bew8sxi9",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "{{i18n.translate(\"Kolor\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 7,
+  "leftColumn": 57,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -53,22 +57,23 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_doplata_kolor.run();\n}}",
+  "onOptionChange": "",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 180,
-  "originalTopRow": 173,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Wybierz kolor",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 64,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "sourceData": "{{Plisy_kolor_zapytaj_prowadnica.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ai7kcb1lmq",
-  "widgetName": "kolor_select"
+  "widgetId": "m2p8qh01ei",
+  "widgetName": "kolor_prowadnica"
 }

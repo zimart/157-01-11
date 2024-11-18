@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_87a59500-ec99-49cc-89db-147c0346b05a",
-  "id": "Plisy_Plisy_kolor_zapytajCopy",
+  "gitSyncId": "67252580698c850488983504_2467961c-3b88-4e76-b30b-1e1fe6683bb9",
+  "id": "Plisy_Plisy_wymiary_dachowe",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor;",
+      "body": "SELECT * FROM plisy_dachowe where typokna = {{dachoweokno.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
-    "name": "Plisy_kolor_zapytajCopy",
+    "name": "Plisy_wymiary_dachowe",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

@@ -2,7 +2,8 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
   "defaultOptionValue": "{{\n            {\n              label: Select17.options[0].label,\n              value: Select17.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
@@ -17,27 +18,37 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": true,
+  "isRequired": true,
+  "isVisible": "{{Select1.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
   "key": "42nmme0mbx",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "Okno",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 26,
+  "leftColumn": 49,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -46,19 +57,21 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 210,
   "needsErrorInfo": false,
+  "onOptionChange": "{{Plisy_wymiary_dachowe.run().then(() => {\n  storeValue('szerokoscdachowa', Plisy_wymiary_dachowe.data[0].szerokosc);\n  storeValue('wysokoscdachowa', Plisy_wymiary_dachowe.data[0].wysokosc);\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 216,
-  "originalTopRow": 209,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 57,
   "serverSideFiltering": false,
   "sourceData": "{{Plisy_okna_dachowe.data.map( (obj) =>{ return  {'label': obj.typokna, 'value': obj.typokna } })}}",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "dfby8pzth3",

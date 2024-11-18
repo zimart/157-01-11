@@ -2,73 +2,58 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "RAL 7016",
+  "defaultOptionValue": "Standard",
   "dynamicBindingPathList": [
-    {
-      "key": "sourceData"
-    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
-  "key": "q6bew8sxi9",
+  "key": "42nmme0mbx",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Kolor\")}}",
+  "labelText": "Mocowanie",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 7,
+  "leftColumn": 34,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 180,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 173,
+  "mobileBottomRow": 6,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_doplata_kolor.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 180,
-  "originalTopRow": 173,
+  "parentColumnSpace": 19.625,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz kolor",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 42,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "sourceData": "[\n  {\n    \"label\": \"Standard\",\n    \"value\": \"Standard\"\n  },\n  {\n    \"label\": \"Bezinwazyjne\",\n    \"value\": \"Bezinwazyjne\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ai7kcb1lmq",
-  "widgetName": "kolor_select"
+  "widgetId": "q22qpks5r3",
+  "widgetName": "select_mocowanie"
 }

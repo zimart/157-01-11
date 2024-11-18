@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_1b0f39e3-7282-4747-85eb-e048e77ecb50",
-  "id": "Plisy_kosztdoplatytkanina",
+  "gitSyncId": "67252580698c850488983504_87a59500-ec99-49cc-89db-147c0346b05a",
+  "id": "Plisy_Plisy_kolor_zapytaj_prowadnica",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT doplatam2 FROM screeny_tkanina_wybor where tkanina_main = {{Select_kolekcja.selectedOptionLabel}};",
+      "body": "SELECT kolorm FROM plisy_kolor WHERE rodzajpr = \"prowadnica\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
-    "executeOnLoad": false,
-    "name": "kosztdoplatytkanina",
+    "dynamicBindingPathList": [],
+    "executeOnLoad": true,
+    "name": "Plisy_kolor_zapytaj_prowadnica",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

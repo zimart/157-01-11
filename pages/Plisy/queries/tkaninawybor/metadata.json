@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tkanina FROM screeny_tkanina_wybor WHERE tkanina_main={{Select9.selectedOptionValue}};",
+      "body": "SELECT tkanina FROM screeny_tkanina_wybor WHERE tkanina_main={{Select_kolekcja.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

@@ -2,73 +2,64 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 214,
   "boxShadow": "none",
-  "defaultOptionValue": "RAL 7016",
+  "defaultOptionValue": "{{\n            {\n              label: Select18.options[0].label,\n              value: Select18.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
     },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
     }
   ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "q6bew8sxi9",
+  "key": "42nmme0mbx",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Kolor\")}}",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 7,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 180,
+  "mobileBottomRow": 215,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 173,
+  "mobileTopRow": 208,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_doplata_kolor.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 180,
-  "originalTopRow": 173,
-  "parentId": "76671vu120",
+  "originalBottomRow": 214,
+  "originalTopRow": 207,
+  "parentId": "0",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz kolor",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
+  "rightColumn": 20,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
-  "topRow": 0,
+  "sourceData": "{{Plisy_kolor_zapytaj_prowadnica.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "topRow": 207,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ai7kcb1lmq",
-  "widgetName": "kolor_select"
+  "widgetId": "pv0vsukpvs",
+  "widgetName": "Select18"
 }

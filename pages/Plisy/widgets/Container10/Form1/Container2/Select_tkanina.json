@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "WHITE-WHITE 002 002",
+  "defaultOptionValue": "P202",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
@@ -29,7 +29,7 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
   "key": "p6i97dwydz",
   "labelAlignment": "left",
@@ -37,7 +37,7 @@
   "labelText": "{{i18n.translate(\"Tkanina\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 48,
+  "leftColumn": 25,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -55,12 +55,12 @@
   "placeholderText": "Referencja",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
+  "rightColumn": 34,
   "serverSideFiltering": false,
-  "sourceData": "{{tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
+  "sourceData": "{{Plisy_tkanina.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "psksqvlpxy",
-  "widgetName": "Select10"
+  "widgetName": "Select_tkanina"
 }

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_1b0f39e3-7282-4747-85eb-e048e77ecb50",
-  "id": "Plisy_kosztdoplatytkanina",
+  "gitSyncId": "67252580698c850488983504_1998fa3e-ecac-4cf9-af1c-d4a316e6e097",
+  "id": "Plisy_Plisy_tkanina",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT doplatam2 FROM screeny_tkanina_wybor where tkanina_main = {{Select_kolekcja.selectedOptionLabel}};",
+      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{Select_kolekcja.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "kosztdoplatytkanina",
+    "executeOnLoad": true,
+    "name": "Plisy_tkanina",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

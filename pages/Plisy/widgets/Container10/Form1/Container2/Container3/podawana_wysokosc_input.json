@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{appsmith.store.wysokoscdachowa||\"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,6 +16,9 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -51,9 +54,9 @@
   "labelWidth": 5,
   "leftColumn": 11,
   "maxDynamicHeight": 9000,
-  "maxNum": "5000",
+  "maxNum": "3000",
   "minDynamicHeight": 4,
-  "minNum": "800",
+  "minNum": "200",
   "minWidth": 450,
   "mobileBottomRow": 17,
   "mobileLeftColumn": 8,
