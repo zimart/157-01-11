@@ -14,19 +14,5 @@ closeModal(LanguageLoading.name));
 
 },
 	
-	
-	
-	
 }
 	
-//async kategoria2(kategoria3 = kategoriaselect.selectedOptionValue){
-//		if (!this.resources[SCREENY]){
-//			showModal(LanguageLoading.name);
-//			await system_zapytaj.run();
-//			closeModal(LanguageLoading.name);
-				
-			
-//		} else {
-			
-//		}
-//	},

@@ -54,7 +54,7 @@
   "mobileTopRow": 98,
   "needsErrorInfo": false,
   "onDropdownOpen": "{{}}",
-  "onOptionChange": "{{removeValue('sku_value');\nPlisy_tkanina.run();\n}}",
+  "onOptionChange": "{{removeValue('sku_value');\nPlisy_tkanina.run();\nPlisy_grupa_kolekcja.grupa();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 105,

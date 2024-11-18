@@ -60,7 +60,7 @@
   "mobileRightColumn": 53,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2_form())\n.then(() => FORM_indekswys.run())\n.then(() => \nstoreValue('edit_skrzynkawybrana', Select8.selectedOptionValue))\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => FORM_indekswys.run())\n.then(() => powierzchnian.m2_form())\n.then(() => doplata.tkanina_form())\n}}",
+  "onOptionChange": "{{\nclearStore()\n.then(() => \nwysokosccala.wys2_form())\n.then(() => FORM_indekswys.run())\n.then(() => \nstoreValue('edit_skrzynkawybrana', Select8.selectedOptionValue))\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => FORM_indekswys.run())\n.then(() => plisy_grupa.m2_form())\n.then(() => doplata.tkanina_form())\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 27,

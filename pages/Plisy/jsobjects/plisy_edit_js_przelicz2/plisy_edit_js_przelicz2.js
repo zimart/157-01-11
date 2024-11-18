@@ -1,6 +1,6 @@
 export default {
 		
-przelicz_screeny: async () => {
+przelicz_plisy: async () => {
 //var wartoscdoplaty = doplatakolorinput.text;
 //var skrzynka = Select8.selectedOptionValue;
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
