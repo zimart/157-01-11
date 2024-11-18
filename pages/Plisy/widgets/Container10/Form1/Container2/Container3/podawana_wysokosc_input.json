@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.wysokoscdachowa||\"\"}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,9 +16,6 @@
     },
     {
       "key": "label"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -38,7 +35,7 @@
       "key": "onBlur"
     }
   ],
-  "errorMessage": "Błędna wartość - minimum 800 max 5000",
+  "errorMessage": "Błędna wartość - minimum 200 max 3000",
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -46,7 +43,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "ebj3l9h399",
-  "label": "{{i18n.translate(\"Wysokość\")}}",
+  "label": "{{i18n.translate(\"Wysokość\")}} {{appsmith.store.wysokoscdachowa||\"\"}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -63,7 +60,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => \ndoplata.wkladka())\n.then(() => \nwysokosccala.wys2())\n.then(() => indekswys.run())\n.then(() => storeValue('calkowita', wysokosc_input.text))\n.then(() => \ndoplata.wkladka()\t)\n.then(() => \nskrzynka_zapytaj.run())\n.then(() => plisy_grupa.m2())\n.then(() => resetWidget(\"doplatawkladka2\", true))\n.then(() => \t\t\tresetWidget(\"wkladkaselect\", true))\n\t\t\t\n\t\n\n}}\n",
+  "onBlur": "{{removeValue('indekswys')\n.then(() =>\nPlisy_indekswys.run())\n.then(() =>\n  storeValue('indekswys', Plisy_indekswys.data[0].indeks))}}\n",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 4,

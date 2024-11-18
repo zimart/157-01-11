@@ -1,5 +1,4 @@
 export default {
-	
 grupa: function () {
 var kolekcja = Select_kolekcja.selectedOptionValue;
 var grupa;

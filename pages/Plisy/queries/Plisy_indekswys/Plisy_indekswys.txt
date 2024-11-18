@@ -1,0 +1,1 @@
+SELECT `indeks` FROM `plisy_tabelaindeksy` WHERE {{podawana_wysokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin;
