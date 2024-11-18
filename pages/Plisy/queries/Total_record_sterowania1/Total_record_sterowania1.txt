@@ -1,1 +1,0 @@
-SELECT COUNT(*) from sterowania WHERE model LIKE '%{{sterowania_tabela_main.searchText}}%';

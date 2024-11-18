@@ -1,1 +1,0 @@
-SELECT doplatam2 FROM screeny_tkanina_wybor where tkanina_main = {{Select_kolekcja.selectedOptionLabel}};

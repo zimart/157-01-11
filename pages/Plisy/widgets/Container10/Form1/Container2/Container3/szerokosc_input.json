@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.szerokoscdachowa||\"\"}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,9 +18,6 @@
     },
     {
       "key": "label"
-    },
-    {
-      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -48,7 +45,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "iyb187w358",
-  "label": "{{i18n.translate(\"Szerokość\")}} ",
+  "label": "{{i18n.translate(\"Szerokość\")}}\n{{appsmith.store.szerokoscdachowa||\"\"}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -65,7 +62,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\n.then(() => storeValue('calkowita', wysokosc_input.text))\n}}",
+  "onBlur": "{{removeValue('indeksszer')\n.then(() =>\nPlisy_indeksszer.run())\n.then(() =>\n  storeValue('indeksszer', Plisy_indeksszer.data[0].indeks))}}",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 41,

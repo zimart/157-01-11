@@ -137,6 +137,10 @@
     {
       "id": "Plisy_kolor",
       "isDefault": false
+    },
+    {
+      "id": "Plisy_tabelaindeksy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -1,2 +1,0 @@
-SELECT * FROM  sterowania WHERE fk_oferty_inventory_id_ster = {{appsmith.URL.queryParams.id_oferta}}
- 
