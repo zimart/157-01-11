@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 16,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -107,12 +107,15 @@
           "widgetId": ""
         },
         "menuItemgu742vm8se": {
+          "iconColor": "#831843",
+          "iconName": "circle-arrow-right",
           "id": "menuItemgu742vm8se",
           "index": 1,
           "isDisabled": false,
           "isVisible": true,
           "label": "PLISY",
           "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Plisy', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
+          "textColor": "#3e9985",
           "widgetId": "ceo1r6z511"
         }
       },
@@ -132,15 +135,15 @@
   "mobileTopRow": 6,
   "needsErrorInfo": false,
   "orientation": "horizontal",
-  "originalBottomRow": 16,
-  "originalTopRow": 12,
+  "originalBottomRow": 18,
+  "originalTopRow": 14,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 34,
-  "topRow": 14,
+  "topRow": 12,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "rglkpqhgdq",

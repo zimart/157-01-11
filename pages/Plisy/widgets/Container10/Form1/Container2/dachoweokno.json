@@ -5,13 +5,10 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "{{\n            {\n              label: Select17.options[0].label,\n              value: Select17.options[0].value\n            }\n          }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "accentColor"

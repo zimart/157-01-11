@@ -45,7 +45,7 @@
   "key": "q6bew8sxi9",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Kolor\")}}",
+  "labelText": "{{i18n.translate(\"Kolor prowadnicy\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 57,
