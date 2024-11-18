@@ -9,7 +9,7 @@ await edit_update_screeny.run();
 //.then(() => 
 await przeliczpozycje.run();
 //.then(() => 
-await plisy_tabela_inventory_id_new.run();
+await Plisy_tabela_inventory_id_new.run();
 //.then(() => 
 //await closeModal(LanguageLoading.name))	;
 

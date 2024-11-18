@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "PREMIUM",
+  "defaultOptionValue": "VEGAS",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -44,7 +44,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{system_zapytaj.run();\nresetWidget(\"doplatawkladka2\", true);\nwkladki.run()}}",
+  "onOptionChange": "",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,
@@ -54,9 +54,9 @@
   "placeholderText": "WYBIERZ LINIĘ",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 5,
+  "rightColumn": 7,
   "serverSideFiltering": true,
-  "sourceData": "[\n  {\n    \"label\": \"PREMIUM\",\n    \"value\": \"PREMIUM\"\n  },\n  {\n    \"label\": \"STANDARD\",\n    \"value\": \"STANDARD\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"VEGAS\",\n    \"value\": \"VEGAS\"\n  },\n  {\n    \"label\": \"DACHOWA-VEGAS\",\n    \"value\": \"DACHOWA-VEGAS\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

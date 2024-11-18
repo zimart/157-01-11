@@ -36,7 +36,7 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{plisy_tabela_inventory_id_new.run()}}",
+  "onClick": "{{Plisy_tabela_inventory_id_new.run()}}",
   "originalBottomRow": 8,
   "originalTopRow": 4,
   "parentColumnSpace": 20.25,

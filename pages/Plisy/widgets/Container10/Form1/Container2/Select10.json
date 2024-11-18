@@ -34,7 +34,7 @@
   "key": "p6i97dwydz",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Referencja\")}}",
+  "labelText": "{{i18n.translate(\"Tkanina\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 48,

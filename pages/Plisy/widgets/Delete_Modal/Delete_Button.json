@@ -24,7 +24,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{kasujzglownej.run().then(() => {\n  DeleteQuery_new.run();\n  plisy_tabela_inventory_id_new.run();\n  closeModal(Delete_Modal.name);\n  plisy_tabela_inventory_id_new.run();\n});}}",
+  "onClick": "{{kasujzglownej.run().then(() => {\n  DeleteQuery_new.run();\n  Plisy_tabela_inventory_id_new.run();\n  closeModal(Delete_Modal.name);\n  Plisy_tabela_inventory_id_new.run();\n});}}",
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "rightColumn": 64,

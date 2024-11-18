@@ -133,6 +133,10 @@
     {
       "id": "Plisy",
       "isDefault": false
+    },
+    {
+      "id": "Plisy_kolor",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

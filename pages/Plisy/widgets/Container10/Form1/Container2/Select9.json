@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "COPACO SERGE 600",
+  "defaultOptionValue": "P200 - STANDARD",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,7 +41,7 @@
   "key": "ki1dwtwiw3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Tkanina\")}}",
+  "labelText": "{{i18n.translate(\"Kolekcja\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 38,
@@ -66,7 +66,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 48,
   "serverSideFiltering": false,
-  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"P200 - STANDARD\",\n    \"value\": \"P200 - STANDARD\"\n  },\n  {\n    \"label\": \"P300 - COMFORT\",\n    \"value\": \"P300 - COMFORT\"\n  },\n\t{\n    \"label\": \"P900 - PREMIUM\",\n    \"value\": \"P900 - PREMIUM\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

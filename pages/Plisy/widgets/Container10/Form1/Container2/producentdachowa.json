@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": "{{Select1.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
+  "key": "fwycrzmq3m",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "DACHOWA",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 17,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 130,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 123,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{Plisy_okna_dachowe.run()}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentId": "76671vu120",
+  "parentRowSpace": 10,
+  "placeholderText": "WYBIERZ OKNO",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "serverSideFiltering": true,
+  "sourceData": "[\n  {\n    \"label\": \"FAKRO\",\n    \"value\": \"FAKRO\"\n  },\n  {\n    \"label\": \"VELUX\",\n    \"value\": \"VELUX\"\n  }\n]",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "spzgz4sctm",
+  "widgetName": "producentdachowa"
+}
