@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE oferty SET\n    numeroferty = CONCAT(\"OF/\",{{numerofertmiesiac.miesiac.data}},\"/\",id_oferta)\n  WHERE  id_klient = {{appsmith.URL.queryParams.id_klienta}}",
+      "body": "UPDATE oferty SET\n    numeroferty = CONCAT(\"OF-B2B/\",{{numerofertmiesiac.miesiac.data}},\"/\",id_oferta)\n  WHERE  id_klient = {{appsmith.URL.queryParams.id_klienta}}",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

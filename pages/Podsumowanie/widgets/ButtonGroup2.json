@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 18,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -35,6 +35,9 @@
     },
     {
       "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemgu742vm8se.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -46,6 +49,9 @@
     },
     {
       "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemgu742vm8se.onClick"
     }
   ],
   "groupButtons": {
@@ -99,6 +105,15 @@
           "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Screeny', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
           "textColor": "#3e9985",
           "widgetId": ""
+        },
+        "menuItemgu742vm8se": {
+          "id": "menuItemgu742vm8se",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "PLISY",
+          "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Plisy', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
+          "widgetId": "ceo1r6z511"
         }
       },
       "placement": "CENTER",
@@ -125,7 +140,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 34,
-  "topRow": 12,
+  "topRow": 14,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "rglkpqhgdq",

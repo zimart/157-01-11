@@ -14,7 +14,7 @@ export default {
 		var yyyy = today.getFullYear();
 		var numm = pobierzid.data[0].id_oferta;
 		var kolejny = numm+1;
-		var przedr = 'OF/'
+		var przedr = 'OF-B2B/'
 		today = przedr + mm + "/" + kolejny;
 		return (today);
 	}

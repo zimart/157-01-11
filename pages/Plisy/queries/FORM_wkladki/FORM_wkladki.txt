@@ -1,0 +1,1 @@
+SELECT wkladka FROM wkladki WHERE linia = {{edit_linia.selectedOptionLabel}};

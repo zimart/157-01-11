@@ -1,0 +1,1 @@
+SELECT DISTINCT serianapedu FROM screeny_wyborserii WHERE system = {{edit_system.selectedOptionLabel}};

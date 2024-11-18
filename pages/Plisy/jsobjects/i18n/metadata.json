@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "67252580698c850488983504_5f0e0fb1-327e-4dc1-a39f-7c1bdfe939c4",
+  "id": "Plisy_i18n",
+  "unpublishedCollection": {
+    "name": "i18n",
+    "pageId": "Plisy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "resources",
+        "value": "{\n  polski: {\n    translation: Constants.defaultLanguageKeys\n  }\n}"
+      }
+    ]
+  }
+}

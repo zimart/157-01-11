@@ -63,10 +63,6 @@
       "isDefault": false
     },
     {
-      "id": "testpdf",
-      "isDefault": false
-    },
-    {
       "id": "Screeny_tkanina_wybor",
       "isDefault": false
     },
@@ -80,10 +76,6 @@
     },
     {
       "id": "Screeny_tabelaindeksy",
-      "isDefault": false
-    },
-    {
-      "id": "rozne-js",
       "isDefault": false
     },
     {
@@ -104,10 +96,6 @@
     },
     {
       "id": "Screeny",
-      "isDefault": false
-    },
-    {
-      "id": "Inventory_screeny",
       "isDefault": false
     },
     {
@@ -140,6 +128,10 @@
     },
     {
       "id": "Screeny_napedy3",
+      "isDefault": false
+    },
+    {
+      "id": "Plisy",
       "isDefault": false
     }
   ],

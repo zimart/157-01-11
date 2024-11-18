@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67252580698c850488983504_4705375c-efac-4f53-bf1b-d5942f8545a0",
+  "id": "Podsumowanie_sms",
+  "unpublishedCollection": {
+    "name": "sms",
+    "pageId": "Podsumowanie",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
