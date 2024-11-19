@@ -30,21 +30,24 @@
     "customColumn3",
     "customColumn1",
     "seq",
-    "cenanetto",
+    "produkt",
     "ilosc",
+    "cena",
+    "doplatakolor",
+    "doplatamocowanie",
+    "doplataprowadnica",
+    "systemzdoplata",
+    "komentarz",
     "razemnetto",
     "id",
     "concat",
     "szerokosc",
     "wysokosc",
-    "cena",
-    "doplatakolor",
-    "systemzdoplata",
+    "tkanina",
     "rabatsystem",
     "kwotarabatsystem",
     "systemporabacie",
     "brutto",
-    "tkanina",
     "skugen",
     "linia",
     "kolor",
@@ -58,21 +61,18 @@
     "opiszrabatami_de",
     "opisbezrabatow_en",
     "opiszrabatami_en",
-    "komentarz",
-    "doplatamocowanie",
-    "doplataprowadnica",
     "dachowaproducent",
     "dachowaokno",
     "prowadnicakolor",
     "mocowanie",
-    "produkt"
+    "cenanetto"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1732048717403,
+  "columnUpdatedAt": 1732049884560,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -90,6 +90,7 @@
     "opisbezrabatow": 261,
     "price_motor": 103,
     "procentdoplatakolor": 148,
+    "produkt": 208,
     "rabatmotor": 151,
     "rabatsystem": 243,
     "seq": 65.99999999999999,
@@ -231,13 +232,7 @@
       "key": "primaryColumns.wysokosc.isCellVisible"
     },
     {
-      "key": "primaryColumns.cena.isCellVisible"
-    },
-    {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.systemporabacie.isCellVisible"
     },
     {
       "key": "primaryColumns.kwotarabatsystem.isCellVisible"
@@ -391,6 +386,15 @@
     },
     {
       "key": "primaryColumns.produkt.computedValue"
+    },
+    {
+      "key": "primaryColumns.komentarz.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatamocowanie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplataprowadnica.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -438,6 +442,15 @@
     },
     {
       "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.komentarz.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplatamocowanie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.doplataprowadnica.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -558,14 +571,14 @@
       "id": "cena",
       "index": 6,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "true",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Cena bazowa systemu",
+      "label": "Cena bazowa",
       "notation": "standard",
       "originalId": "cena",
       "sticky": "",
@@ -598,7 +611,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Produkt",
       "notation": "standard",
       "originalId": "cenanetto",
@@ -880,7 +893,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"doplatamocowanie\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"doplatamocowanie\"]).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -890,14 +903,14 @@
       "id": "doplatamocowanie",
       "index": 5,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "doplatamocowanie",
+      "label": "Dopłata mocowanie",
       "notation": "standard",
       "originalId": "doplatamocowanie",
       "sticky": "",
@@ -914,7 +927,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"doplataprowadnica\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"doplataprowadnica\"]).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -924,14 +937,14 @@
       "id": "doplataprowadnica",
       "index": 6,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "doplataprowadnica",
+      "label": "Dopłata prowadnica",
       "notation": "standard",
       "originalId": "doplataprowadnica",
       "sticky": "",
@@ -1094,14 +1107,14 @@
       "id": "komentarz",
       "index": 49,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "komentarz",
+      "isVisible": true,
+      "label": "Komentarz",
       "notation": "standard",
       "originalId": "komentarz",
       "sticky": "",
@@ -1459,7 +1472,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"produkt\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"produkt\"] + ' ' + currentRow.linia))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1476,7 +1489,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "produkt",
+      "label": "Produkt",
       "notation": "standard",
       "originalId": "produkt",
       "sticky": "",
@@ -1710,14 +1723,14 @@
       "id": "systemporabacie",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "true",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "System po rabacie",
+      "label": "Cena po rabacie",
       "notation": "standard",
       "onSubmit": "{{przeliczofertepojedynczo_new.run()}}",
       "originalId": "systemporabacie",

@@ -15,7 +15,9 @@ INSERT INTO inventory_plisy (wysokosc,
 														 prowadnicakolor,
 														 fk_oferty_inventory_id,
 														 skugen,
-														 produkt
+														 produkt,
+														 opis,
+														 rabatsystem
 														 
 														)
   VALUES ('{{podawana_wysokosc_input.text}}',
@@ -35,7 +37,9 @@ INSERT INTO inventory_plisy (wysokosc,
 					'{{kolor_prowadnica.selectedOptionLabel}}',
 					'{{idoferty.text}}',
 					'{{sku_input.text}}',
-					'PLISA'
+					'PLISA',
+					'{{Input33.text}}',
+					'0'
 					
 					
 					
