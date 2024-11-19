@@ -287,8 +287,7 @@
           "label": "Kategoria",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kategoria",
-          "position": 4,
-          "sourceData": null
+          "position": 4
         },
         "szermax": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

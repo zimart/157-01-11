@@ -60,7 +60,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{removeValue('indekswys')\n.then(() =>\nPlisy_indekswys.run())\n.then(() =>\n  storeValue('indekswys', Plisy_indekswys.data[0].indeks))}}\n",
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indekswys'))\n.then(() =>\nPlisy_indekswys.run())\n.then(() =>\n  storeValue('indekswys', indekswys_l.text))}}\n",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 4,

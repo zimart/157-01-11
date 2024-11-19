@@ -1,1 +1,1 @@
-SELECT kolorm FROM plisy_kolor where rodzajpr="mocowanie" ;
+SELECT kolorm FROM plisy_kolor where rodzajpr="mocowanie" and linia = {{Select1.selectedOptionLabel}} ;

@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 23,
   "boxShadow": "none",
-  "defaultText": "{{plisy_grupa.m2.data}}",
+  "defaultText": "{{appsmith.URL.queryParams.uzytkownik}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,53 +18,42 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "u66mnxu4qr",
-  "label": "Powierzchnia",
+  "key": "j2jehfmukc",
+  "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 4,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 167,
-  "mobileLeftColumn": 3,
-  "mobileRightColumn": 23,
-  "mobileTopRow": 160,
+  "mobileBottomRow": 34,
+  "mobileLeftColumn": 13,
+  "mobileRightColumn": 33,
+  "mobileTopRow": 27,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('powierzchniastore', powierzchnia.text);\ndoplata.tkanina();}}",
-  "originalBottomRow": 167,
-  "originalTopRow": 160,
-  "parentColumnSpace": 20.5625,
-  "parentId": "esfh9fxray",
+  "originalBottomRow": 225,
+  "originalTopRow": 218,
+  "parentColumnSpace": 20.25,
+  "parentId": "2euvpeizh1",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 9,
-  "shouldAllowAutofill": false,
+  "rightColumn": 20,
   "showStepArrows": false,
-  "topRow": 0,
+  "topRow": 16,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "cjyjybh0j5",
-  "widgetName": "powierzchnia"
+  "widgetId": "r5tmr6p1n9",
+  "widgetName": "Input29"
 }

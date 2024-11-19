@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "Plisy_indekswys",
     "pageId": "Plisy",
     "userSetOnLoad": false

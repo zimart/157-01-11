@@ -62,7 +62,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onBlur": "{{removeValue('indeksszer')\n.then(() =>\nPlisy_indeksszer.run())\n.then(() =>\n  storeValue('indeksszer', Plisy_indeksszer.data[0].indeks))}}",
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n.then(() =>\nPlisy_indeksszer.run())\n.then(() =>\n  storeValue('indeksszer', indeksszer_l.text))}}",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 41,

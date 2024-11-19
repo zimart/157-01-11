@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "PL-{{index_szer_input.text|| \"\"}}-{{index_szer_input.text|| \"\"}}-{{Input31.text}}",
+  "defaultText": "PL-{{indeksszer.text|| \"\"}}-{{indekswys.text|| \"\"}}-{{Input31.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

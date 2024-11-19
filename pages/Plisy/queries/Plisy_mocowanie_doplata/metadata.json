@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" ;",
+      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" and linia = {{Select1.selectedOptionLabel}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,8 +22,12 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": true,
     "name": "Plisy_mocowanie_doplata",
     "pageId": "Plisy",
     "userSetOnLoad": false

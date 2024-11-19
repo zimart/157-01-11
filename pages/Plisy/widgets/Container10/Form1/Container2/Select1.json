@@ -17,6 +17,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -44,7 +47,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore();\nPlisy_wymiary_dachowe.run();\nresetWidget(\"producentdachowa\", true);\nresetWidget(\"dachoweokno\", true);\nPlisy_doplaty.prowadnica();}}",
+  "onOptionChange": "{{clearStore();\nresetWidget(\"szerokosc_input\", true);\nresetWidget(\"podawana_wysokosc_input\", true);\nPlisy_wymiary_dachowe.run();\nresetWidget(\"producentdachowa\", true);\nresetWidget(\"dachoweokno\", true);\nPlisy_doplaty.prowadnica();\nPlisy_mocowanie_doplata.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,
