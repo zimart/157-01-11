@@ -63,7 +63,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 49,
   "serverSideFiltering": true,
-  "sourceData": "[\n  {\n    \"label\": \"FAKRO\",\n    \"value\": \"FAKRO\"\n  },\n  {\n    \"label\": \"VELUX\",\n    \"value\": \"VELUX\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"FAKRO\",\n    \"value\": \"FAKRO\"\n  },\n  {\n    \"label\": \"VELUX\",\n    \"value\": \"VELUX\"\n  },\n\t{\n    \"label\": \"OKPOL\",\n    \"value\": \"OKPOL\"\n  },\n\t{\n    \"label\": \"ROTO\",\n    \"value\": \"ROTO\"\n  },\n\t{\n    \"label\": \"ROTO2\",\n    \"value\": \"ROTO2\"\n  }\n\t\n]",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",

@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_bc1562f9-bd45-4ecd-95b1-fe7cadcc9fd1",
-  "id": "Plisy_indekswys",
+  "gitSyncId": "67252580698c850488983504_60d88597-6bf5-4c76-a23c-bff0eb39bc2a",
+  "id": "Plisy_Plisy_mocowanie_doplata",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT indeks FROM screeny_tabelaindeksy WHERE {{wysokosc_input.text}} <= szermax AND {{wysokosc_input.text}} > szermin;",
+      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,10 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": false,
-    "name": "indekswys",
+    "name": "Plisy_mocowanie_doplata",
     "pageId": "Plisy",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

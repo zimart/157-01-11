@@ -44,7 +44,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nclearStore();\nPlisy_wymiary_dachowe.run();\nresetWidget(\"producentdachowa\", true);\nresetWidget(\"dachoweokno\", true);}}",
+  "onOptionChange": "{{clearStore();\nPlisy_wymiary_dachowe.run();\nresetWidget(\"producentdachowa\", true);\nresetWidget(\"dachoweokno\", true);\nPlisy_doplaty.prowadnica();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,

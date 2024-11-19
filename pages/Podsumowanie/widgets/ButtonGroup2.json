@@ -107,7 +107,7 @@
           "widgetId": ""
         },
         "menuItemgu742vm8se": {
-          "iconColor": "#831843",
+          "iconColor": "#3e9985",
           "iconName": "circle-arrow-right",
           "id": "menuItemgu742vm8se",
           "index": 1,
@@ -135,8 +135,8 @@
   "mobileTopRow": 6,
   "needsErrorInfo": false,
   "orientation": "horizontal",
-  "originalBottomRow": 18,
-  "originalTopRow": 14,
+  "originalBottomRow": 16,
+  "originalTopRow": 12,
   "parentColumnSpace": 20.25,
   "parentId": "0",
   "parentRowSpace": 10,

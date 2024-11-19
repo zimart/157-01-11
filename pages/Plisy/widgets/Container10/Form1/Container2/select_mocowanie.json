@@ -19,7 +19,11 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -40,6 +44,7 @@
   "mobileRightColumn": 61,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
+  "onOptionChange": "{{Plisy_doplaty.mocowanie();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 19.625,
@@ -50,7 +55,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 42,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"Standard\",\n    \"value\": \"Standard\"\n  },\n  {\n    \"label\": \"Bezinwazyjne\",\n    \"value\": \"Bezinwazyjne\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"Standard\",\n    \"value\": \"Standard\"\n  },\n\t{\n    \"label\": \"Standard-regulowany\",\n    \"value\": \"Standard-regulowany\"\n  },\n\t\n\t{\n    \"label\": \"Bezinwazyjne-standard\",\n    \"value\": \"Bezinwazyjne-standard\"\n  },\n\t\n  {\n    \"label\": \"Bezinwazyjne-wydłużone\",\n    \"value\": \"Bezinwazyjne-wydłużone\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

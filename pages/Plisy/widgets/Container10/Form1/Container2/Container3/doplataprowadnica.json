@@ -6,13 +6,16 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Plisy_doplaty.prowadnica.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",

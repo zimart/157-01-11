@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_doplata_kolor.data[0].doplata}}",
+  "defaultText": "{{Plisy_doplaty.mocowanie.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
