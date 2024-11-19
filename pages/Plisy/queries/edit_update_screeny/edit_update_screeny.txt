@@ -23,4 +23,4 @@ UPDATE inventory_screeny SET
   
 		
 		
-  WHERE id = {{tabela_screeny_inventory_id.triggeredRow.id}}
+  WHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}}

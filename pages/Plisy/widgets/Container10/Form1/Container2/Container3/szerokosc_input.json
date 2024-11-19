@@ -18,12 +18,18 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "onBlur"
+    },
+    {
+      "key": "showStepArrows"
     }
   ],
   "dynamicTriggerPathList": [
@@ -70,13 +76,14 @@
   "parentColumnSpace": 19.59375,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,
-  "placeholderText": "",
+  "placeholderText": "{{appsmith.store.szerokoscdachowa||\"\"}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": false,
   "responsiveBehavior": "fill",
   "rightColumn": 11,
   "shouldAllowAutofill": false,
-  "showStepArrows": false,
+  "showStepArrows": "false",
+  "tooltip": "",
   "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "validation": "{{szerokosc_input.text > 200}}/",

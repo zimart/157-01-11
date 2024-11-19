@@ -6,7 +6,7 @@
   "bottomRow": 86,
   "bottomRowBeforeCollapse": 86,
   "boxShadow": "none",
-  "defaultText": "{{plisy_grupa.m2_form.data||tabela_screeny_inventory_id.triggeredRow.powierzchnia}}",
+  "defaultText": "{{plisy_grupa.m2_form.data||tabela_plisy_inventory_id.triggeredRow.powierzchnia}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

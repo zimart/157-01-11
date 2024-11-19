@@ -4,7 +4,7 @@
   "borderColor": "rgba(46, 61, 73, 0.33)",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
-  "bottomRow": 67,
+  "bottomRow": 64,
   "bottomRowBeforeCollapse": 128,
   "boxShadow": "none",
   "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
@@ -32,60 +32,47 @@
     "seq",
     "cenanetto",
     "ilosc",
-    "moc",
     "razemnetto",
     "id",
     "concat",
     "szerokosc",
     "wysokosc",
     "cena",
-    "doplatatkanina",
-    "procentdoplatakolor",
     "doplatakolor",
-    "doplatawkladka",
     "systemzdoplata",
     "rabatsystem",
     "kwotarabatsystem",
     "systemporabacie",
-    "naped",
-    "price_motor",
-    "rabatmotor",
-    "kwotarabatmotor",
-    "priceall",
-    "vat",
     "brutto",
-    "skrzynka",
     "tkanina",
-    "rodzajmotor",
-    "wkladka",
-    "powierzchnia",
-    "rodzajpomiaru",
-    "indexszer",
-    "indexwys",
     "skugen",
     "linia",
-    "system",
     "kolor",
     "fk_oferty_inventory_id",
     "kurseuro",
     "waluta",
     "opisbezrabatow",
     "opiszrabatami",
-    "serianapedu",
-    "rodzajnapedu",
     "referencja",
     "opisbezrabatow_de",
     "opiszrabatami_de",
     "opisbezrabatow_en",
     "opiszrabatami_en",
-    "komentarz"
+    "komentarz",
+    "doplatamocowanie",
+    "doplataprowadnica",
+    "dachowaproducent",
+    "dachowaokno",
+    "prowadnicakolor",
+    "mocowanie",
+    "produkt"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731527350779,
+  "columnUpdatedAt": 1732048717403,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -125,7 +112,7 @@
       "borderRadius": "0px",
       "boxShadow": "none",
       "buttonColor": "#DD4B34",
-      "buttonLabel": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
+      "buttonLabel": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
       "buttonLabelColor": "#FFFFFF",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
@@ -163,19 +150,10 @@
       "key": "primaryColumns.szerokosc.computedValue"
     },
     {
-      "key": "primaryColumns.indexszer.computedValue"
-    },
-    {
-      "key": "primaryColumns.indexwys.computedValue"
-    },
-    {
       "key": "primaryColumns.skugen.computedValue"
     },
     {
       "key": "primaryColumns.cena.computedValue"
-    },
-    {
-      "key": "primaryColumns.doplatatkanina.computedValue"
     },
     {
       "key": "primaryColumns.doplatakolor.computedValue"
@@ -187,49 +165,16 @@
       "key": "primaryColumns.linia.computedValue"
     },
     {
-      "key": "primaryColumns.system.computedValue"
-    },
-    {
-      "key": "primaryColumns.skrzynka.computedValue"
-    },
-    {
       "key": "primaryColumns.kolor.computedValue"
     },
     {
       "key": "primaryColumns.tkanina.computedValue"
     },
     {
-      "key": "primaryColumns.wkladka.computedValue"
-    },
-    {
-      "key": "primaryColumns.moc.computedValue"
-    },
-    {
-      "key": "primaryColumns.naped.computedValue"
-    },
-    {
-      "key": "primaryColumns.price_motor.computedValue"
-    },
-    {
-      "key": "primaryColumns.rabatmotor.computedValue"
-    },
-    {
-      "key": "primaryColumns.priceall.computedValue"
-    },
-    {
-      "key": "primaryColumns.doplatawkladka.computedValue"
-    },
-    {
-      "key": "primaryColumns.rodzajmotor.computedValue"
-    },
-    {
       "key": "primaryColumns.seq.computedValue"
     },
     {
       "key": "primaryColumns.fk_oferty_inventory_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.powierzchnia.computedValue"
     },
     {
       "key": "primaryColumns.ilosc.computedValue"
@@ -239,15 +184,6 @@
     },
     {
       "key": "primaryColumns.cenanetto.computedValue"
-    },
-    {
-      "key": "primaryColumns.vat.computedValue"
-    },
-    {
-      "key": "primaryColumns.procentdoplatakolor.computedValue"
-    },
-    {
-      "key": "primaryColumns.rodzajpomiaru.computedValue"
     },
     {
       "key": "primaryColumns.systemzdoplata.computedValue"
@@ -269,9 +205,6 @@
     },
     {
       "key": "primaryColumns.brutto.computedValue"
-    },
-    {
-      "key": "primaryColumns.kwotarabatmotor.computedValue"
     },
     {
       "key": "primaryColumns.customColumn2.boxShadow"
@@ -301,15 +234,6 @@
       "key": "primaryColumns.cena.isCellVisible"
     },
     {
-      "key": "primaryColumns.doplatatkanina.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.procentdoplatakolor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.doplatawkladka.isCellVisible"
-    },
-    {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
     },
     {
@@ -317,27 +241,6 @@
     },
     {
       "key": "primaryColumns.kwotarabatsystem.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.naped.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.price_motor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.priceall.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.kwotarabatmotor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.wkladka.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.skrzynka.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.rodzajpomiaru.isCellVisible"
     },
     {
       "key": "primaryColumns.kolor.isCellVisible"
@@ -352,28 +255,10 @@
       "key": "cellBackground"
     },
     {
-      "key": "primaryColumns.doplatawkladka.cellBackground"
-    },
-    {
-      "key": "primaryColumns.moc.cellBackground"
-    },
-    {
-      "key": "primaryColumns.powierzchnia.cellBackground"
-    },
-    {
       "key": "primaryColumns.skugen.cellBackground"
     },
     {
       "key": "primaryColumns.ilosc.cellBackground"
-    },
-    {
-      "key": "primaryColumns.naped.cellBackground"
-    },
-    {
-      "key": "primaryColumns.indexszer.cellBackground"
-    },
-    {
-      "key": "primaryColumns.indexwys.cellBackground"
     },
     {
       "key": "primaryColumns.linia.cellBackground"
@@ -385,19 +270,10 @@
       "key": "primaryColumns.fk_oferty_inventory_id.cellBackground"
     },
     {
-      "key": "primaryColumns.skrzynka.cellBackground"
-    },
-    {
       "key": "primaryColumns.brutto.cellBackground"
     },
     {
       "key": "primaryColumns.systemporabacie.cellBackground"
-    },
-    {
-      "key": "primaryColumns.rabatmotor.cellBackground"
-    },
-    {
-      "key": "primaryColumns.rodzajpomiaru.cellBackground"
     },
     {
       "key": "primaryColumns.waluta.cellBackground"
@@ -418,22 +294,7 @@
       "key": "primaryColumns.razemnetto.cellBackground"
     },
     {
-      "key": "primaryColumns.priceall.cellBackground"
-    },
-    {
-      "key": "primaryColumns.kwotarabatmotor.cellBackground"
-    },
-    {
-      "key": "primaryColumns.procentdoplatakolor.cellBackground"
-    },
-    {
-      "key": "primaryColumns.vat.cellBackground"
-    },
-    {
       "key": "primaryColumns.customColumn1.cellBackground"
-    },
-    {
-      "key": "primaryColumns.wkladka.cellBackground"
     },
     {
       "key": "primaryColumns.concat.cellBackground"
@@ -445,19 +306,7 @@
       "key": "primaryColumns.kwotarabatsystem.cellBackground"
     },
     {
-      "key": "primaryColumns.price_motor.cellBackground"
-    },
-    {
-      "key": "primaryColumns.doplatatkanina.cellBackground"
-    },
-    {
-      "key": "primaryColumns.system.cellBackground"
-    },
-    {
       "key": "primaryColumns.doplatakolor.cellBackground"
-    },
-    {
-      "key": "primaryColumns.rodzajmotor.cellBackground"
     },
     {
       "key": "primaryColumns.szerokosc.cellBackground"
@@ -493,12 +342,6 @@
       "key": "primaryColumns.customColumn3.menuColor"
     },
     {
-      "key": "primaryColumns.serianapedu.computedValue"
-    },
-    {
-      "key": "primaryColumns.rodzajnapedu.computedValue"
-    },
-    {
       "key": "primaryColumns.referencja.computedValue"
     },
     {
@@ -529,7 +372,25 @@
       "key": "primaryColumns.rabatsystem.textColor"
     },
     {
-      "key": "primaryColumns.rabatmotor.textColor"
+      "key": "primaryColumns.doplatamocowanie.computedValue"
+    },
+    {
+      "key": "primaryColumns.doplataprowadnica.computedValue"
+    },
+    {
+      "key": "primaryColumns.dachowaproducent.computedValue"
+    },
+    {
+      "key": "primaryColumns.dachowaokno.computedValue"
+    },
+    {
+      "key": "primaryColumns.prowadnicakolor.computedValue"
+    },
+    {
+      "key": "primaryColumns.mocowanie.computedValue"
+    },
+    {
+      "key": "primaryColumns.produkt.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -543,15 +404,6 @@
       "key": "primaryColumns.cena.isCellVisible"
     },
     {
-      "key": "primaryColumns.doplatatkanina.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.procentdoplatakolor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.doplatawkladka.isCellVisible"
-    },
-    {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
     },
     {
@@ -559,30 +411,6 @@
     },
     {
       "key": "primaryColumns.kwotarabatsystem.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.naped.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.price_motor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.rabatmotor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.priceall.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.kwotarabatmotor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.wkladka.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.skrzynka.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.rodzajpomiaru.isCellVisible"
     },
     {
       "key": "primaryColumns.kolor.isCellVisible"
@@ -609,10 +437,7 @@
       "key": "primaryColumns.rabatsystem.textColor"
     },
     {
-      "key": "primaryColumns.rabatmotor.cellBackground"
-    },
-    {
-      "key": "primaryColumns.rabatmotor.textColor"
+      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -644,9 +469,6 @@
       "key": "primaryColumns.customColumn1.onClick"
     },
     {
-      "key": "primaryColumns.rabatmotor.onSubmit"
-    },
-    {
       "key": "primaryColumns.customColumn2.onClick"
     },
     {
@@ -676,7 +498,7 @@
   "leftColumn": 0,
   "onPageChange": "{{Plisy_tabela_inventory_id_new.run()}}",
   "onPageSizeChange": "{{Plisy_tabela_inventory_id_new.run()}}",
-  "onRowSelected": "{{storeValue('numerkoloru', tabela_screeny_inventory_id.selectedRow.kolor);}}",
+  "onRowSelected": "{{storeValue('numerkoloru', tabela_plisy_inventory_id.selectedRow.kolor);}}",
   "onSearchTextChanged": "{{Plisy_tabela_inventory_id_new.run()}}",
   "onSort": "{{Plisy_tabela_inventory_id_new.run()}}",
   "originalBottomRow": 111,
@@ -692,7 +514,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.brutto/kursinput.text).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.brutto/kursinput.text).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -726,7 +548,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number.parseFloat(currentRow.cena).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number.parseFloat(currentRow.cena).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -736,7 +558,7 @@
       "id": "cena",
       "index": 6,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -760,7 +582,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.moc + ' ' + currentRow.komentarz))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.produkt))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -794,7 +616,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.concat))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.concat))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -853,7 +675,7 @@
       "isVisible": true,
       "label": "Usuń",
       "labelColor": "#FFFFFF",
-      "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuColor": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
       "onClick": "{{showModal(Delete_Modal.name);}}",
       "originalId": "customColumn1",
@@ -868,8 +690,8 @@
       "alias": "Info",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "borderRadius": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
       "buttonColor": "#2D9DC5",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
@@ -896,7 +718,7 @@
       "isVisible": true,
       "label": "Info",
       "labelColor": "#FFFFFF",
-      "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuColor": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
       "onClick": "{{showModal(infomodal.name);}}",
       "originalId": "customColumn2",
@@ -911,8 +733,8 @@
       "alias": "Edytuj",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "borderRadius": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "borderRadius": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
       "buttonColor": "#42a38e",
       "buttonStyle": "rgb(3, 179, 101)",
       "buttonVariant": "SECONDARY",
@@ -939,11 +761,79 @@
       "isVisible": true,
       "label": "Edytuj",
       "labelColor": "#FFFFFF",
-      "menuColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "menuColor": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
       "notation": "standard",
       "onClick": "{{showModal(modal_edit.name).then(() => \nclearStore())\n.then(() => \nform_screeny_trigered.run())\n.then(() => \n  FORM_system_zapytaj.run())\n.then(() => \n  FORM_kolor_zapytaj.run())\n.then(() => \n  FORM_skrzynka_zapytaj.run())\n.then(() => \n  FORM_serianapedu.run())\n.then(() => \n  FORM_rodzajnapedu.run())\n.then(() => \n\tFORM_tkaninawybor.run())\n}}",
       "originalId": "customColumn3",
       "sticky": "left",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "dachowaokno": {
+      "alias": "dachowaokno",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dachowaokno\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "dachowaokno",
+      "index": 14,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "dachowaokno",
+      "notation": "standard",
+      "originalId": "dachowaokno",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "dachowaproducent": {
+      "alias": "dachowaproducent",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"dachowaproducent\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "dachowaproducent",
+      "index": 13,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "dachowaproducent",
+      "notation": "standard",
+      "originalId": "dachowaproducent",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -956,7 +846,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatakolor).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatakolor).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -966,7 +856,7 @@
       "id": "doplatakolor",
       "index": 8,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -984,32 +874,32 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "doplatatkanina": {
-      "alias": "doplatatkanina",
+    "doplatamocowanie": {
+      "alias": "doplatamocowanie",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatatkanina).toFixed(2)))}}",
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"doplatamocowanie\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "doplatatkanina",
-      "index": 7,
+      "id": "doplatamocowanie",
+      "index": 5,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Dopłata tkanina",
+      "label": "doplatamocowanie",
       "notation": "standard",
-      "originalId": "doplatatkanina",
+      "originalId": "doplatamocowanie",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1018,32 +908,32 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "doplatawkladka": {
-      "alias": "doplatawkladka",
+    "doplataprowadnica": {
+      "alias": "doplataprowadnica",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatawkladka).toFixed(2)))}}",
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"doplataprowadnica\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "doplatawkladka",
-      "index": 21,
+      "id": "doplataprowadnica",
+      "index": 6,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Dopłata do wkładki",
+      "label": "doplataprowadnica",
       "notation": "standard",
-      "originalId": "doplatawkladka",
+      "originalId": "doplataprowadnica",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1058,7 +948,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_oferty_inventory_id\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"fk_oferty_inventory_id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1092,7 +982,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"id\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1126,7 +1016,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ilosc\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"ilosc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1154,81 +1044,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "indexszer": {
-      "alias": "indexszer",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"indexszer\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "indexszer",
-      "index": 3,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "indexszer",
-      "notation": "standard",
-      "originalId": "indexszer",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "indexwys": {
-      "alias": "indexwys",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"indexwys\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "indexwys",
-      "index": 4,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "indexwys",
-      "notation": "standard",
-      "originalId": "indexwys",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "kolor": {
       "alias": "kolor",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kolor\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kolor\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1238,7 +1060,7 @@
       "id": "kolor",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1262,7 +1084,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"komentarz\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"komentarz\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1296,7 +1118,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kurseuro\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kurseuro\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1324,47 +1146,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "kwotarabatmotor": {
-      "alias": "kwotarabatmotor",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow[\"kwotarabatmotor\"]).toFixed(2)))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "kwotarabatmotor",
-      "index": 39,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Kwota rabatu",
-      "notation": "standard",
-      "originalId": "kwotarabatmotor",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "kwotarabatsystem": {
       "alias": "kwotarabatsystem",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.kwotarabatsystem).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.kwotarabatsystem).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1374,7 +1162,7 @@
       "id": "kwotarabatsystem",
       "index": 12,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -1399,7 +1187,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"linia\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"linia\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1427,21 +1215,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "moc": {
-      "alias": "moc",
+    "mocowanie": {
+      "alias": "mocowanie",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.cenanetto).toFixed(2)))}}",
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"mocowanie\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "moc",
-      "index": 16,
+      "id": "mocowanie",
+      "index": 20,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -1450,43 +1238,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Cena netto",
+      "label": "mocowanie",
       "notation": "standard",
-      "originalId": "moc",
-      "sticky": "",
-      "textColor": "#231F20",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "naped": {
-      "alias": "naped",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"naped\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "naped",
-      "index": 17,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Napęd",
-      "notation": "standard",
-      "originalId": "naped",
+      "originalId": "mocowanie",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1501,7 +1255,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opisbezrabatow\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opisbezrabatow\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1535,7 +1289,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opisbezrabatow_de\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opisbezrabatow_de\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1569,7 +1323,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opisbezrabatow_en\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opisbezrabatow_en\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1603,7 +1357,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1637,7 +1391,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami_de\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami_de\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1671,7 +1425,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami_en\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opiszrabatami_en\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1699,21 +1453,21 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "powierzchnia": {
-      "alias": "powierzchnia",
+    "produkt": {
+      "alias": "produkt",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"powierzchnia\"]))}}",
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"produkt\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "powierzchnia",
-      "index": 25,
+      "id": "produkt",
+      "index": 36,
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": false,
@@ -1721,44 +1475,10 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Powierzchnia",
-      "notation": "standard",
-      "originalId": "powierzchnia",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "price_motor": {
-      "alias": "price_motor",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.price_motor).toFixed(2)))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "RIGHT",
-      "id": "price_motor",
-      "index": 18,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
       "isVisible": true,
-      "label": "Cena napędu",
+      "label": "produkt",
       "notation": "standard",
-      "originalId": "price_motor",
+      "originalId": "produkt",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1767,108 +1487,37 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "priceall": {
-      "alias": "priceall",
+    "prowadnicakolor": {
+      "alias": "prowadnicakolor",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.priceall).toFixed(2)))}}",
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"prowadnicakolor\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "CENTER",
-      "id": "priceall",
-      "index": 20,
+      "id": "prowadnicakolor",
+      "index": 17,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": true,
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Automatyka po rabacie",
+      "label": "prowadnicakolor",
       "notation": "standard",
-      "originalId": "priceall",
+      "originalId": "prowadnicakolor",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "procentdoplatakolor": {
-      "alias": "procentdoplatakolor",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.procentdoplatakolor).toFixed(2)))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "procentdoplatakolor",
-      "index": 7,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Dopłata do koloru %",
-      "notation": "standard",
-      "originalId": "procentdoplatakolor",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "rabatmotor": {
-      "alias": "rabatmotor",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "BOLD",
-      "horizontalAlignment": "CENTER",
-      "id": "rabatmotor",
-      "index": 19,
-      "isCellEditable": true,
-      "isCellVisible": "true",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Rabat automatyka",
-      "notation": "standard",
-      "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  Plisy_tabela_inventory_id_new.run();\n});}}",
-      "originalId": "rabatmotor",
-      "sticky": "",
-      "textColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#B71C1C\" : \"#000000\"))}}",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {
-        "max": "100"
-      },
       "verticalAlignment": "CENTER",
       "width": 150
     },
@@ -1876,9 +1525,9 @@
       "alias": "rabatsystem",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
+      "cellBackground": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#EEEEEE\" : \"#ffffff\"))}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1900,7 +1549,7 @@
       "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  Plisy_tabela_inventory_id_new.run();\n}).catch(() => {});}}",
       "originalId": "rabatsystem",
       "sticky": "",
-      "textColor": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#B71C1C\" : \"#000000\"))}}",
+      "textColor": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#B71C1C\" : \"#000000\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {
@@ -1915,7 +1564,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (currentRow.razemnetto).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( (currentRow.razemnetto).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1949,7 +1598,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "#ffffff",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"referencja\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"referencja\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -1977,115 +1626,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "rodzajmotor": {
-      "alias": "rodzajmotor",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rodzajmotor\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "rodzajmotor",
-      "index": 22,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "rodzajmotor",
-      "notation": "standard",
-      "originalId": "rodzajmotor",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "rodzajnapedu": {
-      "alias": "rodzajnapedu",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#ffffff",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rodzajnapedu\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "rodzajnapedu",
-      "index": 43,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "rodzajnapedu",
-      "notation": "standard",
-      "originalId": "rodzajnapedu",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "rodzajpomiaru": {
-      "alias": "rodzajpomiaru",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rodzajpomiaru\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "rodzajpomiaru",
-      "index": 31,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "rodzajpomiaru",
-      "notation": "standard",
-      "originalId": "rodzajpomiaru",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "seq": {
       "alias": "seq",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentIndex+1))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2113,81 +1660,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "serianapedu": {
-      "alias": "serianapedu",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#ffffff",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"serianapedu\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "serianapedu",
-      "index": 42,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "serianapedu",
-      "notation": "standard",
-      "originalId": "serianapedu",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "skrzynka": {
-      "alias": "skrzynka",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skrzynka\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "skrzynka",
-      "index": 12,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Skrzynka",
-      "notation": "standard",
-      "originalId": "skrzynka",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "skugen": {
       "alias": "skugen",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skugen\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skugen\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2215,47 +1694,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "system": {
-      "alias": "system",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"system\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "system",
-      "index": 11,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "System",
-      "notation": "standard",
-      "originalId": "system",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "systemporabacie": {
       "alias": "systemporabacie",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.systemporabacie).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.systemporabacie).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2265,7 +1710,7 @@
       "id": "systemporabacie",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -2290,7 +1735,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.systemzdoplata).toFixed(2)))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.systemzdoplata).toFixed(2)))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2300,7 +1745,7 @@
       "id": "systemzdoplata",
       "index": 32,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -2325,7 +1770,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"szerokosc\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"szerokosc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2335,7 +1780,7 @@
       "id": "szerokosc",
       "index": 2,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -2359,7 +1804,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tkanina\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"tkanina\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2369,7 +1814,7 @@
       "id": "tkanina",
       "index": 14,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -2387,47 +1832,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "vat": {
-      "alias": "vat",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"vat\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "vat",
-      "index": 29,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Vat %",
-      "notation": "standard",
-      "originalId": "vat",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "waluta": {
       "alias": "waluta",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"waluta\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"waluta\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2455,47 +1866,13 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "wkladka": {
-      "alias": "wkladka",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wkladka\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "wkladka",
-      "index": 15,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Wkładka",
-      "notation": "standard",
-      "originalId": "wkladka",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "wysokosc": {
       "alias": "wysokosc",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
       "columnType": "number",
-      "computedValue": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wysokosc\"]))}}",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wysokosc\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -2505,7 +1882,7 @@
       "id": "wysokosc",
       "index": 1,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -2539,5 +1916,5 @@
   "version": 3,
   "verticalAlignment": "CENTER",
   "widgetId": "uji69u6swx",
-  "widgetName": "tabela_screeny_inventory_id"
+  "widgetName": "tabela_plisy_inventory_id"
 }

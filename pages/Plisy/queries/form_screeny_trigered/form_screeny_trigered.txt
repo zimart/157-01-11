@@ -1,1 +1,1 @@
-SELECT * FROM inventory_screeny WHERE id={{tabela_screeny_inventory_id.triggeredRow.id}};
+SELECT * FROM inventory_screeny WHERE id={{tabela_plisy_inventory_id.triggeredRow.id}};

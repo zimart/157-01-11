@@ -42,7 +42,7 @@
   "mobileRightColumn": 33,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{\nPlisy_indeksszer.run()\n.then(() => \t\nPlisy_indekswys.run())\n.then(() =>\nstoreValue('indeksszer', indeksszer_l.text))\n.then(() => \nstoreValue('indekswys', indekswys_l.text))\n.then(() =>\t\t\t\nremoveValue('sku_value'))\n.then(() => \nstoreValue('sku_value', tymczasowy.text))\n.then(() => \n  Plisy_danesku.run())\n.then(() => \n  storeValue('cenaplisy', Input32.text));\n}}",
+  "onClick": "{{button_sku.oblicz()}}",
   "originalBottomRow": 6,
   "originalTopRow": 2,
   "parentColumnSpace": 18.6884765625,

@@ -16,6 +16,9 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -68,6 +71,7 @@
   "parentColumnSpace": 20.21875,
   "parentId": "er5qa5lbjh",
   "parentRowSpace": 10,
+  "placeholderText": "{{appsmith.store.wysokoscdachowa}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": false,
   "responsiveBehavior": "fill",

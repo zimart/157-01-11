@@ -34,7 +34,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodajpozycje_new.run().then(() => przeliczpozycje.run()).then(() => resetWidget(\"sku_input\", true)).then(() => resetWidget(\"podawana_wysokosc_input\", true)).then(() => resetWidget(\"szerokosc_input\", true)).then(() => przeliczpozycje.run()).then(() => Plisy_tabela_inventory_id_new.run())\n.then(() => \nremoveValue('sku_value'))}}",
+  "onClick": "{{button_sku.plisy_dodaj_pozycje()}}",
   "originalBottomRow": 29,
   "originalTopRow": 25,
   "parentId": "8jwyu0isum",

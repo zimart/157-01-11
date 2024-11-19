@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_69eb6b7c-2190-4e4c-b096-7f78adf3001d",
-  "id": "Plisy_kasujzglownej",
+  "gitSyncId": "67252580698c850488983504_2d276553-cd05-49bd-8a09-7331f79cb813",
+  "id": "Plisy_Plisy_DeleteQuery_new",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM inventory_main WHERE inventory_main.id_wiersz = {{tabela_screeny_inventory_id.triggeredRow.id}}\n",
+      "body": "DELETE FROM inventory_plisy\nWHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "kasujzglownej",
+    "name": "Plisy_DeleteQuery_new",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

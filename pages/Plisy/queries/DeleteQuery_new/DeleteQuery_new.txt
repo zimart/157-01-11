@@ -1,2 +1,0 @@
-DELETE FROM inventory_screeny
-WHERE id = {{tabela_screeny_inventory_id.triggeredRow.id}};

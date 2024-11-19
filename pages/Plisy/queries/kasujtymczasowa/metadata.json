@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE from tymczasowascreeny WHERE tymczasowascreeny.id_wiersza = {{tabela_screeny_inventory_id.triggeredRow.id}}\n",
+      "body": "DELETE from tymczasowascreeny WHERE tymczasowascreeny.id_wiersza = {{tabela_plisy_inventory_id.triggeredRow.id}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

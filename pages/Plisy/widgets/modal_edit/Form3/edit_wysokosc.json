@@ -6,7 +6,7 @@
   "bottomRow": 93,
   "bottomRowBeforeCollapse": 93,
   "boxShadow": "none",
-  "defaultText": "{{wysokosccala.wys2_form.data||tabela_screeny_inventory_id.triggeredRow.wysokosc}}",
+  "defaultText": "{{wysokosccala.wys2_form.data||tabela_plisy_inventory_id.triggeredRow.wysokosc}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
