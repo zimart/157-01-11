@@ -34,7 +34,7 @@
   "isDisabled": false,
   "isFilterable": false,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": "{{Select1.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
   "key": "fwycrzmq3m",
   "labelAlignment": "left",

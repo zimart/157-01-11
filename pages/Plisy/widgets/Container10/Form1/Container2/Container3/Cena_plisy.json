@@ -25,7 +25,7 @@
   "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
-  "isRequired": false,
+  "isRequired": true,
   "isVisible": true,
   "key": "2t39cnlom2",
   "label": "Cena plisy",
