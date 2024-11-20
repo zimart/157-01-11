@@ -40,12 +40,14 @@ const columns4 = [
 //{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
 //{ header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
 //{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
-{ header: 'Netto nach Abzug', dataKey: 'nettopo' } ,// Custom header with currency
+{ header: 'Netto', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
 { header: 'Nettosumme', dataKey: 'razemnetto' }, // Custom header with currency
 //{ header: 'Steuer %', dataKey: 'vat' }, // Custom header with currency
 //{ header: 'Steuerbetrag', dataKey: 'vatkwota' }, // Custom header with currency
 //{ header: 'Zu bezahlen', dataKey: 'Brutto' } // Custom header with currency
+{ header: 'Rabatt %', dataKey: 'rabatogolny' }, // Custom header with currency
+{ header: 'Netto nach Abzug', dataKey: 'porabacie' } // Custom header with currency
 ];		
 	
 
@@ -79,11 +81,13 @@ cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price
 Opis: item.opiszrabatami,
 Rabatprocent: item.rabatogolny,
 Rabat: ((item.kwotarabatogolny/currencyRate)*narzuty).toFixed(2),
-nettopo: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2),
-razemnetto: ((item.razemnetto/ currencyRate)*narzuty).toFixed(2),
+nettopo: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),
+razemnetto: (((item.cenanetto/ currencyRate)*narzuty).toFixed(2))*item.Ilosc,
 vat: item.vat,
 vatkwota: ((item.razemnetto*(item.vat/100))*narzuty).toFixed(2),
-Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2)
+Brutto: ((item.brutto/ currencyRate)*narzuty).toFixed(2),
+rabatogolny: item.rabatogolny,
+porabacie: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2)
 }));		
 	
 	
