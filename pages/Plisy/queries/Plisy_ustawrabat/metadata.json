@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67252580698c850488983504_b9698e68-4c55-4c62-8bdb-112e80aadb52",
-  "id": "Plisy_ustawrabat",
+  "id": "Plisy_Plisy_ustawrabat",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_screeny SET\n    rabatsystem = '{{rabatsystem.text}}',\n\t  kwotarabatsystem = systemzdoplata*(rabatsystem/100),\n\t\tsystemporabacie = systemzdoplata-kwotarabatsystem,\n\t\tcenanetto = priceall+systemporabacie,\t\n\t\trazemnetto = cenanetto * ilosc\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "UPDATE inventory_plisy SET\n    rabatsystem = '{{rabatsystem.text}}',\n\t  kwotarabatsystem = systemzdoplata*(rabatsystem/100),\n\t\tsystemporabacie = systemzdoplata-kwotarabatsystem,\n\t\tcenanetto = systemporabacie,\n\t\trazemnetto = cenanetto * ilosc\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "ustawrabat",
+    "name": "Plisy_ustawrabat",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

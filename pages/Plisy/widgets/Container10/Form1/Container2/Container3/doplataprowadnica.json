@@ -6,7 +6,7 @@
   "bottomRow": 7,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_doplaty.prowadnica.data}}",
+  "defaultText": "{{Plisy_doplaty.prowadnica.data||0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

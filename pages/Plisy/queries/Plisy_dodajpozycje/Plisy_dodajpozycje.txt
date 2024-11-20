@@ -39,7 +39,7 @@ INSERT INTO inventory_plisy (wysokosc,
 					'{{sku_input.text}}',
 					'PLISA',
 					'{{Input33.text}}',
-					'0'
+					'{{rabatsystem.text}}'
 					
 					
 					

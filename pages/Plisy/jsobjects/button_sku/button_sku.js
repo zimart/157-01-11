@@ -27,8 +27,8 @@ plisy_dodaj_pozycje: async () => {
 
 await Plisy_dodajpozycje.run();
 //.then(() => 
-await Plisy_tabela_inventory_id_new.run();
 await Plisy_przeliczpozycje.run();
+await Plisy_tabela_inventory_id_new.run();
 },	
 	
 	

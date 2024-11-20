@@ -31,22 +31,23 @@
     "customColumn1",
     "seq",
     "produkt",
+    "opis",
     "ilosc",
     "cena",
     "doplatakolor",
     "doplatamocowanie",
     "doplataprowadnica",
     "systemzdoplata",
-    "komentarz",
-    "razemnetto",
     "id",
     "concat",
     "szerokosc",
     "wysokosc",
     "tkanina",
+    "referencja",
     "rabatsystem",
     "kwotarabatsystem",
     "systemporabacie",
+    "razemnetto",
     "brutto",
     "skugen",
     "linia",
@@ -56,7 +57,6 @@
     "waluta",
     "opisbezrabatow",
     "opiszrabatami",
-    "referencja",
     "opisbezrabatow_de",
     "opiszrabatami_de",
     "opisbezrabatow_en",
@@ -65,14 +65,15 @@
     "dachowaokno",
     "prowadnicakolor",
     "mocowanie",
-    "cenanetto"
+    "cenanetto",
+    "komentarz"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1732049884560,
+  "columnUpdatedAt": 1732086086560,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -230,9 +231,6 @@
     },
     {
       "key": "primaryColumns.wysokosc.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.systemzdoplata.isCellVisible"
     },
     {
       "key": "primaryColumns.kwotarabatsystem.isCellVisible"
@@ -395,6 +393,30 @@
     },
     {
       "key": "primaryColumns.doplataprowadnica.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.opis.computedValue"
+    },
+    {
+      "key": "primaryColumns.mocowanie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.prowadnicakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.opis.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.concat.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.dachowaproducent.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.dachowaokno.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.referencja.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -451,6 +473,27 @@
     },
     {
       "key": "primaryColumns.doplataprowadnica.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.mocowanie.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.prowadnicakolor.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.opis.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.concat.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.dachowaproducent.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.dachowaokno.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.referencja.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -639,7 +682,7 @@
       "id": "concat",
       "index": 27,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
@@ -801,14 +844,14 @@
       "id": "dachowaokno",
       "index": 14,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "dachowaokno",
+      "label": "Okno",
       "notation": "standard",
       "originalId": "dachowaokno",
       "sticky": "",
@@ -835,14 +878,14 @@
       "id": "dachowaproducent",
       "index": 13,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "dachowaproducent",
+      "label": "Rodzaj dachowej",
       "notation": "standard",
       "originalId": "dachowaproducent",
       "sticky": "",
@@ -1113,7 +1156,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Komentarz",
       "notation": "standard",
       "originalId": "komentarz",
@@ -1244,16 +1287,50 @@
       "id": "mocowanie",
       "index": 20,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "mocowanie",
+      "label": "Mocowanie",
       "notation": "standard",
       "originalId": "mocowanie",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "opis": {
+      "alias": "opis",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opis\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "opis",
+      "index": 37,
+      "isCellEditable": false,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Opis",
+      "notation": "standard",
+      "originalId": "opis",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1516,14 +1593,14 @@
       "id": "prowadnicakolor",
       "index": 17,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "prowadnicakolor",
+      "label": "Kolor prowadnicy",
       "notation": "standard",
       "originalId": "prowadnicakolor",
       "sticky": "",
@@ -1621,14 +1698,14 @@
       "id": "referencja",
       "index": 44,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
-      "label": "referencja",
+      "isVisible": true,
+      "label": "Tkanina",
       "notation": "standard",
       "originalId": "referencja",
       "sticky": "",
@@ -1758,14 +1835,14 @@
       "id": "systemzdoplata",
       "index": 32,
       "isCellEditable": false,
-      "isCellVisible": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
+      "isCellVisible": "true",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "System z dopłatą",
+      "label": "Plisa z dopłatą",
       "notation": "standard",
       "onSubmit": "",
       "originalId": "systemzdoplata",
@@ -1834,7 +1911,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "Tkanina",
+      "label": "Kolekcja",
       "notation": "standard",
       "originalId": "tkanina",
       "sticky": "",

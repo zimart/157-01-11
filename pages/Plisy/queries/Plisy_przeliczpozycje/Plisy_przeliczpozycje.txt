@@ -1,7 +1,11 @@
 UPDATE inventory_plisy SET 
-    systemzdoplata = cena +doplatakolor+doplatamocowanie+doplataprowadnica
-    kwotarabatsystem = systemzdoplata*(rabatsystem/100),
-		systemporabacie = systemzdoplata-kwotarabatsystem
+    systemzdoplata = cena + doplatamocowanie + doplatakolor + doplataprowadnica,
+	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		systemporabacie = systemzdoplata-kwotarabatsystem,
+		cenanetto = systemporabacie,
+		razemnetto = cenanetto * ilosc		
+	
+		
    	
 			
 WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "{{Input2.text* kursinput.text}}",
+  "defaultText": "{{Number(Input2.text* kursinput.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

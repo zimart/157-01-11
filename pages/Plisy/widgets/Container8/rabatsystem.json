@@ -59,7 +59,7 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onBlur": "{{ustawrabat.run()\n.then(() =>\t\t\t\t\t\t\t\t\t\t\nprzeliczpozycje.run())\n.then(() =>\t\tPlisy_tabela_inventory_id_new.run()\n)}}\n",
+  "onBlur": "{{Plisy_ustawrabat.run().then(() => {\n  Plisy_przeliczpozycje.run();\n}).then(() => Plisy_tabela_inventory_id_new.run());}}",
   "onTextChanged": "",
   "originalBottomRow": 10,
   "originalTopRow": 4,
