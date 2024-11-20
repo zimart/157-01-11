@@ -8,6 +8,8 @@ showModal(LanguageLoading.name)
 ustawrabatogolny.run())
 .then(() => 
 updateopismainkursscreeny.run())
+.then(() => 
+updateopismainkursplisy.run())
 .then(() =>
 tabela_glowna.run())
 .then(() => 
