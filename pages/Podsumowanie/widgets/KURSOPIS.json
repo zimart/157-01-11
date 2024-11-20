@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 236,
-  "bottomRowBeforeCollapse": 239,
+  "bottomRowBeforeCollapse": 236,
   "boxShadow": "none",
   "defaultText": " / KURS EURO : {{kursnbp.data.rates[0].no}} - {{kursnbp.data.rates[0].mid}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 33,
   "showStepArrows": false,
   "topRow": 229,
-  "topRowBeforeCollapse": 232,
+  "topRowBeforeCollapse": 229,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "b248xx5cf2",

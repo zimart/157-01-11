@@ -30,7 +30,6 @@
     "customColumn3",
     "customColumn1",
     "seq",
-    "produkt",
     "opis",
     "ilosc",
     "cena",
@@ -66,14 +65,16 @@
     "prowadnicakolor",
     "mocowanie",
     "cenanetto",
-    "komentarz"
+    "komentarz",
+    "moc",
+    "rodzajmotor"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1732086086560,
+  "columnUpdatedAt": 1732125449686,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -383,9 +384,6 @@
       "key": "primaryColumns.mocowanie.computedValue"
     },
     {
-      "key": "primaryColumns.produkt.computedValue"
-    },
-    {
       "key": "primaryColumns.komentarz.isCellVisible"
     },
     {
@@ -417,6 +415,12 @@
     },
     {
       "key": "primaryColumns.referencja.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.moc.computedValue"
+    },
+    {
+      "key": "primaryColumns.rodzajmotor.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -1271,6 +1275,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "moc": {
+      "alias": "moc",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"moc\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "moc",
+      "index": 36,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "moc",
+      "notation": "standard",
+      "originalId": "moc",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "mocowanie": {
       "alias": "mocowanie",
       "allowCellWrapping": false,
@@ -1543,40 +1581,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "produkt": {
-      "alias": "produkt",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "#ffffff",
-      "columnType": "text",
-      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"produkt\"] + ' ' + currentRow.linia))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "produkt",
-      "index": 36,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "Produkt",
-      "notation": "standard",
-      "originalId": "produkt",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "prowadnicakolor": {
       "alias": "prowadnicakolor",
       "allowCellWrapping": false,
@@ -1708,6 +1712,40 @@
       "label": "Tkanina",
       "notation": "standard",
       "originalId": "referencja",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "rodzajmotor": {
+      "alias": "rodzajmotor",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rodzajmotor\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "rodzajmotor",
+      "index": 38,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "rodzajmotor",
+      "notation": "standard",
+      "originalId": "rodzajmotor",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
