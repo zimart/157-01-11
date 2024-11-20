@@ -3,7 +3,24 @@ UPDATE inventory_plisy SET
 	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
 		systemporabacie = systemzdoplata-kwotarabatsystem,
 		cenanetto = systemporabacie,
-		razemnetto = cenanetto * ilosc
+		razemnetto = cenanetto * ilosc,
+		komentarz = concat(linia,"/",kolor,"/",szerokosc,"x",wysokosc,"/",referencja),
+		moc="PLISA",
+		
+		opisbezrabatow = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina,"-",referencja," | Cena bazowa: ",cena," | Doplata kolor: ",doplatakolor," | Doplata mocowanie: ",doplatamocowanie," | Doplata prowadnica: ",doplataprowadnica," | Cena z doplatami: ",cenanetto),
+		
+		opiszrabatami = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Kolekcja: ",tkanina,"-",referencja," | Tkanina: ",referencja," | Cena bazowa: ",cena," | Doplata kolor: ",doplatakolor," | Doplata mocowanie: ",doplatamocowanie," | Doplata prowadnica: ",doplataprowadnica," | Cena z doplatami: ",systemzdoplata," | Rabat system: ",rabatsystem,"%"," | System po rabacie: ", cenanetto),
+		
+		opiszrabatami_de = CONCAT("System: ",linia," | Farbe: ",kolor," Breite: ", szerokosc," | Höhe: ",wysokosc," | Stoff: ",tkanina,"-",referencja," | Grundpreis: ",cena," | Farbzuschlag: ",doplatakolor," | Doplata mocowanie: ",doplatamocowanie," | Doplata prowadnica: ",doplataprowadnica," | Preis mit Zuschlägen: ",systemzdoplata," | Systemrabatt: ",rabatsystem,"%"," | System nach Rabatt: ", cenanetto),
+		
+		opisbezrabatow_de = CONCAT("System: ",linia," | Farbe: ",kolor," Breite: ", szerokosc," | Höhe: ",wysokosc," | Stoff: ",tkanina,"-",referencja," | Grundpreis: ",cena," | Farbzuschlag: ",doplatakolor," | Doplata mocowanie: ",doplatamocowanie," | Doplata prowadnica: ",doplataprowadnica," | Preis mit Zuschlägen: ",cenanetto),
+		
+		
+		
+		opisbezrabatow_en = CONCAT("System: ",linia," | Kolor: ",kolor," Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor: ",doplatakolor," | Doplata mocowanie: ","--"," | Doplata prowadnica: ","----"," | Cena z doplatami: ",systemzdoplata," | Rabat system: ",rabatsystem,"%"," | System po rabacie: ", cenanetto),
+		
+		opiszrabatami_en = CONCAT("System: ",linia," | Kolor: ",kolor," Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor: ",doplatakolor," | Doplata mocowanie: ","--"," | Doplata prowadnica: ","----"," | Cena z doplatami: ",systemzdoplata," | Rabat system: ",rabatsystem,"%"," | System po rabacie: ", cenanetto)
+		
 	
 					
 WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

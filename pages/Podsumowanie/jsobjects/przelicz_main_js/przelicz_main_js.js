@@ -7,7 +7,7 @@ showModal(LanguageLoading.name)
 .then(() => 
 ustawrabatogolny.run())
 .then(() => 
-updateopismainkurs.run())
+updateopismainkursscreeny.run())
 .then(() =>
 tabela_glowna.run())
 .then(() => 

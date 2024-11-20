@@ -32,7 +32,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{dodaj_pozycje_normal.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n  updateopismainkurs.run();\n  przenumeruj.run();\n});}}",
+  "onClick": "{{dodaj_pozycje_normal.run().then(() => {\n  przelicz_main_js.przelicz_glowna();\n  updateopismainkursscreeny.run();\n  przenumeruj.run();\n});}}",
   "originalBottomRow": 30,
   "originalTopRow": 26,
   "parentId": "f2dt60ix92",

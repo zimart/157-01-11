@@ -1,5 +1,5 @@
 UPDATE inventory_main
-JOIN inventory_screeny ON inventory_main.id_wiersz = inventory_screeny.id 
+JOIN inventory_screeny ON inventory_main.fk_oferty_inventory_id = inventory_screeny.fk_oferty_inventory_id
 SET inventory_main.opiszrabatami = CONCAT("System: ",inventory_screeny.system,
 " | Skrzynka: ",inventory_screeny.skrzynka," | Kolor: ",inventory_screeny.kolor,
 " | Szerokość: ", inventory_screeny.szerokosc," | Wysokość: ",inventory_screeny.wysokosc,
@@ -83,5 +83,5 @@ inventory_main.opisbezrabatow_en = CONCAT("System: ",inventory_screeny.system,
 " | Price of the set (system+motor: ",round((inventory_screeny.cenanetto/{{kursinput.text}})*{{narzutpdf.text}},2),
 " ",{{Select6.selectedOptionLabel}})
 
-
+ WHERE inventory_main.id_wiersz = inventory_screeny.id and inventory_main.fk_oferty_inventory_id={{idoferty_appsmith.text}}
 ;
