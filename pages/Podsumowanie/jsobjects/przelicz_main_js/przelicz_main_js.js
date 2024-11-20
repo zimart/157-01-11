@@ -1,27 +1,26 @@
 export default {
-przelicz_glowna: function () {
+przelicz_glowna: async () => {
 //var wartoscdoplaty = doplatakolorinput.text;
 //var skrzynka = Select8.selectedOptionValue;
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
-showModal(LanguageLoading.name)
-.then(() => 
-ustawrabatogolny.run())
-.then(() => 
-updateopismainkursscreeny.run())
-.then(() => 
-updateopismainkursplisy.run())
-.then(() =>
-tabela_glowna.run())
-.then(() => 
-sumanettoporabacie.run())
-.then(() => 
-sumabrutto.run())
-.then(() => 
-przenumeruj.run())
-.then(() => 
-closeModal(LanguageLoading.name));
+await showModal(LanguageLoading.name);
+//.then(() => 
+await ustawrabatogolny.run();
+//.then(() => 
+await updateopismainkursscreeny.run();
+//.then(() => 
+await updateopismainkursplisy.run();
+//.then(() =>
+await tabela_glowna.run();
+//.then(() => 
+await sumanettoporabacie.run();
+//.then(() => 
+await sumabrutto.run();
+//.then(() => 
+await przenumeruj.run();
+//.then(() => 
+await closeModal(LanguageLoading.name);
 
 },
 }
 	
-

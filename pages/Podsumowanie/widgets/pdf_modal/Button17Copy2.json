@@ -30,7 +30,7 @@
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": "{{wybierzjezykpdf.selectedOptionValue===\"deutch\"}}",
+  "isVisible": "{{wybierzjezykpdf.selectedOptionValue===\"deutch\"&&rabatogolny.text>0}}",
   "key": "ufu47vxd4q",
   "leftColumn": 0,
   "minWidth": 120,
