@@ -50,20 +50,22 @@
     "sumarabatu",
     "tabelanbpkurs",
     "kurswgtabeli",
-    "narzut"
+    "narzut",
+    "customColumn6"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731241829874,
+  "columnUpdatedAt": 1732171659713,
   "columnWidthMap": {
     "customColumn1": 102,
     "customColumn2": 80,
     "customColumn3": 111,
     "customColumn4": 174.99999999999997,
     "kategoria": 329,
+    "numeroferty": 237,
     "temat": 111
   },
   "compactMode": "DEFAULT",
@@ -183,6 +185,15 @@
     },
     {
       "key": "primaryColumns.narzut.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn6.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn6.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn6.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -208,6 +219,9 @@
     },
     {
       "key": "onPageSizeChange"
+    },
+    {
+      "key": "primaryColumns.customColumn6.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -231,7 +245,7 @@
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
   "originalBottomRow": 89,
-  "originalTopRow": 8,
+  "originalTopRow": 10,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -342,6 +356,45 @@
       "notation": "standard",
       "onClick": "{{storeValue('id_oferta', data_table.triggeredRow.id_oferta).then(() => {\n  storeValue('klient', data_table.triggeredRow.klient);\n  storeValue('numer', data_table.triggeredRow.numeroferty);\n  storeValue('id_klienta', Input2.text);\n  storeValue('data', data_table.triggeredRow.dataoferty);\n  navigateTo('Podsumowanie', {\n    id_oferta: appsmith.store.id_oferta,\n    klient: appsmith.store.klient,\n    data: appsmith.store.data,\n    numer: appsmith.store.numer,\n    id_klienta: appsmith.store.id_klienta\n  }, 'SAME_WINDOW');\n});}}",
       "originalId": "customColumn4",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn6": {
+      "alias": "kopiuj",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "kopiuj",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn6",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kopiuj",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{storeValue('idoferty2', data_table.triggeredRow.id_oferta).then(() => {\n  kopiuj.run();\n  zapisznumeroferty.run();\n  tabela_id_klient.run();\n});}}",
+      "originalId": "customColumn6",
       "sticky": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
