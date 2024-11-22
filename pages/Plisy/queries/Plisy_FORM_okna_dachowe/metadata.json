@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_7c47dda9-05f2-4891-a04c-2d7d45951a78",
-  "id": "Plisy_plisy_FORM_tkaninawybor",
+  "gitSyncId": "67252580698c850488983504_c0f4b2d6-0d48-4734-90df-37ad852b717d",
+  "id": "Plisy_Plisy_FORM_okna_dachowe",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja={{edit_tkanina.selectedOptionValue}};",
+      "body": "SELECT typokna FROM plisy_dachowe where producent={{Plisy_edit_producentdachowa.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "plisy_FORM_tkaninawybor",
+    "executeOnLoad": false,
+    "name": "Plisy_FORM_okna_dachowe",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

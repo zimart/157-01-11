@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_df67e84c-83a5-4344-aab9-038fc0a5f2ed",
-  "id": "Plisy_FORM_skrotsystem",
+  "gitSyncId": "67252580698c850488983504_a0b43de8-69d2-4765-bea5-d491ac40c323",
+  "id": "Plisy_Plisy_FORM_mocowanie_doplata",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT valueindeks FROM screeny_system where system={{edit_system.selectedOptionValue}};",
+      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" and linia = {{edit_linia.selectedOptionLabel}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "FORM_skrotsystem",
+    "executeOnLoad": true,
+    "name": "Plisy_FORM_mocowanie_doplata",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

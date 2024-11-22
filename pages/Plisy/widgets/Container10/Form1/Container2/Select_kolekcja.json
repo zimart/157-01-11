@@ -63,7 +63,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 25,
   "serverSideFiltering": false,
-  "sourceData": "[   \t\n  {\n    \"label\": \"P200\",\n    \"value\": \"P200\"\n  },\n  {\n    \"label\": \"P300\",\n    \"value\": \"P300\"\n  },\n\t{\n    \"label\": \"P900\",\n    \"value\": \"P900\"\n  }\n]",
+  "sourceData": "[   \t\n  {\n    \"label\": \"P200\",\n    \"value\": \"P200\"\n  },\n  {\n    \"label\": \"P300\",\n    \"value\": \"P300\"\n  },\n\t  {\n    \"label\": \"P600\",\n    \"value\": \"P600\"\n  },\n\t{\n    \"label\": \"P900\",\n    \"value\": \"P900\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

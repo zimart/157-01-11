@@ -1,0 +1,1 @@
+SELECT typokna FROM plisy_dachowe where producent={{Plisy_edit_producentdachowa.selectedOptionLabel}};

@@ -68,7 +68,7 @@
   "placeholderText": "{{i18n.translate(\"Wybierz linię\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 8,
+  "rightColumn": 7,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"label\": \"VEGAS\",\n    \"value\": \"VEGAS\"\n  },\n  {\n    \"label\": \"DACHOWA-VEGAS\",\n    \"value\": \"DACHOWA-VEGAS\"\n  }\n]",
   "topRow": 0,

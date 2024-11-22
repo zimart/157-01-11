@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].dachowaokno))(Plisy_edit_producentdachowaCopy.options, Plisy_edit_producentdachowaCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,10 +19,13 @@
       "key": "placeholderText"
     },
     {
+      "key": "labelText"
+    },
+    {
       "key": "labelTooltip"
     },
     {
-      "key": "labelText"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -31,7 +34,7 @@
       "key": "sourceData"
     },
     {
-      "key": "onOptionChange"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,38 +46,40 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{edit_linia.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Tkanina - {{plisy_form_screeny_trigered.data[0].tkanina}}",
+  "labelText": "okno - {{plisy_form_screeny_trigered.data[0].dachowaokno}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Tkanina -{{plisy_form_screeny_trigered.data[0].tkanina}}",
+  "labelTooltip": "Producent okna - {{plisy_form_screeny_trigered.data[0].dachowaproducent}}",
   "labelWidth": 5,
-  "leftColumn": 21,
+  "leftColumn": 9,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 9,
-  "mobileLeftColumn": 45,
-  "mobileRightColumn": 64,
-  "mobileTopRow": 2,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_FORM_tkaninawybor.run();}}",
-  "optionLabel": "value",
+  "onOptionChange": "{{Plisy_FORM_okna_dachowe.run()}}",
+  "optionLabel": "label",
   "optionValue": "value",
+  "originalBottomRow": 14,
+  "originalTopRow": 7,
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"Tkanina\")}}",
+  "placeholderText": "{{i18n.translate(\"Producent)}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 18,
   "serverSideFiltering": false,
-  "sourceData": "[   \t\n  {\n    \"label\": \"P200\",\n    \"value\": \"P200\"\n  },\n  {\n    \"label\": \"P300\",\n    \"value\": \"P300\"\n  },\n\t  {\n    \"label\": \"P600\",\n    \"value\": \"P600\"\n  },\n\t{\n    \"label\": \"P900\",\n    \"value\": \"P900\"\n  }\n]",
-  "topRow": 0,
+  "sourceData": "",
+  "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "0gjt1qwxuk",
-  "widgetName": "edit_tkanina"
+  "widgetId": "gx336l23oz",
+  "widgetName": "Plisy_edit_producentdachowaCopy"
 }

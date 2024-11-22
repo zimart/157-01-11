@@ -1,0 +1,1 @@
+SELECT kolorm FROM plisy_kolor where rodzajpr="mocowanie" and linia = {{edit_linia.selectedOptionLabel}} ;

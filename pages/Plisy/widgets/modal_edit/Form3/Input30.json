@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 49,
-  "bottomRowBeforeCollapse": 49,
+  "bottomRowBeforeCollapse": 48,
   "boxShadow": "none",
   "defaultText": "{{doplata.kolor_form();}}",
   "dynamicBindingPathList": [
@@ -64,7 +64,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 42,
-  "topRowBeforeCollapse": 42,
+  "topRowBeforeCollapse": 41,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "rg925hqghr",

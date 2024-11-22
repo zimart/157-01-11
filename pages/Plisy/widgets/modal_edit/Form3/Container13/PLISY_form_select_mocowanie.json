@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].referencja))(edit_referencja.options, edit_referencja.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].mocowanie))(PLISY_form_select_mocowanie.options, PLISY_form_select_mocowanie.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -43,11 +43,11 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Referencja - {{plisy_form_screeny_trigered.data[0].referencja}}",
+  "labelText": "Mocowanie - {{plisy_form_screeny_trigered.data[0].mocowanie}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Referencja - {{plisy_form_screeny_trigered.data[0].referencja}}",
+  "labelTooltip": "Referencja - {{plisy_form_screeny_trigered.data[0].mocowanie}}",
   "labelWidth": 5,
-  "leftColumn": 34,
+  "leftColumn": 44,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -66,12 +66,12 @@
   "placeholderText": "{{i18n.translate(\"Referencja\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 53,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_FORM_tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
+  "sourceData": "{{Plisy_FORM_mocowanie_doplata.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "gbhqqo17xu",
-  "widgetName": "edit_referencja"
+  "widgetId": "d4j0ggamwc",
+  "widgetName": "PLISY_form_select_mocowanie"
 }

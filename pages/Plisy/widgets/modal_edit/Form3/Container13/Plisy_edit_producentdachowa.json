@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].referencja))(edit_referencja.options, edit_referencja.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].dachowaproducent))(Plisy_edit_producentdachowa.options, Plisy_edit_producentdachowa.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     },
     {
       "key": "defaultOptionValue"
@@ -26,28 +23,38 @@
     },
     {
       "key": "labelTooltip"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{edit_linia.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Referencja - {{plisy_form_screeny_trigered.data[0].referencja}}",
+  "labelText": "Producent - {{plisy_form_screeny_trigered.data[0].dachowaproducent}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Referencja - {{plisy_form_screeny_trigered.data[0].referencja}}",
+  "labelTooltip": "Producent okna - {{plisy_form_screeny_trigered.data[0].dachowaproducent}}",
   "labelWidth": 5,
-  "leftColumn": 34,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -56,6 +63,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onOptionChange": "{{Plisy_FORM_okna_dachowe.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 14,
@@ -63,15 +71,15 @@
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"Referencja\")}}",
+  "placeholderText": "{{i18n.translate(\"Producent)}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 44,
+  "rightColumn": 9,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_FORM_tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
-  "topRow": 0,
+  "sourceData": "[\n  {\n    \"label\": \"FAKRO\",\n    \"value\": \"FAKRO\"\n  },\n  {\n    \"label\": \"VELUX\",\n    \"value\": \"VELUX\"\n  },\n\t{\n    \"label\": \"OKPOL\",\n    \"value\": \"OKPOL\"\n  },\n\t{\n    \"label\": \"ROTO\",\n    \"value\": \"ROTO\"\n  },\n\t{\n    \"label\": \"ROTO2\",\n    \"value\": \"ROTO2\"\n  }\n\t\n]",
+  "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "gbhqqo17xu",
-  "widgetName": "edit_referencja"
+  "widgetId": "mfluotb675",
+  "widgetName": "Plisy_edit_producentdachowa"
 }
