@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "name": "Plisy_FORM_okna_dachowe",
     "pageId": "Plisy",
     "userSetOnLoad": false

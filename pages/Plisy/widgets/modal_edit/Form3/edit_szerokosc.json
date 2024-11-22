@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 26,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{tabela_plisy_inventory_id.triggeredRow.szerokosc}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,14 +18,13 @@
     },
     {
       "key": "placeholderText"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onBlur"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onBlur"
@@ -53,10 +52,10 @@
   "mobileRightColumn": 21,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "{{clearStore()\n.then(() => \nwysokosccala.wys2_form())\n.then(() => \nFORM_indeksszer.run())\n.then(() => \t\t\tFORM_skrzynka_zapytaj.run())\n.then(() => FORM_skrotsystem.run())\n.then(() => storeValue('edit_calkowita', edit_wysokosc.text))\n.then(() => \nplisy_grupa.m2_form())\n.then(() => \ndoplata.tkanina_form())}}",
+  "onBlur": "",
   "onTextChanged": "{{}}",
-  "originalBottomRow": 28,
-  "originalTopRow": 21,
+  "originalBottomRow": 26,
+  "originalTopRow": 19,
   "parentColumnSpace": 9.12109375,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
@@ -68,7 +67,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tooltip": "Wpisz ponownie szerokość -{{tabela_plisy_inventory_id.triggeredRow.szerokosc}}",
-  "topRow": 21,
+  "topRow": 19,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "qsooyhzw7k",

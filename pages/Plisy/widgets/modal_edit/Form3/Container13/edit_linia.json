@@ -2,18 +2,15 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "labelText"
@@ -23,12 +20,18 @@
     },
     {
       "key": "labelTooltip"
+    },
+    {
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -44,9 +47,9 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Linia - {{plisy_form_screeny_trigered.data[0].linia}}",
+  "labelText": "Linia - {{Plisy_form_plisy_trigered.data[0].linia}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Linia - {{plisy_form_screeny_trigered.data[0].linia}}",
+  "labelTooltip": "Linia - {{Plisy_form_plisy_trigered.data[0].linia}}",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -57,7 +60,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onOptionChange": "{{FORM_system_zapytaj.run().then(() => {\n  removeValue('edit_sku_value');\n  FORM_wkladki.run();\n});}}",
+  "onOptionChange": "{{clearStore();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie_doplata.run();\nPlisy_FORM_doplata_kolor.run();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 17,

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].referencja))(edit_referencja.options, edit_referencja.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].referencja))(edit_referencja.options, edit_referencja.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -43,9 +43,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Referencja - {{plisy_form_screeny_trigered.data[0].referencja}}",
+  "labelText": "Referencja - {{Plisy_form_plisy_trigered.data[0].referencja}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Referencja - {{plisy_form_screeny_trigered.data[0].referencja}}",
+  "labelTooltip": "Referencja - {{Plisy_form_plisy_trigered.data[0].referencja}}",
   "labelWidth": 5,
   "leftColumn": 34,
   "maxDynamicHeight": 9000,

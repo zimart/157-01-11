@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67252580698c850488983504_e1e67a6f-6cde-4be5-8fc6-1206f8048e96",
-  "id": "Plisy_plisy_form_screeny_trigered",
+  "id": "Plisy_Plisy_form_plisy_trigered",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "plisy_form_screeny_trigered",
+    "name": "Plisy_form_plisy_trigered",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

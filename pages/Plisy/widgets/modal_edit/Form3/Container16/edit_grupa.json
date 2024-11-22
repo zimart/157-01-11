@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
-  "bottomRowBeforeCollapse": 49,
+  "bottomRow": 8,
   "boxShadow": "none",
-  "defaultText": "{{doplata.kolor_form();}}",
+  "defaultText": "{{Plisy_FORM_grupa_kolekcja.grupa.data}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,54 +18,40 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": false,
-  "key": "xx4706e4we",
+  "isVisible": true,
+  "key": "qj5qv6kkz8",
   "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 40,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 55,
-  "mobileLeftColumn": 40,
-  "mobileRightColumn": 60,
-  "mobileTopRow": 48,
+  "mobileBottomRow": 8,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13.000000000000002,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('kosztdoplatykolor', Input30.text);}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 40,
-  "parentColumnSpace": 17.9625,
-  "parentId": "jnoi6scv56",
+  "parentColumnSpace": 17.65,
+  "parentId": "qr6se2kb2j",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
-  "shouldAllowAutofill": false,
+  "rightColumn": 13.000000000000002,
   "showStepArrows": false,
-  "topRow": 38,
-  "topRowBeforeCollapse": 42,
+  "topRow": 1,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "rg925hqghr",
-  "widgetName": "Input30"
+  "widgetId": "j6pvsn3xc5",
+  "widgetName": "edit_grupa"
 }

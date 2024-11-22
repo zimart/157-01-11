@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 10,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].dachowaokno))(Plisy_edit_producentdachowaCopy.options, Plisy_edit_producentdachowaCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].prowadnicakolor))(Plisy_edit_dachowa_prowadnica.options, Plisy_edit_dachowa_prowadnica.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -53,11 +53,11 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Okno - {{Plisy_form_plisy_trigered.data[0].dachowaokno}}",
+  "labelText": "Kolor prowadnicy - {{Plisy_form_plisy_trigered.data[0].prowadnicakolor}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Producent okna - {{Plisy_form_plisy_trigered.data[0].dachowaproducent}}",
+  "labelTooltip": "Producent okna - {{Plisy_form_plisy_trigered.data[0].prowadnicakolor}}",
   "labelWidth": 5,
-  "leftColumn": 12,
+  "leftColumn": 21,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -77,12 +77,12 @@
   "placeholderText": "{{i18n.translate(\"Producent)}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 21,
+  "rightColumn": 30,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_FORM_okna_dachowe.data.map( (obj) =>{ return  {'label': obj.typokna, 'value': obj.typokna } })}}",
+  "sourceData": "{{Plisy_FORM_zapytaj_prowadnica.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 6,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "gx336l23oz",
-  "widgetName": "Plisy_edit_producentdachowaCopy"
+  "widgetId": "8ks5303p5u",
+  "widgetName": "Plisy_edit_dachowa_prowadnica"
 }

@@ -5,7 +5,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].kolor))(edit_kolor.options, edit_kolor.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -24,9 +24,6 @@
     },
     {
       "key": "labelTooltip"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -51,9 +48,9 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Kolor - {{plisy_form_screeny_trigered.data[0].kolor}}",
+  "labelText": "Kolor - {{Plisy_form_plisy_trigered.data[0].kolor}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Kolor - {{plisy_form_screeny_trigered.data[0].kolor}}",
+  "labelTooltip": "Kolor - {{Plisy_form_plisy_trigered.data[0].kolor}}",
   "labelWidth": 5,
   "leftColumn": 7,
   "maxDynamicHeight": 9000,

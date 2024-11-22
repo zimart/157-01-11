@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -29,14 +29,14 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
   "isDisabled": false,
@@ -47,9 +47,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Tkanina - {{plisy_form_screeny_trigered.data[0].tkanina}}",
+  "labelText": "Tkanina - {{Plisy_form_plisy_trigered.data[0].tkanina}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Tkanina -{{plisy_form_screeny_trigered.data[0].tkanina}}",
+  "labelTooltip": "Tkanina -{{Plisy_form_plisy_trigered.data[0].tkanina}}",
   "labelWidth": 5,
   "leftColumn": 21,
   "maxDynamicHeight": 9000,
@@ -60,7 +60,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_FORM_tkaninawybor.run();}}",
+  "onDropdownOpen": "",
+  "onOptionChange": "{{Plisy_FORM_tkaninawybor.run().then(() => {\n  Plisy_FORM_grupa_kolekcja.grupa();\n});}}",
   "optionLabel": "value",
   "optionValue": "value",
   "parentColumnSpace": 18.09375,

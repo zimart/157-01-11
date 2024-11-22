@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_54f14ebc-3708-4fce-8d31-2ca4b1d592bc",
-  "id": "Plisy_Plisy_FORM_doplata_kolor",
+  "gitSyncId": "67252580698c850488983504_eeef693f-9b74-4bed-a762-6a47a0bc0173",
+  "id": "Plisy_Plisy_FORM_zapytaj_prowadnica",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT doplata FROM plisy_kolor where kolorm = {{edit_kolor.selectedOptionLabel}} ;",
+      "body": "SELECT kolorm FROM plisy_kolor WHERE rodzajpr = \"prowadnica\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "Plisy_FORM_doplata_kolor",
+    "name": "Plisy_FORM_zapytaj_prowadnica",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }
