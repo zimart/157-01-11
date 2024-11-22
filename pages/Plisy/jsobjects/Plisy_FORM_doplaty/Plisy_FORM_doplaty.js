@@ -1,6 +1,6 @@
 export default {
 mocowanie: function () {
-var mocowanie = PLISY_FORMselect_mocowanie.selectedOptionValue;
+var mocowanie = PLISY_form_select_mocowanie.selectedOptionValue;
 var doplatamocowanie;
 if (mocowanie === 'Standard') { doplatamocowanie = 0; }
 else if (mocowanie === 'Standard-regulowany') { doplatamocowanie = 10}

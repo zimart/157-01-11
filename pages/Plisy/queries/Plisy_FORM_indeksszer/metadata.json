@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_68c686f6-c864-4230-8886-0edb43f9c6d9",
-  "id": "Plisy_plisy_FORM_kolor_zapytaj",
+  "gitSyncId": "6730fb351a38055f68677a02_6dce4441-129c-4476-9aac-5f61fa415e93",
+  "id": "Plisy_Plisy_FORM_indeksszer",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"profil\" ;",
+      "body": "SELECT `indeks` FROM `plisy_tabelaindeksy` WHERE {{edit_szerokosc.text}} <= szermax AND {{edit_szerokosc.text}} > szermin and kategoria='szer';",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": true,
-    "name": "plisy_FORM_kolor_zapytaj",
+    "name": "Plisy_FORM_indeksszer",
     "pageId": "Plisy",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

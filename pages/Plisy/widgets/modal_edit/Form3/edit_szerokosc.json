@@ -24,12 +24,17 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onBlur"
     }
   ],
+  "errorMessage": "Min 200 mm - Max 2400 mm",
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -45,14 +50,16 @@
   "labelWidth": 5,
   "leftColumn": 5,
   "maxDynamicHeight": 9000,
+  "maxNum": "2400",
   "minDynamicHeight": 4,
+  "minNum": "200",
   "minWidth": 450,
   "mobileBottomRow": 22,
   "mobileLeftColumn": 1,
   "mobileRightColumn": 21,
   "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "onBlur": "",
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n}}",
   "onTextChanged": "{{}}",
   "originalBottomRow": 26,
   "originalTopRow": 19,

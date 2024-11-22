@@ -29,6 +29,9 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -51,7 +54,7 @@
   "labelTextSize": "0.875rem",
   "labelTooltip": "Tkanina -{{Plisy_form_plisy_trigered.data[0].tkanina}}",
   "labelWidth": 5,
-  "leftColumn": 21,
+  "leftColumn": 24,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -61,7 +64,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{Plisy_FORM_tkaninawybor.run().then(() => {\n  Plisy_FORM_grupa_kolekcja.grupa();\n});}}",
+  "onOptionChange": "{{\nremoveValue('sku_value');\nPlisy_FORM_tkaninawybor.run()\n.then(() => {\nPlisy_FORM_grupa_kolekcja.grupa();\n});}}",
   "optionLabel": "value",
   "optionValue": "value",
   "parentColumnSpace": 18.09375,
@@ -70,7 +73,7 @@
   "placeholderText": "{{i18n.translate(\"Tkanina\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 38,
   "serverSideFiltering": false,
   "sourceData": "[   \t\n  {\n    \"label\": \"P200\",\n    \"value\": \"P200\"\n  },\n  {\n    \"label\": \"P300\",\n    \"value\": \"P300\"\n  },\n\t  {\n    \"label\": \"P600\",\n    \"value\": \"P600\"\n  },\n\t{\n    \"label\": \"P900\",\n    \"value\": \"P900\"\n  }\n]",
   "topRow": 0,

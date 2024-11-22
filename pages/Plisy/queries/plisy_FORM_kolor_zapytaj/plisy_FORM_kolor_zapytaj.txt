@@ -1,1 +1,1 @@
-SELECT kolorm FROM plisy_kolor;
+SELECT kolorm FROM plisy_kolor where rodzajpr="profil" ;
