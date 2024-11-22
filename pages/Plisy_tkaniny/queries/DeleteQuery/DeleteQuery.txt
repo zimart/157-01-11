@@ -1,0 +1,2 @@
+DELETE FROM plisy_tkaniny
+  WHERE id_tkaninaplisa = {{data_table.triggeredRow.id_tkaninaplisa}};

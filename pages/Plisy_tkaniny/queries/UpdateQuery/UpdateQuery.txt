@@ -1,0 +1,5 @@
+UPDATE plisy_tkaniny SET
+		tkanina = '{{update_form.fieldState.tkanina.isVisible ? update_form.formData.tkanina : update_form.sourceData.tkanina}}',
+		kolekcja = '{{update_form.fieldState.kolekcja.isVisible ? update_form.formData.kolekcja : update_form.sourceData.kolekcja}}',
+    obrazek = '{{update_form.fieldState.obrazek.isVisible ? update_form.formData.obrazek : update_form.sourceData.obrazek}}'
+WHERE id_tkaninaplisa = {{data_table.selectedRow.id_tkaninaplisa}};

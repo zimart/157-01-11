@@ -141,6 +141,10 @@
     {
       "id": "Plisy_tabelaindeksy",
       "isDefault": false
+    },
+    {
+      "id": "Plisy_tkaniny",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

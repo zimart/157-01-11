@@ -1,0 +1,8 @@
+INSERT INTO plisy_tkaniny (
+	tkanina,
+	kolekcja,
+	obrazek)
+VALUES (
+	'{{insert_form.formData.tkanina}}',
+	'{{insert_form.formData.kolekcja}}',
+	'{{insert_form.formData.obrazek}}');
