@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_7c47dda9-05f2-4891-a04c-2d7d45951a78",
-  "id": "Plisy_FORM_tkaninawybor",
+  "gitSyncId": "67252580698c850488983504_1efa3734-9eb3-4944-b816-5c29f8497bc8",
+  "id": "Oferty_tabela_id_klientCopy",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tkanina FROM screeny_tkanina_wybor WHERE tkanina_main={{edit_tkanina.selectedOptionLabel}};",
+      "body": "SELECT id_oferta,temat,numeroferty FROM oferty where fk_klienci_oferty_id = {{appsmith.URL.queryParams.id_klienta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "FORM_tkaninawybor",
-    "pageId": "Plisy",
+    "name": "tabela_id_klientCopy",
+    "pageId": "Oferty",
     "userSetOnLoad": false
   }
 }

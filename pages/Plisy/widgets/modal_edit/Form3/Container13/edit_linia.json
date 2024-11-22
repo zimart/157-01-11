@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -44,9 +44,9 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Linia - {{form_screeny_trigered.data[0].linia}}",
+  "labelText": "Linia - {{plisy_form_screeny_trigered.data[0].linia}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Linia - {{form_screeny_trigered.data[0].linia}}",
+  "labelTooltip": "Linia - {{plisy_form_screeny_trigered.data[0].linia}}",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -68,9 +68,9 @@
   "placeholderText": "{{i18n.translate(\"Wybierz linię\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 13,
+  "rightColumn": 8,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"PREMIUM\",\n    \"value\": \"PREMIUM\"\n  },\n  {\n    \"label\": \"STANDARD\",\n    \"value\": \"STANDARD\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"VEGAS\",\n    \"value\": \"VEGAS\"\n  },\n  {\n    \"label\": \"DACHOWA-VEGAS\",\n    \"value\": \"DACHOWA-VEGAS\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -354,7 +354,7 @@
   "hideCard": false,
   "iconSVG": "/static/media/icon.6bacf7df.svg",
   "isLoading": false,
-  "isVisible": "{{!!data_table.selectedRow.id_oferta}}",
+  "isVisible": "{{!!tabela_glowna.selectedRow.id_oferta}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
@@ -924,7 +924,7 @@
   "scrollContents": true,
   "shouldScrollContents": true,
   "showReset": false,
-  "sourceData": "{{_.omit(data_table.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id_oferta\")}}",
+  "sourceData": "{{_.omit(tabela_glowna.selectedRow, \"customColumn1\", \"__originalIndex__\", \"id_oferta\")}}",
   "submitButtonLabel": "ZAPISZ",
   "submitButtonStyles": {
     "borderRadius": "0px",
@@ -934,7 +934,7 @@
     "iconAlign": "left",
     "iconName": "saved"
   },
-  "title": "Aktualizacja oferty ID: {{data_table.selectedRow.id_oferta}}",
+  "title": "Aktualizacja oferty ID: {{tabela_glowna.selectedRow.id_oferta}}",
   "topRow": 4,
   "topRowBeforeCollapse": 0,
   "type": "JSON_FORM_WIDGET",

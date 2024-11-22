@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 12,
+  "bottomRow": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( plisy_form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,13 +16,13 @@
       "key": "defaultOptionValue"
     },
     {
-      "key": "labelText"
-    },
-    {
       "key": "placeholderText"
     },
     {
       "key": "labelTooltip"
+    },
+    {
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -47,11 +47,11 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
+  "labelText": "Tkanina - {{plisy_form_screeny_trigered.data[0].tkanina}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
+  "labelTooltip": "Tkanina -{{plisy_form_screeny_trigered.data[0].tkanina}}",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 22,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -60,8 +60,8 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{FORM_tkaninawybor.run();\ndoplata.tkanina_form();}}",
-  "optionLabel": "label",
+  "onOptionChange": "{{plisy_FORM_tkaninawybor.run();}}",
+  "optionLabel": "value",
   "optionValue": "value",
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
@@ -69,10 +69,10 @@
   "placeholderText": "{{i18n.translate(\"Tkanina\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 13,
+  "rightColumn": 35,
   "serverSideFiltering": false,
-  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
-  "topRow": 7,
+  "sourceData": "[   \t\n  {\n    \"label\": \"P200 - STANDARD\",\n    \"value\": \"P200 - STANDARD\"\n  },\n  {\n    \"label\": \"P300 - COMFORT\",\n    \"value\": \"P300 - COMFORT\"\n  },\n\t{\n    \"label\": \"P900 - PREMIUM\",\n    \"value\": \"P900 - PREMIUM\"\n  }\n]",
+  "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "0gjt1qwxuk",

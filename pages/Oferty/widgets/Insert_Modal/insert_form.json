@@ -865,7 +865,7 @@
   "scrollContents": true,
   "shouldScrollContents": true,
   "showReset": false,
-  "sourceData": "{{_.omit(data_table.tableData[0], \"customColumn1\", \"id_oferta\")}}",
+  "sourceData": "{{_.omit(tabela_glowna.tableData[0], \"customColumn1\", \"id_oferta\")}}",
   "submitButtonLabel": "Zapisz",
   "submitButtonStyles": {
     "borderRadius": "0.375rem",

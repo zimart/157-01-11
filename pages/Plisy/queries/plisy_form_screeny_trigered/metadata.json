@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_efee254c-6c4e-415b-84cd-7040bd8a72a6",
-  "id": "Oferty_TESTKOPIUJ",
+  "gitSyncId": "67252580698c850488983504_e1e67a6f-6cde-4be5-8fc6-1206f8048e96",
+  "id": "Plisy_plisy_form_screeny_trigered",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE oferty SET\n   dataoferty = '{{datepobierz.dzisiaj.data}}'\n  WHERE oferty.id_oferta = {{tabela_glowna.triggeredRow.id_oferta}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "SELECT * FROM inventory_plisy WHERE id={{tabela_plisy_inventory_id.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "TESTKOPIUJ",
-    "pageId": "Oferty",
+    "executeOnLoad": true,
+    "name": "plisy_form_screeny_trigered",
+    "pageId": "Plisy",
     "userSetOnLoad": false
   }
 }

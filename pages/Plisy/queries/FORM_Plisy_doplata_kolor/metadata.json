@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_efee254c-6c4e-415b-84cd-7040bd8a72a6",
-  "id": "Oferty_TESTKOPIUJ",
+  "gitSyncId": "67252580698c850488983504_54f14ebc-3708-4fce-8d31-2ca4b1d592bc",
+  "id": "Plisy_FORM_Plisy_doplata_kolor",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE oferty SET\n   dataoferty = '{{datepobierz.dzisiaj.data}}'\n  WHERE oferty.id_oferta = {{tabela_glowna.triggeredRow.id_oferta}}; -- Specify a valid condition here. Removing the condition may update every row in the table!",
+      "body": "SELECT doplata FROM plisy_kolor where kolorm = {{edit_kolor.selectedOptionLabel}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "TESTKOPIUJ",
-    "pageId": "Oferty",
+    "name": "FORM_Plisy_doplata_kolor",
+    "pageId": "Plisy",
     "userSetOnLoad": false
   }
 }

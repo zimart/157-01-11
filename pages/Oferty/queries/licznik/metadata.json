@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_e1e67a6f-6cde-4be5-8fc6-1206f8048e96",
-  "id": "Plisy_form_screeny_trigered",
+  "gitSyncId": "67252580698c850488983504_4b8e82e6-8057-4872-800e-a7fdb45f3ce9",
+  "id": "Oferty_licznik",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM inventory_screeny WHERE id={{tabela_plisy_inventory_id.triggeredRow.id}};",
+      "body": "SELECT COUNT (*) FROM inventory_main WHERE fk_oferty_inventory_id = {{tabela_glowna.triggeredRow}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "form_screeny_trigered",
-    "pageId": "Plisy",
+    "executeOnLoad": false,
+    "name": "licznik",
+    "pageId": "Oferty",
     "userSetOnLoad": false
   }
 }

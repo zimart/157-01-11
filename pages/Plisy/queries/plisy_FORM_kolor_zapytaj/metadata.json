@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67252580698c850488983504_68c686f6-c864-4230-8886-0edb43f9c6d9",
-  "id": "Plisy_FORM_kolor_zapytaj",
+  "id": "Plisy_plisy_FORM_kolor_zapytaj",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM screeny_kolor where system = {{edit_system.selectedOptionLabel}};",
+      "body": "SELECT kolorm FROM plisy_kolor;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "FORM_kolor_zapytaj",
+    "name": "plisy_FORM_kolor_zapytaj",
     "pageId": "Plisy",
     "userSetOnLoad": true
   }
