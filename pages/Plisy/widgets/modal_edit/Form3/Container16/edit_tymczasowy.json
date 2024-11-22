@@ -3,10 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 45,
-  "bottomRowBeforeCollapse": 49,
+  "bottomRow": 8,
+  "bottomRowBeforeCollapse": 51,
   "boxShadow": "none",
-  "defaultText": "{{doplata.kolor_form();}}",
+  "defaultText": "PL-{{edit_indeksszer_l.text|| \"\"}}-{{edit_indekswys_l.text|| \"\"}}-{{edit_grupa.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,54 +19,43 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": false,
+  "inputType": "TEXT",
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": false,
-  "key": "xx4706e4we",
+  "key": "y5hqo4m5hy",
   "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 40,
+  "leftColumn": 13,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 55,
-  "mobileLeftColumn": 40,
-  "mobileRightColumn": 60,
-  "mobileTopRow": 48,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('kosztdoplatykolor', Input30.text);}}",
-  "originalBottomRow": 47,
-  "originalTopRow": 40,
-  "parentColumnSpace": 17.9625,
-  "parentId": "jnoi6scv56",
+  "originalBottomRow": 53,
+  "originalTopRow": 46,
+  "parentColumnSpace": 18.40625,
+  "parentId": "qr6se2kb2j",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
-  "shouldAllowAutofill": false,
+  "rightColumn": 24,
   "showStepArrows": false,
-  "topRow": 38,
-  "topRowBeforeCollapse": 42,
+  "topRow": 1,
+  "topRowBeforeCollapse": 44,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "rg925hqghr",
-  "widgetName": "Input30"
+  "widgetId": "rookmtboqo",
+  "widgetName": "edit_tymczasowy"
 }

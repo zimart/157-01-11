@@ -61,7 +61,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_FORM_doplata_kolor.run();}}\n",
+  "onOptionChange": "{{Plisy_FORM_doplata_kolor.run();\nPlisy_FORM_mocowanie_doplata.run();}}\n",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

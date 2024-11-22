@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "FORM_indekswys",
     "pageId": "Plisy",
     "userSetOnLoad": false
