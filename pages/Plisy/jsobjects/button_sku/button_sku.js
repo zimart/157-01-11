@@ -41,8 +41,12 @@ oblicz_form: async () => {
 await Plisy_FORM_indeksszer.run();
 //.then(() => 
 await Plisy_FORM_indekswys.run();
+	
 //.then(() => 
 await  removeValue('sku_value');
+await Plisy_FORM_grupa_kolekcja.grupa();
+
+await  storeValue('grupa', Plisy_FORM_grupa_kolekcja.grupa.data);
 await  storeValue('sku_value', edit_tymczasowy.text);
 await  Plisy_FORM_danesku.run();
 await Plisy_FORM_doplata_kolor.run();

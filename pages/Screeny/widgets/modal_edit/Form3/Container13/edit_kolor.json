@@ -27,6 +27,9 @@
     },
     {
       "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -36,6 +39,9 @@
     },
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,7 +53,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{edit_system.isValid}}",
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",

@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -23,6 +24,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -31,7 +35,7 @@
       "key": "sourceData"
     },
     {
-      "key": "onOptionChange"
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -46,7 +50,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{edit_kolor.isValid}}",
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -64,9 +68,11 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{\nremoveValue('sku_value');\nPlisy_FORM_tkaninawybor.run()\n.then(() => {\nPlisy_FORM_grupa_kolekcja.grupa();\n});}}",
+  "onOptionChange": "{{clearStore()\nremoveValue('grupa');\nPlisy_FORM_tkaninawybor.run().then(() => {\n  Plisy_FORM_grupa_kolekcja.grupa();\n  storeValue('grupa', Plisy_FORM_grupa_kolekcja.grupa.data);\n});}}",
   "optionLabel": "value",
   "optionValue": "value",
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
@@ -77,6 +83,7 @@
   "serverSideFiltering": false,
   "sourceData": "[   \t\n  {\n    \"label\": \"P200\",\n    \"value\": \"P200\"\n  },\n  {\n    \"label\": \"P300\",\n    \"value\": \"P300\"\n  },\n\t  {\n    \"label\": \"P600\",\n    \"value\": \"P600\"\n  },\n\t{\n    \"label\": \"P900\",\n    \"value\": \"P900\"\n  }\n]",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "0gjt1qwxuk",

@@ -52,7 +52,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{FORM_serianapedu.responseMeta=true}}",
+  "isVisible": "{{edit_system.isValid}}",
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",

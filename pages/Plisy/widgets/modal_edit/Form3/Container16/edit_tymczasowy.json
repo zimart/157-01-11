@@ -6,7 +6,7 @@
   "bottomRow": 8,
   "bottomRowBeforeCollapse": 8,
   "boxShadow": "none",
-  "defaultText": "PL-{{edit_indeksszer_l.text|| \"\"}}-{{edit_indekswys_l.text|| \"\"}}-{{edit_grupa.text}}",
+  "defaultText": "PL-{{edit_indeksszer_l.text|| \"\"}}-{{edit_indekswys_l.text|| \"\"}}-{{appsmith.store.grupa}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
