@@ -149,6 +149,10 @@
     {
       "id": "Moskitiery",
       "isDefault": false
+    },
+    {
+      "id": "Moskitiery_kolor",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

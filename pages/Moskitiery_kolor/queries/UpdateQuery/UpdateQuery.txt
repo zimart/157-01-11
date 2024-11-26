@@ -1,0 +1,9 @@
+UPDATE moskitiery_kolor SET
+		kolorm = '{{update_form.fieldState.kolorm.isVisible ? update_form.formData.kolorm : update_form.sourceData.kolorm}}',
+		linia = '{{update_form.fieldState.linia.isVisible ? update_form.formData.linia : update_form.sourceData.linia}}',
+    doplata = '{{update_form.fieldState.doplata.isVisible ? update_form.formData.doplata : update_form.sourceData.doplata}}',
+		skrot = '{{update_form.fieldState.skrot.isVisible ? update_form.formData.skrot : update_form.sourceData.skrot}}',
+		rodzajpr = '{{update_form.fieldState.rodzajpr.isVisible ? update_form.formData.rodzajpr : update_form.sourceData.rodzajpr}}',
+		obrazek = '{{update_form.fieldState.obrazek.isVisible ? update_form.formData.obrazek : update_form.sourceData.obrazek}}',
+		typ = '{{update_form.fieldState.typ.isVisible ? update_form.formData.typ : update_form.sourceData.typ}}'
+WHERE id = {{data_table.selectedRow.id}};

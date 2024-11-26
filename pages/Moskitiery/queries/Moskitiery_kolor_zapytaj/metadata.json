@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_07a52a65-b574-45ca-ba6a-4d0bea593788",
-  "id": "Moskitiery_Plisy_tkanina",
+  "gitSyncId": "67252580698c850488983504_9ae17cb0-87f3-4d0d-8d4a-238aa79faa18",
+  "id": "Moskitiery_Moskitiery_kolor_zapytaj",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{seria_ramka.selectedOptionValue}};",
+      "body": "SELECT kolorm,doplata FROM moskitiery_kolor where linia={{rodzajmoskitiery.selectedOptionLabel}} and typ={{seria_ramka.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Plisy_tkanina",
+    "name": "Moskitiery_kolor_zapytaj",
     "pageId": "Moskitiery",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

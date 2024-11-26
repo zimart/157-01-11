@@ -1,0 +1,16 @@
+INSERT INTO moskitiery_kolor (
+	kolorm,
+	linia,
+	doplata,
+	skrot,
+	rodzajpr,
+	obrazek,
+	typ)
+VALUES (
+	'{{insert_form.formData.kolorm}}',
+	'{{insert_form.formData.linia}}',
+	'{{insert_form.formData.doplata}}',
+	'{{insert_form.formData.skrot}}',
+	'{{insert_form.formData.rodzajpr}}',
+	'{{insert_form.formData.obrazek}}',
+	'{{insert_form.formData.typ}}');

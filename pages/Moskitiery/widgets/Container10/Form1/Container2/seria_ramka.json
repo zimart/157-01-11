@@ -3,8 +3,9 @@
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "P200 - STANDARD",
+  "defaultOptionValue": "STANDARD-GIĘTA",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,6 +15,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,6 +27,9 @@
     },
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -37,14 +44,14 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{rodzajmoskitiery.selectedOptionLabel===\"RAMKOWA\"}}",
   "key": "ki1dwtwiw3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Kolekcja\")}}",
+  "labelText": "{{i18n.translate(\"TYP\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 16,
+  "leftColumn": 12,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -54,11 +61,11 @@
   "mobileTopRow": 98,
   "needsErrorInfo": false,
   "onDropdownOpen": "{{}}",
-  "onOptionChange": "{{removeValue('sku_value');\nPlisy_tkanina.run();\nPlisy_grupa_kolekcja.grupa();\nresetWidget(\"Cena_plisy\", true);\nresetWidget(\"cenabazowasystemu\", true);}}",
+  "onOptionChange": "{{removeValue('sku_value');\nMoskitiery_kolor_zapytaj.run();\n}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 105,
-  "originalTopRow": 98,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Tkanina",
@@ -66,10 +73,11 @@
   "responsiveBehavior": "fill",
   "rightColumn": 25,
   "serverSideFiltering": false,
-  "sourceData": "[   \t\n  {\n    \"label\": \"P200\",\n    \"value\": \"P200\"\n  },\n  {\n    \"label\": \"P300\",\n    \"value\": \"P300\"\n  },\n\t  {\n    \"label\": \"P600\",\n    \"value\": \"P600\"\n  },\n\t{\n    \"label\": \"P900\",\n    \"value\": \"P900\"\n  }\n]",
+  "sourceData": "[   \t\n  {\n    \"label\": \"STANDARD-GIĘTA\",\n    \"value\": \"STANDARD-GIĘTA\"\n  },\n  {\n    \"label\": \"EKSR.NAROŻNIK-ZEWN.\",\n    \"value\": \"EKSR.NAROŻNIK-ZEWN.\"\n  },\n\t  {\n    \"label\": \"EKSR.NAROŻNIK-WEWN.\",\n    \"value\": \"EKSR. NAROŻNIK-WEWN.\"\n  },\n\t{\n    \"label\": \"EKSR.OKNA ZLICOWANE\",\n    \"value\": \"EKSR.OKNA ZLICOWANE\"\n  }\n]",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "jvfoo2ygy6",
-  "widgetName": "Select_kolekcja"
+  "widgetName": "seria_ramka"
 }

@@ -1,1 +1,1 @@
-SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{Select_kolekcja.selectedOptionValue}};
+SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{seria_ramka.selectedOptionValue}};

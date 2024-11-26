@@ -1,16 +1,16 @@
 {
-  "gitSyncId": "67252580698c850488983504_9ae17cb0-87f3-4d0d-8d4a-238aa79faa18",
-  "id": "Moskitiery_Plisy_kolor_zapytaj",
+  "gitSyncId": "67252580698c850488983504_d858e2dc-1f8c-4620-aac1-fca93056d76c",
+  "id": "Moskitiery_kolor_SelectQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"profil\" ;",
+      "body": "SELECT * FROM moskitiery_kolor\nWHERE kolorm like '%{{data_table.searchText || \"\"}}%'\nORDER BY {{data_table.sortOrder.column || 'id'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
         {
-          "value": true
+          "value": false
         }
       ],
       "timeoutInMillisecond": 10000
@@ -22,10 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "Plisy_kolor_zapytaj",
-    "pageId": "Moskitiery",
+    "name": "SelectQuery",
+    "pageId": "Moskitiery_kolor",
     "userSetOnLoad": true
   }
 }
