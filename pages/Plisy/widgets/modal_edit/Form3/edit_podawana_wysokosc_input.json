@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{tabela_plisy_inventory_id.triggeredRow.wysokosc}} ",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,7 +20,7 @@
       "key": "tooltip"
     },
     {
-      "key": "defaultText"
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -42,7 +42,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "ln4t6mme1i",
-  "label": "Wysokość",
+  "label": "Wysokość - {{tabela_plisy_inventory_id.triggeredRow.wysokosc}} ",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

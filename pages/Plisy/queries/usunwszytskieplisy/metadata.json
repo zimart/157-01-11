@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_60d88597-6bf5-4c76-a23c-bff0eb39bc2a",
-  "id": "Plisy_Plisy_mocowanie_doplata",
+  "gitSyncId": "67252580698c850488983504_b510f063-e812-483d-b0b9-20da5fa14803",
+  "id": "Plisy_usunwszytskieplisy",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" and linia = {{Select1.selectedOptionLabel}} ;",
+      "body": "DELETE FROM inventory_plisy  WHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "Plisy_mocowanie_doplata",
+    "executeOnLoad": false,
+    "name": "usunwszytskieplisy",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

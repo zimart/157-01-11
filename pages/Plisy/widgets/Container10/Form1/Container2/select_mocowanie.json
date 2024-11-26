@@ -58,7 +58,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 42,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_mocowanie_doplata.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "sourceData": "{{Plisy_mocowanie.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

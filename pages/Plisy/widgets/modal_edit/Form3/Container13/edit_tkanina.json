@@ -5,16 +5,13 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "placeholderText"
@@ -36,6 +33,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -68,7 +68,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{clearStore()\nremoveValue('grupa');\nPlisy_FORM_tkaninawybor.run().then(() => {\n  Plisy_FORM_grupa_kolekcja.grupa();\n  storeValue('grupa', Plisy_FORM_grupa_kolekcja.grupa.data);\n});}}",
+  "onOptionChange": "{{removeValue('sku_value');\nPlisy_FORM_tkaninawybor.run();\nPlisy_FORM_grupa_kolekcja.grupa();\nresetWidget(\"edit_cena_plisy\", true);\nresetWidget(\"edit_cenabazowasystemu\", true);}}",
   "optionLabel": "value",
   "optionValue": "value",
   "originalBottomRow": 5,

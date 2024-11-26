@@ -7,9 +7,9 @@ przelicz_plisy: async () => {
 //await showModal(LanguageLoading.name)
 await edit_update_plisy.run();
 //.then(() => 
-await przeliczpozycje.run();
+            //await przeliczpozycje.run();
 //.then(() => 
-await Plisy_tabela_inventory_id_new.run();
+               //await tabela_inventory_id_new.run();
 //.then(() => 
 //await closeModal(LanguageLoading.name))	;
 

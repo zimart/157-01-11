@@ -5,7 +5,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].mocowanie))(PLISY_form_select_mocowanie.options, PLISY_form_select_mocowanie.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,9 +15,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "placeholderText"
@@ -41,7 +38,11 @@
       "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -63,6 +64,7 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onOptionChange": "{{Plisy_FORM_doplaty.mocowanie();\nremoveValue('sku_value');\nresetWidget(\"edit_cena_plisy\", true);\nremoveValue('cenaplisy');}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 4,
@@ -70,12 +72,12 @@
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"Referencja\")}}",
+  "placeholderText": "{{i18n.translate(\"Mocowanie\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_FORM_mocowanie_doplata.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "sourceData": "{{Plisy_FORM_mocowanie.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",

@@ -67,7 +67,7 @@
   "onOptionChange": "{{Plisy_FORM_okna_dachowe.run().then(() => {\n  Plisy_FORM_zapytaj_prowadnica.run();\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 10,
+  "originalBottomRow": 6,
   "originalTopRow": 6,
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",

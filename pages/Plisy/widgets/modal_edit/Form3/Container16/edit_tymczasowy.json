@@ -6,7 +6,7 @@
   "bottomRow": 8,
   "bottomRowBeforeCollapse": 8,
   "boxShadow": "none",
-  "defaultText": "PL-{{edit_indeksszer_l.text|| \"\"}}-{{edit_indekswys_l.text|| \"\"}}-{{appsmith.store.grupa}}",
+  "defaultText": "PL-{{edit_indeksszer_l.text|| \"\"}}-{{edit_indekswys_l.text|| \"\"}}-{{edit_grupa.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,7 +19,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": true,
@@ -42,6 +46,7 @@
   "mobileRightColumn": 32,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
+  "onTextChanged": "{{storeValue('sku_value', 'PL-' + edit_indeksszer_l.text || \"\" + '-' + edit_indekswys_l.text || \"\" + '-' + appsmith.store.grupa);}}",
   "originalBottomRow": 8,
   "originalTopRow": 1,
   "parentColumnSpace": 18.40625,

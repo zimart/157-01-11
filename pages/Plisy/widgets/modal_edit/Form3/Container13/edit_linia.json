@@ -60,7 +60,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie_doplata.run();\nPlisy_FORM_doplata_kolor.run();}}",
+  "onOptionChange": "{{clearStore();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie.run();\nPlisy_FORM_doplata_kolor.run();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 17,

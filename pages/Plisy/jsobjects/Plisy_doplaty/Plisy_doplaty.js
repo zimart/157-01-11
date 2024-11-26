@@ -10,6 +10,10 @@ return doplatamocowanie;
 
 },
 	
+	
+	
+	
+	
 prowadnica: function () {
 var czyprowadnica = Select1.selectedOptionValue;
 var doplataprowadnica;

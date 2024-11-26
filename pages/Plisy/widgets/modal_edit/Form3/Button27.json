@@ -11,7 +11,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -29,7 +33,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(LanguageLoading.name).then(() => {\n  edit_js_przelicz.przelicz_screeny();\n  closeModal(LanguageLoading.name);\n});}}",
+  "onClick": "{{showModal(LanguageLoading.name).then(() => {\n  PLISY_FORM_js_przelicz.przelicz_screeny();\n  closeModal(LanguageLoading.name);\n});}}",
   "originalBottomRow": 38,
   "originalTopRow": 34,
   "parentId": "jnoi6scv56",

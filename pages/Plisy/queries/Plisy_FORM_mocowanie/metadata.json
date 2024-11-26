@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67252580698c850488983504_a0b43de8-69d2-4765-bea5-d491ac40c323",
-  "id": "Plisy_Plisy_FORM_mocowanie_doplata",
+  "id": "Plisy_Plisy_FORM_mocowanie",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Plisy_FORM_mocowanie_doplata",
+    "name": "Plisy_FORM_mocowanie",
     "pageId": "Plisy",
     "userSetOnLoad": false
   }

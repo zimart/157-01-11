@@ -61,7 +61,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nclearStore();\nremoveValue('sku_value');\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_mocowanie_doplata.run();}}\n",
+  "onOptionChange": "{{\nclearStore();\nremoveValue('sku_value');\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_mocowanie.run();}}\n",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,
