@@ -60,10 +60,11 @@
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "flexVerticalAlignment": "stretch",
   "isCanvas": true,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "mdz5wuhko6",
   "leftColumn": 0,
   "maxDynamicHeight": 9000,

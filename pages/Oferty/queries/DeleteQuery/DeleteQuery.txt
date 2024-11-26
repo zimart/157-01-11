@@ -1,2 +1,2 @@
 DELETE FROM oferty
-  WHERE id_oferta = {{data_table.triggeredRow.id_oferta}};
+  WHERE id_oferta = {{tabela_glowna.triggeredRow.id_oferta}};

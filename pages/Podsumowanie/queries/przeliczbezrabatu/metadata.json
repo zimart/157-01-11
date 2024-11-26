@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_3d159434-33b9-45d0-beb4-73421dbfb1ec",
-  "id": "Oferty_DeleteQuery",
+  "gitSyncId": "67252580698c850488983504_2fd1fdd4-c649-415f-ad21-a783dc4e080d",
+  "id": "Podsumowanie_przeliczbezrabatu",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM oferty\n  WHERE id_oferta = {{tabela_glowna.triggeredRow.id_oferta}};",
+      "body": "UPDATE inventory_main SET\n    \n\t\tvat = {{vat.selectedOptionValue}},\n    kwotarabatogolny = cenanetto*(rabatogolny/100),\n\t\tcenaporabacie = cenanetto-kwotarabatogolny,\n\t\trazemnetto = ilosc*cenaporabacie,\n\t\tbrutto = razemnetto*((vat/100)+1)\n\t\t\nWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "DeleteQuery",
-    "pageId": "Oferty",
+    "name": "przeliczbezrabatu",
+    "pageId": "Podsumowanie",
     "userSetOnLoad": false
   }
 }

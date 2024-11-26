@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 202,
-  "bottomRowBeforeCollapse": 208,
+  "bottomRowBeforeCollapse": 202,
   "boxShadow": "none",
   "defaultText": "{{dane_oferty_main.data[0].dataoferty}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 22,
   "showStepArrows": false,
   "topRow": 195,
-  "topRowBeforeCollapse": 201,
+  "topRowBeforeCollapse": 195,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "c03lbb12p4",

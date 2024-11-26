@@ -284,6 +284,9 @@
     },
     {
       "key": "primaryColumns.customColumn5.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatogolny.onSubmit"
     }
   ],
   "dynamicTriggerPathList": [
@@ -1221,7 +1224,7 @@
       "isVisible": true,
       "label": "{{i18n.translate(\"Rabat\")}}",
       "notation": "standard",
-      "onSubmit": "{{rabatindywidualny.run().then(() => {\n  tabela_glowna.run();\n});}}",
+      "onSubmit": "{{przelicz_main_rabat_indywidual.przelicz_glowna()}}",
       "originalId": "rabatogolny",
       "sticky": "",
       "textColor": "",

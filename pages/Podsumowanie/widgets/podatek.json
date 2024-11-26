@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 177,
-  "bottomRowBeforeCollapse": 183,
+  "bottomRowBeforeCollapse": 177,
   "boxShadow": "none",
   "defaultText": "{{((netto.text*(Input7.text/100))*narzutpdf.text).toFixed(2)}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 173,
-  "topRowBeforeCollapse": 179,
+  "topRowBeforeCollapse": 173,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "55lm4bvbbx",

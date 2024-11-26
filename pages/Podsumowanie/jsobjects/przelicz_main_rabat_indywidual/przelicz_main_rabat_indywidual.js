@@ -6,22 +6,19 @@ przelicz_glowna: async () => {
 await showModal(LanguageLoading.name);
 //.then(() => 
 //await ustawrabatogolny.run();
-	await przeliczbezrabatu.run();
+	await rabatindywidualny.run();
 //.then(() => 
-await updateopismainkursscreeny.run();
+await przeliczbezrabatu.run();
 //.then(() => 
-await updateopismainkursplisy.run();
-//.then(() =>
 await tabela_glowna.run();
-//.then(() => 
+
 await sumanettoporabacie.run();
 //.then(() => 
 await sumabrutto.run();
 //.then(() => 
-await przenumeruj.run();
-//.then(() => 
+await przenumeruj.run();	
+	
 await closeModal(LanguageLoading.name);
 
 },
 }
-	
