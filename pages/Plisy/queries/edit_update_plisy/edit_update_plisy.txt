@@ -1,42 +1,32 @@
 UPDATE inventory_plisy SET
+     wysokosc = '{{edit_podawana_wysokosc_input.text}}',
+    szerokosc = '{{edit_szerokosc.text}}',
+    skugen = '{{edit_sku_input.text}}',
+    cena = '{{edit_cenabazowa.text}}',
+    doplatamocowanie = '{{edit_doplata_mocowanie.text}}',
+    doplataprowadnica = '{{edit_doplata_prowadnica.text}}',
+    doplatakolor = '{{edit_kosztdoplatykolor.text}}',
+    linia = '{{edit_linia.selectedOptionLabel}}',
+    dachowaproducent = '{{Plisy_edit_producentdachowa.selectedOptionLabel}}',
+    dachowaokno = '{{Plisy_edit_producentdachowaCopy.selectedOptionLabel}}',
+    kolor = '{{edit_kolor.selectedOptionLabel}}',
+   
+    tkanina = '{{edit_tkanina.selectedOptionLabel}}',
+    prowadnicakolor = '{{Plisy_edit_dachowa_prowadnica.selectedOptionLabel}}',
+   
   
-    wysokosc = '',
-    szerokosc = '',
-    skugen = '',
-    cena = '',
-    doplatamocowanie = '',
-    doplataprowadnica = '',
-    doplatakolor = '',
-    systemzdoplata = '',
-    rabatsystem = '',
-    kwotarabatsystem = '',
-    systemporabacie = '',
-    linia = '',
-    dachowaproducent = '',
-    dachowaokno = '',
-    kolor = '',
-    tkanina = '',
-    prowadnicakolor = '',
-    seq = '',
-    fk_oferty_inventory_id = '',
-    mocowanie = '',
-    ilosc = '',
-    concat = '',
-    cenanetto = '',
-    kurseuro = '',
-    waluta = '',
-    razemnetto = '',
-    brutto = '',
+    mocowanie = '{{PLISY_form_select_mocowanie.selectedOptionLabel}}',
+    ilosc = '{{edit_ilosc.text}}',
+   
+   
     opisbezrabatow = '',
     opiszrabatami = '',
-    referencja = '',
+    referencja = '{{edit_referencja.selectedOptionLabel}}',
     opisbezrabatow_de = '',
     opiszrabatami_de = '',
     opisbezrabatow_en = '',
     opiszrabatami_en = '',
-    komentarz = '',
-    moc = '',
-    opis = '',
-    rodzajmotor = ''
-		
-    WHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}}
+    komentarz = '{{Input35.text}}',
+    opis = '{{Input35.text}}'
+   
+  WHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}}

@@ -5,7 +5,7 @@ przelicz_glowna: async () => {
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 await showModal(LanguageLoading.name);
 //.then(() => 
-await ustawrabatogolny.run();
+//await ustawrabatogolny.run();
 //.then(() => 
 await updateopismainkursscreeny.run();
 //.then(() => 

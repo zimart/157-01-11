@@ -1,0 +1,11 @@
+UPDATE inventory_plisy SET
+     rabatsystem =  '{{tabela_plisy_inventory_id.updatedRow.rabatsystem}}',
+		
+	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		systemporabacie = systemzdoplata-kwotarabatsystem,
+		cenanetto = systemporabacie,
+		razemnetto = cenanetto * ilosc
+		 
+		 
+
+WHERE id = {{tabela_plisy_inventory_id.updatedRow.id}}; 

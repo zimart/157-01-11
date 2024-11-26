@@ -61,7 +61,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nclearStore();\nremoveValue('sku_value');\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_mocowanie.run();}}\n",
+  "onOptionChange": "{{clearStore();\nremoveValue('sku_value');\nresetWidget(\"edit_doplata_mocowanie\");\nresetWidget(\"edit_doplata_prowadnica\");\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie.run();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

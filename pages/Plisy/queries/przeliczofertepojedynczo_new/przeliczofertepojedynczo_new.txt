@@ -1,9 +1,0 @@
-UPDATE inventory_screeny SET
-     rabatsystem =  '{{tabela_plisy_inventory_id.updatedRow.rabatsystem}}',
-		 kwotarabatsystem = '{{tabela_plisy_inventory_id.updatedRow.systemzdoplata*(tabela_plisy_inventory_id.updatedRow.rabatsystem/100)}}',
-rabatmotor = '{{tabela_plisy_inventory_id.updatedRow.rabatmotor}}',
-systemporabacie = '{{tabela_plisy_inventory_id.updatedRow.systemzdoplata-tabela_plisy_inventory_id.updatedRow.kwotarabatsystem}}',
-kwotarabatmotor = '{{tabela_plisy_inventory_id.updatedRow.price_motor*(tabela_plisy_inventory_id.updatedRow.rabatmotor/100)}}',
-priceall = '{{tabela_plisy_inventory_id.updatedRow.price_motor - tabela_plisy_inventory_id.updatedRow.rabatmotor}}',
-cenanetto = '{{tabela_plisy_inventory_id.updatedRow.priceall}}'
-WHERE id = {{tabela_plisy_inventory_id.updatedRow.id}}; 

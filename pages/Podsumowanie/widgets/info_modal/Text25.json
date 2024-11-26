@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 31,
+  "bottomRow": 15,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -41,8 +41,8 @@
   "mobileRightColumn": 17,
   "mobileTopRow": 32,
   "needsErrorInfo": false,
-  "originalBottomRow": 19,
-  "originalTopRow": 19,
+  "originalBottomRow": 31,
+  "originalTopRow": 24,
   "overflow": "NONE",
   "parentColumnSpace": 10.40625,
   "parentId": "u0g0i1vh5r",
@@ -54,7 +54,7 @@
   "text": "{{glowna_tabela.triggeredRow.opiszrabatami_en}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 24,
+  "topRow": 15,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

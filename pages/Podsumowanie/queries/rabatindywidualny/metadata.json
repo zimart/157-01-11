@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_main SET\n\n    rabatogolny = '{{glowna_tabela.updatedRow.rabatogolny}}',\n    kwotarabatogolny = '{{glowna_tabela.updatedRow.cenanetto*(glowna_tabela.updatedRow.rabatogolny/100)}}',\n\t\tcenaporabacie = '{{glowna_tabela.updatedRow.cenanetto-glowna_tabela.updatedRow.kwotarabatogolny}}',\n\t\trazemnetto = '{{glowna_tabela.updatedRow.cenaporabacie*glowna_tabela.updatedRow.Ilosc}}'\n    \n  WHERE id_main_inv = {{glowna_tabela.updatedRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!\n\t",
+      "body": "UPDATE inventory_main SET\n\n    rabatogolny = '{{glowna_tabela.updatedRow.rabatogolny}}',\n    kwotarabatogolny = '{{glowna_tabela.updatedRow.cenanetto*(glowna_tabela.updatedRow.rabatogolny/100)}}',\n\t\tcenaporabacie = '{{glowna_tabela.updatedRow.cenanetto - \n(glowna_tabela.updatedRow.cenanetto*(glowna_tabela.updatedRow.rabatogolny/100))}}',\n\n\t\trazemnetto = '{{(glowna_tabela.updatedRow.cenanetto - \n(glowna_tabela.updatedRow.cenanetto*(glowna_tabela.updatedRow.rabatogolny/100)))*glowna_tabela.updatedRow.Ilosc}}'\n    \n  WHERE id_main_inv = {{glowna_tabela.updatedRow.id_main_inv}}; -- Specify a valid condition here. Removing the condition may update every row in the table!\n\t",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

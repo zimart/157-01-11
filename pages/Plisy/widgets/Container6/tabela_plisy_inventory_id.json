@@ -498,6 +498,9 @@
     },
     {
       "key": "primaryColumns.referencja.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.rabatsystem.onSubmit"
     }
   ],
   "dynamicTriggerPathList": [
@@ -1640,7 +1643,7 @@
       "isVisible": true,
       "label": "Rabat system",
       "notation": "standard",
-      "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  Plisy_tabela_inventory_id_new.run();\n}).catch(() => {});}}",
+      "onSubmit": "{{PLISY_ustaw_rabat_pojedynczy.run().then(() => {\n  Plisy_tabela_inventory_id_new.run();\n}).catch(() => {});}}",
       "originalId": "rabatsystem",
       "sticky": "",
       "textColor": "{{tabela_plisy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#B71C1C\" : \"#000000\"))}}",
@@ -1847,7 +1850,7 @@
       "isVisible": true,
       "label": "Cena po rabacie",
       "notation": "standard",
-      "onSubmit": "{{przeliczofertepojedynczo_new.run()}}",
+      "onSubmit": "{{PLISY_ustaw_rabat_pojedynczy.run()}}",
       "originalId": "systemporabacie",
       "sticky": "",
       "textColor": "",
