@@ -1,1 +1,0 @@
-DELETE from tymczasowascreeny WHERE tymczasowascreeny.id_wiersza = {{tabela_plisy_inventory_id.triggeredRow.id}}

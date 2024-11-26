@@ -1,0 +1,90 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 10,
+  "bottomRowBeforeCollapse": 10,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].dachowaokno))(Plisy_edit_producentdachowaCopy.options, Plisy_edit_producentdachowaCopy.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelText"
+    },
+    {
+      "key": "labelTooltip"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": "{{edit_linia.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
+  "key": "2eaywto8sv",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Okno - {{Plisy_form_plisy_trigered.data[0].dachowaokno}}",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Producent okna - {{Plisy_form_plisy_trigered.data[0].dachowaproducent}}",
+  "labelWidth": 5,
+  "leftColumn": 12,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onOptionChange": "",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 6,
+  "originalTopRow": 6,
+  "parentColumnSpace": 18.09375,
+  "parentId": "73uy2fdkul",
+  "parentRowSpace": 10,
+  "placeholderText": "{{i18n.translate(\"Producent)}}",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 23,
+  "serverSideFiltering": false,
+  "sourceData": "{{Plisy_FORM_okna_dachowe.data.map( (obj) =>{ return  {'label': obj.typokna, 'value': obj.typokna } })}}",
+  "topRow": 6,
+  "topRowBeforeCollapse": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "gx336l23oz",
+  "widgetName": "Plisy_edit_producentdachowaCopy"
+}

@@ -1,0 +1,58 @@
+INSERT INTO inventory_plisy (wysokosc,
+														 szerokosc,
+														 linia,
+														 kolor,
+														 tkanina,
+														 referencja,
+														 ilosc,
+														 cena,
+														 doplatakolor,
+														 doplataprowadnica,
+														 doplatamocowanie,
+														 mocowanie,
+														 dachowaproducent,
+														 dachowaokno,
+														 prowadnicakolor,
+														 fk_oferty_inventory_id,
+														 skugen,
+														 moc,
+														 opis,
+														 rabatsystem,
+														 rodzajmotor,
+														 opiszrabatami
+														 
+														)
+  VALUES ('{{podawana_wysokosc_input.text}}',
+					'{{szerokosc_input.text}}',
+					'{{rodzajmoskitiery.selectedOptionLabel}}',
+					'{{kolor_select.selectedOptionLabel}}',
+					'{{Select_kolekcja.selectedOptionLabel}}',
+					'{{Select_tkanina.selectedOptionLabel}}',
+					'{{Input2.text}}',
+					'{{cenabazowasystemu.text}}',
+					'{{kosztdoplatykolor.text}}',
+					'{{doplataprowadnica.text}}',
+					'{{doplata_mocowanie.text}}',
+					'{{select_mocowanie.selectedOptionLabel}}',
+					'{{producentdachowa.selectedOptionLabel}}',
+					'{{dachoweokno.selectedOptionLabel}}',
+					'{{kolor_prowadnica.selectedOptionLabel}}',
+					'{{idoferty.text}}',
+					'{{sku_input.text}}',
+					'PLISA',
+					'{{Input33.text}}',
+					'0',
+					'2',
+					''
+					
+					
+					
+					
+					
+					
+					
+				 
+				 
+				 
+				 
+				 );

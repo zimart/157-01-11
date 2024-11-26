@@ -1,1 +1,0 @@
-SELECT indeks FROM screeny_tabelaindeksy WHERE {{edit_wysokosc.text}} <= szermax AND {{edit_wysokosc.text}} > szermin;

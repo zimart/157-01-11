@@ -1,0 +1,87 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "label"
+    },
+    {
+      "key": "placeholderText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onFocus"
+    },
+    {
+      "key": "onBlur"
+    }
+  ],
+  "errorMessage": "Błędna wartość - minimum 200 max 3000",
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ebj3l9h399",
+  "label": "{{i18n.translate(\"Wysokość\")}} {{appsmith.store.wysokoscdachowa||\"\"}}",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 11,
+  "maxDynamicHeight": 9000,
+  "maxNum": "3000",
+  "minDynamicHeight": 4,
+  "minNum": "200",
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 8,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indekswys'))\n}}\n",
+  "onFocus": "",
+  "onTextChanged": "",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentColumnSpace": 20.21875,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "placeholderText": "{{appsmith.store.wysokoscdachowa}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": false,
+  "responsiveBehavior": "fill",
+  "rightColumn": 17,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "jmdkg0qk5r",
+  "widgetName": "podawana_wysokosc_input"
+}

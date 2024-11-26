@@ -1,0 +1,1 @@
+SELECT `indeks` FROM `plisy_tabelaindeksy` WHERE {{edit_szerokosc.text}} <= szermax AND {{edit_szerokosc.text}} > szermin and kategoria='szer';

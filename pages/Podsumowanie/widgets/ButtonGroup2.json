@@ -38,6 +38,9 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItemgu742vm8se.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem4m9kx2mqe7.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -52,6 +55,9 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItemgu742vm8se.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem4m9kx2mqe7.onClick"
     }
   ],
   "groupButtons": {
@@ -105,6 +111,18 @@
           "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Screeny', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
           "textColor": "#3e9985",
           "widgetId": ""
+        },
+        "menuItem4m9kx2mqe7": {
+          "iconColor": "#3e9985",
+          "iconName": "circle-arrow-right",
+          "id": "menuItem4m9kx2mqe7",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "MOSKITIERY",
+          "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Moskitiery', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
+          "textColor": "#3e9985",
+          "widgetId": "c3cxtqka69"
         },
         "menuItemgu742vm8se": {
           "iconColor": "#3e9985",

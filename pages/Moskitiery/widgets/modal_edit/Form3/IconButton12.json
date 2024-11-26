@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 25,
+  "bottomRowBeforeCollapse": 25,
+  "boxShadow": "none",
+  "buttonColor": "#831843",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "repeat",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{edit_szerokosc.text>0&&edit_podawana_wysokosc_input.text>0}}",
+  "key": "8xo8kta8qm",
+  "leftColumn": 25,
+  "minWidth": 50,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onClick": "{{button_sku.oblicz_form()}}",
+  "originalBottomRow": 25,
+  "originalTopRow": 21,
+  "parentColumnSpace": 18.40625,
+  "parentId": "jnoi6scv56",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 29,
+  "topRow": 21,
+  "topRowBeforeCollapse": 21,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qybs18hvqf",
+  "widgetName": "IconButton12"
+}

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "67252580698c850488983504_aefae565-54dc-45db-ba25-97b38cffb7ed",
+  "id": "Moskitiery_i18n",
+  "unpublishedCollection": {
+    "name": "i18n",
+    "pageId": "Moskitiery",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "resources",
+        "value": "{\n  polski: {\n    translation: Constants.defaultLanguageKeys\n  }\n}"
+      }
+    ]
+  }
+}

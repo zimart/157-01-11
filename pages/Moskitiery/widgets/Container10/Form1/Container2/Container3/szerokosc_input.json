@@ -1,0 +1,93 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "validation"
+    },
+    {
+      "key": "label"
+    },
+    {
+      "key": "placeholderText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    },
+    {
+      "key": "showStepArrows"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onBlur"
+    },
+    {
+      "key": "onFocus"
+    }
+  ],
+  "errorMessage": "WPISZ WYMIAR >= 200 <=2500",
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "iyb187w358",
+  "label": "{{i18n.translate(\"Szerokość\")}}\n{{appsmith.store.szerokoscdachowa||\"\"}}",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "maxDynamicHeight": 9000,
+  "maxNum": "2000",
+  "minDynamicHeight": 4,
+  "minNum": "200",
+  "minWidth": 450,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 8,
+  "mobileTopRow": 9,
+  "needsErrorInfo": false,
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n}}",
+  "onFocus": "",
+  "onTextChanged": "",
+  "originalBottomRow": 41,
+  "originalTopRow": 36,
+  "parentColumnSpace": 19.59375,
+  "parentId": "er5qa5lbjh",
+  "parentRowSpace": 10,
+  "placeholderText": "{{appsmith.store.szerokoscdachowa||\"\"}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": false,
+  "responsiveBehavior": "fill",
+  "rightColumn": 11,
+  "shouldAllowAutofill": false,
+  "showStepArrows": "false",
+  "tooltip": "",
+  "topRow": 0,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{szerokosc_input.text > 200}}/",
+  "version": 2,
+  "widgetId": "xkgvvtb0ij",
+  "widgetName": "szerokosc_input"
+}

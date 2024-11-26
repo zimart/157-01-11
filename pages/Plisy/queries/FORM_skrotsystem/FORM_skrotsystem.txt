@@ -1,1 +1,0 @@
-SELECT valueindeks FROM screeny_system where system={{edit_system.selectedOptionValue}};

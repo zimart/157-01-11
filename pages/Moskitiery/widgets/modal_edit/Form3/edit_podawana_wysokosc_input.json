@@ -1,0 +1,81 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 25,
+  "boxShadow": "none",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "tooltip"
+    },
+    {
+      "key": "label"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
+  "errorMessage": "Min 200 mm - Max 3000 mm",
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "ln4t6mme1i",
+  "label": "Wysokość - {{tabela_plisy_inventory_id.triggeredRow.wysokosc}} ",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 15,
+  "maxDynamicHeight": 9000,
+  "maxNum": "3000",
+  "minDynamicHeight": 4,
+  "minNum": "200",
+  "minWidth": 450,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 21,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indekswys'))\n}}\n",
+  "originalBottomRow": 25,
+  "originalTopRow": 19,
+  "parentColumnSpace": 18.40625,
+  "parentId": "jnoi6scv56",
+  "parentRowSpace": 10,
+  "placeholderText": "{{tabela_plisy_inventory_id.triggeredRow.wysokosc}}",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 25,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "tooltip": "Wpisz ponownie wysokość  -{{tabela_plisy_inventory_id.triggeredRow.wysokosc}} ",
+  "topRow": 19,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "canxm4d6u0",
+  "widgetName": "edit_podawana_wysokosc_input"
+}

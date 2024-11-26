@@ -1,0 +1,2 @@
+DELETE FROM inventory_plisy
+WHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}};

@@ -145,6 +145,10 @@
     {
       "id": "Plisy_tkaniny",
       "isDefault": false
+    },
+    {
+      "id": "Moskitiery",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

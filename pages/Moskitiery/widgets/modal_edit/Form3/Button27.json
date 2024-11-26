@@ -1,0 +1,48 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 38,
+  "boxShadow": "none",
+  "buttonColor": "#831843",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "mljre0oiyp",
+  "leftColumn": 48,
+  "minWidth": 120,
+  "mobileBottomRow": 37,
+  "mobileLeftColumn": 46,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 33,
+  "needsErrorInfo": false,
+  "onClick": "{{showModal(LanguageLoading.name).then(() => {\n  PLISY_form_edit_js_przelicz.przelicz_plisy();\n  resetWidget(\"edit_kosztdoplatykolor\", true);\n  resetWidget(\"edit_doplata_prowadnica\", true);\n  resetWidget(\"edit_doplata_mocowanie\", true);\n  closeModal(LanguageLoading.name);\n});}}",
+  "originalBottomRow": 38,
+  "originalTopRow": 34,
+  "parentId": "jnoi6scv56",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": true,
+  "responsiveBehavior": "hug",
+  "rightColumn": 64,
+  "text": "ZAPISZ ZMIANY",
+  "topRow": 34,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "vqjmvahfn0",
+  "widgetName": "Button27"
+}

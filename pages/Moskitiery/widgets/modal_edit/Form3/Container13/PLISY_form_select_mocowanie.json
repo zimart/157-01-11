@@ -1,0 +1,87 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelText"
+    },
+    {
+      "key": "labelTooltip"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": "{{edit_kolor.isValid}}",
+  "key": "2eaywto8sv",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Mocowanie - {{Plisy_form_plisy_trigered.data[0].mocowanie}}",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Referencja - {{Plisy_form_plisy_trigered.data[0].mocowanie}}",
+  "labelWidth": 5,
+  "leftColumn": 50,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 43,
+  "mobileRightColumn": 63,
+  "mobileTopRow": 8,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{Plisy_FORM_doplaty.mocowanie();\nremoveValue('sku_value');\nresetWidget(\"edit_cena_plisy\", true);\nremoveValue('cenaplisy');}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentColumnSpace": 18.09375,
+  "parentId": "73uy2fdkul",
+  "parentRowSpace": 10,
+  "placeholderText": "{{i18n.translate(\"Mocowanie\")}}",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "{{Plisy_FORM_mocowanie.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "d4j0ggamwc",
+  "widgetName": "PLISY_form_select_mocowanie"
+}

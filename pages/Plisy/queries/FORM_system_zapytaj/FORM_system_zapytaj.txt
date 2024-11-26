@@ -1,2 +1,0 @@
-SELECT system,valueindeks FROM screeny_system where linia = {{edit_linia.selectedOptionLabel}}
-ORDER BY seq ASC;

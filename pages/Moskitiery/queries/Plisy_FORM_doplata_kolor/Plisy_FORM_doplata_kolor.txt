@@ -1,0 +1,1 @@
+SELECT doplata FROM plisy_kolor where kolorm = {{edit_kolor.selectedOptionLabel}} ;
