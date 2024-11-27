@@ -3,30 +3,20 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
-  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "RAL9006 Srebrny półmat",
+  "defaultOptionValue": "RAMKOWA",
   "dynamicBindingPathList": [
-    {
-      "key": "sourceData"
-    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -35,42 +25,41 @@
     }
   ],
   "isDisabled": false,
-  "isFilterable": true,
+  "isFilterable": false,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": "{{rodzajmoskitiery.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
-  "key": "q6bew8sxi9",
+  "isRequired": true,
+  "isVisible": true,
+  "key": "fwycrzmq3m",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Kolor prowadnicy",
+  "labelText": "Typ moskitiery",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 62,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 180,
+  "mobileBottomRow": 130,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 173,
+  "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "",
+  "onOptionChange": "{{Moskitiery_js.typ();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
+  "originalBottomRow": 32,
+  "originalTopRow": 25,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz kolor",
+  "placeholderText": "WYBIERZ LINIĘ",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
-  "serverSideFiltering": false,
-  "sourceData": "{{Plisy_kolor_zapytaj_prowadnica.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "rightColumn": 7,
+  "serverSideFiltering": true,
+  "sourceData": "[\n  {\n    \"label\": \"RAMKOWA\",\n    \"value\": \"RAMKOWA\"\n  },\n  {\n    \"label\": \"OTWIERANA-MRO\",\n    \"value\": \"OTWIERANA-MRO\"\n  },\n\t{\n    \"label\": \"PRZESUWNA-MRP\",\n    \"value\": \"PRZESUWNA-MRP\"\n  },\n\t{\n    \"label\": \"PLISOWANA-MPH\",\n    \"value\": \"PLISOWANA-MPH\"\n  },\n\t{\n    \"label\": \"PIONOWA MPH-VERTI\",\n    \"value\": \"PIONOWA MPH-VERTI\"\n  },\n\t{\n    \"label\": \"ZWIJANA MZN\",\n    \"value\": \"ZWIJANA MZN\"\n  }\n]",
   "topRow": 0,
-  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "m2p8qh01ei",
-  "widgetName": "kolor_prowadnica"
+  "widgetId": "rf34x6l1p4",
+  "widgetName": "typmoskitiery"
 }

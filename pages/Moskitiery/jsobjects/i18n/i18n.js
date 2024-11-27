@@ -7,7 +7,7 @@ export default {
 	getResources() {
 		return this.resources;
 	},
-	async selectLanguage(lang = rodzajmoskitiery.selectedOptionValue){
+	async selectLanguage(lang = typmoskitiery.selectedOptionValue){
 		if (!this.resources[lang]){
 			showModal(LanguageLoading.name);
 			await getLanguageValuesAI.run();

@@ -1,6 +1,6 @@
 export default {
 grupa: function () {
-var kolekcja = seria_ramka.selectedOptionValue;
+var kolekcja = rodzajprofila.selectedOptionValue;
 var grupa;
 if (kolekcja === "P200") { grupa = 'G1'; }
 else if (kolekcja === "P300") { grupa = 'G2'}

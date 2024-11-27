@@ -1,0 +1,65 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": "{{rodzajprofila.selectedOptionLabel!==\"STANDARD-GIĘTA\"&&rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-ZEWN.\"&&rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-WEWN.\"}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "lc18j6rhdw",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Blaszka",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 29,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 44,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 0,
+  "needsErrorInfo": false,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "parentColumnSpace": 19.625,
+  "parentId": "76671vu120",
+  "parentRowSpace": 10,
+  "placeholderText": "Select option",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 35,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"name\": \"4\",\n    \"code\": \"4\"\n  },\n  {\n    \"name\": \"5\",\n    \"code\": \"5\"\n  },\n  {\n    \"name\": \"6\",\n    \"code\": \"6\"\n  },\n\t{\n    \"name\": \"8\",\n    \"code\": \"8\"\n  },\n\t{\n    \"name\": \"9\",\n    \"code\": \"9\"\n  },\n\t{\n    \"name\": \"10\",\n    \"code\": \"10\"\n  },\n\t{\n    \"name\": \"11\",\n    \"code\": \"11\"\n  },\n\t{\n    \"name\": \"12\",\n    \"code\": \"12\"\n  }\n]",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "k0dzih2eg8",
+  "widgetName": "blaszka"
+}

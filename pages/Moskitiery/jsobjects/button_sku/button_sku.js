@@ -11,7 +11,7 @@ await Plisy_indeksszer.run();
 await Plisy_indekswys.run();
 //.then(() => 
 await  removeValue('sku_value');
-await  storeValue('sku_value', tymczasowy.text);
+await  storeValue('sku_value', moskitiery_tymczasowy.text);
 await  Plisy_danesku.run();
 await Plisy_doplata_kolor.run();
 await  storeValue('cenaplisy', Input32.text);	

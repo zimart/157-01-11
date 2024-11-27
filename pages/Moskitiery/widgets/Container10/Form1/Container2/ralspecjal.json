@@ -1,10 +1,12 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
+  "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "Standard",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,55 +15,52 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
-      "key": "sourceData"
+      "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
-  "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
-  "key": "42nmme0mbx",
+  "isVisible": "{{kolor_select.selectedOptionLabel===\"RAL SPECJALNY\"}}",
+  "key": "beqhoqaxlw",
+  "label": "Kolor specjalny",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Mocowanie",
+  "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 43,
+  "leftColumn": 35,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 6,
-  "mobileLeftColumn": 41,
-  "mobileRightColumn": 61,
+  "mobileBottomRow": 7,
+  "mobileLeftColumn": 32,
+  "mobileRightColumn": 52,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_doplaty.mocowanie();}}",
-  "optionLabel": "label",
-  "optionValue": "value",
+  "originalBottomRow": 6,
+  "originalTopRow": 0,
   "parentColumnSpace": 19.625,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
   "renderMode": "CANVAS",
+  "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
-  "serverSideFiltering": false,
-  "sourceData": "{{Plisy_mocowanie.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "rightColumn": 43,
+  "showStepArrows": false,
   "topRow": 0,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "q22qpks5r3",
-  "widgetName": "select_mocowanie"
+  "topRowBeforeCollapse": 0,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "32jqr3tpcw",
+  "widgetName": "ralspecjal"
 }

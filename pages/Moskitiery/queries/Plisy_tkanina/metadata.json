@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{seria_ramka.selectedOptionValue}};",
+      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{rodzajprofila.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

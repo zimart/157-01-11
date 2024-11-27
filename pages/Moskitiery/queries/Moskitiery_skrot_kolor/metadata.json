@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_7024d799-e071-4a97-a2ef-0dd25e5adc45",
-  "id": "Moskitiery_Plisy_kolor_zapytaj_prowadnica",
+  "gitSyncId": "67252580698c850488983504_e8799997-64fb-4a88-8dba-1ff85566131d",
+  "id": "Moskitiery_Moskitiery_skrot_kolor",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor WHERE rodzajpr = \"prowadnica\";",
+      "body": "SELECT skrot FROM moskitiery_kolor where typ={{rodzajprofila.selectedOptionLabel}} and kolorm={{kolor_select.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,9 +22,13 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": false,
-    "name": "Plisy_kolor_zapytaj_prowadnica",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": true,
+    "name": "Moskitiery_skrot_kolor",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

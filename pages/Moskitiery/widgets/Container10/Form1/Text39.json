@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 29,
+  "bottomRow": 43,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 54,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "originalBottomRow": 29,
-  "originalTopRow": 25,
+  "originalBottomRow": 40,
+  "originalTopRow": 36,
   "overflow": "NONE",
   "parentColumnSpace": 19.3125,
   "parentId": "8jwyu0isum",
@@ -46,7 +46,7 @@
   "text": "Cena plisy brutto (23%) : {{Number(Cena_plisy.text*1.23).toFixed(2)}}",
   "textAlign": "RIGHT",
   "textColor": "#71717a",
-  "topRow": 25,
+  "topRow": 39,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

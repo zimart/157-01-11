@@ -23,9 +23,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -44,7 +41,7 @@
   "labelText": "{{i18n.translate(\"Kolor\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 25,
+  "leftColumn": 20,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -53,7 +50,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nremoveValue('sku_value');\nPlisy_doplata_kolor.run();\nPlisy_doplaty.mocowanie();\nPlisy_doplaty.prowadnica();\n}}",
+  "onOptionChange": "{{Moskitiery_js.kolor();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 180,
@@ -63,7 +60,7 @@
   "placeholderText": "Wybierz kolor",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 34,
+  "rightColumn": 29,
   "serverSideFiltering": false,
   "sourceData": "{{Moskitiery_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,

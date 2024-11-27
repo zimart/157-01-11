@@ -1,1 +1,1 @@
-SELECT kolorm,doplata FROM moskitiery_kolor where linia={{rodzajmoskitiery.selectedOptionLabel}} and typ={{seria_ramka.selectedOptionLabel}};
+SELECT kolorm,doplata FROM moskitiery_kolor where linia={{typmoskitiery.selectedOptionLabel}} and typ={{rodzajprofila.selectedOptionLabel}};

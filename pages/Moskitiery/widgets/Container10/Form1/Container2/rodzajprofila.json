@@ -1,11 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
+  "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "STANDARD-GIĘTA",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,7 +14,10 @@
       "key": "borderRadius"
     },
     {
-      "key": "isVisible"
+      "key": "labelText"
+    },
+    {
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,45 +32,49 @@
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
   "isDisabled": false,
-  "isFilterable": false,
+  "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": "{{rodzajmoskitiery.selectedOptionLabel===\"DACHOWA-VEGAS\"}}",
-  "key": "fwycrzmq3m",
+  "isRequired": true,
+  "isVisible": "true",
+  "key": "ki1dwtwiw3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "DACHOWA",
+  "labelText": "{{i18n.translate(\"Rodzaj profila\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 51,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 130,
+  "mobileBottomRow": 105,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 123,
+  "mobileTopRow": 98,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_okna_dachowe.run();\nPlisy_kolor_zapytaj_prowadnica.run()}}",
+  "onDropdownOpen": "{{}}",
+  "onOptionChange": "{{Moskitiery_js.rodzaj();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 4,
   "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "WYBIERZ OKNO",
+  "placeholderText": "Rodzaj profila",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 58,
-  "serverSideFiltering": true,
-  "sourceData": "[\n  {\n    \"label\": \"FAKRO\",\n    \"value\": \"FAKRO\"\n  },\n  {\n    \"label\": \"VELUX\",\n    \"value\": \"VELUX\"\n  },\n\t{\n    \"label\": \"OKPOL\",\n    \"value\": \"OKPOL\"\n  },\n\t{\n    \"label\": \"ROTO\",\n    \"value\": \"ROTO\"\n  },\n\t{\n    \"label\": \"ROTO2\",\n    \"value\": \"ROTO2\"\n  }\n\t\n]",
+  "rightColumn": 20,
+  "serverSideFiltering": false,
+  "sourceData": "{{Moskitiery_typ_moskitery.data.map( (obj) =>{ return  {'label': obj.typ, 'value': obj.typ } })}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "spzgz4sctm",
-  "widgetName": "producentdachowa"
+  "widgetId": "jvfoo2ygy6",
+  "widgetName": "rodzajprofila"
 }

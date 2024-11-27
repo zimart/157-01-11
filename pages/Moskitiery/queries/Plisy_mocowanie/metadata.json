@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" and linia = {{rodzajmoskitiery.selectedOptionLabel}} ;",
+      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" and linia = {{typmoskitiery.selectedOptionLabel}} ;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Plisy_mocowanie",
     "pageId": "Moskitiery",
     "userSetOnLoad": false

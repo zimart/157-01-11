@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "Plisy_doplaty.mocowanie",
     "name": "mocowanie",
     "pageId": "Moskitiery",

@@ -1,1 +1,1 @@
-SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{seria_ramka.selectedOptionValue}};
+SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{rodzajprofila.selectedOptionValue}};

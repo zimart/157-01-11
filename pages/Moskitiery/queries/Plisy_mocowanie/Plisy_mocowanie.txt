@@ -1,1 +1,1 @@
-SELECT kolorm FROM plisy_kolor where rodzajpr="mocowanie" and linia = {{rodzajmoskitiery.selectedOptionLabel}} ;
+SELECT kolorm FROM plisy_kolor where rodzajpr="mocowanie" and linia = {{typmoskitiery.selectedOptionLabel}} ;

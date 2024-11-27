@@ -47,7 +47,7 @@
   "mobileRightColumn": 58,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "onOptionChange": "{{i18n.selectLanguage();\nstoreValue('jezyk', rodzajmoskitiery.selectedOptionValue);}}",
+  "onOptionChange": "{{i18n.selectLanguage();\nstoreValue('jezyk', typmoskitiery.selectedOptionValue);}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 15,

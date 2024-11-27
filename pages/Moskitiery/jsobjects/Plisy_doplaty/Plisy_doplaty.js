@@ -15,7 +15,7 @@ return doplatamocowanie;
 	
 	
 prowadnica: function () {
-var czyprowadnica = rodzajmoskitiery.selectedOptionValue;
+var czyprowadnica = typmoskitiery.selectedOptionValue;
 var doplataprowadnica;
 if (czyprowadnica === 'DACHOWA-VEGAS') { doplataprowadnica = 60; }
 else  doplataprowadnica = 0;

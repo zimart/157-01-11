@@ -1,0 +1,1 @@
+SELECT skrot FROM moskitiery_kolor where typ={{rodzajprofila.selectedOptionLabel}} and kolorm={{kolor_select.selectedOptionLabel}};

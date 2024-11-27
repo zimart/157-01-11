@@ -268,7 +268,7 @@
           "isVisible": true,
           "label": "Kolorm",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"BIAŁY\",\n    \"value\": \"BIAŁY\"\n  },\n  {\n    \"label\": \"ANTRACYT\",\n    \"value\": \"ANTRACYT\"\n  },\n  {\n    \"label\": \"BRĄZ\",\n    \"value\": \"BRĄZ\"\n  },\n\t\n\t{\n    \"label\": \"CIEMNY BRĄZ\",\n    \"value\": \"CIEMNY BRĄZ\"\n  },\n\t\n\t{\n    \"label\": \"ORZECH\",\n    \"value\": \"ORZECH\"\n  },\n\t\n\t{\n    \"label\": \"ZŁOTY DĄB\",\n    \"value\": \"ZŁOTY DĄB\"\n  },\n\t\n\t{\n    \"label\": \"WINCHESTER\",\n    \"value\": \"WINCHESTER\"\n  }\n\t\n]",
+          "options": "[\n  {\n    \"label\": \"BIAŁY\",\n    \"value\": \"BIAŁY\"\n  },\n  {\n    \"label\": \"ANTRACYT\",\n    \"value\": \"ANTRACYT\"\n  },\n  {\n    \"label\": \"BRĄZ\",\n    \"value\": \"BRĄZ\"\n  },\n\t\n\t{\n    \"label\": \"CIEMNY BRĄZ\",\n    \"value\": \"CIEMNY BRĄZ\"\n  },\n\t\n\t{\n    \"label\": \"ORZECH\",\n    \"value\": \"ORZECH\"\n  },\n\t\n\t{\n    \"label\": \"ZŁOTY DĄB\",\n    \"value\": \"ZŁOTY DĄB\"\n  },\n\t\n\t{\n    \"label\": \"WINCHESTER\",\n    \"value\": \"WINCHESTER\"\n  },\n\t\n\t\t{\n    \"label\": \"RAL SPECJALNY\",\n    \"value\": \"RAL SPECJALNY\"\n  }\n\t\n]",
           "originalIdentifier": "kolorm",
           "position": 0,
           "serverSideFiltering": false,

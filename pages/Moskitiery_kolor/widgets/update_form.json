@@ -394,7 +394,7 @@
           "isVisible": true,
           "label": "Typ",
           "labelTextSize": "0.875rem",
-          "options": "[   \t\n  {\n    \"label\": \"STANDARD-GIĘTA\",\n    \"value\": \"STANDARD-GIĘTA\"\n  },\n  {\n    \"label\": \"EKSR.NAROŻNIK-ZEWN.\",\n    \"value\": \"EKSR.NAROŻNIK-ZEWN.\"\n  },\n\t  {\n    \"label\": \"EKSR.NAROŻNIK-WEWN.\",\n    \"value\": \"EKSR. NAROŻNIK-WEWN.\"\n  },\n\t{\n    \"label\": \"EKSR.OKNA ZLICOWANE\",\n    \"value\": \"EKSR.OKNA ZLICOWANE\"\n  },\n\t{\n    \"label\": \"EKSRUDOWANA\",\n    \"value\": \"EKSRUDOWANA\"\n  }\n]",
+          "options": "[   \t\n  {\n    \"label\": \"STANDARD-GIĘTA\",\n    \"value\": \"STANDARD-GIĘTA\"\n  },\n  {\n    \"label\": \"EKSTR.NAROŻNIK-ZEWN.\",\n    \"value\": \"EKSTR.NAROŻNIK-ZEWN.\"\n  },\n\t  {\n    \"label\": \"EKSTR.NAROŻNIK-WEWN.\",\n    \"value\": \"EKSTR. NAROŻNIK-WEWN.\"\n  },\n\t{\n    \"label\": \"EKSTR.OKNA ZLICOWANE\",\n    \"value\": \"EKSTR.OKNA ZLICOWANE\"\n  },\n\t{\n    \"label\": \"EKSTRUDOWANA\",\n    \"value\": \"EKSTRUDOWANA\"\n  }\n]",
           "originalIdentifier": "typ",
           "position": 6,
           "serverSideFiltering": false
