@@ -1,0 +1,1 @@
+SELECT cenakatalogplisa FROM plisy_cennik where indeksplisa = {{appsmith.store.sku_value}};

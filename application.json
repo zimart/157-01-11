@@ -153,6 +153,10 @@
     {
       "id": "Moskitiery_kolor",
       "isDefault": false
+    },
+    {
+      "id": "Moskitiery_tabelaindeksy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
