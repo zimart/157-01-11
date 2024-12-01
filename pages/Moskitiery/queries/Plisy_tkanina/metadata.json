@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Plisy_tkanina",
     "pageId": "Moskitiery",
     "userSetOnLoad": false

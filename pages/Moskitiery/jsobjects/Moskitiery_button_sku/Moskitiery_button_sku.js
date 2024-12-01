@@ -10,6 +10,7 @@ await Moskitiery_indeksszer.run();
 //.then(() => 
 await Moskitiery_indekswys.run();
 await Moskitiery_js.obwod();
+await Moskitiery_js.polemalowania();
 //.then(() => 
 await  removeValue('sku_value');
 await  storeValue('sku_value', moskitiery_tymczasowy.text);

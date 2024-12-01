@@ -46,6 +46,7 @@ await removeValue('sku_value');
 await Moskitiery_kolor_zapytaj.run();
 await	Moskitiery_skrot_kolor.run();
 
+
 //await Moskitiery_tabela_inventory.run();
 //.then(() => 
 //await closeModal(LanguageLoading.name))	;
@@ -68,6 +69,17 @@ return obwod;
 
 },		
 	
+polemalowania: function () {
+var spec_kolor = kolor_select.selectedOptionLabel;
+var obwod = Input36.text;
+var polemalowania;
+
+if (spec_kolor === "RAL SPECJALNY") { polemalowania = Input36.text*0.14;}
+else { polemalowania = 0}
+	
+return polemalowania;
+
+},		
 
 	
 }

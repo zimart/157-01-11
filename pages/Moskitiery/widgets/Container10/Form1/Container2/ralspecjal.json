@@ -29,7 +29,7 @@
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": "{{kolor_select.selectedOptionLabel===\"RAL SPECJALNY\"}}",
   "key": "beqhoqaxlw",
   "label": "Kolor specjalny",

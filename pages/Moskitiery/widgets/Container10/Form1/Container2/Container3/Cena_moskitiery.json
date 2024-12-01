@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{cenabazowasystemu.text+kosztdoplatykolor.text+doplata_mocowanie.text+doplataprowadnica.text}}",
+  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatyprofil.text+kosztmalowania.text).toFixed(2)}}\n",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -34,7 +34,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 54,
+  "leftColumn": 48,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -59,5 +59,5 @@
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "si2ly2gaw0",
-  "widgetName": "Cena_plisy"
+  "widgetName": "Cena_moskitiery"
 }
