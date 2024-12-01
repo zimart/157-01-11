@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.cenaplisy}}",
+  "defaultText": "{{appsmith.store.cenamoskitiery}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

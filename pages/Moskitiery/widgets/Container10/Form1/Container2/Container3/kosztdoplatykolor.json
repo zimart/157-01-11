@@ -6,7 +6,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_doplata_kolor.data[0].doplata}}",
+  "defaultText": "{{Number(appsmith.store.cenamoskitiery*((doplataprofil.text)/100)).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -26,9 +26,9 @@
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": false,
+  "isVisible": true,
   "key": "2t39cnlom2",
-  "label": "Koszt dopłaty - kolor",
+  "label": "Koszt dopłaty - profil",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

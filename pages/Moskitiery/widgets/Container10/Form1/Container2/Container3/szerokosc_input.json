@@ -68,7 +68,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n.then(() =>\n\n\n}}",
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n}}",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 41,

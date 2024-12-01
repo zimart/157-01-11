@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "67252580698c850488983504_ef873c8c-50d1-40aa-82d5-409bbc4b34fb",
+  "id": "Podsumowanie_xml2",
+  "unpublishedCollection": {
+    "name": "xml2",
+    "pageId": "Podsumowanie",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "_parser",
+        "value": "new XMLParser.prototype()"
+      }
+    ]
+  }
+}

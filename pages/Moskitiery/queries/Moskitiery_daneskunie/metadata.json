@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_060c42fe-b34c-490b-a6c2-b57dcfbc4de9",
-  "id": "Moskitiery_Plisy_indekswys",
+  "gitSyncId": "67252580698c850488983504_00d4ba7d-1dcb-4107-8676-0fc419f3b962",
+  "id": "Moskitiery_Moskitiery_daneskunie",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT indeks FROM plisy_tabelaindeksy WHERE {{podawana_wysokosc_input.text}} <= szermax AND {{podawana_wysokosc_input.text}} > szermin and kategoria='wys';",
+      "body": "SELECT cenakatalogplisa FROM plisy_cennik where indeksplisa = {{appsmith.store.sku_value}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "Plisy_indekswys",
+    "executeOnLoad": false,
+    "name": "Moskitiery_daneskunie",
     "pageId": "Moskitiery",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_indeksszer.data[0].indeks}}",
+  "defaultText": "{{Moskitiery_indeksszer.data[0].indeks}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

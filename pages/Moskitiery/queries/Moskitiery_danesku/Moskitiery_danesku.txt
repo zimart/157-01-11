@@ -1,1 +1,1 @@
-SELECT cenakatalogplisa FROM plisy_cennik where indeksplisa = {{appsmith.store.sku_value}};
+SELECT cena FROM moskitiery_cennik where sku = {{appsmith.store.sku_value}};

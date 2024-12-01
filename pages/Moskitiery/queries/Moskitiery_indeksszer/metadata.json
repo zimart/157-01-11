@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67252580698c850488983504_7f7d69be-0b05-4559-905b-b28f2aadeb62",
-  "id": "Moskitiery_Plisy_indeksszer",
+  "id": "Moskitiery_Moskitiery_indeksszer",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT `indeks` FROM `plisy_tabelaindeksy` WHERE {{szerokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin and kategoria='szer';",
+      "body": "SELECT `indeks` FROM `moskitiery_tabelaindeksy` WHERE {{szerokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Plisy_indeksszer",
+    "name": "Moskitiery_indeksszer",
     "pageId": "Moskitiery",
     "userSetOnLoad": true
   }

@@ -50,7 +50,7 @@ await	Moskitiery_skrot_kolor.run();
 //.then(() => 
 //await closeModal(LanguageLoading.name))	;
 
-},		
+}
 	
 
 	
