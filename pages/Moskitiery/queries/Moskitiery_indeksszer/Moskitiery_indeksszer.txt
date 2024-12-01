@@ -1,1 +1,1 @@
-SELECT `indeks` FROM `moskitiery_tabelaindeksy` WHERE {{szerokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin;
+SELECT `indeks` FROM `moskitiery_tabelaindeksy` WHERE {{szerokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin and kategoria="szer" and typmosk='{{Moskitiery_skrot_system.skrot_typ.data}}';

@@ -44,7 +44,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Moskitiery_js.typ();}}",
+  "onOptionChange": "{{Moskitiery_js.typ();\nMoskitiery_js.maksymalne_szer();\nMoskitiery_js.maksymalne_wys();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,

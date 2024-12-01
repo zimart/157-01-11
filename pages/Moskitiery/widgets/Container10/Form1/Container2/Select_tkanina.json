@@ -1,10 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
+  "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 33,
   "boxShadow": "none",
-  "defaultOptionValue": "RAL 7016",
+  "defaultOptionValue": "P202",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
@@ -25,47 +25,42 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "q6bew8sxi9",
+  "key": "p6i97dwydz",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Kolor\")}}",
+  "labelText": "{{i18n.translate(\"Tkanina\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 17,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 180,
+  "mobileBottomRow": 189,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 173,
+  "mobileTopRow": 182,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Moskitiery_js.kolor();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 180,
-  "originalTopRow": 173,
+  "originalBottomRow": 33,
+  "originalTopRow": 28,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz kolor",
+  "placeholderText": "Referencja",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 16,
   "serverSideFiltering": false,
-  "sourceData": "{{Moskitiery_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
-  "topRow": 0,
+  "sourceData": "{{Plisy_tkanina.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
+  "topRow": 28,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ai7kcb1lmq",
-  "widgetName": "kolor_select"
+  "widgetId": "psksqvlpxy",
+  "widgetName": "Select_tkanina"
 }

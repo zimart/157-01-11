@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67252580698c850488983504_6a04066a-4e6f-4369-8589-674e343e96dc",
-  "id": "Moskitiery_Moskitiery_js.polemalowania",
+  "gitSyncId": "67252580698c850488983504_b428f608-fca1-4cb6-9ae8-33d93f81e1b8",
+  "id": "Moskitiery_Moskitiery_js.maksymalne_wys",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -23,8 +23,8 @@
       }
     ],
     "executeOnLoad": true,
-    "fullyQualifiedName": "Moskitiery_js.polemalowania",
-    "name": "polemalowania",
+    "fullyQualifiedName": "Moskitiery_js.maksymalne_wys",
+    "name": "maksymalne_wys",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }
