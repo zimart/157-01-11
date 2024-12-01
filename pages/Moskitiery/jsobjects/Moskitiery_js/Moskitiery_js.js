@@ -59,11 +59,11 @@ var szerokosc = szerokosc_input.text;
 var wysokosc = podawana_wysokosc_input.text;
 var obwod;
 if (typ_moskitiery === "RAMKOWA") { obwod = (((2*szerokosc)+(2*wysokosc))/1000); }
-else if (typ_moskitiery === "OTWIERANA-MRO") { skrottyp = "MRO"}
-else if (typ_moskitiery === "PRZESUWNA-MRP") { skrottyp = "MRP"}
-else if (typ_moskitiery === "PLISOWANA-MPH") { skrottyp = "MPH"}
-else if (typ_moskitiery === "ZWIJANA MZN") { skrottyp = "MZN"}
-else if (typ_moskitiery === "PIONOWA MPH-VERTI") { skrottyp = "VERTI"}
+else if (typ_moskitiery === "OTWIERANA-MRO") { obwod = ((((2*szerokosc)+(2*wysokosc))+szerokosc)/1000);}
+else if (typ_moskitiery === "PRZESUWNA-MRP") { obwod = ((((2*szerokosc)+(2*wysokosc))+2*szerokosc)/1000);}
+else if (typ_moskitiery === "PLISOWANA-MPH") { obwod = (((2*szerokosc)+(3*wysokosc))/1000);}
+else if (typ_moskitiery === "ZWIJANA MZN") { obwod = (((1*szerokosc)+(2*wysokosc))/1000);}
+else if (typ_moskitiery === "PIONOWA MPH-VERTI") { obwod = (((3*szerokosc)+(2*wysokosc))/1000);}
 	
 return obwod;
 
