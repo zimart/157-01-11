@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
+  "bottomRow": 36,
   "boxShadow": "none",
   "defaultText": "{{Moskitiery_skrot_system.skrot_typ.data}}",
   "dynamicBindingPathList": [
@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 31,
   "showStepArrows": false,
-  "topRow": 30,
+  "topRow": 29,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "myfj0kr54x",

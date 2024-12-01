@@ -50,7 +50,23 @@ await	Moskitiery_skrot_kolor.run();
 //.then(() => 
 //await closeModal(LanguageLoading.name))	;
 
-}
+},
+	
+obwod: function () {
+var typ_moskitiery = typmoskitiery.selectedOptionLabel;
+var szerokosc = szerokosc_input.text;
+var wysokosc = podawana_wysokosc_input.text;
+var obwod;
+if (typ_moskitiery === "RAMKOWA") { obwod = (((2*szerokosc)+(2*wysokosc))/1000); }
+else if (typ_moskitiery === "OTWIERANA-MRO") { skrottyp = "MRO"}
+else if (typ_moskitiery === "PRZESUWNA-MRP") { skrottyp = "MRP"}
+else if (typ_moskitiery === "PLISOWANA-MPH") { skrottyp = "MPH"}
+else if (typ_moskitiery === "ZWIJANA MZN") { skrottyp = "MZN"}
+else if (typ_moskitiery === "PIONOWA MPH-VERTI") { skrottyp = "VERTI"}
+	
+return obwod;
+
+},		
 	
 
 	

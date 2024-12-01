@@ -39,7 +39,7 @@
   "mobileRightColumn": 44,
   "mobileTopRow": 12,
   "needsErrorInfo": false,
-  "onClick": "{{button_sku.oblicz_form()}}",
+  "onClick": "{{Moskitiery_button_sku.oblicz_form()}}",
   "originalBottomRow": 25,
   "originalTopRow": 21,
   "parentColumnSpace": 18.40625,

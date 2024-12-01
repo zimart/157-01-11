@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 43,
+  "bottomRow": 42,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -46,7 +46,7 @@
   "text": "Cena plisy brutto (23%) : {{Number(Cena_plisy.text*1.23).toFixed(2)}}",
   "textAlign": "RIGHT",
   "textColor": "#71717a",
-  "topRow": 39,
+  "topRow": 38,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

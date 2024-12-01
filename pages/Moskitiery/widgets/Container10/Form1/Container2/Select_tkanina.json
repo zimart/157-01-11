@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 34,
+  "bottomRow": 33,
   "boxShadow": "none",
   "defaultOptionValue": "P202",
   "dynamicBindingPathList": [
@@ -58,7 +58,7 @@
   "rightColumn": 16,
   "serverSideFiltering": false,
   "sourceData": "{{Plisy_tkanina.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
-  "topRow": 29,
+  "topRow": 28,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "psksqvlpxy",
