@@ -26,7 +26,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": "{{rodzajprofila.selectedOptionLabel!==\"STANDARD-GIĘTA\"&&rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-ZEWN.\"&&rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-WEWN.\"}}",
+  "isDisabled": "{{rodzajprofila.selectedOptionLabel!==\"STANDARD-GIĘTA\"&&rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-ZEWN.\"&&rodzajprofila.selectedOptionLabel!==\"EKSTR. NAROŻNIK-WEWN.\"}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,

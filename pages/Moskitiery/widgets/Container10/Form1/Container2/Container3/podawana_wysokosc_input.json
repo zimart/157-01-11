@@ -63,7 +63,7 @@
   "mobileRightColumn": 28,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indekswys'))\n}}\n",
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indekswys'))\n.then(() =>\nMoskitiery_js.obwod())\n}}\n",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 4,
