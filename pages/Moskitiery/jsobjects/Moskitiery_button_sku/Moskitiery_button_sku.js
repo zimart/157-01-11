@@ -27,9 +27,9 @@ moskitiery_dodaj_pozycje: async () => {
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 //await showModal(LanguageLoading.name)
 
-await Plisy_dodajpozycje.run();
+await Moskitiery_dodajpozycje.run();
 //.then(() => 
-await Plisy_przeliczpozycje.run();
+//await Plisy_przeliczpozycje.run();
 await Moskitiery_tabela_inventory.run();
 },	
 	

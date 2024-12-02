@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "defaultText": "{{Number(appsmith.store.cenamoskitiery*((doplataprofil.text)/100)).toFixed(2)}}",
   "dynamicBindingPathList": [
@@ -50,7 +50,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
+  "originalBottomRow": 5,
   "originalTopRow": 0,
   "parentColumnSpace": 18.6884765625,
   "parentId": "er5qa5lbjh",

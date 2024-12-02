@@ -20,9 +20,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "onClick"
     }
   ],
   "dynamicTriggerPathList": [

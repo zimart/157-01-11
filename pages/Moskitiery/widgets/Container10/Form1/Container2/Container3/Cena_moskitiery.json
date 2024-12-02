@@ -4,9 +4,9 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatykolor.text+Input38.text).toFixed(2)}}",
+  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatykolor.text+kosztmalowania.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -50,7 +50,7 @@
   "mobileRightColumn": 14,
   "mobileTopRow": 11,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
+  "originalBottomRow": 4,
   "originalTopRow": 0,
   "parentColumnSpace": 18.6884765625,
   "parentId": "er5qa5lbjh",
