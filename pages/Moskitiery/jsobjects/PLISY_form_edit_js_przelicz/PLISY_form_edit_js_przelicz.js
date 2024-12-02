@@ -7,7 +7,7 @@ przelicz_plisy: async () => {
 //await showModal(LanguageLoading.name)
 await edit_update_plisy.run();
 //.then(() => 
-            await Plisy_przeliczpozycje.run();
+            await Moskitiery_przeliczpozycje.run();
 //.then(() => 
                await Moskitiery_tabela_inventory.run();
 //.then(() => 

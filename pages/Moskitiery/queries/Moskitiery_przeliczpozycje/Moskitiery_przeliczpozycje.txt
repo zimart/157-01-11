@@ -1,0 +1,28 @@
+UPDATE inventory_moskitiery SET 
+    systemzdoplata = cena + kosztprofil + doplatakolor,
+	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		systemporabacie = systemzdoplata-kwotarabatsystem,
+		cenanetto = systemporabacie,
+		razemnetto = cenanetto * ilosc,
+		komentarz = concat(linia,"/",kolor,"/",szerokosc,"x",wysokosc,"/"),
+		moc="MOSKITIERA",
+		
+		opisbezrabatow = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
+		
+		opiszrabatami = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
+		
+		opiszrabatami_de = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
+		
+		opisbezrabatow_de = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
+		
+		
+		
+		opisbezrabatow_en = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
+		
+		opiszrabatami_en = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto)
+		
+	
+					
+WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};
+
+

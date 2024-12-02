@@ -1146,7 +1146,7 @@
   },
   "scrollContents": true,
   "showReset": true,
-  "sourceData": "{{_.omit(tabela_plisy_inventory_id.tableData[0], \"customColumn1\", \"id\")}}",
+  "sourceData": "{{_.omit(tabela_moskitiery_inventory_id.tableData[0], \"customColumn1\", \"id\")}}",
   "submitButtonLabel": "Submit",
   "submitButtonStyles": {
     "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

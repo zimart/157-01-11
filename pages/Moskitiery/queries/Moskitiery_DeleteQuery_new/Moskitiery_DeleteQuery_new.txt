@@ -1,0 +1,2 @@
+DELETE FROM inventory_moskitiery
+WHERE id = {{tabela_moskitiery_inventory_id.triggeredRow.id}};

@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67252580698c850488983504_687587e6-1f1a-4f08-a462-2a6481774fa3",
-  "id": "Moskitiery_Plisy_kasujzglownej",
+  "id": "Moskitiery_Moskitiery_kasujzglownej",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM inventory_main WHERE inventory_main.id_wiersz = {{tabela_plisy_inventory_id.triggeredRow.id}}\n",
+      "body": "DELETE FROM inventory_main WHERE inventory_main.id_wiersz = {{tabela_moskitiery_inventory_id.triggeredRow.id}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Plisy_kasujzglownej",
+    "name": "Moskitiery_kasujzglownej",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

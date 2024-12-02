@@ -29,4 +29,4 @@ UPDATE inventory_plisy SET
     komentarz = '{{Input35.text}}',
     opis = '{{Input35.text}}'
    
-  WHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}}
+  WHERE id = {{tabela_moskitiery_inventory_id.triggeredRow.id}}

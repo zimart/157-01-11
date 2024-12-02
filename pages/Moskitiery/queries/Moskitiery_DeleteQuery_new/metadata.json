@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67252580698c850488983504_5fab2312-c6de-4082-834b-a3bdf3e4f235",
-  "id": "Moskitiery_Plisy_DeleteQuery_new",
+  "id": "Moskitiery_Moskitiery_DeleteQuery_new",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM inventory_plisy\nWHERE id = {{tabela_plisy_inventory_id.triggeredRow.id}};",
+      "body": "DELETE FROM inventory_moskitiery\nWHERE id = {{tabela_moskitiery_inventory_id.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Plisy_DeleteQuery_new",
+    "name": "Moskitiery_DeleteQuery_new",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

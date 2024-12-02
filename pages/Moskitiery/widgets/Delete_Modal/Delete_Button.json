@@ -24,7 +24,7 @@
   "isVisible": "true",
   "labelTextSize": "0.875rem",
   "leftColumn": 46,
-  "onClick": "{{Plisy_kasujzglownej.run().then(() => {\n  Plisy_DeleteQuery_new.run();\n  closeModal(Delete_Modal.name);\n  Moskitiery_tabela_inventory.run();\n});}}",
+  "onClick": "{{Moskitiery_kasujzglownej.run().then(() => {\n  Moskitiery_DeleteQuery_new.run();\n  Moskitiery_tabela_inventory.run();\n  closeModal(Delete_Modal.name);\n});}}",
   "parentId": "zi8fjakv8o",
   "recaptchaType": "V3",
   "rightColumn": 64,

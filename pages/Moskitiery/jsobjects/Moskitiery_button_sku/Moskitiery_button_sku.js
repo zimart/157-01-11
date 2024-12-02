@@ -29,7 +29,7 @@ moskitiery_dodaj_pozycje: async () => {
 
 await Moskitiery_dodajpozycje.run();
 //.then(() => 
-//await Plisy_przeliczpozycje.run();
+await Moskitiery_przeliczpozycje.run();
 await Moskitiery_tabela_inventory.run();
 },	
 	

@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatykolor.text+kosztmalowania.text).toFixed(2)}}",
+  "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatyprofil.text+kosztmalowania.text).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

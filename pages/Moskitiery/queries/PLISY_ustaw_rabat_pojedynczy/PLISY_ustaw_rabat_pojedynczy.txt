@@ -1,5 +1,5 @@
 UPDATE inventory_plisy SET
-     rabatsystem =  '{{tabela_plisy_inventory_id.updatedRow.rabatsystem}}',
+     rabatsystem =  '{{tabela_moskitiery_inventory_id.updatedRow.rabatsystem}}',
 		
 	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),
 		systemporabacie = systemzdoplata-kwotarabatsystem,
@@ -8,4 +8,4 @@ UPDATE inventory_plisy SET
 		 
 		 
 
-WHERE id = {{tabela_plisy_inventory_id.updatedRow.id}}; 
+WHERE id = {{tabela_moskitiery_inventory_id.updatedRow.id}}; 
