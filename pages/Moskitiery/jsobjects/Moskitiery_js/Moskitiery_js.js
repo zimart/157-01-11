@@ -55,12 +55,12 @@ var typ_moskitiery = typmoskitiery.selectedOptionLabel;
 var szerokosc = szerokosc_input.text;
 var wysokosc = podawana_wysokosc_input.text;
 var obwod;
-if (typ_moskitiery === "RAMKOWA") { obwod = (((2*szerokosc)+(2*wysokosc))/1000); }
-else if (typ_moskitiery === "OTWIERANA-MRO") { skrottyp = "MRO"}
-else if (typ_moskitiery === "PRZESUWNA-MRP") { skrottyp = "MRP"}
-else if (typ_moskitiery === "PLISOWANA-MPH") { skrottyp = "MPH"}
-else if (typ_moskitiery === "ZWIJANA MZN") { skrottyp = "MZN"}
-else if (typ_moskitiery === "PIONOWA MPH-VERTI") { skrottyp = "VERTI"}
+if (typ_moskitiery === "RAMKOWA") { obwod = (((2*szerokosc)+(2*wysokosc))/1000) }
+else if (typ_moskitiery === "OTWIERANA-MRO") { obwod = (((3*szerokosc)+(2*wysokosc))/1000)}
+else if (typ_moskitiery === "PRZESUWNA-MRP") { obwod = (((3*szerokosc)+(2*wysokosc))/1000)}
+else if (typ_moskitiery === "PLISOWANA-MPH") { obwod = (((1*szerokosc)+(3*wysokosc))/1000)}
+else if (typ_moskitiery === "ZWIJANA MZN") { obwod = (((1*szerokosc)+(2*wysokosc))/1000)}
+else if (typ_moskitiery === "PIONOWA MPH-VERTI") { obwod = (((3*szerokosc)+(2*wysokosc))/1000)}
 	
 return obwod;
 
@@ -91,6 +91,17 @@ else if (typ_moskitiery === "PIONOWA MPH-VERTI") {max3="min 601 max 2000";}
 	
 return max3;
 },	
+
+polemalowania: function () {
+var kolormosk = kolor_select.selectedOptionLabel;
+var obwod = Input36.text;
+var polemalowania2;
+if (kolormosk === "RAL SPECJALNY") { polemalowania2 = obwod*0.14 }
+else polemalowania2 = 0;
+
+return polemalowania2;
+
+},			
 	
 	
 }

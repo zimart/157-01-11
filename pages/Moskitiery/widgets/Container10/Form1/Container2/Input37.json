@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "{{Input36.text*0.12}}",
+  "defaultText": "{{Number(Moskitiery_js.polemalowania.data||0).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
