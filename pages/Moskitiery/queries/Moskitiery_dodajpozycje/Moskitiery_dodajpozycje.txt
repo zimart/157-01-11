@@ -6,11 +6,13 @@ cena,
 doplataprofil,
 kosztprofil,
 doplatakolor, 
-systemzdoplata, rabatsystem,  linia, typmoskitiery, kolor, blaszka, ral, fk_oferty_inventory_id, ilosc, moc, opis, rodzajmotor,polemalowania,obwod)
+systemzdoplata, rabatsystem,kwotarabatsystem, linia, typmoskitiery, kolor, blaszka, ral, fk_oferty_inventory_id, ilosc, moc, opis, rodzajmotor,polemalowania,obwod,cenanetto)
   VALUES ('{{podawana_wysokosc_input.text}}',
 					'{{szerokosc_input.text}}',
 					'{{sku_input.text}}',
 					'{{cenabazowasystemu.text}}',
 					'{{doplataprofil.text}}',
 					'{{kosztdoplatyprofil.text}}',
-					'{{kosztmalowania.text}}', '{{Cena_moskitiery.text}}', '{{rabatsystem.text}}', '{{typmoskitiery.selectedOptionLabel}}', '{{rodzajprofila.selectedOptionLabel}}', '{{kolor_select.selectedOptionLabel}}', '{{blaszka.selectedOptionLabel}}', '{{ralspecjal.text}}', '{{idoferty_appsmith.text}}', '{{Input2.text}}', "MOSKITIERA", '{{Input33.text}}', '3','{{polemalowania.text}}',{{obwodinput.text}});
+					'{{kosztmalowania.text}}', '{{Cena_moskitiery.text}}', '{{rabatsystem.text}}',
+					'{{Cena_moskitiery.text*(rabatsystem.text/100)}}',
+					'{{typmoskitiery.selectedOptionLabel}}', '{{rodzajprofila.selectedOptionLabel}}', '{{kolor_select.selectedOptionLabel}}', '{{blaszka.selectedOptionLabel}}', '{{ralspecjal.text}}', '{{idoferty_appsmith.text}}', '{{Input2.text}}', "MOSKITIERA", '{{Input33.text}}', '3','{{polemalowania.text}}',{{obwodinput.text}},{{Cena_moskitiery.text}});

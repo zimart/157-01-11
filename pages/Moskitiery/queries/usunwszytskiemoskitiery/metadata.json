@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_1dfe23a5-c4f2-489f-980f-9deff0b625ef",
-  "id": "Moskitiery_plisy_FORM_kolor_zapytaj",
+  "gitSyncId": "67252580698c850488983504_0e31fa16-8afa-4777-9426-13c9009b2ae8",
+  "id": "Moskitiery_usunwszytskiemoskitiery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"profil\" ;",
+      "body": "DELETE FROM inventory_moskitiery  WHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}}; ",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,10 +22,14 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [],
-    "executeOnLoad": true,
-    "name": "plisy_FORM_kolor_zapytaj",
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
+    "executeOnLoad": false,
+    "name": "usunwszytskiemoskitiery",
     "pageId": "Moskitiery",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

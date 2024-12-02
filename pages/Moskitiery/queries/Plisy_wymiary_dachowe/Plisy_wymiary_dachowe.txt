@@ -1,1 +1,0 @@
-SELECT * FROM plisy_dachowe where typokna = {{dachoweokno.selectedOptionLabel}};

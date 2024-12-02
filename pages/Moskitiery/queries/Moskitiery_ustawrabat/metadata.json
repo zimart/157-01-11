@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_7f9f2cae-7a51-4e8a-b5c1-25f0bee2b8d1",
-  "id": "Moskitiery_Plisy_wymiary_dachowe",
+  "gitSyncId": "67252580698c850488983504_e971d35d-3cb6-488e-a982-a04456d1eec0",
+  "id": "Moskitiery_Moskitiery_ustawrabat",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM plisy_dachowe where typokna = {{dachoweokno.selectedOptionLabel}};",
+      "body": "UPDATE inventory_moskitiery SET\n    rabatsystem = '{{rabatsystem.text}}',\n\t  kwotarabatsystem = systemzdoplata*(rabatsystem/100),\n\t\tsystemporabacie = systemzdoplata-kwotarabatsystem,\n\t\tcenanetto = systemporabacie,\n\t\trazemnetto = cenanetto * ilosc\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Plisy_wymiary_dachowe",
+    "name": "Moskitiery_ustawrabat",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

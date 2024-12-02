@@ -1,5 +1,6 @@
 UPDATE inventory_main SET
-    
+    kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		systemporabacie = systemzdoplata-kwotarabatsystem,
 		vat = {{vat.selectedOptionValue}},
     kwotarabatogolny = cenanetto*(rabatogolny/100),
 		cenaporabacie = cenanetto-kwotarabatogolny,

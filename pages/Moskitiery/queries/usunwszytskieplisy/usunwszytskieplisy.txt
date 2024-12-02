@@ -1,1 +1,0 @@
-DELETE FROM inventory_plisy  WHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}}; 

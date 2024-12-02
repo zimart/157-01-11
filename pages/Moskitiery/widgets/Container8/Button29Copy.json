@@ -36,7 +36,7 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{usunwszytskieplisy.run()\n.then(() => {\nMoskitiery_tabela_inventory.run()})}}",
+  "onClick": "{{usunwszytskiemoskitiery.run()\n.then(() => {\nMoskitiery_tabela_inventory.run()})}}",
   "originalBottomRow": 8,
   "originalTopRow": 4,
   "parentColumnSpace": 20.25,

@@ -1,4 +1,4 @@
-UPDATE inventory_plisy SET
+UPDATE inventory_moskitiery SET
      rabatsystem =  '{{tabela_moskitiery_inventory_id.updatedRow.rabatsystem}}',
 		
 	  kwotarabatsystem = systemzdoplata*(rabatsystem/100),

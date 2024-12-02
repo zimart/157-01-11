@@ -557,7 +557,7 @@
       "id": "customColumn2",
       "index": 10,
       "isCellEditable": false,
-      "isCellVisible": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow.rodzajmotor === \"1\"||currentRow.rodzajmotor === \"19\"||currentRow.rodzajmotor === \"2\"))}}",
+      "isCellVisible": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow.rodzajmotor === \"1\"||currentRow.rodzajmotor === \"19\"||currentRow.rodzajmotor === \"2\"||currentRow.rodzajmotor === \"3\"))}}",
       "isDerived": true,
       "isDisabled": false,
       "isDiscardVisible": true,

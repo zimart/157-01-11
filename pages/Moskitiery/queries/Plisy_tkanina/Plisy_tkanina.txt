@@ -1,1 +1,0 @@
-SELECT tkanina FROM plisy_tkaniny WHERE kolekcja = {{rodzajprofila.selectedOptionValue}};

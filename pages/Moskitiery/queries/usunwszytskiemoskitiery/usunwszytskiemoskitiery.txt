@@ -1,0 +1,1 @@
+DELETE FROM inventory_moskitiery  WHERE fk_oferty_inventory_id = {{idoferty_appsmith.text}}; 
