@@ -68,7 +68,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n.then(() =>\nMoskitiery_js.obwod())\n}}",
+  "onBlur": "{{\nremoveValue('sku_value')\n.then(() =>\nremoveValue('indeksszer'))\n.then(() =>\nMoskitiery_js.obwod())\n.then(() =>\nMoskitiery_js.polemalowania())\n}}",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 41,
