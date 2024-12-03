@@ -1,0 +1,1 @@
+SELECT DISTINCT typ FROM moskitiery_kolor where linia = {{edit_linia.selectedOptionLabel}};

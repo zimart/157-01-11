@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].linia))(edit_linia.options, edit_linia.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -29,9 +29,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,9 +44,9 @@
   "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Linia - {{Plisy_form_plisy_trigered.data[0].linia}}",
+  "labelText": "Linia - {{Moskitiery_form_plisy_trigered.data[0].linia}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Linia - {{Plisy_form_plisy_trigered.data[0].linia}}",
+  "labelTooltip": "Linia - {{Moskitiery_form_plisy_trigered.data[0].linia}}",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -60,7 +57,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie.run();\nPlisy_FORM_doplata_kolor.run();}}",
+  "onOptionChange": "{{clearStore().then(() => {\n  Moskitiery_js.typ();\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 17,
@@ -73,7 +70,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 10,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"VEGAS\",\n    \"value\": \"VEGAS\"\n  },\n  {\n    \"label\": \"DACHOWA-VEGAS\",\n    \"value\": \"DACHOWA-VEGAS\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"RAMKOWA\",\n    \"value\": \"RAMKOWA\"\n  },\n  {\n    \"label\": \"OTWIERANA-MRO\",\n    \"value\": \"OTWIERANA-MRO\"\n  },\n\t{\n    \"label\": \"PRZESUWNA-MRP\",\n    \"value\": \"PRZESUWNA-MRP\"\n  },\n\t{\n    \"label\": \"PLISOWANA-MPH\",\n    \"value\": \"PLISOWANA-MPH\"\n  },\n\t{\n    \"label\": \"PIONOWA MPH-VERTI\",\n    \"value\": \"PIONOWA MPH-VERTI\"\n  },\n\t{\n    \"label\": \"ZWIJANA MZN\",\n    \"value\": \"ZWIJANA MZN\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 26,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_form_plisy_trigered.data[0].ilosc}}",
+  "defaultText": "{{Moskitiery_form_plisy_trigered.data[0].ilosc}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

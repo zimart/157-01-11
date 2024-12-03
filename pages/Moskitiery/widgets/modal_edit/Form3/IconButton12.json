@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 25,
   "bottomRowBeforeCollapse": 25,
   "boxShadow": "none",
   "buttonColor": "#831843",
@@ -40,7 +40,7 @@
   "mobileTopRow": 12,
   "needsErrorInfo": false,
   "onClick": "{{Moskitiery_button_sku.oblicz_form()}}",
-  "originalBottomRow": 25,
+  "originalBottomRow": 21,
   "originalTopRow": 21,
   "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",

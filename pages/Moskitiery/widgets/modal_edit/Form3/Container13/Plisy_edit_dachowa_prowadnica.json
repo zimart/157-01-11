@@ -5,7 +5,7 @@
   "bottomRow": 10,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].prowadnicakolor))(Plisy_edit_dachowa_prowadnica.options, Plisy_edit_dachowa_prowadnica.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].prowadnicakolor))(Plisy_edit_dachowa_prowadnica.options, Plisy_edit_dachowa_prowadnica.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -54,9 +54,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Kolor prowadnicy - {{Plisy_form_plisy_trigered.data[0].prowadnicakolor}}",
+  "labelText": "Kolor prowadnicy - {{Moskitiery_form_plisy_trigered.data[0].prowadnicakolor}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Producent okna - {{Plisy_form_plisy_trigered.data[0].prowadnicakolor}}",
+  "labelTooltip": "Producent okna - {{Moskitiery_form_plisy_trigered.data[0].prowadnicakolor}}",
   "labelWidth": 5,
   "leftColumn": 23,
   "maxDynamicHeight": 9000,

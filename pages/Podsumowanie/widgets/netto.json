@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 174,
-  "bottomRowBeforeCollapse": 174,
+  "bottomRowBeforeCollapse": 182,
   "boxShadow": "none",
   "defaultText": "{{((sumanettoporabacie.data[0][\"SUM (razemnetto)\"]/kursinput.text)*narzutpdf.text).toFixed(2)||\" \"}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 170,
-  "topRowBeforeCollapse": 170,
+  "topRowBeforeCollapse": 178,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "lpqtbaf370",

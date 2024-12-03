@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_5814a5f9-cb9b-451a-8080-723e7ebec666",
-  "id": "Moskitiery_Plisy_form_plisy_trigered",
+  "gitSyncId": "67252580698c850488983504_a1dd9e1a-04d8-4386-8cf2-69c13e7072a1",
+  "id": "Moskitiery_Moskitiery_FORM_typ_moskitery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM inventory_plisy WHERE id={{tabela_moskitiery_inventory_id.triggeredRow.id}};",
+      "body": "SELECT DISTINCT typ FROM moskitiery_kolor where linia = {{edit_linia.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "Plisy_form_plisy_trigered",
+    "name": "Moskitiery_FORM_typ_moskitery",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

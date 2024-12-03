@@ -5,7 +5,7 @@
   "bottomRow": 10,
   "bottomRowBeforeCollapse": 10,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Plisy_form_plisy_trigered.data[0].dachowaokno))(Plisy_edit_producentdachowaCopy.options, Plisy_edit_producentdachowaCopy.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].dachowaokno))(Plisy_edit_producentdachowaCopy.options, Plisy_edit_producentdachowaCopy.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -54,9 +54,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Okno - {{Plisy_form_plisy_trigered.data[0].dachowaokno}}",
+  "labelText": "Okno - {{Moskitiery_form_plisy_trigered.data[0].dachowaokno}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Producent okna - {{Plisy_form_plisy_trigered.data[0].dachowaproducent}}",
+  "labelTooltip": "Producent okna - {{Moskitiery_form_plisy_trigered.data[0].dachowaproducent}}",
   "labelWidth": 5,
   "leftColumn": 12,
   "maxDynamicHeight": 9000,

@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 193,
-  "bottomRowBeforeCollapse": 193,
+  "bottomRowBeforeCollapse": 201,
   "boxShadow": "none",
   "defaultText": "{{kursnbp.data.rates[0].no}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 29,
   "showStepArrows": false,
   "topRow": 189,
-  "topRowBeforeCollapse": 189,
+  "topRowBeforeCollapse": 197,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "aetjd9cr07",
