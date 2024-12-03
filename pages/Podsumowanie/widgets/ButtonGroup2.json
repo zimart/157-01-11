@@ -24,6 +24,9 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem1.backgroundColor"
+    },
+    {
+      "key": "groupButtons.groupButtonoa96q6vcdl.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -66,7 +69,7 @@
       "buttonType": "SIMPLE",
       "iconName": "add",
       "id": "groupButton1",
-      "index": 0,
+      "index": 1,
       "isDisabled": false,
       "isVisible": true,
       "label": "{{i18n.translate(\"DODAJ POZYCJĘ\")}}/{{i18n.translate(\"MONTAŻ\")}}",
@@ -80,7 +83,7 @@
       "buttonType": "SIMPLE",
       "iconName": "add",
       "id": "groupButton2",
-      "index": 1,
+      "index": 2,
       "isDisabled": false,
       "isVisible": true,
       "label": "PDF",
@@ -94,7 +97,7 @@
       "buttonType": "MENU",
       "iconName": "add",
       "id": "groupButton3",
-      "index": 2,
+      "index": 0,
       "isDisabled": false,
       "isVisible": true,
       "label": "{{i18n.translate(\"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII\")}}",
@@ -139,6 +142,21 @@
       },
       "placement": "CENTER",
       "widgetId": ""
+    },
+    "groupButtonoa96q6vcdl": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "id": "groupButtonoa96q6vcdl",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Do something",
+      "menuItems": {},
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "81mxjn5cva"
     }
   },
   "isCanvas": false,

@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 8,
+  "bottomRow": 6,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 4,
   "mobileTopRow": 0,
   "needsErrorInfo": false,
-  "originalBottomRow": 8,
-  "originalTopRow": 2,
+  "originalBottomRow": 6,
+  "originalTopRow": 0,
   "overflow": "NONE",
   "parentColumnSpace": 30,
   "parentId": "7tq308teo6",
@@ -46,7 +46,7 @@
   "text": "Netto {{((sumanettoporabacie.data[0][\"SUM (razemnetto)\"]/kursinput.text)*narzutpdf.text).toFixed(2)||\" \"}} {{Select6.selectedOptionLabel}}\nVAT: {{(podatek.text/kursinput.text).toFixed(2)}} {{Select6.selectedOptionLabel}}\nBrutto : {{((sumabrutto.data[0][\"SUM (brutto)\"]/kursinput.text)*narzutpdf.text).toFixed(2)||\" \"}} {{Select6.selectedOptionLabel}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 2,
+  "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
