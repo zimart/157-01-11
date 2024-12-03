@@ -54,7 +54,7 @@ const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.seq,
-Produkt: item.Produkt +"\n"+item.komentarz,
+Produkt: item.Produkt +"\n"+item.skugen+"\n"+item.komentarz,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
@@ -72,7 +72,7 @@ const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.seq,
 //Produkt: item.opiszrabatami_de,
-Produkt: item.Produkt +"\n"+item.opisbezrabatow,
+Produkt: item.Produkt +"\n"+item.skugen+"\n"+"\n"+item.opisbezrabatow,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
@@ -407,8 +407,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: ,
-minCellHeight:12,
+minCellWidth: 8,
+minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'

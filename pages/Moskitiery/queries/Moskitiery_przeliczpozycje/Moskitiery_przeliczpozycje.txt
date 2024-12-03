@@ -4,10 +4,10 @@ UPDATE inventory_moskitiery SET
 		systemporabacie = systemzdoplata-kwotarabatsystem,
 		cenanetto = systemporabacie,
 		razemnetto = cenanetto * ilosc,
-		komentarz = concat(linia,"/",kolor,"/",szerokosc,"x",wysokosc,"/"),
+		komentarz =concat(opis,"/",linia,"/",typmoskitiery,"/",kolor,"/",szerokosc,"x",wysokosc,"/",blaszka),
 		moc="MOSKITIERA",
 		
-		opisbezrabatow = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
+		opisbezrabatow = CONCAT("Typ: ",linia,"Rodzaj: ",typmoskitiery," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
 		
 		opiszrabatami = CONCAT("System: ",linia," | Kolor: ",kolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena z doplatami: ",cenanetto),
 		

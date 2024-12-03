@@ -52,7 +52,7 @@ const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.seq,
-Produkt: item.Produkt +"\n"+item.komentarz,
+Produkt: item.Produkt +"\n"+item.skugen+"\n"+item.komentarz,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
@@ -70,7 +70,7 @@ const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.seq,
 //Produkt: item.opiszrabatami_de,
-Produkt: item.Produkt +"\n"+"\n"+item.opisbezrabatow_de,
+Produkt: item.Produkt +"\n"+"\n"+item.skugen+"\n"+item.opisbezrabatow_de,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate

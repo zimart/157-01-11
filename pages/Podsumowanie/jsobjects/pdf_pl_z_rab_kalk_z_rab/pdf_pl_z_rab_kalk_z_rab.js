@@ -49,12 +49,12 @@ const columns4 = [
 ];		
 	
 
-const currencyRate = kursinput.text; // Example currency rate for conversion
+const currencyRate = kursinput.text; // Example currency rate for conversioni
 const narzuty = narzutpdf.text;
 const data = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.seq,
-Produkt: item.Produkt +"\n"+item.komentarz,
+Produkt: item.Produkt +"\n"+item.skugen+"\n"+item.komentarz,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
@@ -72,7 +72,7 @@ const data4 = glowna_tabela.tableData.map(item => ({
 //Produkt: item.Produkt +"\n"+item.opiszrabatami,
 Lp:item.seq,
 //Produkt: item.opiszrabatami_de,
-Produkt: item.Produkt +"\n"+item.opiszrabatami,
+Produkt: item.Produkt+"\n"+item.skugen+"\n"+"\n"+item.opiszrabatami,
 //Produkt: item.Produkt,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
