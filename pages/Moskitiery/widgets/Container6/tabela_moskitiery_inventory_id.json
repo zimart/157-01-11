@@ -1639,7 +1639,7 @@
       "isVisible": true,
       "label": "Rabat system",
       "notation": "standard",
-      "onSubmit": "{{Moskitiery_ustaw_rabat_pojed.run().then(() => {\n  Moskitiery_tabela_inventory.run();\n}).catch(() => {});}}",
+      "onSubmit": "{{Moskitiery_ustaw_rabat_pojed.run()\n.then(() => \nMoskitiery_przeliczpozycje.run()).then(() => Moskitiery_tabela_inventory.run())}}",
       "originalId": "rabatsystem",
       "sticky": "",
       "textColor": "{{tabela_moskitiery_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#B71C1C\" : \"#000000\"))}}",

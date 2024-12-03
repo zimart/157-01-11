@@ -59,7 +59,7 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "onBlur": "{{Moskitiery_ustawrabat.run().then(() => {\n  Moskitiery_przeliczpozycje.run();\n}).then(() => Moskitiery_tabela_inventory.run());}}",
+  "onBlur": "{{Moskitiery_ustawrabat.run().then(() => {\n  Moskitiery_przeliczpozycje.run();\n  Moskitiery_tabela_inventory.run();\n}).then(() => Moskitiery_tabela_inventory.run());}}",
   "onTextChanged": "",
   "originalBottomRow": 10,
   "originalTopRow": 4,

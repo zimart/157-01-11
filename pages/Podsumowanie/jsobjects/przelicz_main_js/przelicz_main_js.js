@@ -12,6 +12,10 @@ await showModal(LanguageLoading.name);
 //.then(() => 
 await updateopismainkursscreeny.run();
 //.then(() => 
+	
+await updateopismainkursmoskitiery.run();
+//.then(() => 
+	
 await updateopismainkursplisy.run();
 //.then(() =>
 await tabela_glowna.run();
