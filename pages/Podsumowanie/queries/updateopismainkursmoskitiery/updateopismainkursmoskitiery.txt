@@ -5,18 +5,30 @@ SET inventory_main.opiszrabatami = CONCAT("Typ: ",inventory_moskitiery.linia,
 " | Kolor: ",inventory_moskitiery.kolor," ",inventory_moskitiery.ral,													
 " | Szerokość: ", inventory_moskitiery.szerokosc,
 " | Wysokość: ",inventory_moskitiery.wysokosc,
-
-" | Cena bazowa: ",round((inventory_moskitiery.cena/{{kursinput.text}})*{{narzutpdf.text}},2)," ",{{Select6.selectedOptionLabel}},
-																					
-" | Dopłata % do profila:",	inventory_moskitiery.doplataprofil,																	
+" | Blaszka:",inventory_moskitiery.blaszka,
+" | Cena bazowa: ",round((inventory_moskitiery.cena/{{kursinput.text}})*{{narzutpdf.text}},2)," ",{{Select6.selectedOptionLabel}},								
+" | Dopłata % do profila:",	inventory_moskitiery.doplataprofil,																
 " | Dopłata do profila: ",round((inventory_moskitiery.kosztprofil/{{kursinput.text}})*{{narzutpdf.text}},2),
 " ",{{Select6.selectedOptionLabel}},
-																			
-																					
 " | Dopłata kolor: ",round((inventory_moskitiery.doplatakolor/{{kursinput.text}})*{{narzutpdf.text}},2),
 " ",{{Select6.selectedOptionLabel}},
-																					
 " | Cena z doplatami: ",round((inventory_moskitiery.systemzdoplata/{{kursinput.text}})*{{narzutpdf.text}},2),
-" ",{{Select6.selectedOptionLabel}}," | Rabat: ",inventory_moskitiery.rabatsystem,"%"," | Cena po rabacie: ",round((inventory_moskitiery.cenanetto/{{kursinput.text}})*{{narzutpdf.text}},2)," ",{{Select6.selectedOptionLabel}})
+" ",{{Select6.selectedOptionLabel}}," | Rabat: ",inventory_moskitiery.rabatsystem,"%"," | Cena po rabacie: ",round((inventory_moskitiery.cenanetto/{{kursinput.text}})*{{narzutpdf.text}},2)," ",{{Select6.selectedOptionLabel}}),
+
+inventory_main.opisbezrabatow = CONCAT("Typ: ",inventory_moskitiery.linia,
+" | Rodzaj profila:",inventory_moskitiery.typmoskitiery,							
+" | Kolor: ",inventory_moskitiery.kolor," ",inventory_moskitiery.ral,													
+" | Szerokość: ", inventory_moskitiery.szerokosc,
+" | Wysokość: ",inventory_moskitiery.wysokosc,
+" | Blaszka:",inventory_moskitiery.blaszka,
+" | Cena bazowa: ",round((inventory_moskitiery.cena/{{kursinput.text}})*{{narzutpdf.text}},2)," ",{{Select6.selectedOptionLabel}},
+" | Dopłata % do profila:",	inventory_moskitiery.doplataprofil,																
+" | Dopłata do profila: ",round((inventory_moskitiery.kosztprofil/{{kursinput.text}})*{{narzutpdf.text}},2),
+" ",{{Select6.selectedOptionLabel}},
+" | Dopłata kolor: ",round((inventory_moskitiery.doplatakolor/{{kursinput.text}})*{{narzutpdf.text}},2),
+" ",{{Select6.selectedOptionLabel}},
+" | Cena z doplatami: ",round((inventory_moskitiery.cenanetto/{{kursinput.text}})*{{narzutpdf.text}},2),
+" ",{{Select6.selectedOptionLabel}})
+
 
  WHERE inventory_main.id_wiersz = inventory_moskitiery.id and inventory_main.fk_oferty_inventory_id={{idoferty_appsmith.text}};

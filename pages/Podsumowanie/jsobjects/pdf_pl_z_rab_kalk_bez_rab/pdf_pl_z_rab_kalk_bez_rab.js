@@ -35,10 +35,10 @@ const columns3 = [
 // Custom headers - kalkulacja z rabatami
 const columns4 = [
 { header: 'Lp', dataKey: 'Lp' },
-{ header: 'Produkt', dataKey: 'Produkt' },
+{ header: 'Produkt - kalkulacja bazowa', dataKey: 'Produkt' },
 { header: 'Ilość', dataKey: 'Ilosc' },
 //{ header: 'Netto', dataKey: 'cenanetto' } ,// Custom header with currency
-//{ header: 'Rabatt %', dataKey: 'Rabatprocent' } ,// Custom header with currency
+{ header: 'Rabat %', dataKey: 'Rabatprocent' } ,// Custom header with currency
 //{header: 'Rabattbetrag', dataKey: 'Rabat' } ,// Custom header with currency
 { header: 'Netto po rabacie', dataKey: 'nettopo' } ,// Custom header with currency
 //{ header: 'Opis', dataKey: 'Opis' }, // Custom header with currency
@@ -59,7 +59,7 @@ Produkt: item.Produkt +"\n"+item.skugen+"\n"+item.komentarz,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
 Opis: item.opiszrabatami,
-Rabatprocent: item.rabatogolny,
+Rabatprocent: item.rabatogolny+" %",
 Rabat: ((item.kwotarabatogolny/currencyRate)*narzuty).toFixed(2),
 nettopo: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2),
 razemnetto: ((item.razemnetto/ currencyRate)*narzuty).toFixed(2),
@@ -77,7 +77,7 @@ Produkt: item.Produkt +"\n"+item.skugen+"\n"+"\n"+item.opisbezrabatow,
 Ilosc: item.Ilosc,
 cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
 Opis: item.opiszrabatami,
-Rabatprocent: item.rabatogolny,
+Rabatprocent: item.rabatogolny+" %",
 Rabat: ((item.kwotarabatogolny/currencyRate)*narzuty).toFixed(2),
 nettopo: ((item.cenaporabacie / currencyRate)*narzuty).toFixed(2),
 razemnetto: ((item.razemnetto/ currencyRate)*narzuty).toFixed(2),
