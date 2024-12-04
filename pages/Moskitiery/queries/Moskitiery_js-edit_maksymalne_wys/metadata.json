@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "67252580698c850488983504_4d936234-98a7-4fa5-86c0-53774a01d66f",
+  "gitSyncId": "67252580698c850488983504_349a7c7c-1e6c-447a-a842-8d7fe4ccaf32",
   "id": "Moskitiery_Moskitiery_js.edit_maksymalne_wys",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "Moskitiery_js.edit_maksymalne_wys",
     "name": "edit_maksymalne_wys",
     "pageId": "Moskitiery",

@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "67252580698c850488983504_9cc24736-2c4a-4830-b52c-5188524b7fb4",
+  "gitSyncId": "67252580698c850488983504_f5e575cf-cdb1-4885-a2d5-b3bd2bc18ad7",
   "id": "Moskitiery_Moskitiery_js.rodzaj",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "Moskitiery_js.rodzaj",
     "name": "rodzaj",
     "pageId": "Moskitiery",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

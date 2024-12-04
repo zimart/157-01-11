@@ -24,10 +24,9 @@ form_typ: async () => {
 //await showModal(LanguageLoading.name)
 //await clearStore();
 //.then(() => 
-await removeValue('sku_value');
-	
+await removeValue('edit_sku_value');
 await Moskitiery_skrot_system.edit_skrot_typ();	
-//await Moskitiery_typ_moskitery.run();
+await Moskitiery_FORM_typ_moskitery.run();
 //await Moskitiery_kolor_zapytaj.run();
 	
 //.then(() => 
@@ -60,7 +59,7 @@ edit_rodzaj: async () => {
 //await showModal(LanguageLoading.name)
 //await clearStore();
 	
-await removeValue('editsku_value');
+await removeValue('edit_sku_value');
 await Moskitiery_FORM_kolor_zapytaj.run();
 
 //await Moskitiery_tabela_inventory.run();
@@ -101,7 +100,23 @@ else if (typ_moskitiery === "PIONOWA MPH-VERTI") {obwod2=(((3*szerokosc)+(2*wyso
 	
 return obwod2;
 
-},		
+},	
+	
+edit_obwod: function () {
+var typ_moskitiery2 = edit_linia.selectedOptionLabel;
+var szerokosc2 = edit_szerokosc.text;
+var wysokosc2 = edit_podawana_wysokosc_input.text;
+var obwod6;
+if (typ_moskitiery2 === "RAMKOWA") { obwod6=(((2*szerokosc2)+(2*wysokosc2))/1000); }
+else if (typ_moskitiery2 === "OTWIERANA-MRO") {obwod6=(((3*szerokosc2)+(2*wysokosc2))/1000);}
+else if (typ_moskitiery2 === "PRZESUWNA-MRP") {obwod6=(((3*szerokosc2)+(2*wysokosc2))/1000);}
+else if (typ_moskitiery2 === "PLISOWANA-MPH") {obwod6=(((1*szerokosc2)+(3*wysokosc2))/1000);}
+else if (typ_moskitiery2 === "ZWIJANA MZN") {obwod6=(((1*szerokosc2)+(2*wysokosc2))/1000);}
+else if (typ_moskitiery2 === "PIONOWA MPH-VERTI") {obwod6=(((3*szerokosc2)+(2*wysokosc2))/1000);}
+	
+return obwod6;
+
+},			
 	
 maksymalne_szer: function () {
 var typ_moskitiery = typmoskitiery.selectedOptionLabel;
@@ -139,6 +154,16 @@ else polemalowania2 = 0;
 return polemalowania2;
 
 },			
+
+edit_polemalowania: function () {
+var kolormosk7 = edit_kolor.selectedOptionLabel;
+var obwod7 = edit_obwod.text;
+var polemalowania7;
+if (kolormosk7 === "RAL SPECJALNY") { polemalowania7 = obwod7*0.14 }
+else polemalowania7 = 0;
+return polemalowania7;
+
+},			
 	
 	
 edit_maksymalne_szer: function () {
@@ -166,6 +191,5 @@ else if (typ_moskitiery === "PIONOWA MPH-VERTI") {max5="min 601 max 2000";}
 	
 return max5;
 },		
-	
-	
+
 }

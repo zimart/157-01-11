@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "",
+  "defaultText": "{{Number(Moskitiery_js.edit_obwod.data).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,13 +15,16 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
@@ -32,7 +35,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 14,
+  "leftColumn": 25,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -41,13 +44,15 @@
   "mobileRightColumn": 14.000000000000002,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "originalBottomRow": 13,
+  "originalTopRow": 6,
   "parentColumnSpace": 18.9,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 31,
+  "rightColumn": 39,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 6,

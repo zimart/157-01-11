@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "{{Number(Moskitiery_js.edit_polemalowania.data||0).toFixed(2)}}",
+  "defaultText": "{{Number(appsmith.store.edit_cenamoskitiery*((edit_doplataprofil.text)/100)).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,53 +14,45 @@
       "key": "borderRadius"
     },
     {
-      "key": "placeholderText"
-    },
-    {
-      "key": "label"
-    },
-    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "xrz4ijv6oa",
-  "label": "Pole malowania - {{Moskitiery_form_plisy_trigered.data[0].polemalowania}} m2",
+  "key": "xhtxojcuq5",
+  "label": "Koszt dopłaty profil",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 39,
+  "leftColumn": 11,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 6,
-  "mobileRightColumn": 26,
-  "mobileTopRow": 8,
+  "mobileBottomRow": 22,
+  "mobileLeftColumn": 42,
+  "mobileRightColumn": 62,
+  "mobileTopRow": 15,
   "needsErrorInfo": false,
-  "originalBottomRow": 13,
-  "originalTopRow": 6,
   "parentColumnSpace": 18.9,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{Moskitiery_form_plisy_trigered.data[0].polemalowania}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 25,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "zhaoonf6ya",
-  "widgetName": "edit_polemalowania"
+  "widgetId": "q141gqu7j8",
+  "widgetName": "edit_koszt_profil"
 }

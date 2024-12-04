@@ -5,16 +5,13 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].referencja))(edit_blaszka.options, edit_blaszka.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "placeholderText"
@@ -60,8 +57,8 @@
   "mobileRightColumn": 63,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "optionLabel": "label",
-  "optionValue": "value",
+  "optionLabel": "name",
+  "optionValue": "code",
   "originalBottomRow": 5,
   "originalTopRow": 0,
   "parentColumnSpace": 18.09375,
@@ -70,7 +67,7 @@
   "placeholderText": "{{i18n.translate(\"Blaszka\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 55,
+  "rightColumn": 56,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"4\",\n    \"code\": \"4\"\n  },\n  {\n    \"name\": \"5\",\n    \"code\": \"5\"\n  },\n  {\n    \"name\": \"6\",\n    \"code\": \"6\"\n  },\n\t{\n    \"name\": \"8\",\n    \"code\": \"8\"\n  },\n\t{\n    \"name\": \"9\",\n    \"code\": \"9\"\n  },\n\t{\n    \"name\": \"10\",\n    \"code\": \"10\"\n  },\n\t{\n    \"name\": \"11\",\n    \"code\": \"11\"\n  },\n\t{\n    \"name\": \"12\",\n    \"code\": \"12\"\n  }\n]",
   "topRow": 0,

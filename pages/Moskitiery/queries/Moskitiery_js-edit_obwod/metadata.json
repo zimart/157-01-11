@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "67252580698c850488983504_916be6cd-57de-4dba-9eb3-4ceed3a80932",
-  "id": "Moskitiery_Moskitiery_js.edit_rodzaj",
+  "gitSyncId": "67252580698c850488983504_561f7ba5-f004-4a08-8fc7-401dd5e9d10e",
+  "id": "Moskitiery_Moskitiery_js.edit_obwod",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,9 +22,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "fullyQualifiedName": "Moskitiery_js.edit_rodzaj",
-    "name": "edit_rodzaj",
+    "executeOnLoad": true,
+    "fullyQualifiedName": "Moskitiery_js.edit_obwod",
+    "name": "edit_obwod",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

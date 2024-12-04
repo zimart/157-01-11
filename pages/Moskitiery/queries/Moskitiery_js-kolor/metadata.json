@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "67252580698c850488983504_9ebe4693-66ea-4caf-921f-3d5613f4e383",
+  "gitSyncId": "67252580698c850488983504_4111c4b5-271a-43aa-8ca3-d2a14aa4cafb",
   "id": "Moskitiery_Moskitiery_js.kolor",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "Moskitiery_js.kolor",
     "name": "kolor",
     "pageId": "Moskitiery",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }
