@@ -23,10 +23,25 @@
       "key": "groupButtons.groupButton3.label"
     },
     {
-      "key": "groupButtons.groupButton3.menuItems.menuItem1.backgroundColor"
+      "key": "groupButtons.groupButtonoa96q6vcdl.buttonColor"
     },
     {
-      "key": "groupButtons.groupButtonoa96q6vcdl.buttonColor"
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.iconColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem1.textColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemgu742vm8se.iconColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemgu742vm8se.textColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem4m9kx2mqe7.iconColor"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItem4m9kx2mqe7.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -106,8 +121,8 @@
       "label": "{{i18n.translate(\"WYBIERZ KATEGORIĘ/ EDYTUJ POZYCJE Z KATEGORII\")}}",
       "menuItems": {
         "menuItem1": {
-          "backgroundColor": "{{appsmith.theme.colors.backgroundColor}}",
-          "iconColor": "#3e9985",
+          "backgroundColor": "#3e9985",
+          "iconColor": "{{appsmith.theme.colors.backgroundColor}}",
           "iconName": "circle-arrow-right",
           "id": "menuItem1",
           "index": 0,
@@ -115,11 +130,12 @@
           "isVisible": true,
           "label": "SCREENY",
           "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Screeny', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
-          "textColor": "#3e9985",
+          "textColor": "{{appsmith.theme.colors.backgroundColor}}",
           "widgetId": ""
         },
         "menuItem4m9kx2mqe7": {
-          "iconColor": "#3e9985",
+          "backgroundColor": "#3e9985",
+          "iconColor": "{{appsmith.theme.colors.backgroundColor}}",
           "iconName": "circle-arrow-right",
           "id": "menuItem4m9kx2mqe7",
           "index": 2,
@@ -127,11 +143,12 @@
           "isVisible": true,
           "label": "MOSKITIERY",
           "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Moskitiery', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
-          "textColor": "#3e9985",
+          "textColor": "{{appsmith.theme.colors.backgroundColor}}",
           "widgetId": "c3cxtqka69"
         },
         "menuItemgu742vm8se": {
-          "iconColor": "#3e9985",
+          "backgroundColor": "#3e9985",
+          "iconColor": "{{appsmith.theme.colors.backgroundColor}}",
           "iconName": "circle-arrow-right",
           "id": "menuItemgu742vm8se",
           "index": 1,
@@ -139,7 +156,7 @@
           "isVisible": true,
           "label": "PLISY",
           "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Plisy', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
-          "textColor": "#3e9985",
+          "textColor": "{{appsmith.theme.colors.backgroundColor}}",
           "widgetId": "ceo1r6z511"
         }
       },

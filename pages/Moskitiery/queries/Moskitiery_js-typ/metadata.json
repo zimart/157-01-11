@@ -22,10 +22,10 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "fullyQualifiedName": "Moskitiery_js.typ",
     "name": "typ",
     "pageId": "Moskitiery",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

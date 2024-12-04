@@ -74,7 +74,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{removeValue('edit_sku_value');\nMoskitiery_js.edit_kolor();}}",
+  "onOptionChange": "{{removeValue('edit_sku_value');\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

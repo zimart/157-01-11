@@ -8,7 +8,7 @@ await showModal(LanguageLoading.name);
 //await ustawrabatogolny.run();
 	await przeliczbezrabatu.run();
 	
-	await tabela_glowna.run();
+//	await tabela_glowna.run();
 //.then(() => 
 await updateopismainkursscreeny.run();
 //.then(() => 
