@@ -53,6 +53,23 @@ await Moskitiery_kolor_zapytaj.run();
 
 },	
 	
+edit_rodzaj: async () => {
+//var wartoscdoplaty = doplatakolorinput.text;
+//var skrzynka = Select8.selectedOptionValue;
+//var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
+//await showModal(LanguageLoading.name)
+//await clearStore();
+	
+await removeValue('editsku_value');
+await Moskitiery_FORM_kolor_zapytaj.run();
+
+//await Moskitiery_tabela_inventory.run();
+//.then(() => 
+//await closeModal(LanguageLoading.name))	;
+
+},		
+	
+	
 kolor: async () => {
 //var wartoscdoplaty = doplatakolorinput.text;
 //var skrzynka = Select8.selectedOptionValue;

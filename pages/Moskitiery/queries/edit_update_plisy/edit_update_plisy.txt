@@ -26,7 +26,7 @@ UPDATE inventory_plisy SET
     opiszrabatami_de = '',
     opisbezrabatow_en = '',
     opiszrabatami_en = '',
-    komentarz = '{{Input35.text}}',
-    opis = '{{Input35.text}}'
+    komentarz = '{{edit_opis.text}}',
+    opis = '{{edit_opis.text}}'
    
   WHERE id = {{tabela_moskitiery_inventory_id.triggeredRow.id}}

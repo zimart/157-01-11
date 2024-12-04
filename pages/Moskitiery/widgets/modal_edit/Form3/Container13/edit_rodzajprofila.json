@@ -30,9 +30,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -52,7 +49,7 @@
   "labelTextSize": "0.875rem",
   "labelTooltip": "Kolor - {{Moskitiery_form_plisy_trigered.data[0].kolor}}",
   "labelWidth": 5,
-  "leftColumn": 10,
+  "leftColumn": 14.000000000000002,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -61,7 +58,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore();\nremoveValue('sku_value');\nresetWidget(\"edit_doplata_mocowanie\");\nresetWidget(\"edit_doplata_prowadnica\");\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie.run();}}",
+  "onOptionChange": "{{Moskitiery_js.edit_rodzaj();\nresetWidget(\"edit_blaszka\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,
@@ -72,7 +69,7 @@
   "placeholderText": "{{i18n.translate(\"\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 24,
+  "rightColumn": 31,
   "serverSideFiltering": false,
   "sourceData": "{{Moskitiery_FORM_typ_moskitery.data.map( (obj) =>{ return  {'label': obj.typ, 'value': obj.typ } })}}",
   "topRow": 0,

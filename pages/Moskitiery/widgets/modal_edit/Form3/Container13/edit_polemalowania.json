@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_FORM_doplaty.mocowanie.data||0}}",
+  "defaultText": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,47 +14,48 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "placeholderText"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": true,
+  "inputType": "TEXT",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "1ocwj7a5k7",
-  "label": "Dopłata do mocowania",
+  "key": "xrz4ijv6oa",
+  "label": "Pole malowania - {{Moskitiery_form_plisy_trigered.data[0].polemalowania}} m2",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 55,
+  "leftColumn": 31,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
-  "mobileLeftColumn": 36,
-  "mobileRightColumn": 56,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 6,
+  "mobileRightColumn": 26,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "originalBottomRow": 13,
-  "originalTopRow": 6,
-  "parentColumnSpace": 17.65,
+  "parentColumnSpace": 18.9,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
+  "placeholderText": "{{Moskitiery_form_plisy_trigered.data[0].polemalowania}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
-  "shouldAllowAutofill": false,
+  "rightColumn": 45,
   "showStepArrows": false,
-  "topRow": 7,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "8ndqy1mm4a",
-  "widgetName": "edit_doplata_mocowanie"
+  "widgetId": "zhaoonf6ya",
+  "widgetName": "edit_polemalowania"
 }

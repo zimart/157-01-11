@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,6 +12,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,13 +26,13 @@
   "isRequired": false,
   "isVisible": true,
   "key": "xrz4ijv6oa",
-  "label": "Dopłata % do profila",
+  "label": "Dopłata % do profila - {{Moskitiery_form_plisy_trigered.data[0].doplataprofil}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 47,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -44,10 +47,10 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 14,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 0,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "zzlix068vh",

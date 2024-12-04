@@ -6,7 +6,7 @@
   "bottomRow": 8,
   "bottomRowBeforeCollapse": 8,
   "boxShadow": "none",
-  "defaultText": "PL-{{edit_indeksszer_l.text|| \"\"}}-{{edit_indekswys_l.text|| \"\"}}-{{edit_grupa.text}}",
+  "defaultText": "{{Moskitiery_skrot_system.edit_skrot_typ.data}}-{{rodzajkoloru.text}}-{{indeksszer_l.text|| \"\"}}-{{indekswys_l.text|| \"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
