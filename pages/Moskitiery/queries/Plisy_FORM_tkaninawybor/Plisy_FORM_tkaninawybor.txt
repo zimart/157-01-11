@@ -1,1 +1,1 @@
-SELECT tkanina FROM plisy_tkaniny WHERE kolekcja={{edit_tkanina.selectedOptionValue}};
+SELECT tkanina FROM plisy_tkaniny WHERE kolekcja={{edit_kolor.selectedOptionValue}};

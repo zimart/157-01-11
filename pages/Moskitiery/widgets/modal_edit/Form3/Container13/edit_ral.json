@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 14,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_FORM_doplaty.prowadnica.data||0}}",
+  "defaultText": "{{tabela_moskitiery_inventory_id.triggeredRow.ral}} ",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,46 +15,51 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": true,
+  "inputType": "TEXT",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
-  "key": "1ocwj7a5k7",
-  "label": "Dopłata do prowadnicy",
+  "isVisible": "{{edit_kolor.selectedOptionLabel===\"RAL SPECJALNY\"}}",
+  "key": "xrz4ijv6oa",
+  "label": "Kolor specjalny",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 45,
+  "leftColumn": 40,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 13,
-  "mobileLeftColumn": 36,
-  "mobileRightColumn": 56,
-  "mobileTopRow": 6,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 18,
+  "mobileRightColumn": 38,
+  "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 13,
-  "originalTopRow": 6,
-  "parentColumnSpace": 17.65,
+  "parentColumnSpace": 18.9,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 55,
-  "shouldAllowAutofill": false,
+  "rightColumn": 47,
   "showStepArrows": false,
-  "topRow": 7,
+  "topRow": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "pde5h2ndkr",
-  "widgetName": "edit_doplata_prowadnica"
+  "widgetId": "igsasa4io8",
+  "widgetName": "edit_ral"
 }

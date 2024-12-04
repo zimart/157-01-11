@@ -61,6 +61,9 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem4m9kx2mqe7.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonoa96q6vcdl.onClick"
     }
   ],
   "groupButtons": {
@@ -152,8 +155,9 @@
       "isSeparator": false,
       "isVisible": true,
       "itemType": "BUTTON",
-      "label": "Do something",
+      "label": "Odśwież tabelę",
       "menuItems": {},
+      "onClick": "{{przelicz_main_js.przelicz_glowna();\ntabela_glowna.run()}}",
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "81mxjn5cva"

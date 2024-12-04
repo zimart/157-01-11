@@ -40,7 +40,7 @@
   "mobileTopRow": 12,
   "needsErrorInfo": false,
   "onClick": "{{Moskitiery_button_sku.oblicz_form()}}",
-  "originalBottomRow": 21,
+  "originalBottomRow": 25,
   "originalTopRow": 21,
   "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",

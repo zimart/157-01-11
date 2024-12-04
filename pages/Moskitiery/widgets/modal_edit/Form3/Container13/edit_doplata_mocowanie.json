@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 13,
+  "bottomRow": 14,
   "boxShadow": "none",
   "defaultText": "{{Plisy_FORM_doplaty.mocowanie.data||0}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 6,
+  "topRow": 7,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "8ndqy1mm4a",

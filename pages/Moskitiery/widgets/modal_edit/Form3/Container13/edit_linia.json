@@ -57,7 +57,7 @@
   "mobileRightColumn": 25,
   "mobileTopRow": 25,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore().then(() => {\n  Moskitiery_js.typ();\n});}}",
+  "onOptionChange": "{{clearStore().then(() => {\n  Moskitiery_js.form_typ();\n  Moskitiery_FORM_typ_moskitery.run();\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 17,

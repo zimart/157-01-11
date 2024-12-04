@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_f0cbbc5a-01e1-44ba-be88-831ba6e88e78",
-  "id": "Moskitiery_Plisy_FORM_mocowanie",
+  "gitSyncId": "67252580698c850488983504_a8efd1c0-f0f4-4465-b93b-135503abdd21",
+  "id": "Moskitiery_Moskitiery_FORM_kolor_zapytaj",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT kolorm FROM plisy_kolor where rodzajpr=\"mocowanie\" and linia = {{edit_linia.selectedOptionLabel}} ;",
+      "body": "SELECT kolorm,doplata FROM moskitiery_kolor where linia={{edit_linia.selectedOptionLabel}} and typ={{edit_rodzajprofila.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "Plisy_FORM_mocowanie",
+    "executeOnLoad": true,
+    "name": "Moskitiery_FORM_kolor_zapytaj",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

@@ -2,8 +2,8 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
-  "bottomRowBeforeCollapse": 4,
+  "bottomRow": 5,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -17,16 +17,13 @@
       "key": "sourceData"
     },
     {
-      "key": "placeholderText"
-    },
-    {
       "key": "labelText"
     },
     {
-      "key": "labelTooltip"
+      "key": "placeholderText"
     },
     {
-      "key": "isVisible"
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -35,7 +32,7 @@
       "key": "sourceData"
     },
     {
-      "key": "isVisible"
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -47,41 +44,41 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{edit_kolor.isValid}}",
-  "key": "2eaywto8sv",
+  "isVisible": true,
+  "key": "awmuorqyqr",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Mocowanie - {{Moskitiery_form_plisy_trigered.data[0].mocowanie}}",
+  "labelText": "{{i18n.translate(\"Rodzaj profila\")}} - {{Moskitiery_form_plisy_trigered.data[0].typmoskitiery}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Referencja - {{Moskitiery_form_plisy_trigered.data[0].mocowanie}}",
+  "labelTooltip": "Kolor - {{Moskitiery_form_plisy_trigered.data[0].kolor}}",
   "labelWidth": 5,
-  "leftColumn": 50,
+  "leftColumn": 10,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 15,
-  "mobileLeftColumn": 43,
-  "mobileRightColumn": 63,
-  "mobileTopRow": 8,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Plisy_FORM_doplaty.mocowanie();\nremoveValue('sku_value');\nresetWidget(\"edit_cena_plisy\", true);\nremoveValue('cenaplisy');}}",
+  "onOptionChange": "{{clearStore();\nremoveValue('sku_value');\nresetWidget(\"edit_doplata_mocowanie\");\nresetWidget(\"edit_doplata_prowadnica\");\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie.run();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 4,
+  "originalBottomRow": 5,
   "originalTopRow": 0,
-  "parentColumnSpace": 18.09375,
+  "parentColumnSpace": 13.837890625,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"Mocowanie\")}}",
+  "placeholderText": "{{i18n.translate(\"\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 24,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_FORM_mocowanie.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "sourceData": "{{Moskitiery_FORM_typ_moskitery.data.map( (obj) =>{ return  {'label': obj.typ, 'value': obj.typ } })}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "d4j0ggamwc",
-  "widgetName": "PLISY_form_select_mocowanie"
+  "widgetId": "jg4ag4bs0f",
+  "widgetName": "edit_rodzajprofila"
 }

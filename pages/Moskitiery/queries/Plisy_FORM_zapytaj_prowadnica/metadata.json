@@ -23,7 +23,7 @@
       "pluginId": "mysql-plugin"
     },
     "dynamicBindingPathList": [],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Plisy_FORM_zapytaj_prowadnica",
     "pageId": "Moskitiery",
     "userSetOnLoad": false

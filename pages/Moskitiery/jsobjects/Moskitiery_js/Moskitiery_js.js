@@ -26,7 +26,7 @@ form_typ: async () => {
 //.then(() => 
 await removeValue('sku_value');
 	
-//await Moskitiery_skrot_system.skrot_typ();	
+await Moskitiery_skrot_system.edit_skrot_typ();	
 //await Moskitiery_typ_moskitery.run();
 //await Moskitiery_kolor_zapytaj.run();
 	
@@ -122,6 +122,33 @@ else polemalowania2 = 0;
 return polemalowania2;
 
 },			
+	
+	
+edit_maksymalne_szer: function () {
+var typ_moskitiery = edit_linia.selectedOptionLabel;
+var max4;
+if (typ_moskitiery === "RAMKOWA") { max4="min 300 max 1600"; }
+else if (typ_moskitiery === "OTWIERANA-MRO") {max4="min 400 max 1200";}
+else if (typ_moskitiery === "PRZESUWNA-MRP") {max4="min 601 max 1700";}
+else if (typ_moskitiery === "PLISOWANA-MPH") {max4="min 501 max 4000";}
+else if (typ_moskitiery === "ZWIJANA MZN") {max4="min 501 max 1600";}
+else if (typ_moskitiery === "PIONOWA MPH-VERTI") {max4="min 901 max 2300";}
+	
+return max4;
+},
+	
+edit_maksymalne_wys: function () {
+var typ_moskitiery = edit_linia.selectedOptionLabel;
+var max5;
+if (typ_moskitiery === "RAMKOWA") { max5="min 300 max 1600"; }
+else if (typ_moskitiery === "OTWIERANA-MRO") {max5="min 1700 max 2500";}
+else if (typ_moskitiery === "PRZESUWNA-MRP") {max5="min 1700 max 2538";}
+else if (typ_moskitiery === "PLISOWANA-MPH") {max5="min 1501 max 2700";}
+else if (typ_moskitiery === "ZWIJANA MZN") {max5="min 401 max 2500";}
+else if (typ_moskitiery === "PIONOWA MPH-VERTI") {max5="min 601 max 2000";}
+	
+return max5;
+},		
 	
 	
 }

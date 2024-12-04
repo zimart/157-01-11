@@ -9,9 +9,9 @@ UPDATE inventory_plisy SET
     linia = '{{edit_linia.selectedOptionLabel}}',
     dachowaproducent = '{{Plisy_edit_producentdachowa.selectedOptionLabel}}',
     dachowaokno = '{{Plisy_edit_producentdachowaCopy.selectedOptionLabel}}',
-    kolor = '{{edit_kolor.selectedOptionLabel}}',
+    kolor = '{{edit_rodzajprofila.selectedOptionLabel}}',
    
-    tkanina = '{{edit_tkanina.selectedOptionLabel}}',
+    tkanina = '{{edit_kolor.selectedOptionLabel}}',
     prowadnicakolor = '{{Plisy_edit_dachowa_prowadnica.selectedOptionLabel}}',
    
   
@@ -21,7 +21,7 @@ UPDATE inventory_plisy SET
    
     opisbezrabatow = '',
     opiszrabatami = '',
-    referencja = '{{edit_referencja.selectedOptionLabel}}',
+    referencja = '{{edit_blaszka.selectedOptionLabel}}',
     opisbezrabatow_de = '',
     opiszrabatami_de = '',
     opisbezrabatow_en = '',

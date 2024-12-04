@@ -14,16 +14,19 @@
       "key": "borderRadius"
     },
     {
-      "key": "sourceData"
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelTooltip"
     },
     {
       "key": "labelText"
     },
     {
-      "key": "placeholderText"
+      "key": "isVisible"
     },
     {
-      "key": "labelTooltip"
+      "key": "sourceData"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -32,53 +35,60 @@
       "key": "sourceData"
     },
     {
+      "key": "isVisible"
+    },
+    {
       "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
-  "key": "awmuorqyqr",
+  "isVisible": "{{edit_rodzajprofila.isValid}}",
+  "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Rodzaj profila\")}} - {{Moskitiery_form_plisy_trigered.data[0].typmoskitiery}}",
+  "labelText": "Kolor - {{Moskitiery_form_plisy_trigered.data[0].kolor}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Kolor - {{Moskitiery_form_plisy_trigered.data[0].kolor}}",
+  "labelTooltip": "Tkanina -{{Moskitiery_form_plisy_trigered.data[0].tkanina}}",
   "labelWidth": 5,
-  "leftColumn": 10,
+  "leftColumn": 24,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 29,
-  "mobileLeftColumn": 29,
-  "mobileRightColumn": 49,
-  "mobileTopRow": 22,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore();\nremoveValue('sku_value');\nresetWidget(\"edit_doplata_mocowanie\");\nresetWidget(\"edit_doplata_prowadnica\");\nPlisy_FORM_doplata_kolor.run();\nPlisy_FORM_doplaty.prowadnica();\nPlisy_FORM_mocowanie.run();}}",
+  "onDropdownOpen": "",
+  "onOptionChange": "{{removeValue('sku_value');\nPlisy_FORM_tkaninawybor.run();\nPlisy_FORM_grupa_kolekcja.grupa();\nresetWidget(\"edit_cena_plisy\", true);\nresetWidget(\"edit_cenabazowasystemu\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,
   "originalTopRow": 0,
-  "parentColumnSpace": 13.837890625,
+  "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"\")}}",
+  "placeholderText": "{{i18n.translate(\"Kolor\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 23,
+  "rightColumn": 34,
   "serverSideFiltering": false,
-  "sourceData": "{{Moskitiery_FORM_typ_moskitery.data.map( (obj) =>{ return  {'label': obj.typ, 'value': obj.typ } })}}",
+  "sourceData": "{{Moskitiery_FORM_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "jg4ag4bs0f",
+  "widgetId": "0gjt1qwxuk",
   "widgetName": "edit_kolor"
 }

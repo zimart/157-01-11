@@ -14,13 +14,13 @@
       "key": "borderRadius"
     },
     {
-      "key": "placeholderText"
-    },
-    {
       "key": "tooltip"
     },
     {
       "key": "label"
+    },
+    {
+      "key": "placeholderText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -34,7 +34,7 @@
       "key": "onBlur"
     }
   ],
-  "errorMessage": "Min 200 mm - Max 3000 mm",
+  "errorMessage": "",
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": false,
@@ -65,7 +65,7 @@
   "parentColumnSpace": 18.40625,
   "parentId": "jnoi6scv56",
   "parentRowSpace": 10,
-  "placeholderText": "{{tabela_moskitiery_inventory_id.triggeredRow.wysokosc}}",
+  "placeholderText": "{{Moskitiery_js.edit_maksymalne_wys.data}}",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",

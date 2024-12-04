@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja={{edit_tkanina.selectedOptionValue}};",
+      "body": "SELECT tkanina FROM plisy_tkaniny WHERE kolekcja={{edit_kolor.selectedOptionValue}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,7 +27,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "name": "Plisy_FORM_tkaninawybor",
     "pageId": "Moskitiery",
     "userSetOnLoad": false

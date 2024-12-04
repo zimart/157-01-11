@@ -5,16 +5,13 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].referencja))(edit_referencja.options, edit_referencja.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].referencja))(edit_blaszka.options, edit_blaszka.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
     },
     {
       "key": "defaultOptionValue"
@@ -29,7 +26,7 @@
       "key": "labelTooltip"
     },
     {
-      "key": "isVisible"
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -38,23 +35,23 @@
       "key": "sourceData"
     },
     {
-      "key": "isVisible"
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": false,
+  "isDisabled": "{{edit_rodzajprofila.selectedOptionLabel!==\"STANDARD-GIĘTA\"&&edit_rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-ZEWN.\"&&edit_rodzajprofila.selectedOptionLabel!==\"EKSTR. NAROŻNIK-WEWN.\"}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{edit_kolor.isValid}}",
+  "isVisible": true,
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Referencja - {{Moskitiery_form_plisy_trigered.data[0].referencja}}",
+  "labelText": "Blaszka - {{Moskitiery_form_plisy_trigered.data[0].blaszka}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Referencja - {{Moskitiery_form_plisy_trigered.data[0].referencja}}",
+  "labelTooltip": "Referencja - {{Moskitiery_form_plisy_trigered.data[0].blaszka}}",
   "labelWidth": 5,
-  "leftColumn": 38,
+  "leftColumn": 34,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -70,16 +67,16 @@
   "parentColumnSpace": 18.09375,
   "parentId": "73uy2fdkul",
   "parentRowSpace": 10,
-  "placeholderText": "{{i18n.translate(\"Referencja\")}}",
+  "placeholderText": "{{i18n.translate(\"Blaszka\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 50,
+  "rightColumn": 40,
   "serverSideFiltering": false,
-  "sourceData": "{{Plisy_FORM_tkaninawybor.data.map( (obj) =>{ return  {'label': obj.tkanina, 'value': obj.tkanina } })}}",
+  "sourceData": "[\n  {\n    \"name\": \"4\",\n    \"code\": \"4\"\n  },\n  {\n    \"name\": \"5\",\n    \"code\": \"5\"\n  },\n  {\n    \"name\": \"6\",\n    \"code\": \"6\"\n  },\n\t{\n    \"name\": \"8\",\n    \"code\": \"8\"\n  },\n\t{\n    \"name\": \"9\",\n    \"code\": \"9\"\n  },\n\t{\n    \"name\": \"10\",\n    \"code\": \"10\"\n  },\n\t{\n    \"name\": \"11\",\n    \"code\": \"11\"\n  },\n\t{\n    \"name\": \"12\",\n    \"code\": \"12\"\n  }\n]",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "gbhqqo17xu",
-  "widgetName": "edit_referencja"
+  "widgetName": "edit_blaszka"
 }
