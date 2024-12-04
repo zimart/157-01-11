@@ -74,7 +74,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{removeValue('sku_value');\nPlisy_FORM_tkaninawybor.run();\nPlisy_FORM_grupa_kolekcja.grupa();\nresetWidget(\"edit_cena_plisy\", true);\nresetWidget(\"edit_cenabazowasystemu\", true);}}",
+  "onOptionChange": "{{removeValue('edit_sku_value');\nMoskitiery_js.edit_kolor();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

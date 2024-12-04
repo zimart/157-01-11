@@ -86,6 +86,24 @@ await	Moskitiery_skrot_kolor.run();
 
 },
 	
+edit_kolor: async () => {
+//var wartoscdoplaty = doplatakolorinput.text;
+//var skrzynka = Select8.selectedOptionValue;
+//var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
+//await showModal(LanguageLoading.name)
+//await clearStore();
+	
+await removeValue('edit_sku_value');
+await Moskitiery_FORM_kolor_zapytaj.run();
+await	Moskitiery_FORM_skrot_kolor.run();
+
+//await Moskitiery_tabela_inventory.run();
+//.then(() => 
+//await closeModal(LanguageLoading.name))	;
+
+},	
+	
+	
 obwod: function () {
 var typ_moskitiery = typmoskitiery.selectedOptionLabel;
 var szerokosc = szerokosc_input.text;
