@@ -39,7 +39,7 @@
   "isDisabled": "{{edit_rodzajprofila.selectedOptionLabel!==\"STANDARD-GIĘTA\"&&edit_rodzajprofila.selectedOptionLabel!==\"EKSTR.NAROŻNIK-ZEWN.\"&&edit_rodzajprofila.selectedOptionLabel!==\"EKSTR. NAROŻNIK-WEWN.\"}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
   "key": "2eaywto8sv",
   "labelAlignment": "left",

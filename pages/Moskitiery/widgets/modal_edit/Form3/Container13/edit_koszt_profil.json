@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 13,
   "boxShadow": "none",
-  "defaultText": "{{Number(appsmith.store.edit_cenamoskitiery*((edit_doplataprofil.text)/100)).toFixed(2)}}",
+  "defaultText": "{{Number(appsmith.store.cenamoskitiery*((edit_doplataprofil.text)/100)).toFixed(2)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

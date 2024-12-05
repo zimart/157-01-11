@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{edit_cenabazowa.text}}",
+  "defaultText": "{{edit_cenabazowa.text+edit_koszt_profil.text+edit_koszt_malowania.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -29,7 +29,7 @@
   "isRequired": true,
   "isVisible": true,
   "key": "y5hqo4m5hy",
-  "label": "Cena plisy",
+  "label": "Cena moskitiery",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",

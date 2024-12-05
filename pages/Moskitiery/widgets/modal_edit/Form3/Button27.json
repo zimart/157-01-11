@@ -11,7 +11,11 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
@@ -29,7 +33,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{showModal(LanguageLoading.name).then(() => {\n  PLISY_form_edit_js_przelicz.przelicz_plisy();\n  resetWidget(\"edit_kosztdoplatykolor\", true);\n  resetWidget(\"edit_doplata_prowadnica\", true);\n  resetWidget(\"edit_doplata_mocowanie\", true);\n  closeModal(LanguageLoading.name);\n});}}",
+  "onClick": "{{showModal(LanguageLoading.name).then(() => {\n Moskitiery_form_edit_js.przelicz_moskitiery();\n   closeModal(LanguageLoading.name);\n});}}",
   "originalBottomRow": 39,
   "originalTopRow": 35,
   "parentId": "jnoi6scv56",

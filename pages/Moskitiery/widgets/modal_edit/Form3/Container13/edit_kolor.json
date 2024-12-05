@@ -5,7 +5,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].kolor))(edit_kolor.options, edit_kolor.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -27,9 +27,6 @@
     },
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -39,9 +36,6 @@
     },
     {
       "key": "isVisible"
-    },
-    {
-      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -74,7 +68,7 @@
   "mobileTopRow": 2,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{removeValue('edit_sku_value');\n}}",
+  "onOptionChange": "{{removeValue('edit_sku_value');\nMoskitiery_js.edit_kolor();\nMoskitiery_js.edit_polemalowania();\nresetWidget(\"edit_ral\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

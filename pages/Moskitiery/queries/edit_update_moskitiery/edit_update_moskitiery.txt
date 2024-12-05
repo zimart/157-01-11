@@ -1,0 +1,21 @@
+UPDATE inventory_moskitiery SET
+    wysokosc = '{{edit_podawana_wysokosc_input.text}}',
+    szerokosc = '{{edit_szerokosc.text}}',
+    skugen = '{{edit_sku_input.text}}',
+    cena = '{{edit_cenabazowa.text}}',
+    doplataprofil = '{{edit_doplataprofil.text}}',
+    kosztprofil = '{{edit_koszt_profil.text}}',
+    doplatakolor = '{{edit_koszt_malowania.text}}',
+    systemzdoplata = '{{edit_cena_moskitiery.text}}',
+    linia = '{{edit_linia.selectedOptionLabel}}',
+    typmoskitiery = '{{edit_rodzajprofila.selectedOptionLabel}}',
+    obwod = '{{edit_obwod.text}}',
+    kolor = '{{edit_kolor.selectedOptionLabel}}',
+    blaszka = '{{edit_blaszka.selectedOptionLabel}}',
+    ral = '{{edit_ral.text}}',
+  
+    ilosc = '{{edit_ilosc.text}}',
+  
+    opis = '{{edit_opis.text}}'
+    
+  WHERE id = {{tabela_moskitiery_inventory_id.triggeredRow.id}}
