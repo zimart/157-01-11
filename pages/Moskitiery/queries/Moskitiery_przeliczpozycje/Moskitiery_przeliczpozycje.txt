@@ -4,22 +4,22 @@ UPDATE inventory_moskitiery SET
 		systemporabacie = systemzdoplata-kwotarabatsystem,
 		cenanetto = systemporabacie,
 		razemnetto = cenanetto * ilosc,
-		komentarz =concat(opis,"/",linia,"/",typmoskitiery,"/",kolor,"/",szerokosc,"x",wysokosc,"/",blaszka),
+		komentarz =concat(opis,"  ","/",linia,"/",typmoskitiery,"/",kolor,"/",szerokosc,"x",wysokosc,"/",blaszka),
 		moc="MOSKITIERA",
 		
-		opisbezrabatow = CONCAT("Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",systemzdoplata),
+		opisbezrabatow = CONCAT(opis," | ","Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",systemzdoplata),
 		
-		opiszrabatami = CONCAT("Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",systemzdoplata," | Rabat:",rabatsystem," | Cena po rabacie:",systemporabacie),
+		opiszrabatami = CONCAT(opis," | ","Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",systemzdoplata," | Rabat:",rabatsystem," | Cena po rabacie:",systemporabacie),
 		
-		opiszrabatami_de = CONCAT("Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto," | Rabat:",rabatsystem," | Cena po rabacie:",systemporabacie),
+		opiszrabatami_de = CONCAT(opis," | ","Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto," | Rabat:",rabatsystem," | Cena po rabacie:",systemporabacie),
 		
-		opisbezrabatow_de = CONCAT("Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto),
+		opisbezrabatow_de = CONCAT(opis,"|","Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto),
 		
 		
 		
-		opisbezrabatow_en = CONCAT("Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto),
+		opisbezrabatow_en = CONCAT(opis," | ","Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto),
 		
-		opiszrabatami_en = CONCAT("Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto," | Rabat:",rabatsystem," | Cena po rabacie:",systemporabacie)
+		opiszrabatami_en = CONCAT(opis," | ","Typ: ",linia," | Rodzaj profila: ",typmoskitiery," | Dopłata do profila %",doplataprofil," | Koszt dopłaty:",kosztprofil," | Kolor: ",kolor," ",ral," | Dopłata do koloru:",doplatakolor," | Szerokość: ", szerokosc," | Wys: ",wysokosc," | Cena bazowa:",cena," | Cena z doplatami: ",cenanetto," | Rabat:",rabatsystem," | Cena po rabacie:",systemporabacie)
 	
 					
 WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};
