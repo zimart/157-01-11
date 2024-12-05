@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_b6f9957b-5e49-45b7-9153-0c402dca87cb",
-  "id": "Moskitiery_Plisy_FORM_indeksszer",
+  "gitSyncId": "67252580698c850488983504_39543752-806e-4c25-b53a-133c1a1a8074",
+  "id": "Moskitiery_Moskitiery_FORM_skrot_kolor",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT `indeks` FROM `plisy_tabelaindeksy` WHERE {{edit_szerokosc.text}} <= szermax AND {{edit_szerokosc.text}} > szermin and kategoria='szer';",
+      "body": "SELECT skrot FROM moskitiery_kolor where typ={{edit_rodzajprofila.selectedOptionLabel}} and kolorm={{edit_kolor.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "Plisy_FORM_indeksszer",
+    "executeOnLoad": false,
+    "name": "Moskitiery_FORM_skrot_kolor",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

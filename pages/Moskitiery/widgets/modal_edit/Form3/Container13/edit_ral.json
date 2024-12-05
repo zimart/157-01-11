@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 5,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
   "defaultText": "{{tabela_moskitiery_inventory_id.triggeredRow.ral}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 6,
+  "originalBottomRow": 5,
   "originalTopRow": 0,
   "parentColumnSpace": 18.9,
   "parentId": "73uy2fdkul",

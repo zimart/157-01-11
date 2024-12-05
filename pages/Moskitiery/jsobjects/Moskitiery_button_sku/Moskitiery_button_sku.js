@@ -40,17 +40,20 @@ oblicz_form: async () => {
 //var doplatakolor = (cenasystemubaza*(doplatakolorinput.text/100));
 //await showModal(LanguageLoading.name)
 
-await Plisy_FORM_indeksszer.run();
+await Moskitiery_FORM_indeksszer.run();
 //.then(() => 
-await Plisy_FORM_indekswys.run();
+await Moskitiery_FORM_indekswys.run();
 	
+await Moskitiery_js.edit_obwod();
+await Moskitiery_js.edit_polemalowania();
 //.then(() => 
-await  removeValue('sku_value');
-await  storeValue('sku_value', edit_tymczasowy.text);	
-	
-await  Plisy_FORM_danesku.run();
-await Plisy_FORM_doplata_kolor.run();
-await  storeValue('cenaplisy', cenastore.text);		
+await  removeValue('edit_sku_value');
+await  storeValue('edit_sku_value', edit_tymczasowy.text);
+await  Moskitiery_FORM_danesku.run();
+//await Plisy_doplata_kolor.run();
+await  storeValue('cenamoskitiery', cenastore.text);	
+//await closeModal(LanguageLoading.name))	;
+
 	
 
 }

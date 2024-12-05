@@ -1,1 +1,0 @@
-SELECT indeks FROM plisy_tabelaindeksy WHERE {{edit_podawana_wysokosc_input.text}} <= szermax AND {{edit_podawana_wysokosc_input.text}} > szermin and kategoria='wys';

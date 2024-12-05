@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_FORM_indeksszer.data[0].indeks}}",
+  "defaultText": "{{Moskitiery_FORM_indeksszer.data[0].indeks}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 24,
+  "leftColumn": 26,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,7 +47,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 33,
+  "rightColumn": 35,
   "showStepArrows": false,
   "topRow": 1,
   "type": "INPUT_WIDGET_V2",

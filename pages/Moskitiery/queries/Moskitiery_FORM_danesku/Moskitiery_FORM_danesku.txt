@@ -1,0 +1,1 @@
+SELECT cena FROM moskitiery_cennik where sku = {{appsmith.store.edit_sku_value}};

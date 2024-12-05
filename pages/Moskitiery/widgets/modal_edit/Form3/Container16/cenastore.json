@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultText": "{{Plisy_FORM_danesku.data[0].cenakatalogplisa}}",
+  "defaultText": "{{Moskitiery_FORM_danesku.data[0].cena}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -32,7 +32,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 43,
+  "leftColumn": 45,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,7 +47,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 52,
+  "rightColumn": 54,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 1,
