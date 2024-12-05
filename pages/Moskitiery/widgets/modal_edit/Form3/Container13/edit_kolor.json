@@ -23,9 +23,6 @@
       "key": "labelText"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "sourceData"
     }
   ],
@@ -33,9 +30,6 @@
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -50,7 +44,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{edit_rodzajprofila.isValid}}",
+  "isVisible": true,
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",

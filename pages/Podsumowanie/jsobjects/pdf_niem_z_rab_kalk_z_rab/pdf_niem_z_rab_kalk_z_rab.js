@@ -1,6 +1,11 @@
 export default {
 
+	// Adjust your margins here (left, top, right ,bottom)
+
+	
+	
 async BuildPDF () {
+
 const doc = jspdf.jsPDF();
 const data2 = glowna_tabela.tableData;
 const numer = idoferty_appsmith.text;
@@ -210,7 +215,7 @@ CellHookData_3(doc, {
            // lineColor: 'black',
 							 lineWidth: 0.1,
             //lineColor: 'black'
-							 fontSize: 9,
+							 fontSize: 8,
 							 fontStyle: 'bold',
 							},
 	startY: finalY1+10,
@@ -234,8 +239,8 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 8,
-minCellHeight:8,
+minCellWidth: 12,
+//minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
 valign: 'middle'

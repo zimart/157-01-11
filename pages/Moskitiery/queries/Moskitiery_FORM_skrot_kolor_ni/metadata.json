@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_39543752-806e-4c25-b53a-133c1a1a8074",
-  "id": "Moskitiery_Moskitiery_FORM_skrot_kolor",
+  "gitSyncId": "67252580698c850488983504_2baa8c3a-9d02-4170-84aa-54da8cd1f093",
+  "id": "Moskitiery_Moskitiery_FORM_skrot_kolor_ni",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT skrot FROM moskitiery_kolor where typ={{edit_rodzajprofila.selectedOptionLabel}} and kolorm={{edit_kolor.selectedOptionLabel}};",
+      "body": "SELECT skrot FROM moskitiery_kolor where typ={{edit_rodzajprofila.selectedOptionLabel}} and kolorm={{kolor_select.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "Moskitiery_FORM_skrot_kolor",
+    "executeOnLoad": false,
+    "name": "Moskitiery_FORM_skrot_kolor_ni",
     "pageId": "Moskitiery",
     "userSetOnLoad": false
   }

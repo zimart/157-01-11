@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 8,
   "boxShadow": "none",
-  "defaultText": "{{Moskitiery_skrot_kolor.data[0].skrot}}",
+  "defaultText": "{{Moskitiery_FORM_skrot_kolor.data[0].skrot}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

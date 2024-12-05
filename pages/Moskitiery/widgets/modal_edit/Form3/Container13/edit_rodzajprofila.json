@@ -5,7 +5,7 @@
   "bottomRow": 5,
   "bottomRowBeforeCollapse": 5,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Moskitiery_form_plisy_trigered.data[0].typmoskitiery))(edit_rodzajprofila.options, edit_rodzajprofila.serverSideFiltering) }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -24,9 +24,6 @@
     },
     {
       "key": "labelTooltip"
-    },
-    {
-      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
