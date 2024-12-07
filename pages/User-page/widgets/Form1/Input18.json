@@ -12,9 +12,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "validation"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -58,7 +55,7 @@
   "showStepArrows": false,
   "topRow": 10,
   "type": "INPUT_WIDGET_V2",
-  "validation": "{{Input18.text>4}}",
+  "validation": "",
   "version": 2,
   "widgetId": "197p18615p",
   "widgetName": "Input18"
