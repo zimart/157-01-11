@@ -13,17 +13,10 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [
     {
       "key": "onTextChanged"
@@ -34,7 +27,7 @@
   "isDisabled": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": "{{Select9.selectedOptionValue === \"COPACO LUNAR\"}}",
+  "isVisible": true,
   "key": "lc68vad2ei",
   "label": "Dopłata do tkaniny m2",
   "labelAlignment": "left",
@@ -42,7 +35,7 @@
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 18,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -60,7 +53,7 @@
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 27,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
