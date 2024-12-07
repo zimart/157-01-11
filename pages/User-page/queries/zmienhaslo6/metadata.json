@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_3e185102-0506-49b5-8846-6c792eb7cbee",
-  "id": "User-page_zmienhaslouser",
+  "gitSyncId": "67252580698c850488983504_1eb9be4e-85ac-4f90-ac20-2dbd98c448c0",
+  "id": "User-page_zmienhaslo6",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE user_auth SET\n    password_hash = '{{Input19.text}}',\nWHERE id = {{Input15.text}};",
+      "body": "UPDATE user_auth SET\npassword_hash = '{{Input19.text}}'\nWHERE id = {{Input15.text}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "zmienhaslouser",
+    "name": "zmienhaslo6",
     "pageId": "User-page",
     "userSetOnLoad": false
   }

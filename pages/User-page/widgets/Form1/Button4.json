@@ -37,7 +37,7 @@
   "mobileRightColumn": 31,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onClick": "{{zmienhaslouser.run().then(() => {\n  resetWidget(\"Input18\", true);\n  showAlert('Zmieniono', 'success');\n});}}",
+  "onClick": "{{zmienhaslo6.run().then(() => {\n  resetWidget(\"Input18\", true);\n  showAlert('ZMIENIONO', 'success');\n  navigateTo('Klienci-B2B', {}, 'SAME_WINDOW');\n});}}",
   "originalBottomRow": 17,
   "originalTopRow": 12,
   "parentColumnSpace": 20.25,
