@@ -12,12 +12,7 @@ export default {
 		const Roboto = Input1.text;
 		const Robotobold = Input9.text;
 		const footer = stopka.text;
-		var margins = {
-			top: 40,
-			bottom: 60,
-			left: 40,
-			width: 522
-		};
+	
 
 		// Custom headers
 		const columns = [
@@ -61,6 +56,9 @@ export default {
 			{ header: 'Netto nach Abzug', dataKey: 'porabacie' } // Custom header with currency
 		];		
 
+		const columns5 = [
+			{ header: 'szczegoly', dataKey: 'szczegoly' }
+		];	
 
 		const currencyRate = kursinput.text; // Example currency rate for conversion
 		const narzuty = narzutpdf.text;
@@ -277,28 +275,8 @@ export default {
 		const finalY2 = doc.lastAutoTable.finalY; // The y position where the table ends
 
 		//tabelka-z-opisem-netto-bruttozad
-
-
-		doc.setFont("Robotobold");
-		doc.text(razemnetto_de.text, 15, finalY2 + 10);
-		doc.text(podatek_de.text, 15, finalY2 + 15); 
-		doc.setFont("Roboto");
-		doc.text("Gesamtbetrag mit MwSt :", 15, finalY2 + 25);
-
-		doc.setFontSize("13");
-		doc.setFont("Robotobold"); // set font	
-		doc.text(razembrutto_de.text, 15, finalY2 + 30);
-
-
-		//doc.addPage();
-		//doc.text(textpdfdlugi.text, 15, finalY2 + 30);	
-
-		//const finalY3 = doc.lastAutoTable.finalY; // The y position where the table ends			
-
-
-		//doc.text(textpdfdlugi.text, 15, finalY2 + 30);		
-
-		//tabela-opis-z-danymi
+    doc.setFont("Robotobold");
+			//tabela-cena
 		CellHookData_3(doc, {
 			theme: 'grid',
 			headStyles: { 
@@ -309,7 +287,104 @@ export default {
 				fontSize: 10,
 				fontStyle: 'bold',
 			},
-			startY: finalY2+35,
+			startY: finalY2+10,
+			columnStyles: { europe: { halign: 'left',valign: 'middle' },
+										 Produkt: {
+											 fontStyle: 'bold',
+											 halign: 'left',
+											 valign: 'middle',
+											 fontSize: 10,
+											 lineWidth: 0,
+										 },
+
+										},
+			styles: { cellPadding: 1, fontSize: 12,
+							 textColor:0,
+							 //font: 'Amiri',
+							 font: 'Roboto',
+							 //  font:'Helvetica',
+							 // lineColor: 'black',
+							 cellWidth: 'auto',
+							 overflow: 'linebreak',
+							 //					overflow: 'linebreak'|'ellipsize'|'visible'|'hidden' = 'linebreak'
+							 //fillColor: 255,
+							 //textColor: Color? = 20
+							 //cellWidth: 'auto'|'wrap'|number = 'auto'
+							 minCellWidth: 8,
+							 minCellHeight:8,
+							 //minCellHeight: number = 0
+							 halign: 'left',
+							 valign: 'middle',
+							 //	halign: 'left'|'center'|'right' = 'left'
+							 //valign: 'top'|'middle'|'bottom' = 'top'
+							 //fontSize: number = 10
+							 //cellPadding: Padding = 10
+							 //lineColor: Color = 10
+							 lineWidth: border = 0 ,// If 0, no border is drawn,
+							 fontStyle: 'bold'
+
+
+
+
+							},		
+
+			// European countries centered
+			body: [
+				{ opis: Text32.text},
+
+			],
+			columns: [
+				{ header: Text31.text, dataKey: 'opis' },
+
+			]
+
+		});
+		//koniec-tabeli-opis-oferty	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		//doc.setFont("Robotobold");
+		//doc.text(razemnetto_de.text, 15, finalY2 + 10);
+	//	doc.text(podatek_de.text, 15, finalY2 + 15); 
+	//	doc.setFont("Roboto");
+	//	doc.text("Gesamtbetrag mit MwSt :", 15, finalY2 + 25);
+
+	//	doc.setFontSize("13");
+	//	doc.setFont("Robotobold"); // set font	
+//		doc.text(razembrutto_de.text, 15, finalY2 + 30);
+
+
+		//doc.addPage();
+		//doc.text(textpdfdlugi.text, 15, finalY2 + 30);	
+
+const finalY3 = doc.lastAutoTable.finalY; // The y position where the table ends			
+
+
+		//doc.text(textpdfdlugi.text, 15, finalY2 + 30);		
+
+		//tabela-opis-z-danymi/
+		CellHookData_3(doc, {
+			theme: 'grid',
+			headStyles: { 
+				fillColor:  [255, 255, 255] ,
+				// lineColor: 'black',
+				lineWidth: 0,
+				//lineColor: 'black'
+				fontSize: 10,
+				fontStyle: 'bold',
+			},
+			startY: finalY3+10,
 			columnStyles: { europe: { halign: 'left',valign: 'middle' },
 										 Produkt: {
 											 //fontStyle: 'bold',
