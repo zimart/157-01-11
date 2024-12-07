@@ -4,6 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 100,
+  "bottomRowBeforeCollapse": 100,
   "boxShadow": "none",
   "defaultText": "{{zmienhaslo.generatePasswordHash.data}}",
   "dynamicBindingPathList": [
@@ -52,6 +53,7 @@
   "rightColumn": 44,
   "showStepArrows": false,
   "topRow": 93,
+  "topRowBeforeCollapse": 93,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "a6ukl8s89y",

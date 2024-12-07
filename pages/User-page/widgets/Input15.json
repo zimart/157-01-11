@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 85,
-  "bottomRowBeforeCollapse": 79,
+  "bottomRowBeforeCollapse": 85,
   "boxShadow": "none",
   "defaultText": "{{appsmith.URL.queryParams.user ||daneuzytkownik.data[0].id}}",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 40,
   "showStepArrows": false,
   "topRow": 78,
-  "topRowBeforeCollapse": 72,
+  "topRowBeforeCollapse": 78,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "6tw2i8fhbi",

@@ -1,17 +1,22 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 17,
   "boxShadow": "none",
-  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "buttonColor": "#b91c1c",
+  "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
-      "key": "buttonColor"
+      "key": "borderRadius"
     },
     {
-      "key": "borderRadius"
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -22,16 +27,16 @@
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{Input18.text.length>5}}",
   "key": "mytqgjw6bm",
-  "leftColumn": 15,
+  "leftColumn": 16,
   "minWidth": 120,
   "mobileBottomRow": 17,
   "mobileLeftColumn": 15,
   "mobileRightColumn": 31,
   "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onClick": "{{zapiszhaslo.zapiszhaslo();\nnavigateTo('User-page', {}, 'SAME_WINDOW');}}",
+  "onClick": "{{zmienhaslouser.run().then(() => {\n  resetWidget(\"Text18\", true);\n  showAlert('Zmieniono', 'success');\n  navigateTo('User-page', {}, 'SAME_WINDOW');\n});}}",
   "parentColumnSpace": 20.25,
   "parentId": "3nptwm86f7",
   "parentRowSpace": 10,
@@ -40,7 +45,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 31,
+  "rightColumn": 32,
   "text": "zmień hasło",
   "topRow": 12,
   "type": "BUTTON_WIDGET",
