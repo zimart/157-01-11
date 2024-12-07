@@ -39,7 +39,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{UpdateQuery.run().then(() => {\n  showAlert('ZAPISANO', 'success');\n  navigateTo('Klienci', {}, 'SAME_WINDOW');\n});}}",
+  "onClick": "{{zmienhaslouser2.run().then(() => {\n  showAlert('ZAPISANO', 'success');\n  navigateTo('Klienci', {}, 'SAME_WINDOW');\n});}}",
   "originalBottomRow": 57,
   "originalTopRow": 53,
   "parentId": "3nptwm86f7",

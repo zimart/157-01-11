@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67252580698c850488983504_3e185102-0506-49b5-8846-6c792eb7cbee",
-  "id": "User-page_Query1",
+  "id": "User-page_zmienhaslouser",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "Query1",
+    "name": "zmienhaslouser",
     "pageId": "User-page",
     "userSetOnLoad": false
   }

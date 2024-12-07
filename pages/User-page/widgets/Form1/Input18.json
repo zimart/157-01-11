@@ -15,6 +15,11 @@
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onBlur"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
@@ -22,7 +27,7 @@
   "isRequired": false,
   "isVisible": true,
   "key": "gvc5qj9s62",
-  "label": "Label",
+  "label": "Nowe hasło",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
@@ -37,6 +42,7 @@
   "mobileRightColumn": 11,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
+  "onBlur": "{{zmienhaslo.generatePasswordHash();}}",
   "originalBottomRow": 17,
   "originalTopRow": 10,
   "parentColumnSpace": 20.25,

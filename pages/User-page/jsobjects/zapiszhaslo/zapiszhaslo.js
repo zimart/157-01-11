@@ -3,7 +3,7 @@ export default {
 zapiszhaslo: async () => {
 
 await zmienhaslo();
-await updateopismainkursscreeny.run();
+await zmienhaslouser.run();
 
 },
 }
