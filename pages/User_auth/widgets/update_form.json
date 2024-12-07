@@ -133,9 +133,6 @@
       "key": "schema.__root_schema__.children.email.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.password_hash.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.password_hash.borderRadius"
     },
     {
@@ -302,6 +299,15 @@
     },
     {
       "key": "schema.__root_schema__.children.telefonfirma.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.active.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.active.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.active.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -314,14 +320,17 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "onSubmit"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onSubmit"
+    },
+    {
+      "key": "schema.__root_schema__.children.password_hash.onTextChanged"
+    },
+    {
+      "key": "schema.__root_schema__.children.password_hash.onBlur"
     }
   ],
   "fieldLimitExceeded": false,
@@ -356,6 +365,27 @@
       "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
       "cellBoxShadow": "none",
       "children": {
+        "active": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "active",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.active))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "active",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Active",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "active",
+          "position": 20
+        },
         "akcent": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "akcent",
@@ -648,7 +678,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.password_hash))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "password_hash",
@@ -659,6 +689,8 @@
           "isVisible": true,
           "label": "Password Hash",
           "labelTextSize": "0.875rem",
+          "onBlur": "{{zmienhaslo.generatePasswordHash();}}",
+          "onTextChanged": "{{}}",
           "originalIdentifier": "password_hash",
           "position": 1,
           "sourceData": "$2a$10$6VhWwIkmT.lG6Wliot0N5OB6bhhWiKxIUdBq1P.C9rSGHP9VdOJDG"

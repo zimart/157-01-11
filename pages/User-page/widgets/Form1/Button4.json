@@ -1,10 +1,10 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 16,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "SECONDARY",
+  "buttonVariant": "PRIMARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
@@ -14,26 +14,18 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "6xs3qefgwv",
+  "key": "mytqgjw6bm",
   "leftColumn": 15,
   "minWidth": 120,
-  "mobileBottomRow": 55,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 12,
-  "mobileTopRow": 51,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 15,
+  "mobileRightColumn": 31,
+  "mobileTopRow": 13,
   "needsErrorInfo": false,
-  "onClick": "{{zapiszlogo.run()}}",
-  "originalBottomRow": 46,
-  "originalTopRow": 42,
   "parentColumnSpace": 20.25,
   "parentId": "3nptwm86f7",
   "parentRowSpace": 10,
@@ -42,11 +34,11 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 27,
-  "text": "ZAPISZ LOGO",
-  "topRow": 42,
+  "rightColumn": 31,
+  "text": "Submit",
+  "topRow": 12,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "vkt0tla6dm",
-  "widgetName": "Button3"
+  "widgetId": "mq2u7v1qdh",
+  "widgetName": "Button4"
 }

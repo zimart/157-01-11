@@ -5,12 +5,12 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "",
-  "bottomRow": 41,
+  "bottomRow": 26,
   "boxShadow": "none",
   "children": [
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 410,
+      "bottomRow": 260,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -58,7 +58,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 410,
+      "bottomRow": 390,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": true,
       "detachFromLayout": true,
@@ -71,7 +71,7 @@
           "key": "boxShadow"
         }
       ],
-      "dynamicHeight": "FIXED",
+      "dynamicHeight": "AUTO_HEIGHT",
       "dynamicTriggerPathList": [],
       "flexLayers": [],
       "hideCard": true,
@@ -89,13 +89,15 @@
       "mobileLeftColumn": 0,
       "mobileRightColumn": 475.5,
       "mobileTopRow": 0,
+      "originalBottomRow": 390,
+      "originalTopRow": 0,
       "parentColumnSpace": 1,
       "parentId": "8voawvc8hu",
       "parentRowSpace": 1,
       "renderMode": "CANVAS",
       "responsiveBehavior": "fill",
       "rightColumn": 475.5,
-      "shouldScrollContents": false,
+      "shouldScrollContents": true,
       "tabId": "tab2",
       "tabName": "Sign Up",
       "topRow": 0,
@@ -106,7 +108,7 @@
     },
     {
       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "bottomRow": 410,
+      "bottomRow": 260,
       "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
       "canExtend": false,
       "containerStyle": "none",

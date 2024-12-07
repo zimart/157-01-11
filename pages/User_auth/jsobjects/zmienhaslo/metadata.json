@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67252580698c850488983504_b6b1649d-adce-4be0-9a7f-9ec0e024a2c6",
+  "id": "User_auth_zmienhaslo",
+  "unpublishedCollection": {
+    "name": "zmienhaslo",
+    "pageId": "User_auth",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

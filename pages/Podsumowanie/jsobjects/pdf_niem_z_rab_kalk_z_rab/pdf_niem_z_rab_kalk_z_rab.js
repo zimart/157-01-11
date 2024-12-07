@@ -12,12 +12,7 @@ export default {
 		const Roboto = Input1.text;
 		const Robotobold = Input9.text;
 		const footer = stopka.text;
-		var margins = {
-			top: 40,
-			bottom: 60,
-			left: 40,
-			width: 522
-		};
+		
 
 		// Custom headers
 		const columns = [
