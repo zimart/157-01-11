@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
+  "bottomRow": 42,
   "boxShadow": "none",
   "buttonColor": "#831843",
   "buttonVariant": "PRIMARY",
@@ -44,7 +44,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 64,
   "text": "ZAPISZ ZMIANY",
-  "topRow": 37,
+  "topRow": 38,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "vqjmvahfn0",

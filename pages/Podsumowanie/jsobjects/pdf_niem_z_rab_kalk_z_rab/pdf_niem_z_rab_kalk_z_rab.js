@@ -67,7 +67,8 @@ export default {
 		const data = glowna_tabela.tableData.map(item => ({
 			//Produkt: item.Produkt +"\n"+item.opiszrabatami,
 			Lp:item.seq,
-			Produkt: item.Produkt +"\n"+item.skugen+"\n"+item.komentarz,
+		//Produkt: item.Produkt +"\n"+item.skugen+"\n"+item.komentarz,
+				Produkt: item.Produkt +"\n"+"\n"+item.komentarz,
 			//Produkt: item.Produkt,
 			Ilosc: item.Ilosc,
 			cenanetto: ((item.cenanetto / currencyRate)*narzuty).toFixed(2),// Convert price using currency rate
@@ -176,7 +177,7 @@ export default {
 							 //fillColor: 255,
 							 //textColor: Color? = 20
 							 //cellWidth: 'auto'|'wrap'|number = 'auto'
-							 minCellWidth: 8,
+							 minCellWidth: 14,
 							 minCellHeight:8,
 							 //minCellHeight: number = 0
 							 halign: 'left',
@@ -245,8 +246,8 @@ export default {
 							 //fillColor: 255,
 							 //textColor: Color? = 20
 							 //cellWidth: 'auto'|'wrap'|number = 'auto'
-							 minCellWidth: 12,
-							 //minCellHeight:8,
+							 minCellWidth: 14,
+							 minCellHeight:8,
 							 //minCellHeight: number = 0
 							 halign: 'center',
 							 valign: 'middle'
@@ -331,7 +332,7 @@ export default {
 							 //fillColor: 255,
 							 //textColor: Color? = 20
 							 //cellWidth: 'auto'|'wrap'|number = 'auto'
-							 minCellWidth: 8,
+							 minCellWidth: 14,
 							 minCellHeight:8,
 							 //minCellHeight: number = 0
 							 halign: 'left',

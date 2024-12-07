@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
+  "bottomRow": 27,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -67,7 +67,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tooltip": "Wpisz ponownie wysokość  -{{tabela_screeny_inventory_id.triggeredRow.concat}} ",
-  "topRow": 20,
+  "topRow": 21,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "canxm4d6u0",

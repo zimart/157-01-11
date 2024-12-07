@@ -161,7 +161,7 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 8,
+//minCellWidth: 10,
 minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
@@ -230,7 +230,7 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 8,
+minCellWidth: 14,
 minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
@@ -313,7 +313,7 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 8,
+minCellWidth: 14,
 minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
@@ -392,7 +392,7 @@ theme: 'grid',
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 8,
+minCellWidth: 14,
 minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'left',
@@ -476,7 +476,7 @@ CellHookData_3(doc, {
 //fillColor: 255,
 //textColor: Color? = 20
 //cellWidth: 'auto'|'wrap'|number = 'auto'
-minCellWidth: 8,
+minCellWidth: 14,
 minCellHeight:8,
 //minCellHeight: number = 0
 halign: 'center',
