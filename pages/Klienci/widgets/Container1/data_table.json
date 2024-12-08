@@ -23,6 +23,7 @@
   },
   "columnOrder": [
     "accountname",
+    "nazwafirmy",
     "phone",
     "email1",
     "customColumn1",
@@ -41,7 +42,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1730621947931,
+  "columnUpdatedAt": 1733654709157,
   "columnWidthMap": {
     "accountname": 267,
     "customColumn1": 176,
@@ -141,6 +142,9 @@
     },
     {
       "key": "primaryColumns.uzytkownikwlasnosc.computedValue"
+    },
+    {
+      "key": "primaryColumns.nazwafirmy.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -184,8 +188,8 @@
   "onPageChange": "{{SelectQuery.run()}}",
   "onSearchTextChanged": "{{SelectQuery.run()}}",
   "onSort": "{{SelectQuery.run()}}",
-  "originalBottomRow": 90,
-  "originalTopRow": 9,
+  "originalBottomRow": 89,
+  "originalTopRow": 8,
   "parentColumnSpace": 16.3125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
@@ -466,6 +470,40 @@
       "label": "Miejscowość",
       "notation": "standard",
       "originalId": "miejscowosc",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "nazwafirmy": {
+      "alias": "nazwafirmy",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"nazwafirmy\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "nazwafirmy",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Firma",
+      "notation": "standard",
+      "originalId": "nazwafirmy",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

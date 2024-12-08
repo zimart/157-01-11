@@ -8,5 +8,6 @@ UPDATE klienci SET
 		nazwiskoklient = '{{update_form.fieldState.nazwiskoklient.isVisible ? update_form.formData.nazwiskoklient : update_form.sourceData.nazwiskoklient}}',
 		ulica = '{{update_form.fieldState.ulica.isVisible ? update_form.formData.ulica : update_form.sourceData.ulica}}',
 		numer = '{{update_form.fieldState.numer.isVisible ? update_form.formData.numer : update_form.sourceData.numer}}',
-		kod = '{{update_form.fieldState.kod.isVisible ? update_form.formData.kod : update_form.sourceData.kod}}'
+		kod = '{{update_form.fieldState.kod.isVisible ? update_form.formData.kod : update_form.sourceData.kod}}',
+		nazwafirmy = '{{update_form.fieldState.nazwafirmy.isVisible ? update_form.formData.nazwafirmy : update_form.sourceData.nazwafirmy}}'
 WHERE accountid = {{data_table.selectedRow.accountid}};
