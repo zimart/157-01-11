@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
   "boxShadow": "none",
-  "defaultText": "{{Number(Input5.text).toFixed(2)}}",
+  "defaultText": "{{dane_oferty_main.data[0].wymaganyzadatek||\"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

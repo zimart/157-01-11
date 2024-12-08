@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 176,
-  "bottomRowBeforeCollapse": 176,
+  "bottomRowBeforeCollapse": 179,
   "boxShadow": "none",
   "defaultText": "{{Number(cenabazowasystemu.text+kosztdoplatykolor.text+doplatadotkaninyinput.text+doplatawkladka2.text).toFixed(2)}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 172,
-  "topRowBeforeCollapse": 172,
+  "topRowBeforeCollapse": 175,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "y2enr1oaf8",

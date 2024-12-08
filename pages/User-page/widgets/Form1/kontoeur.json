@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 67,
   "boxShadow": "none",
-  "defaultText": "{{daneuzytkownik.data[0].kontoeur}}",
+  "defaultText": "{{daneuzytkownik.data[0].kontoeuro}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,7 +41,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 52,
   "needsErrorInfo": false,
-  "originalBottomRow": 59,
+  "originalBottomRow": 62,
   "originalTopRow": 52,
   "parentColumnSpace": 20.25,
   "parentId": "3nptwm86f7",

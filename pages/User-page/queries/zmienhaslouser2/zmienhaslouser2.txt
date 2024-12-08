@@ -14,7 +14,8 @@ UPDATE user_auth SET
 		akcent = '{{Input14.text}}',
 		username = '{{Input17.text}}',
 		kontopln = '{{kontopln.text}}',
-		kontoeuro = '{{kontoeur.text}}'
+		kontoeuro = '{{kontoeur.text}}',
+		rodo = '{{rodo.text}}'
 		
 	
 			

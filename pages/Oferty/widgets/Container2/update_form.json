@@ -327,6 +327,15 @@
     },
     {
       "key": "schema.__root_schema__.children.narzut.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kwotazadatku.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.kwotazadatku.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kwotazadatku.accentColor"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -598,6 +607,28 @@
           "originalIdentifier": "kurswgtabeli",
           "position": 22,
           "sourceData": 4.3365
+        },
+        "kwotazadatku": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "kwotazadatku",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kwotazadatku))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "kwotazadatku",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": false,
+          "label": "Kwotazadatku",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kwotazadatku",
+          "position": 24,
+          "sourceData": null
         },
         "narzut": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

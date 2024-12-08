@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 320,
+  "bottomRow": 319,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 12,
   "mobileTopRow": 309,
   "needsErrorInfo": false,
-  "originalBottomRow": 315,
-  "originalTopRow": 310,
+  "originalBottomRow": 319,
+  "originalTopRow": 314,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "Gesamtbetrag mit MwSt :\n{{razembrutto_de.text}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 315,
+  "topRow": 314,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

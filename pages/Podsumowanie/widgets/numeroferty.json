@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 184,
-  "bottomRowBeforeCollapse": 184,
+  "bottomRowBeforeCollapse": 187,
   "boxShadow": "none",
   "defaultText": "{{dane_oferty_main.data[0].numeroferty ||\"\"}} ",
   "dynamicBindingPathList": [
@@ -53,7 +53,7 @@
   "rightColumn": 32,
   "showStepArrows": false,
   "topRow": 180,
-  "topRowBeforeCollapse": 180,
+  "topRowBeforeCollapse": 183,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ciglx5ivzz",

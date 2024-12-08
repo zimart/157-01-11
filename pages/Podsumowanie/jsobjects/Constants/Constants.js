@@ -37,7 +37,7 @@ export default {
 		"Do zapłaty brutto":"Do zapłaty brutto",
 		"Waluta dokumentu":"Waluta dokumenu",
 		"Numer konta bankowego":"Numer konta bankowego",
-		"Wymagana kwota zadatku":"Wymagana kwota zaadatku",
+		"Wymagana kwota zadatku":"Wymagana kwota zadatku",
 		"Data ważności oferty":"Data ważności oferty",
 		"Wyloguj":"Wyloguj",
 		"Oferta":"Oferta",

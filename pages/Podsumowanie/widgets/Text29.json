@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 294,
+  "bottomRow": 293,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,15 +33,15 @@
   "mobileRightColumn": 38,
   "mobileTopRow": 266,
   "needsErrorInfo": false,
-  "originalBottomRow": 289,
-  "originalTopRow": 284,
+  "originalBottomRow": 293,
+  "originalTopRow": 289,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 38,
+  "rightColumn": 54,
   "shouldTruncate": false,
   "text": "{{i18n.translate(\"Oferta\")}}_{{dane_oferty_main.data[0].dataoferty}}_{{dane_oferty_main.data[0].numeroferty}}_{{dane_oferty_main.data[0].klient}}.pdf",
   "textAlign": "LEFT",
