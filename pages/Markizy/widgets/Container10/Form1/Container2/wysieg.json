@@ -17,6 +17,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -40,6 +43,7 @@
   "labelPosition": "Top",
   "labelText": "Label",
   "labelTextSize": "0.875rem",
+  "labelTooltip": "Minimalna szerokość dla wysięgu {{Input32.text}} to {{minimalnaszerokosc.data[0].minimalnaszer||\"\"}}",
   "labelWidth": 5,
   "leftColumn": 22,
   "maxDynamicHeight": 9000,

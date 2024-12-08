@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 287,
+  "bottomRow": 289,
   "boxShadow": "none",
   "defaultText": "{{daneuzytkownik.data[0].kontoeuro||\"\"}}",
   "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
   "mobileRightColumn": 54,
   "mobileTopRow": 276,
   "needsErrorInfo": false,
-  "originalBottomRow": 289,
+  "originalBottomRow": 287,
   "originalTopRow": 277,
   "parentColumnSpace": 20.5625,
   "parentId": "0",

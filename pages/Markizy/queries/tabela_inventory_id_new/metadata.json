@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM inventory_screeny where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};",
+      "body": "SELECT * FROM inventory_markizy where fk_oferty_inventory_id ={{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
