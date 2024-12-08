@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 319,
+  "bottomRow": 317,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -46,7 +46,7 @@
   "text": "Gesamtbetrag mit MwSt :\n{{razembrutto_de.text}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 314,
+  "topRow": 312,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

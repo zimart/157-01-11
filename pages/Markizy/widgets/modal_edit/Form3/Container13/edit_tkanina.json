@@ -1,0 +1,80 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 12,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelText"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelTooltip"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "2eaywto8sv",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 9,
+  "mobileLeftColumn": 45,
+  "mobileRightColumn": 64,
+  "mobileTopRow": 2,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{FORM_tkaninawybor.run();\ndoplata.tkanina_form();}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 18.09375,
+  "parentId": "73uy2fdkul",
+  "parentRowSpace": 10,
+  "placeholderText": "{{i18n.translate(\"Tkanina\")}}",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 13,
+  "serverSideFiltering": false,
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
+  "topRow": 7,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "0gjt1qwxuk",
+  "widgetName": "edit_tkanina"
+}

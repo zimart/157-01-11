@@ -1,0 +1,31 @@
+UPDATE inventory_screeny SET 
+    kwotarabatsystem = systemzdoplata*(rabatsystem/100),
+		doplatakolor = (procentdoplatakolor/100)*cena,
+		
+		systemzdoplata = cena + doplatatkanina + doplatakolor + doplatawkladka,
+		systemporabacie = systemzdoplata-kwotarabatsystem,
+    priceall = price_motor - (price_motor*(rabatmotor/100)),
+		cenanetto = systemporabacie + priceall,
+		kwotarabatmotor = price_motor*(rabatmotor/100),
+	  razemnetto = cenanetto * ilosc,
+		moc = "Roleta SCREEN",
+		komentarz = concat(system,"/",skrzynka,"/",kolor,"/",CHAR(13),CHAR(10), szerokosc,"x",wysokosc,CHAR(13),CHAR(10),"/",tkanina,"-",referencja,"/",naped),
+		
+		opisbezrabatow = CONCAT("Opis pozycji: ",indexszer,CHAR(13),"| System:",system," | Skrzynka: ",skrzynka," | Kolor: ",kolor," Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor: ",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina: ",doplatatkanina," | Doplata do wkladki: ",doplatawkladka," | Cena rolety z doplatami: ",systemzdoplata," | Cena napedu: ",priceall,"| Roleta kompletna: ", cenanetto,"| Strona napędu:",indexwys),
+		
+		opiszrabatami = CONCAT("Opis pozycji: ",indexszer,CHAR(13),"System: ",system," Skrzynka: ",skrzynka," | Kolor: ",kolor," Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor: ",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina: ",doplatatkanina," | Doplata do wkladki: ",doplatawkladka," | Cena rolety z doplatami: ",systemzdoplata," | Rabat system: ",rabatsystem,"%"," | System po rabacie: ",systemporabacie," | Cena napedu: ",priceall," | Rabat naped: ",rabatmotor,"%","  Naped po rabacie: ",priceall,"| Roleta kompletna: ", cenanetto,"| Strona napędu: ",indexwys),
+		
+		opiszrabatami_de = CONCAT("Opis pozycji: ",indexszer,CHAR(13),"System: ",system," Kasten: ",skrzynka," | Farbe: ",kolor," Breite: ", szerokosc," | Wys: ",wysokosc," | Stoff: ",tkanina,"-",referencja," | Katalogpreis: ",cena," | Farbzuschlag: ",procentdoplatakolor,"%"," |Zuschlagsbetrag: ",doplatakolor," | Stoffzuschlag: ",doplatatkanina," | Aufpreis für die ZIIIP-Einlage: ",doplatawkladka," | Preis für system mit Zuschlägen: ",systemzdoplata," | Systemrabatt: ",rabatsystem,"%"," | System nach Rabatt: ",systemporabacie," | Motor: ",naped," | Fahrpreis: ",priceall," | Motorrabatt: ",rabatmotor,"%","  Motor nach einem Rabatt: ",priceall,"| Preis des Komplettsystems: ", cenanetto,"| Strona napędu: ",indexwys),
+		
+		opisbezrabatow_de = CONCAT("Opis pozycji: ",indexszer,CHAR(13),"System:",system," Kasten: ",skrzynka," | Farbe: ",kolor," Breite: ", szerokosc," | Wys: ",wysokosc," | Stoff: ",tkanina,"-",referencja," | Katalogpreis:  ",cena," | Farbzuschlag: ",procentdoplatakolor,"%"," |Zuschlagsbetrag: ",doplatakolor," | Stoffzuschlag: ",doplatatkanina," | Aufpreis für die ZIIIP-Einlage: ",doplatawkladka," | Preis für system mit Zuschlägen: ",systemzdoplata," | Motor: ",naped," | Motorpreis: ",priceall,"| Preis des Komplettsystems: ", cenanetto,"| Strona napędu: ",indexwys),
+		
+		
+		
+		opisbezrabatow_en = CONCAT("Opis pozycji: ",indexszer," | System: ",system," | Box: ",skrzynka," | Color: ",kolor," Szerokość:", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Base price: ",cena," | Doplata kolor: ",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina: ",doplatatkanina," | Doplata do wkladki: ",doplatawkladka," | Cena rolety z doplatami: ",systemzdoplata," | Cena napedu: ",priceall,"| Price set: ", cenanetto,"| Strona napędu: ",indexwys),
+		
+		opiszrabatami_en = CONCAT("Opis pozycji: ",indexszer," | System: ",system," Box: ",skrzynka," | Color: ",kolor," Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor: ",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor, " | Doplata tkanina: ",doplatatkanina," | Doplata do wkladki: ",doplatawkladka," | Cena rolety z doplatami: ",systemzdoplata," | Rabat system: ",rabatsystem,"%"," | System po rabacie: ",systemporabacie," | Cena napedu: ",priceall," | Rabat naped: ",rabatmotor,"%","  Naped po rabacie: ",priceall,"| Roleta kompletna: ", cenanetto,"| Strona napędu: ",indexwys)
+	
+			
+WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};
+
+

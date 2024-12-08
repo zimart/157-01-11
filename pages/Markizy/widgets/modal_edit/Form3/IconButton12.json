@@ -1,0 +1,57 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 26,
+  "bottomRowBeforeCollapse": 26,
+  "boxShadow": "none",
+  "buttonColor": "#831843",
+  "buttonVariant": "PRIMARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "onClick"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "repeat",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{Select16.isValid;edit_szerokosc.text>0;edit_wysokosc.text>0}}",
+  "key": "8xo8kta8qm",
+  "leftColumn": 48,
+  "minWidth": 50,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 40,
+  "mobileRightColumn": 44,
+  "mobileTopRow": 12,
+  "needsErrorInfo": false,
+  "onClick": "{{\nstoreValue('edit_powierzchnia', edit_powierzchnia.text)\n.then(() => doplata.tkanina_form())\n.then(() => \nremoveValue('edit_sku_value'))\n.then(() => \nstoreValue('edit_sku_value', edit_tymczasowy.text))\n.then(() => FORM_danesku.run())\n.then(() => \ndoplata.tkanina_form())\n.then(() => storeValue('edit_cenasystemu', edit_cenasystemu.text).catch(() => {\n  showAlert('blad', 'error')\n}))\n.then(() => storeValue('edit_wymaganynaped', edit_wymaganamocnaped.text))\n.then(() => FORM_napedwybrany.run())\n.then(() => FORM_cenanapeduwybranego.run())\n.then(() => storeValue('edit_modelnapedu', edit_wybranynaped.text))\n.then(() => \nstoreValue('edit_cenanapedu2', edit_cena_naped_pobranie.text))\n.then(() => doplata.wkladka_form())\n.then(() => FORM_czydoplatakolor.run())\n.then(() => \nFORM_doplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor_form())\n}}",
+  "originalBottomRow": 26,
+  "originalTopRow": 22,
+  "parentColumnSpace": 18.40625,
+  "parentId": "jnoi6scv56",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 51,
+  "topRow": 22,
+  "topRowBeforeCollapse": 22,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "qybs18hvqf",
+  "widgetName": "IconButton12"
+}

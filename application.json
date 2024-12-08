@@ -157,6 +157,14 @@
     {
       "id": "Moskitiery_tabelaindeksy",
       "isDefault": false
+    },
+    {
+      "id": "Markizy",
+      "isDefault": false
+    },
+    {
+      "id": "Markizy_wysieg",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

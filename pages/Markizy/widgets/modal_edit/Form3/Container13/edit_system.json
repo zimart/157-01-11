@@ -1,0 +1,82 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTooltip"
+    },
+    {
+      "key": "labelText"
+    },
+    {
+      "key": "placeholderText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "awmuorqyqr",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "System - {{form_screeny_trigered.data[0].system}}",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Wybierz ponownie system - {{form_screeny_trigered.data[0].system}}",
+  "labelWidth": 5,
+  "leftColumn": 13,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 2,
+  "mobileRightColumn": 22,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{FORM_kolor_zapytaj.run()\n.then(() => \nremoveValue(appsmith.store.edit_sku_value))\n.then(() => removeValue(appsmith.store.edit_modelnapedu))\n.then(() => FORM_serianapedu.run())\n.then(() => FORM_rodzajnapedu.run())\n.then(() => \nFORM_skrzynka_zapytaj.run())\n.then(() => \nFORM_serianapedu.run())\n.then(() => \nFORM_rodzajnapedu.run())\n.then(() => \nFORM_wkladki.run())\n.then(() => \nFORM_skrotsystem.run());}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 12,
+  "originalTopRow": 5,
+  "parentColumnSpace": 9.12109375,
+  "parentId": "73uy2fdkul",
+  "parentRowSpace": 10,
+  "placeholderText": "{{i18n.translate(\"Wybierz system\")}}",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 26,
+  "serverSideFiltering": false,
+  "sourceData": "{{FORM_system_zapytaj.data.map( (obj) =>{ return  {'label': obj.system, 'value': obj.system } })}}",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "7ly4u8n5y6",
+  "widgetName": "edit_system"
+}

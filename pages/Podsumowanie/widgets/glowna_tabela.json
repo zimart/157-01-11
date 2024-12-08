@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 115,
+  "bottomRow": 118,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -1519,7 +1519,7 @@
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{tabela_glowna.data}}",
   "textSize": "0.875rem",
-  "topRow": 29,
+  "topRow": 32,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

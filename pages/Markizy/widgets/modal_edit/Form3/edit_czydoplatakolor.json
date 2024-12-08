@@ -1,0 +1,61 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 73,
+  "bottomRowBeforeCollapse": 66,
+  "boxShadow": "none",
+  "defaultText": "{{FORM_czydoplatakolor.data[0].czydoplata}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "6sl70almze",
+  "label": "CZY DOPŁATA KOLOR",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 41,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 63,
+  "mobileLeftColumn": 41,
+  "mobileRightColumn": 61,
+  "mobileTopRow": 56,
+  "needsErrorInfo": false,
+  "originalBottomRow": 73,
+  "originalTopRow": 66,
+  "parentColumnSpace": 19.2125,
+  "parentId": "jnoi6scv56",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 49,
+  "showStepArrows": false,
+  "topRow": 66,
+  "topRowBeforeCollapse": 59,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "f5fvcdf59q",
+  "widgetName": "edit_czydoplatakolor"
+}

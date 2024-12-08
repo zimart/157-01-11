@@ -1,0 +1,5 @@
+UPDATE markizy_wysieg SET
+		typmarkizy = '{{update_form.fieldState.typmarkizy.isVisible ? update_form.formData.typmarkizy : update_form.sourceData.typmarkizy}}',
+		wysieg = '{{update_form.fieldState.wysieg.isVisible ? update_form.formData.wysieg : update_form.sourceData.wysieg}}',
+    minimalnaszer = '{{update_form.fieldState.minimalnaszer.isVisible ? update_form.formData.minimalnaszer : update_form.sourceData.minimalnaszer}}'
+WHERE id = {{data_table.selectedRow.id}};

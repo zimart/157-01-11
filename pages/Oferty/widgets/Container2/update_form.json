@@ -627,8 +627,7 @@
           "label": "Kwotazadatku",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kwotazadatku",
-          "position": 24,
-          "sourceData": null
+          "position": 24
         },
         "narzut": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

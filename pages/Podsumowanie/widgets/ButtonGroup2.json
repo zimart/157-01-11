@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 18,
   "boxShadow": "none",
   "buttonVariant": "PRIMARY",
   "childStylesheet": {
@@ -59,6 +59,9 @@
     },
     {
       "key": "groupButtons.groupButton3.menuItems.menuItem4m9kx2mqe7.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemc3q0bfki0z.onClick"
     }
   ],
   "dynamicTriggerPathList": [
@@ -79,6 +82,9 @@
     },
     {
       "key": "groupButtons.groupButtonoa96q6vcdl.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton3.menuItems.menuItemc3q0bfki0z.onClick"
     }
   ],
   "groupButtons": {
@@ -146,6 +152,15 @@
           "textColor": "{{appsmith.theme.colors.backgroundColor}}",
           "widgetId": "c3cxtqka69"
         },
+        "menuItemc3q0bfki0z": {
+          "id": "menuItemc3q0bfki0z",
+          "index": 3,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "MARKIZY",
+          "onClick": "{{storeValue('id_oferta', idoferty_appsmith.text);\nstoreValue('uzytkownik', uzytkownik.text).then(() => {\n  navigateTo('Markizy', {\n    id_oferta: appsmith.store.id_oferta,\n    uzytkownik: appsmith.store.uzytkownik\n  }, 'SAME_WINDOW');\n});}}",
+          "widgetId": "yc9ogov7fe"
+        },
         "menuItemgu742vm8se": {
           "backgroundColor": "#3e9985",
           "iconColor": "{{appsmith.theme.colors.backgroundColor}}",
@@ -200,7 +215,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 34,
-  "topRow": 12,
+  "topRow": 14,
   "type": "BUTTON_GROUP_WIDGET",
   "version": 1,
   "widgetId": "rglkpqhgdq",

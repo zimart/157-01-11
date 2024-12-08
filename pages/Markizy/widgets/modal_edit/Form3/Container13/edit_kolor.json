@@ -1,0 +1,93 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "bottomRowBeforeCollapse": 5,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].kolor))(edit_kolor.options, edit_kolor.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelText"
+    },
+    {
+      "key": "placeholderText"
+    },
+    {
+      "key": "labelTooltip"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": "{{edit_system.isValid}}",
+  "key": "awmuorqyqr",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Kolor - {{form_screeny_trigered.data[0].kolor}}",
+  "labelTextSize": "0.875rem",
+  "labelTooltip": "Kolor - {{form_screeny_trigered.data[0].kolor}}",
+  "labelWidth": 5,
+  "leftColumn": 26,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 29,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 49,
+  "mobileTopRow": 22,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\nFORM_czydoplatakolor.run()\n.then(() => \nFORM_doplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor_form())\n.then(() => \nFORM_cena_zapytaj.run())\t\n}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 5,
+  "originalTopRow": 0,
+  "parentColumnSpace": 13.837890625,
+  "parentId": "73uy2fdkul",
+  "parentRowSpace": 10,
+  "placeholderText": "{{i18n.translate(\"Wybierz kolor\")}}",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 40,
+  "serverSideFiltering": false,
+  "sourceData": "{{FORM_kolor_zapytaj.data.map( (obj) =>{ return  {'label': obj.kolorm, 'value': obj.kolorm } })}}",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "jg4ag4bs0f",
+  "widgetName": "edit_kolor"
+}

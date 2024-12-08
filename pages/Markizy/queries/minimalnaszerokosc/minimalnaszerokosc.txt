@@ -1,0 +1,1 @@
+SELECT minimalnaszer FROM markizy_wysieg WHERE typmarkizy={{typmarkizy.selectedOptionLabel}} and wysieg = {{Input32.text}};

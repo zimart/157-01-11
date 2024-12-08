@@ -1,0 +1,8 @@
+INSERT INTO markizy_wysieg (
+	typmarkizy,
+	wysieg,
+	minimalnaszer)
+VALUES (
+	'{{insert_form.formData.typmarkizy}}',
+	'{{insert_form.formData.wysieg}}',
+	'{{insert_form.formData.minimalnaszer}}');

@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "67252580698c850488983504_21daf14b-284d-433f-a188-53ebc910b5b2",
+  "id": "Markizy_i18n",
+  "unpublishedCollection": {
+    "name": "i18n",
+    "pageId": "Markizy",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "resources",
+        "value": "{\n  polski: {\n    translation: Constants.defaultLanguageKeys\n  }\n}"
+      }
+    ]
+  }
+}

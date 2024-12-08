@@ -411,8 +411,7 @@
           "label": "Nazwa firmy",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "nazwafirmy",
-          "position": 1,
-          "sourceData": null
+          "position": 1
         },
         "nazwiskoklient": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

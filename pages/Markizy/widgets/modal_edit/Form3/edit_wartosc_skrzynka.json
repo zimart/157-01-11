@@ -1,0 +1,62 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 86,
+  "bottomRowBeforeCollapse": 79,
+  "boxShadow": "none",
+  "defaultText": "{{Select16.selectedOptionValue}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "NUMBER",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": false,
+  "key": "y5hqo4m5hy",
+  "label": "wrtoscskrzynka",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 57,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 20,
+  "mobileTopRow": 50,
+  "needsErrorInfo": false,
+  "originalBottomRow": 86,
+  "originalTopRow": 79,
+  "parentColumnSpace": 18.40625,
+  "parentId": "jnoi6scv56",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 4,
+  "shouldAllowAutofill": false,
+  "showStepArrows": false,
+  "topRow": 79,
+  "topRowBeforeCollapse": 72,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "0dk7r5zn72",
+  "widgetName": "edit_wartosc_skrzynka"
+}
