@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 46,
+  "bottomRow": 47,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -30,8 +30,8 @@
   "mobileRightColumn": 9,
   "mobileTopRow": 36,
   "needsErrorInfo": false,
-  "originalBottomRow": 46,
-  "originalTopRow": 42,
+  "originalBottomRow": 45,
+  "originalTopRow": 41,
   "overflow": "NONE",
   "parentColumnSpace": 20.25,
   "parentId": "3nptwm86f7",
@@ -40,10 +40,10 @@
   "responsiveBehavior": "fill",
   "rightColumn": 9,
   "shouldTruncate": false,
-  "text": "Identyfikacja",
+  "text": "Finanse",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 42,
+  "topRow": 43,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

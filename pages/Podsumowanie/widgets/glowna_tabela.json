@@ -4,7 +4,7 @@
   "borderColor": "#E0DEDE",
   "borderRadius": "0px",
   "borderWidth": "1",
-  "bottomRow": 117,
+  "bottomRow": 115,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "canFreezeColumn": true,
   "childStylesheet": {
@@ -331,7 +331,7 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 117,
+  "originalBottomRow": 115,
   "originalTopRow": 29,
   "parentId": "0",
   "parentRowSpace": 10,
