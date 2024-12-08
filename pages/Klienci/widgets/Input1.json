@@ -6,7 +6,7 @@
   "bottomRow": 113,
   "bottomRowBeforeCollapse": 115,
   "boxShadow": "none",
-  "defaultText": "{{podajidusera.data[0].id}}",
+  "defaultText": "{{podajidusera.data[0].id||userdane.text}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -42,8 +42,8 @@
   "mobileRightColumn": 36,
   "mobileTopRow": 105,
   "needsErrorInfo": false,
-  "originalBottomRow": 113,
-  "originalTopRow": 106,
+  "originalBottomRow": 115,
+  "originalTopRow": 108,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,

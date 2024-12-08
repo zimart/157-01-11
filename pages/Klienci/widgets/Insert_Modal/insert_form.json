@@ -173,6 +173,15 @@
     },
     {
       "key": "schema.__root_schema__.children.uzytkownikwlasnosc.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.nazwafirmy.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.nazwafirmy.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.nazwafirmy.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -243,7 +252,7 @@
           "label": "Klient",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "accountname",
-          "position": 8,
+          "position": 9,
           "sourceData": "[value-3]"
         },
         "email1": {
@@ -265,7 +274,7 @@
           "label": "E-mail",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "email1",
-          "position": 3,
+          "position": 4,
           "sourceData": "[value-11]"
         },
         "imie": {
@@ -309,7 +318,7 @@
           "label": "Kod pocztowy",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "kod",
-          "position": 7
+          "position": 8
         },
         "miejscowosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -330,8 +339,30 @@
           "label": "Miejscowość",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "miejscowosc",
-          "position": 4,
+          "position": 5,
           "sourceData": "[value-43]"
+        },
+        "nazwafirmy": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "accessor": "nazwafirmy",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.nazwafirmy))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "nazwafirmy",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Nazwa firmy",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "nazwafirmy",
+          "position": 2,
+          "sourceData": "jakasSA firmra cos"
         },
         "nazwiskoklient": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -374,7 +405,7 @@
           "label": "Numer ",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "numer",
-          "position": 6
+          "position": 7
         },
         "phone": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -395,7 +426,7 @@
           "label": "Telefon",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "phone",
-          "position": 2,
+          "position": 3,
           "sourceData": "[value-9]"
         },
         "ulica": {
@@ -417,7 +448,7 @@
           "label": "Ulica",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "ulica",
-          "position": 5
+          "position": 6
         },
         "uzytkownikwlasnosc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -438,7 +469,7 @@
           "label": "Uzytkownikwlasnosc",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "uzytkownikwlasnosc",
-          "position": 9
+          "position": 10
         }
       },
       "dataType": "object",

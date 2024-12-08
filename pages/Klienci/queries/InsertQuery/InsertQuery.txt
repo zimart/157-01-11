@@ -7,7 +7,7 @@ INSERT INTO klienci (
 	nazwiskoklient,
 	ulica,
 	numer,
-	kod)
+	kod,nazwafirmy)
 VALUES (
 	'{{insert_form.formData.accountname}}',
 	'{{insert_form.formData.phone}}',
@@ -17,4 +17,5 @@ VALUES (
 	'{{insert_form.formData.nazwiskoklient}}',
 	'{{insert_form.formData.ulica}}',
 	'{{insert_form.formData.numer}}',
-	'{{insert_form.formData.kod}}');
+	'{{insert_form.formData.kod}}',
+	'{{insert_form.formData.nazwafirmy}}');
