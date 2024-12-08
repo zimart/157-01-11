@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE markizy_wysieg SET\n\t\ttypmarkizy = '{{update_form.fieldState.typmarkizy.isVisible ? update_form.formData.typmarkizy : update_form.sourceData.typmarkizy}}',\n\t\twysieg = '{{update_form.fieldState.wysieg.isVisible ? update_form.formData.wysieg : update_form.sourceData.wysieg}}',\n    minimalnaszer = '{{update_form.fieldState.minimalnaszer.isVisible ? update_form.formData.minimalnaszer : update_form.sourceData.minimalnaszer}}'\nWHERE id = {{data_table.selectedRow.id}};",
+      "body": "UPDATE markizy_wysieg SET\n\t\ttypmarkizy = '{{update_form.fieldState.typmarkizy.isVisible ? update_form.formData.typmarkizy : update_form.sourceData.typmarkizy}}',\n\t\twysieg = '{{update_form.fieldState.wysieg.isVisible ? update_form.formData.wysieg : update_form.sourceData.wysieg}}',\n    minimalnaszer = '{{update_form.fieldState.minimalnaszer.isVisible ? update_form.formData.minimalnaszer : update_form.sourceData.minimalnaszer}}',\n\t\twymaganamoc = '{{update_form.fieldState.wymaganamoc.isVisible ? update_form.formData.wymaganamoc : update_form.sourceData.wymaganamoc}}'\nWHERE id = {{data_table.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,6 +22,11 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "executeOnLoad": false,
     "name": "UpdateQuery",
     "pageId": "Markizy_wysieg",

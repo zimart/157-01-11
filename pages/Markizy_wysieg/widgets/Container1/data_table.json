@@ -26,6 +26,7 @@
     "typmarkizy",
     "wysieg",
     "minimalnaszer",
+    "wymaganamoc",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -33,7 +34,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1733676990445,
+  "columnUpdatedAt": 1733680067869,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -96,6 +97,9 @@
     },
     {
       "key": "primaryColumns.minimalnaszer.computedValue"
+    },
+    {
+      "key": "primaryColumns.wymaganamoc.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -262,6 +266,40 @@
       "label": "typmarkizy",
       "notation": "standard",
       "originalId": "typmarkizy",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "wymaganamoc": {
+      "alias": "wymaganamoc",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wymaganamoc\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "wymaganamoc",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "wymaganamoc",
+      "notation": "standard",
+      "originalId": "wymaganamoc",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

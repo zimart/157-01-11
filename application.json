@@ -165,6 +165,10 @@
     {
       "id": "Markizy_wysieg",
       "isDefault": false
+    },
+    {
+      "id": "Markizy_napedy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

@@ -1,0 +1,2 @@
+DELETE FROM markizy_napedy
+  WHERE id = {{data_table.triggeredRow.id}};

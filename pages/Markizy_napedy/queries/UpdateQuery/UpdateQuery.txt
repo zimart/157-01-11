@@ -1,0 +1,18 @@
+UPDATE markizy_napedy SET
+ 
+    seria = '{{update_form.formData.seria}}',
+    rodzaj = '{{update_form.formData.rodzaj}}',
+    moc = '{{update_form.formData.moc}}',
+    model = '{{update_form.formData.model}}',
+    cenakatalogowanaped = '{{update_form.formData.cenakatalogowanaped}}',
+    typ = '{{update_form.formData.typ}}',
+    opis = '{{update_form.formData.opis}}',
+   
+    indeks = '{{update_form.formData.indeks}}',
+   
+    INTRA = '{{update_form.formData.INTRA}}',
+    SURI = '{{update_form.formData.SURI}}',
+    SAKHO = '{{update_form.formData.SAKHO}}',
+    TAKSYA = '{{update_form.formData.TAKSYA}}',
+    THOR = '{{update_form.formData.THOR}}'
+  WHERE id = {{data_table.selectedRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

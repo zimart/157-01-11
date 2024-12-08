@@ -1,0 +1,26 @@
+INSERT INTO markizy_napedy (
+	seria,
+	rodzaj,
+	moc,
+	model,
+	cenakatalogowanaped,
+	typ,
+	opis,
+	niewiem,
+	indeks,
+	rabat,
+	porabacie
+)
+VALUES (
+	'{{insert_form.formData.seria}}',
+	'{{insert_form.formData.rodzaj}}',
+	'{{insert_form.formData.moc}}',
+	'{{insert_form.formData.model}}',
+	'{{insert_form.formData.cenakatalogowanaped}}',
+	'{{insert_form.formData.typ}}',
+	'{{insert_form.formData.opis}}',
+	'{{insert_form.formData.niewiem}}',
+	'{{insert_form.formData.indeks}}',
+	'{{insert_form.formData.rabat}}',
+	'{{insert_form.formData.porabacie}}'
+);
