@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 56,
   "boxShadow": "none",
-  "defaultOptionValue": "GREEN",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -28,7 +28,7 @@
   "key": "yoa76gtndi",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Kolor",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 32,
@@ -42,6 +42,8 @@
   "needsErrorInfo": false,
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 56,
+  "originalTopRow": 49,
   "parentColumnSpace": 20.25,
   "parentId": "3nptwm86f7",
   "parentRowSpace": 10,
@@ -50,7 +52,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 49,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"name\": \"Pomarańczowy\",\n    \"code\": \"#ff9800\"\n  },\n  {\n    \"name\": \"Niebieski\",\n    \"code\": \"#0889c2\"\n  },\n  {\n    \"name\": \"Czerwony\",\n    \"code\": \"RED\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"name\": \"Pomarańczowy\",\n    \"code\": \"#ff9800\"\n  },\n  {\n    \"name\": \"Niebieski\",\n    \"code\": \"#0889c2\"\n  },\n  {\n    \"name\": \"Czerwony\",\n    \"code\": \"#ce0808\"\n  }\n]",
   "topRow": 49,
   "type": "SELECT_WIDGET",
   "version": 1,

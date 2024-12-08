@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 49,
   "boxShadow": "none",
-  "defaultText": "{{daneuzytkownik.data[0].akcent}}",
+  "defaultText": "{{Select1.selectedOptionValue||daneuzytkownik.data[0].akcent}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
