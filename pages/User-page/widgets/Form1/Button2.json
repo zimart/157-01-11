@@ -32,7 +32,7 @@
   "isLoading": false,
   "isVisible": "{{Input16.text===\"Admin\"}}",
   "key": "6xs3qefgwv",
-  "leftColumn": 48,
+  "leftColumn": 50,
   "minWidth": 120,
   "mobileBottomRow": 37,
   "mobileLeftColumn": 46,

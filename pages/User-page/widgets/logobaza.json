@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 3368,
+  "bottomRow": 85,
   "boxShadow": "none",
   "defaultText": "{{daneuzytkownik.data[0].logobase}}",
   "dynamicBindingPathList": [
@@ -41,7 +41,7 @@
   "mobileRightColumn": 31,
   "mobileTopRow": 70,
   "needsErrorInfo": false,
-  "originalBottomRow": 2773,
+  "originalBottomRow": 85,
   "originalTopRow": 75,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
