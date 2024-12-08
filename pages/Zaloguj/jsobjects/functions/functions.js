@@ -25,6 +25,10 @@ return await dcodeIO.bcrypt.compare(password, hash);
 	createToken: async (user) => {
 		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
 	},
+	
+	createToken2: async (user) => {
+		return jsonwebtoken.sign(user, 'secret', {expiresIn: 60*60});
+	},
 
 //	signIn: async () => {
 //		const password = inp_password.text;
