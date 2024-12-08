@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 27,
   "boxShadow": "none",
   "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tabela_screeny_inventory_id.triggeredRow.rodzajpomiaru))(edit_rodzaj_pomiaru.options, edit_rodzaj_pomiaru.serverSideFiltering) }}",
   "dynamicBindingPathList": [
@@ -64,7 +64,7 @@
   "rightColumn": 27,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"label\": \"Wysokość całkowita\",\n    \"value\": \"Wysokość całkowita\"\n  },\n  {\n    \"label\": \"Wysokość okna\",\n    \"value\": \"Wysokość okna\"\n  }\n]",
-  "topRow": 21,
+  "topRow": 20,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "l2b50w7sgl",

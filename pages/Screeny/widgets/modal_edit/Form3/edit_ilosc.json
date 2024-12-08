@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 27,
   "boxShadow": "none",
   "defaultText": "{{form_screeny_trigered.data[0].ilosc}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 5,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 21,
+  "topRow": 20,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "z5o6i885xe",

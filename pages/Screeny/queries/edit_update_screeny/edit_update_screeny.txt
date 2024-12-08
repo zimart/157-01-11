@@ -18,7 +18,9 @@ UPDATE inventory_screeny SET
 		procentdoplatakolor = '{{edit_doplatakolorinput22.text}}',		
 		doplatatkanina = '{{edit_doplatadotkaninyinput.text}}',
 		wkladka = '{{edit_wkladkaselect.selectedOptionLabel}}',
-		doplatawkladka = '{{edit_doplatawkladka2.text}}'
+		doplatawkladka = '{{edit_doplatawkladka2.text}}',
+		indexszer = '{{edit_opis.text}}',
+		indexwys = '{{edit_stronanapedu.selectedOptionLabel}}'
 		
   
 		

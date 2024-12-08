@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 28,
+  "bottomRow": 27,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -68,7 +68,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "tooltip": "Wpisz ponownie szerokość -{{tabela_screeny_inventory_id.triggeredRow.szerokosc}}",
-  "topRow": 21,
+  "topRow": 20,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "qsooyhzw7k",

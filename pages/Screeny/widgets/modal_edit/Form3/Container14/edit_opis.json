@@ -3,10 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 62,
-  "bottomRowBeforeCollapse": 55,
+  "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "{{doplata.kolor_form();}}",
+  "defaultText": "{{tabela_screeny_inventory_id.triggeredRow.indexszer}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,55 +17,45 @@
       "key": "defaultText"
     }
   ],
-  "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "MULTI_LINE_TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": false,
-  "key": "xx4706e4we",
-  "label": "Label",
+  "isVisible": true,
+  "key": "t7huo2waqh",
+  "label": "",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 40,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 55,
-  "mobileLeftColumn": 40,
-  "mobileRightColumn": 60,
-  "mobileTopRow": 48,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 8.000000000000002,
+  "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('kosztdoplatykolor', Input30.text);}}",
-  "originalBottomRow": 64,
-  "originalTopRow": 57,
-  "parentColumnSpace": 17.9625,
-  "parentId": "jnoi6scv56",
+  "originalBottomRow": 17,
+  "originalTopRow": 7,
+  "parentColumnSpace": 17.65,
+  "parentId": "s3307hquwf",
   "parentRowSpace": 10,
+  "placeholderText": "Opis pozycji",
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 60,
+  "rightColumn": 64,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 55,
-  "topRowBeforeCollapse": 48,
+  "topRow": 7,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "rg925hqghr",
-  "widgetName": "Input30"
+  "widgetId": "vil3wx0gr6",
+  "widgetName": "edit_opis"
 }
