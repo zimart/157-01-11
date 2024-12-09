@@ -7,12 +7,12 @@ UPDATE markizy_napedy SET
     cenakatalogowanaped = '{{update_form.formData.cenakatalogowanaped}}',
     typ = '{{update_form.formData.typ}}',
     opis = '{{update_form.formData.opis}}',
-   
-    indeks = '{{update_form.formData.indeks}}',
-   
+    indeks = '{{update_form.formData.indeks}}',   
     INTRA = '{{update_form.formData.INTRA}}',
     SURI = '{{update_form.formData.SURI}}',
     SAKHO = '{{update_form.formData.SAKHO}}',
     TAKSYA = '{{update_form.formData.TAKSYA}}',
-    THOR = '{{update_form.formData.THOR}}'
+    THOR = '{{update_form.formData.THOR}}',
+		rodzajsterowania = {{update_form.formData.rodzajsterowania}},
+		nhk = '{{update_form.formData.nhk}}'
   WHERE id = {{data_table.selectedRow.id}}; -- Specify a valid condition here. Removing the condition may update every row in the table!

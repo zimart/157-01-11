@@ -56,7 +56,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 13,
   "serverSideFiltering": true,
-  "sourceData": "[\n  {\n    \"label\": \"INTRA\",\n    \"value\": \"INTRA\"\n  },\n\t{\n    \"label\": \"SURI\",\n    \"value\": \"SURI\"\n  },\n  {\n    \"label\": \"SAKHO\",\n    \"value\": \"SAKHO\"\n  },\n\t{\n    \"label\": \"TAKSYA\",\n    \"value\": \"TAKSYA\"\n  },\n\t{\n    \"label\": \"THOR\",\n    \"value\": \"THOR\"\n  }\n]",
+  "sourceData": "[\n  {\n    \"label\": \"INTRA\",\n    \"value\": \"INTRA\"\n  },\n\t{\n    \"label\": \"SURI\",\n    \"value\": \"SURI\"\n  },\n  {\n    \"label\": \"SAKHO\",\n    \"value\": \"SAKHO\"\n  },\n\t{\n    \"label\": \"TAKSYA\",\n    \"value\": \"taksya\"\n  },\n\t{\n    \"label\": \"THOR\",\n    \"value\": \"THOR\"\n  }\n]",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,

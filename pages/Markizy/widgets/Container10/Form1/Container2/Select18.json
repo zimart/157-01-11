@@ -2,10 +2,16 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "ANTRACYT",
+  "defaultOptionValue": "{{\n            {\n              label: Select18.options[0].label,\n              value: Select18.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
     {
       "key": "accentColor"
     },
@@ -13,7 +19,7 @@
       "key": "borderRadius"
     },
     {
-      "key": "labelText"
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,50 +28,45 @@
       "key": "sourceData"
     },
     {
-      "key": "onOptionChange"
+      "key": "isDisabled"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
-  "isDisabled": false,
+  "dynamicTriggerPathList": [],
+  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": false,
   "isVisible": true,
-  "key": "q6bew8sxi9",
+  "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Kolor\")}}",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 26,
+  "leftColumn": 41,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 180,
+  "mobileBottomRow": 242,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 173,
+  "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore()\n.then(() => \nczydoplatakolor.run())\n.then(() => \ndoplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor())\n}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 180,
-  "originalTopRow": 173,
+  "originalBottomRow": 239,
+  "originalTopRow": 232,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz kolor",
+  "placeholderText": "Wybierz napęd",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 33,
+  "rightColumn": 48,
   "serverSideFiltering": false,
-  "sourceData": "[\n  {\n    \"label\": \"BIAŁY\",\n    \"value\": \"BIAŁY\"\n  },\n\t{\n    \"label\": \"BEŻ\",\n    \"value\": \"BEŻ\"\n  },\n  {\n    \"label\": \"ANTRACYT\",\n    \"value\": \"ANTRACYT\"\n  },\n\t{\n    \"label\": \"SPECJALNY\",\n    \"value\": \"SPECJALNY\"\n  }\n]",
+  "sourceData": "{{Markizy_markanaped.data.map( (obj) =>{ return  {'label': obj.seria, 'value': obj.seria } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ai7kcb1lmq",
-  "widgetName": "kolor_select"
+  "widgetId": "bfinimxb7v",
+  "widgetName": "Select18"
 }

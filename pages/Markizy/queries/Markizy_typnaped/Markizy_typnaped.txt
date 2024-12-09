@@ -1,0 +1,1 @@
+SELECT DISTINCT rodzaj FROM markizy_napedy WHERE seria={{Select18.selectedOptionLabel}} and rodzajsterowania="Elektryczne";

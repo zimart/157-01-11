@@ -2,34 +2,27 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
-  "bottomRowBeforeCollapse": 4,
+  "bottomRow": 16,
   "boxShadow": "none",
-  "defaultOptionValue": "SOMFY",
+  "defaultOptionValue": "{{\n            {\n              label: Select20.options[0].label,\n              value: Select20.options[0].value\n            }\n          }}",
   "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
-    },
-    {
-      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -40,40 +33,39 @@
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
-  "isVisible": "{{serianapedu.responseMeta=true}}",
-  "key": "pomnq6978w",
+  "isRequired": false,
+  "isVisible": true,
+  "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Seria napędu\")}}",
+  "labelText": "Label",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 19,
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 172,
+  "mobileBottomRow": 246,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 165,
+  "mobileTopRow": 239,
   "needsErrorInfo": false,
-  "onOptionChange": "{{rodzajnapedu.run();}}",
+  "onOptionChange": "{{Markizy_wybranynaped.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 4,
-  "originalTopRow": 0,
-  "parentId": "er5qa5lbjh",
+  "originalBottomRow": 243,
+  "originalTopRow": 236,
+  "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Seria napędu",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 28,
+  "rightColumn": 8,
   "serverSideFiltering": false,
-  "sourceData": "{{serianapedu.data.map( (obj) =>{ return  {'label': obj.serianapedu, 'value': obj.serianapedu } })}}",
-  "topRow": 2,
-  "topRowBeforeCollapse": 0,
+  "sourceData": "{{Markizy_typnaped.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
+  "topRow": 9,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "ejtqh5suq5",
-  "widgetName": "naped_seria_select"
+  "widgetId": "sp0smwdfc9",
+  "widgetName": "Select20"
 }

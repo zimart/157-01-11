@@ -1,0 +1,1 @@
+SELECT DISTINCT seria FROM markizy_napedy where rodzajsterowania = "Elektryczne";

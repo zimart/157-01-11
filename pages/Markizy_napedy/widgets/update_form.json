@@ -188,15 +188,6 @@
       "key": "schema.__root_schema__.children.opis.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.niewiem.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.niewiem.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.niewiem.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.indeks.defaultValue"
     },
     {
@@ -213,15 +204,6 @@
     },
     {
       "key": "schema.__root_schema__.children.rabat.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.porabacie.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.porabacie.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.porabacie.accentColor"
     },
     {
       "key": "schema.__root_schema__.children.INTRA.defaultValue"
@@ -267,6 +249,24 @@
     },
     {
       "key": "schema.__root_schema__.children.THOR.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajsterowania.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajsterowania.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodzajsterowania.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.nhk.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.nhk.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.nhk.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -343,8 +343,7 @@
           "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n  {\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n  \n]",
           "originalIdentifier": "INTRA",
           "position": 11,
-          "serverSideFiltering": false,
-          "sourceData": null
+          "serverSideFiltering": false
         },
         "SAKHO": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -366,8 +365,7 @@
           "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n  {\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n  \n]",
           "originalIdentifier": "SAKHO",
           "position": 13,
-          "serverSideFiltering": false,
-          "sourceData": null
+          "serverSideFiltering": false
         },
         "SURI": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -389,8 +387,7 @@
           "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n  {\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n  \n]",
           "originalIdentifier": "SURI",
           "position": 12,
-          "serverSideFiltering": false,
-          "sourceData": null
+          "serverSideFiltering": false
         },
         "TAKSYA": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -412,8 +409,7 @@
           "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n  {\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n  \n]",
           "originalIdentifier": "TAKSYA",
           "position": 14,
-          "serverSideFiltering": false,
-          "sourceData": null
+          "serverSideFiltering": false
         },
         "THOR": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -435,8 +431,7 @@
           "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n  {\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n  \n]",
           "originalIdentifier": "THOR",
           "position": 15,
-          "serverSideFiltering": false,
-          "sourceData": null
+          "serverSideFiltering": false
         },
         "cenakatalogowanaped": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -479,8 +474,7 @@
           "label": "Indeks",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "indeks",
-          "position": 8,
-          "sourceData": null
+          "position": 8
         },
         "moc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -526,26 +520,27 @@
           "position": 3,
           "sourceData": "DM-S 10/17"
         },
-        "niewiem": {
+        "nhk": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "niewiem",
+          "accessor": "nhk",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
           "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.niewiem))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "niewiem",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.nhk))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "nhk",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Niewiem",
+          "label": "Nhk",
           "labelTextSize": "0.875rem",
-          "originalIdentifier": "niewiem",
-          "position": 7,
+          "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n\t{\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n]",
+          "originalIdentifier": "nhk",
+          "position": 15,
+          "serverSideFiltering": false,
           "sourceData": null
         },
         "opis": {
@@ -567,30 +562,7 @@
           "label": "Opis",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "opis",
-          "position": 6,
-          "sourceData": null
-        },
-        "porabacie": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "porabacie",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.porabacie))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "porabacie",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Porabacie",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "porabacie",
-          "position": 10,
-          "sourceData": null
+          "position": 6
         },
         "rabat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -611,8 +583,7 @@
           "label": "Rabat",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabat",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         },
         "rodzaj": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -635,6 +606,28 @@
           "originalIdentifier": "rodzaj",
           "position": 1,
           "sourceData": "S"
+        },
+        "rodzajsterowania": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "rodzajsterowania",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "null",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rodzajsterowania))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Select",
+          "identifier": "rodzajsterowania",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isFilterable": false,
+          "isRequired": false,
+          "isVisible": true,
+          "label": "Rodzajsterowania",
+          "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"Ręczne\",\n    \"value\": \"Ręczne\"\n  },\n  {\n    \"label\": \"Elektryczne\",\n    \"value\": \"Elektryczne\"\n  }\n]",
+          "originalIdentifier": "rodzajsterowania",
+          "position": 15,
+          "serverSideFiltering": false
         },
         "seria": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

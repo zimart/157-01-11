@@ -1,1 +1,1 @@
-SELECT wysieg FROM markizy_wysieg where typmarkizy = {{typmarkizy.selectedOptionLabel}} and minimalnaszer <= {{szerokosc_input.text}};
+SELECT wysieg,wymaganamoc FROM markizy_wysieg where typmarkizy = {{typmarkizy.selectedOptionLabel}} and minimalnaszer <= {{szerokosc_input.text}};

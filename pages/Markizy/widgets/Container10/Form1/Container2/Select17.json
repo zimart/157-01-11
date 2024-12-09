@@ -17,9 +17,6 @@
     },
     {
       "key": "borderRadius"
-    },
-    {
-      "key": "labelTooltip"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -28,48 +25,42 @@
       "key": "sourceData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onOptionChange"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "lu7iptq12k",
+  "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Wysięg - mm",
+  "labelText": "Rodzaj sterowania",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Minimalna szerokość dla wysięgu {{Input32.text}} to {{minimalnaszerokosc.data[0].minimalnaszer||\"\"}}",
   "labelWidth": 5,
-  "leftColumn": 19,
+  "leftColumn": 33,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 223,
+  "mobileBottomRow": 242,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 216,
+  "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{minimalnaszerokosc.run();\nnastepnywysieg.nastepny();\nMarkizy_wymaganynaped.wymaganynaped();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 222,
-  "originalTopRow": 215,
+  "originalBottomRow": 239,
+  "originalTopRow": 232,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 26,
+  "rightColumn": 41,
   "serverSideFiltering": false,
-  "sourceData": "{{markizy_wysieg.data.map( (obj) =>{ return  {'label': obj.wysieg, 'value': obj.wysieg } })}}",
+  "sourceData": "{{Markizy_rodzajsterowania.data.map( (obj) =>{ return  {'label': obj.rodzajsterowania, 'value': obj.rodzajsterowania } })}}",
   "topRow": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "83xmmfghie",
-  "widgetName": "wysieg"
+  "widgetId": "hhcyaosvdr",
+  "widgetName": "Select17"
 }

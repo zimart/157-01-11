@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_ef791334-bdba-4d0c-8514-d823286b90c9",
-  "id": "Markizy_markizy_wysieg",
+  "gitSyncId": "67252580698c850488983504_8aa90fb4-75ce-41aa-a6bb-4fb19d3d0aea",
+  "id": "Markizy_Markizy_typnaped",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT wysieg,wymaganamoc FROM markizy_wysieg where typmarkizy = {{typmarkizy.selectedOptionLabel}} and minimalnaszer <= {{szerokosc_input.text}};",
+      "body": "SELECT DISTINCT rodzaj FROM markizy_napedy WHERE seria={{Select18.selectedOptionLabel}} and rodzajsterowania=\"Elektryczne\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "markizy_wysieg",
+    "name": "Markizy_typnaped",
     "pageId": "Markizy",
     "userSetOnLoad": false
   }

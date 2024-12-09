@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_ef791334-bdba-4d0c-8514-d823286b90c9",
-  "id": "Markizy_markizy_wysieg",
+  "gitSyncId": "67252580698c850488983504_cb342713-265d-4b1c-a29d-85ffd696b23b",
+  "id": "Markizy_Markizy_rodzajsterowania",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT wysieg,wymaganamoc FROM markizy_wysieg where typmarkizy = {{typmarkizy.selectedOptionLabel}} and minimalnaszer <= {{szerokosc_input.text}};",
+      "body": "SELECT DISTINCT rodzajsterowania FROM markizy_napedy;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,13 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "executeOnLoad": true,
-    "name": "markizy_wysieg",
+    "name": "Markizy_rodzajsterowania",
     "pageId": "Markizy",
     "userSetOnLoad": false
   }

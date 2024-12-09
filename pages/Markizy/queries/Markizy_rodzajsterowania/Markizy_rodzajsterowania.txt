@@ -1,0 +1,1 @@
+SELECT DISTINCT rodzajsterowania FROM markizy_napedy;
