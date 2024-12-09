@@ -233,15 +233,6 @@
       "key": "schema.__root_schema__.children.SAKHO.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.TAKSYA.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.TAKSYA.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.TAKSYA.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.THOR.defaultValue"
     },
     {
@@ -267,6 +258,15 @@
     },
     {
       "key": "schema.__root_schema__.children.nhk.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.taksya.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.taksya.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.taksya.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -389,28 +389,6 @@
           "position": 12,
           "serverSideFiltering": false
         },
-        "TAKSYA": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "TAKSYA",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.TAKSYA))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Select",
-          "identifier": "TAKSYA",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isFilterable": false,
-          "isRequired": false,
-          "isVisible": true,
-          "label": "TAKSYA",
-          "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n  {\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n  \n]",
-          "originalIdentifier": "TAKSYA",
-          "position": 14,
-          "serverSideFiltering": false
-        },
         "THOR": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "accessor": "THOR",
@@ -463,18 +441,19 @@
           "children": {},
           "dataType": "null",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.indeks))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
+          "fieldType": "Multiselect",
           "identifier": "indeks",
           "isCustomField": false,
           "isDisabled": false,
+          "isFilterable": false,
           "isRequired": false,
-          "isSpellCheck": false,
           "isVisible": true,
           "label": "Indeks",
           "labelTextSize": "0.875rem",
+          "options": "[\n  {\n    \"label\": \"INTRA\",\n    \"value\": \"INTRA\"\n  },\n\t{\n    \"label\": \"SURI\",\n    \"value\": \"SURI\"\n  },\n  {\n    \"label\": \"SAKHO\",\n    \"value\": \"SAKHO\"\n  },\n\t{\n    \"label\": \"TAKSYA\",\n    \"value\": \"taksya\"\n  },\n\t{\n    \"label\": \"THOR\",\n    \"value\": \"THOR\"\n  }\n]",
           "originalIdentifier": "indeks",
-          "position": 8
+          "position": 8,
+          "serverSideFiltering": false
         },
         "moc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -540,8 +519,7 @@
           "options": "[\n  {\n    \"label\": \"TAK\",\n    \"value\": \"TAK\"\n  },\n\t{\n    \"label\": \"NIE\",\n    \"value\": \"NIE\"\n  }\n]",
           "originalIdentifier": "nhk",
           "position": 15,
-          "serverSideFiltering": false,
-          "sourceData": null
+          "serverSideFiltering": false
         },
         "opis": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -650,6 +628,28 @@
           "originalIdentifier": "seria",
           "position": 0,
           "sourceData": "przekladnia"
+        },
+        "taksya": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "taksya",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.taksya))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "taksya",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Taksya",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "taksya",
+          "position": 15,
+          "sourceData": "TAK"
         },
         "typ": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

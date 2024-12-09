@@ -35,10 +35,10 @@
     "INTRA",
     "SURI",
     "SAKHO",
-    "TAKSYA",
     "THOR",
     "rodzajsterowania",
     "nhk",
+    "taksya",
     "customColumn1"
   ],
   "columnSizeMap": {
@@ -46,7 +46,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1733776853572,
+  "columnUpdatedAt": 1733783053552,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -138,9 +138,6 @@
       "key": "primaryColumns.SAKHO.computedValue"
     },
     {
-      "key": "primaryColumns.TAKSYA.computedValue"
-    },
-    {
       "key": "primaryColumns.THOR.computedValue"
     },
     {
@@ -148,6 +145,9 @@
     },
     {
       "key": "primaryColumns.nhk.computedValue"
+    },
+    {
+      "key": "primaryColumns.taksya.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -290,40 +290,6 @@
       "label": "SURI",
       "notation": "standard",
       "originalId": "SURI",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "TAKSYA": {
-      "alias": "TAKSYA",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"TAKSYA\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "TAKSYA",
-      "index": 15,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "TAKSYA",
-      "notation": "standard",
-      "originalId": "TAKSYA",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -756,6 +722,40 @@
       "label": "seria",
       "notation": "standard",
       "originalId": "seria",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "taksya": {
+      "alias": "taksya",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"taksya\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "taksya",
+      "index": 15,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "taksya",
+      "notation": "standard",
+      "originalId": "taksya",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
