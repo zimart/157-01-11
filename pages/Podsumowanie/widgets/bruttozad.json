@@ -4,7 +4,7 @@
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 216,
-  "bottomRowBeforeCollapse": 212,
+  "bottomRowBeforeCollapse": 216,
   "boxShadow": "none",
   "defaultText": "{{Number(netto.text+podatek.text).toFixed(2)}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 209,
-  "topRowBeforeCollapse": 205,
+  "topRowBeforeCollapse": 209,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "kalgxvt84b",

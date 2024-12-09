@@ -274,6 +274,12 @@
     },
     {
       "key": "primaryColumns.skugen.computedValue"
+    },
+    {
+      "key": "primaryColumns.rabatogolny.cellBackground"
+    },
+    {
+      "key": "primaryColumns.rabatogolny.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -291,6 +297,15 @@
     },
     {
       "key": "primaryColumns.rabatogolny.onSubmit"
+    },
+    {
+      "key": "primaryColumns.rabatogolny.cellBackground"
+    },
+    {
+      "key": "primaryColumns.rabatogolny.textColor"
+    },
+    {
+      "key": "primaryColumns.rabatogolny.fontStyle"
     }
   ],
   "dynamicTriggerPathList": [
@@ -1207,14 +1222,14 @@
       "alias": "rabatogolny",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
+      "cellBackground": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatogolny >0 ? \"#c2180c\" : \"#ffffff\"))}}",
       "columnType": "number",
       "computedValue": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rabatogolny\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
+      "fontStyle": "BOLD",
       "horizontalAlignment": "LEFT",
       "id": "rabatogolny",
       "index": 8,
@@ -1231,7 +1246,7 @@
       "onSubmit": "{{przelicz_main_rabat_indywidual.przelicz_glowna()}}",
       "originalId": "rabatogolny",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{glowna_tabela.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatogolny >0 ? \"#FFFFFF\" : \"#000000\"))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -1283,7 +1298,7 @@
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "fontStyle": "",
+      "fontStyle": "BOLD",
       "horizontalAlignment": "LEFT",
       "id": "razemnetto",
       "index": 3,
