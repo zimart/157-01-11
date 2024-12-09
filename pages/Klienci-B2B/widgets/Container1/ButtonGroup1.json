@@ -17,6 +17,11 @@
       "key": "groupButtons.groupButton2.buttonColor"
     }
   ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "groupButtons.groupButtonqxud5h0p32.onClick"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "groupButtons.groupButton1.onClick"
@@ -26,6 +31,9 @@
     },
     {
       "key": "groupButtons.groupButtonm38e4u77rv.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonqxud5h0p32.onClick"
     }
   ],
   "groupButtons": {
@@ -73,6 +81,23 @@
       "placement": "CENTER",
       "variant": "filled",
       "widgetId": "usd7qc7gj6"
+    },
+    "groupButtonqxud5h0p32": {
+      "buttonColor": "#1e3a8a",
+      "buttonType": "SIMPLE",
+      "iconName": "log-in",
+      "id": "groupButtonqxud5h0p32",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Wyloguj",
+      "menuItems": {},
+      "onClick": "{{removeValue(appsmith.store.token).then(() => {\n  navigateTo('Zaloguj', {}, 'SAME_WINDOW');\n});}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "qw1f7i835m"
     }
   },
   "isCanvas": false,
