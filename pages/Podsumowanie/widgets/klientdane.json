@@ -3,9 +3,9 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 228,
+  "bottomRow": 230,
   "boxShadow": "none",
-  "defaultText": "{{dane_oferty_main.data[0].klient ||\"\"}}\n{{adresklienta.data[0].ulica ||\"\"}}{{adresklienta.data[0].numer ||\"\"}}\n{{adresklienta.data[0].kod ||\"\"}} {{adresklienta.data[0].miejscowosc||\"\"}}",
+  "defaultText": "{{adresklienta.data[0].nazwafirmy ||\"\"}}\n{{dane_oferty_main.data[0].klient ||\"\"}}\n{{adresklienta.data[0].ulica ||\"\"}}{{adresklienta.data[0].numer ||\"\"}}\n{{adresklienta.data[0].kod ||\"\"}} {{adresklienta.data[0].miejscowosc||\"\"}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,8 +41,8 @@
   "mobileRightColumn": 11,
   "mobileTopRow": 196,
   "needsErrorInfo": false,
-  "originalBottomRow": 231,
-  "originalTopRow": 219,
+  "originalBottomRow": 228,
+  "originalTopRow": 216,
   "parentColumnSpace": 20.5625,
   "parentId": "0",
   "parentRowSpace": 10,

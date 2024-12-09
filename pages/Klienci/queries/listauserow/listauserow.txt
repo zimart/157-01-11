@@ -1,1 +1,1 @@
-SELECT username,id FROM user_auth;
+SELECT username,id FROM user_auth ORDER BY username ASC;

@@ -42,7 +42,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1733654709157,
+  "columnUpdatedAt": 1733769267245,
   "columnWidthMap": {
     "accountname": 267,
     "customColumn1": 176,
@@ -138,18 +138,21 @@
       "key": "primaryColumns.customColumn4.buttonColor"
     },
     {
-      "key": "tableData"
-    },
-    {
       "key": "primaryColumns.uzytkownikwlasnosc.computedValue"
     },
     {
       "key": "primaryColumns.nazwafirmy.computedValue"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicPropertyPathList": [
     {
       "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -687,7 +690,7 @@
   "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{SelectQuery.data}}",
+  "tableData": "{{Switch1.isSwitchedOn ? SelectQuery.data : SelectQueryCopy.data}}",
   "textSize": "0.875rem",
   "topRow": 8,
   "totalRecordsCount": "20",

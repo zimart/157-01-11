@@ -6,7 +6,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "0",
   "bottomRow": 79,
-  "bottomRowBeforeCollapse": 81,
+  "bottomRowBeforeCollapse": 79,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "childStylesheet": {
     "ARRAY": {
@@ -553,7 +553,7 @@
   },
   "title": "Aktualizuj: ID klienta {{data_table.selectedRow.accountid}}",
   "topRow": 12,
-  "topRowBeforeCollapse": 14,
+  "topRowBeforeCollapse": 12,
   "type": "JSON_FORM_WIDGET",
   "version": 1,
   "widgetId": "6g4ewsx2v0",

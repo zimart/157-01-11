@@ -175,9 +175,6 @@
       "key": "schema.__root_schema__.children.uzytkownikwlasnosc.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.nazwafirmy.defaultValue"
-    },
-    {
       "key": "schema.__root_schema__.children.nazwafirmy.borderRadius"
     },
     {
@@ -349,7 +346,7 @@
           "boxShadow": "none",
           "children": {},
           "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.nazwafirmy))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
+          "defaultValue": "",
           "fieldType": "Text Input",
           "iconAlign": "left",
           "identifier": "nazwafirmy",

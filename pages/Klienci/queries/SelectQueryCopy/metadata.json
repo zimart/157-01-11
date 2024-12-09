@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "66db510001b5f41415619b59_0c762336-2d58-479a-a4aa-791c4e404768",
-  "id": "Klienci_SelectQuery",
+  "gitSyncId": "67252580698c850488983504_d3bc12b1-6f7d-4785-bd63-0da14d130c72",
+  "id": "Klienci_SelectQueryCopy",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT * FROM klienci\nWHERE accountname like '%{{data_table.searchText || \"\"}}%' \nORDER BY {{data_table.sortOrder.column || 'accountid'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
+      "body": "SELECT * FROM klienci\nWHERE accountname like '%{{data_table.searchText || \"\"}}%' AND uzytkownikwlasnosc = {{Input1.text}}\nORDER BY {{data_table.sortOrder.column || 'accountid'}} {{data_table.sortOrder.order || \"ASC\"}}\nLIMIT {{data_table.pageSize}}\nOFFSET {{(data_table.pageNo - 1) * data_table.pageSize}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "SelectQuery",
+    "name": "SelectQueryCopy",
     "pageId": "Klienci",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

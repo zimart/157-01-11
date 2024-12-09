@@ -331,8 +331,8 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onPageChange": "{{tabela_glowna.run()}}",
-  "originalBottomRow": 118,
-  "originalTopRow": 32,
+  "originalBottomRow": 115,
+  "originalTopRow": 29,
   "parentId": "0",
   "parentRowSpace": 10,
   "primaryColumns": {
