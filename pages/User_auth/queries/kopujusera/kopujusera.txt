@@ -1,0 +1,3 @@
+INSERT INTO user_auth (email, password_hash, first_name, last_name, username, last_login, role, telefon, nazwafirmy, nip, ulicainumer, kod, miejscowosc, emailfirma, logobase, akcent, strona, bdo, mailfirma, telefonfirma, active, kontopln, kontoeuro, rodo)
+SELECT  email, password_hash, first_name, last_name, username, last_login, role, telefon, nazwafirmy, nip, ulicainumer, kod, miejscowosc, emailfirma, logobase, akcent, strona, bdo, mailfirma, telefonfirma, active, kontopln, kontoeuro, rodo 
+FROM user_auth WHERE id = {{appsmith.store.iduser}};

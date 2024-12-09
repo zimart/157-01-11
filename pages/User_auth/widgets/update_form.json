@@ -308,6 +308,33 @@
     },
     {
       "key": "schema.__root_schema__.children.active.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kontopln.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.kontopln.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kontopln.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.kontoeuro.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.kontoeuro.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.kontoeuro.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodo.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodo.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.rodo.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -341,7 +368,7 @@
   "isVisible": "{{!!data_table.selectedRow.id}}",
   "key": "h9l9ozr8op",
   "labelTextSize": "0.875rem",
-  "leftColumn": 39,
+  "leftColumn": 46,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "onSubmit": "{{UpdateQuery.run(() => SelectQuery.run(), (error) => showAlert(`Error while updating resource!\\n ${error}`,'error'))}}",
@@ -517,6 +544,50 @@
           "originalIdentifier": "kod",
           "position": 11,
           "sourceData": "38-500"
+        },
+        "kontoeuro": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "kontoeuro",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kontoeuro))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "kontoeuro",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Kontoeuro",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kontoeuro",
+          "position": 22,
+          "sourceData": "EUR - Sigma Systemy Osłonowe Tomasz Ślemp - Santander Bank Polska S.A IBAN: PL98 1910 1048 2670 0007 6241 0008 SWIFT : WBKPPLPP"
+        },
+        "kontopln": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "kontopln",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.kontopln))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "kontopln",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Kontopln",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "kontopln",
+          "position": 21,
+          "sourceData": "PLN - Sigma Systemy Osłonowe - Santander Bank Polska S.A - 28 1910 1048 2670 0007 6241 0007"
         },
         "last_login": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
@@ -694,6 +765,28 @@
           "originalIdentifier": "password_hash",
           "position": 1,
           "sourceData": "$2a$10$6VhWwIkmT.lG6Wliot0N5OB6bhhWiKxIUdBq1P.C9rSGHP9VdOJDG"
+        },
+        "rodo": {
+          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "accessor": "rodo",
+          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "boxShadow": "none",
+          "children": {},
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.rodo))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "rodo",
+          "isCustomField": false,
+          "isDisabled": false,
+          "isRequired": false,
+          "isSpellCheck": false,
+          "isVisible": true,
+          "label": "Rodo",
+          "labelTextSize": "0.875rem",
+          "originalIdentifier": "rodo",
+          "position": 23,
+          "sourceData": "RODO - OBOWIĄZEK INFORMACYJNY W ZAKRESIE OCHRONY DANYCH OSOBOWYCH\nWykonując obowiązek wynikający z art. 13 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne  rozporządzenie o ochronie danych, dalej: RODO) - przedstawiamy poniżej informacje dotyczące przetwarzania Pani/Pana danych osobowych przez Administratora danych:\nI. ADMINISTRATOR DANYCH OSOBOWYCH\nAdministratorem danych osobowych jest Sigma Systemy Osłonowe Tomasz Ślemp z siedzibą w : Akacjowa 9, 38-500 Sanok , NIP 687 101 47 35. Z Administratorem można się skontaktować poprzez adres e-mail: biuro@sigma.sanok.pl, telefonicznie pod nr: +48 13 46 34 100 albo pisemnie na adres biura handlowego - Sigma Systemy Osłonowe Tomasz Ślemp , Czerteż 208 38-500 Sanok.\nII. PRZETWARZANE DANE OSOBOWE\nSzczegóły dotyczące przetwarzania Państwa danych znajdziecie Państwo na naszej witrynie internetowej w zakładce - POLITYKA PRYWATNOŚCI pod adresem https://sigma.sanok.pl/polityka-prywatnosci-2/"
         },
         "role": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

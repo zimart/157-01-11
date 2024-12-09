@@ -44,14 +44,19 @@
     "mailfirma",
     "telefonfirma",
     "active",
-    "customColumn1"
+    "kontopln",
+    "kontoeuro",
+    "rodo",
+    "customColumn1",
+    "customColumn1",
+    "customColumn2"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1733602880324,
+  "columnUpdatedAt": 1733765636106,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
@@ -89,9 +94,6 @@
       "key": "derivedColumns.customColumn1.buttonLabel"
     },
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -99,9 +101,6 @@
     },
     {
       "key": "boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
     },
     {
       "key": "primaryColumns.id.computedValue"
@@ -168,6 +167,33 @@
     },
     {
       "key": "primaryColumns.active.computedValue"
+    },
+    {
+      "key": "primaryColumns.kontopln.computedValue"
+    },
+    {
+      "key": "primaryColumns.kontoeuro.computedValue"
+    },
+    {
+      "key": "primaryColumns.rodo.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn1.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn1.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn1.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn2.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn2.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn2.buttonColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -180,9 +206,6 @@
   ],
   "dynamicTriggerPathList": [
     {
-      "key": "primaryColumns.customColumn1.onClick"
-    },
-    {
       "key": "onPageChange"
     },
     {
@@ -190,6 +213,12 @@
     },
     {
       "key": "onSort"
+    },
+    {
+      "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "primaryColumns.customColumn2.onClick"
     }
   ],
   "enableClientSideSearch": true,
@@ -319,27 +348,81 @@
       "width": 150
     },
     "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
-      "boxShadow": "none",
-      "buttonColor": "#DD4B34",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( 'Delete'))}}",
-      "buttonLabelColor": "#FFFFFF",
+      "alias": "customColumn1",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "kopiuj",
       "buttonStyle": "rgb(3, 179, 101)",
       "columnType": "button",
       "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
+      "horizontalAlignment": "LEFT",
       "id": "customColumn1",
-      "index": 5,
+      "index": 10,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
       "isVisible": true,
-      "label": "Delete",
+      "label": "customColumn1",
       "labelColor": "#FFFFFF",
-      "menuColor": "#03B365",
-      "onClick": "{{showModal('Delete_Modal')}}",
-      "sticky": "right",
+      "notation": "standard",
+      "onClick": "{{storeValue('iduser', data_table.triggeredRow.id).then(() => {\n  kopujusera.run();\n  SelectQuery.run();\n});}}",
+      "originalId": "customColumn1",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "customColumn2": {
+      "alias": "customColumn2",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "kasuj",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn2",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "customColumn2",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{DeleteQuery.run().then(() => {\n  SelectQuery.run();\n});}}",
+      "originalId": "customColumn2",
+      "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
       "width": 150
     },
     "email": {
@@ -504,6 +587,74 @@
       "label": "kod",
       "notation": "standard",
       "originalId": "kod",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kontoeuro": {
+      "alias": "kontoeuro",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kontoeuro\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kontoeuro",
+      "index": 23,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kontoeuro",
+      "notation": "standard",
+      "originalId": "kontoeuro",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "kontopln": {
+      "alias": "kontopln",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"kontopln\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "kontopln",
+      "index": 22,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "kontopln",
+      "notation": "standard",
+      "originalId": "kontopln",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -776,6 +927,40 @@
       "label": "password_hash",
       "notation": "standard",
       "originalId": "password_hash",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "rodo": {
+      "alias": "rodo",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"rodo\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "rodo",
+      "index": 24,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "rodo",
+      "notation": "standard",
+      "originalId": "rodo",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
