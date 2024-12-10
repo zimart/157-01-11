@@ -4,13 +4,10 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 16,
   "boxShadow": "none",
-  "defaultOptionValue": "{{\n            {\n              label: Select21.options[0].label,\n              value: Select21.options[0].value\n            }\n          }}",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
     {
       "key": "sourceData"
-    },
-    {
-      "key": "defaultOptionValue"
     },
     {
       "key": "accentColor"
@@ -25,6 +22,7 @@
       "key": "sourceData"
     }
   ],
+  "dynamicTriggerPathList": [],
   "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
@@ -54,7 +52,7 @@
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 19,
+  "rightColumn": 23,
   "serverSideFiltering": false,
   "sourceData": "{{Markizy_wybranynaped.data.map( (obj) =>{ return  {'label': obj.model, 'value': obj.model } })}}",
   "topRow": 9,

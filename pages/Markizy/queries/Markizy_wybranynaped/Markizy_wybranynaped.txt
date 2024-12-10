@@ -1,1 +1,1 @@
-SELECT model FROM markizy_napedy where rodzajsterowania="Elektryczne" and seria={{Select18.selectedOptionLabel}} and nhk={{Select19.selectedOptionValue}} and rodzaj = {{Select20.selectedOptionLabel}} AND moc >= {{Input33.text}} AND indeks LIKE {{Text39.text}};
+SELECT model FROM markizy_napedy where rodzajsterowania="Elektryczne" and seria={{Select18.selectedOptionLabel}} and nhk={{Select19.selectedOptionValue}} and rodzaj = {{Select20.selectedOptionLabel}} AND moc >= {{Input35.text}} AND indeks = {{Input34.text}};

@@ -1,0 +1,1 @@
+SELECT wymaganamoc FROM markizy_wysieg where typmarkizy = {{typmarkizy.selectedOptionLabel}} and wysieg = {{wysieg.selectedOptionLabel}} ;

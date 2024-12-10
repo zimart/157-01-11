@@ -1,0 +1,5 @@
+INSERT INTO markizy_napedy (seria, rodzaj, moc, model, cenakatalogowanaped, typ, opis, rodzajsterowania, indeks, rabat, nhk, INTRA, SURI, SAKHO, TAKSYA, THOR)
+SELECT seria, rodzaj, moc, model, cenakatalogowanaped, typ, opis, rodzajsterowania, indeks, rabat, nhk, INTRA, SURI, SAKHO, TAKSYA, THOR
+	
+
+FROM markizy_napedy WHERE id = {{appsmith.store.idnaped}}

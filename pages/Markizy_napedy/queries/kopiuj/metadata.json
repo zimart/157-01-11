@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_780cf4ec-1e1a-4fc6-9bd4-bc54d47fb3a0",
-  "id": "Markizy_Markizy_wybranynaped",
+  "gitSyncId": "67252580698c850488983504_2801bb93-e3f7-40c6-a10d-37880965b46b",
+  "id": "Markizy_napedy_kopiuj",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT model FROM markizy_napedy where rodzajsterowania=\"Elektryczne\" and seria={{Select18.selectedOptionLabel}} and nhk={{Select19.selectedOptionValue}} and rodzaj = {{Select20.selectedOptionLabel}} AND moc >= {{Input35.text}} AND indeks = {{Input34.text}};",
+      "body": "INSERT INTO markizy_napedy (seria, rodzaj, moc, model, cenakatalogowanaped, typ, opis, rodzajsterowania, indeks, rabat, nhk, INTRA, SURI, SAKHO, TAKSYA, THOR)\nSELECT seria, rodzaj, moc, model, cenakatalogowanaped, typ, opis, rodzajsterowania, indeks, rabat, nhk, INTRA, SURI, SAKHO, TAKSYA, THOR\n\t\n\nFROM markizy_napedy WHERE id = {{appsmith.store.idnaped}}\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
-    "name": "Markizy_wybranynaped",
-    "pageId": "Markizy",
+    "executeOnLoad": false,
+    "name": "kopiuj",
+    "pageId": "Markizy_napedy",
     "userSetOnLoad": false
   }
 }

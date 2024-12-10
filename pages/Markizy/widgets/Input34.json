@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 235,
   "boxShadow": "none",
-  "defaultText": "[\"{{typmarkizy.selectedOptionValue}}\"]",
+  "defaultText": "{{typmarkizy.selectedOptionValue}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

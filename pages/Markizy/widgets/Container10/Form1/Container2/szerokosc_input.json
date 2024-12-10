@@ -62,7 +62,7 @@
   "mobileRightColumn": 8,
   "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "onBlur": "{{\nclearStore()\nmarkizy_wysieg.run()\n.then(() => \nnastepnywysieg.nastepny())\n.then(() => \nminimalnaszerokosc.run())\n.then(() => \nindeksszer.run())\n}}",
+  "onBlur": "{{\nclearStore()\nMarkizy_wysieg2.run()\n.then(() => \nnastepnywysieg.nastepny())\n.then(() => \nminimalnaszerokosc.run())\n.then(() => \nindeksszer.run())\n}}",
   "onFocus": "",
   "onTextChanged": "",
   "originalBottomRow": 41,

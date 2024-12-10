@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 56,
   "shouldTruncate": false,
-  "text": "[\"{{typmarkizy.selectedOptionValue}}\"]",
+  "text": "{{Markizy_rodzaj.rodzaj.data}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 230,

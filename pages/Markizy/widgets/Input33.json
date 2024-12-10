@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 235,
   "boxShadow": "none",
-  "defaultText": "{{markizy_wysieg.data[0].wymaganamoc}}",
+  "defaultText": "{{Markizy_wysieg2.data[0].wymaganamoc}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
