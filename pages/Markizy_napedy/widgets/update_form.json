@@ -450,7 +450,7 @@
           "isVisible": true,
           "label": "Indeks",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"INTRA\",\n    \"value\": \"INTRA\"\n  },\n\t{\n    \"label\": \"SURI\",\n    \"value\": \"SURI\"\n  },\n  {\n    \"label\": \"SAKHO\",\n    \"value\": \"SAKHO\"\n  },\n\t{\n    \"label\": \"TAKSYA\",\n    \"value\": \"taksya\"\n  },\n\t{\n    \"label\": \"THOR\",\n    \"value\": \"THOR\"\n  }\n]",
+          "options": "[\n  {\n    \"label\": \"INTRA\",\n    \"value\": \"INTRA\"\n  },\n\t{\n    \"label\": \"SURI\",\n    \"value\": \"SURI\"\n  },\n  {\n    \"label\": \"SAKHO\",\n    \"value\": \"SAKHO\"\n  },\n\t{\n    \"label\": \"TAKSYA\",\n    \"value\": \"TAKSYA\"\n  },\n\t{\n    \"label\": \"THOR\",\n    \"value\": \"THOR\"\n  }\n]",
           "originalIdentifier": "indeks",
           "position": 8,
           "serverSideFiltering": false

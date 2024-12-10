@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT model FROM markizy_napedy where rodzajsterowania=\"Elektryczne\" and seria={{Select18.selectedOptionLabel}} and nhk={{Select19.selectedOptionValue}} and rodzaj = {{Select20.selectedOptionLabel}} AND moc >= {{Input33.text}} and {{Input34.text}}=\"TAK\";",
+      "body": "SELECT model FROM markizy_napedy where rodzajsterowania=\"Elektryczne\" and seria={{Select18.selectedOptionLabel}} and nhk={{Select19.selectedOptionValue}} and rodzaj = {{Select20.selectedOptionLabel}} AND moc >= {{Input33.text}} AND indeks LIKE {{Text39.text}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

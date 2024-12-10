@@ -279,8 +279,7 @@
           "label": "Wymaganamoc",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "wymaganamoc",
-          "position": 3,
-          "sourceData": null
+          "position": 3
         },
         "wysieg": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
