@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 234,
+  "bottomRow": 247,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 48,
   "mobileTopRow": 34,
   "needsErrorInfo": false,
-  "originalBottomRow": 234,
-  "originalTopRow": 230,
+  "originalBottomRow": 247,
+  "originalTopRow": 243,
   "overflow": "NONE",
   "parentColumnSpace": 19.9287109375,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "{{Markizy_rodzaj.rodzaj.data}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 230,
+  "topRow": 243,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

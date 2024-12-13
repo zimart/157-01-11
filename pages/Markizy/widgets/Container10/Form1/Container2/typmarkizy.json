@@ -44,7 +44,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{system_zapytaj.run();\nresetWidget(\"doplatawkladka2\", true);\nwkladki.run();\nMarkizy_rodzaj.rodzaj();}}",
+  "onOptionChange": "{{Markizy_rodzaj.rodzaj();\nMarkizy_rodzajsterowania.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,

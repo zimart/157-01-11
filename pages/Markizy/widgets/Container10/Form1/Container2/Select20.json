@@ -2,7 +2,8 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 16,
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -14,31 +15,46 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
-  "isDisabled": false,
+  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": true,
+  "isRequired": true,
+  "isVisible": "{{Select17.selectedOptionLabel===\"Elektryczne\"}}",
   "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Typ napędu",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 0,
+  "leftColumn": 55,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,20 +63,22 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 239,
   "needsErrorInfo": false,
+  "onDropdownOpen": "{{resetWidget(\"Select18\", true);}}",
   "onOptionChange": "{{Markizy_wybranynaped.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 243,
-  "originalTopRow": 236,
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Select option",
+  "placeholderText": "Typ napędu",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 8,
+  "rightColumn": 64,
   "serverSideFiltering": false,
   "sourceData": "{{Markizy_typnaped.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
-  "topRow": 9,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "sp0smwdfc9",

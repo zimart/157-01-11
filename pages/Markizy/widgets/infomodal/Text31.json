@@ -43,7 +43,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 63,
   "shouldTruncate": false,
-  "text": "{{tabela_screeny_inventory_id.triggeredRow.opiszrabatami}}\n",
+  "text": "{{tabela_markizy_inventory_id.triggeredRow.opiszrabatami}}\n",
   "textAlign": "LEFT",
   "textColor": "#231F20",
   "topRow": 6,

@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -11,20 +12,39 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
-  "isDisabled": false,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
+    }
+  ],
+  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}\n",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": true,
+  "isRequired": true,
+  "isVisible": "{{Select17.selectedOptionLabel===\"Elektryczne\"}}",
   "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -40,18 +60,23 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
+  "onDropdownOpen": "{{resetWidget(\"Select18\", true);}}",
+  "onOptionChange": "{{Markizy_wybranynaped.run()}}",
   "optionLabel": "name",
   "optionValue": "code",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentColumnSpace": 19.625,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 57,
+  "rightColumn": 55,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"NIE\",\n    \"code\": \"NIE\"\n  },\n  {\n    \"name\": \"TAK\",\n    \"code\": \"TAK\"\n  }\n]",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "6i1c7kth9u",

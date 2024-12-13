@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "{{tabela_screeny_inventory_id.triggeredRow.indexszer}}",
+  "defaultText": "{{tabela_markizy_inventory_id.triggeredRow.indexszer}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

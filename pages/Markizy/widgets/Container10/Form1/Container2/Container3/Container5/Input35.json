@@ -3,63 +3,55 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRow": 8,
   "boxShadow": "none",
-  "defaultText": "70",
+  "defaultText": "{{Markizy_moc.data[0].wymaganamoc}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChanged"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
-  "isDisabled": true,
+  "inputType": "TEXT",
+  "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "lc68vad2ei",
-  "label": "Dopłata do tkaniny m2",
+  "key": "lmrlp2jj99",
+  "label": "Label",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 17,
+  "leftColumn": 20,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 14,
-  "mobileLeftColumn": 15,
-  "mobileRightColumn": 35,
-  "mobileTopRow": 7,
+  "mobileBottomRow": 17,
+  "mobileLeftColumn": 25,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onTextChanged": "{{doplata.tkanina();}}",
-  "originalBottomRow": 6,
-  "originalTopRow": 0,
-  "parentColumnSpace": 18.65625,
+  "parentColumnSpace": 19.625,
   "parentId": "ikmrmo799q",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 27,
-  "shouldAllowAutofill": false,
+  "rightColumn": 26,
   "showStepArrows": false,
-  "topRow": 0,
-  "topRowBeforeCollapse": 0,
+  "topRow": 1,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "mjwc2k8aka",
-  "widgetName": "doplatatkaninam2"
+  "widgetId": "ndcqvwrcnk",
+  "widgetName": "Input35"
 }

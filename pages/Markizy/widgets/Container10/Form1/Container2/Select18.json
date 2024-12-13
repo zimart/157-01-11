@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -17,6 +18,9 @@
     },
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -26,6 +30,9 @@
     },
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -36,12 +43,12 @@
   "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": true,
+  "isRequired": true,
+  "isVisible": "{{Select17.selectedOptionLabel===\"Elektryczne\"}}",
   "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Label",
+  "labelText": "Seria napędu",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 41,
@@ -53,11 +60,11 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_typnaped.run()}}",
+  "onOptionChange": "{{Markizy_typnaped.run().then(() => {\n  resetWidget(\"Select18\", true);\n});}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 239,
-  "originalTopRow": 232,
+  "originalBottomRow": 6,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Wybierz napęd",
@@ -67,6 +74,7 @@
   "serverSideFiltering": false,
   "sourceData": "{{Markizy_markanaped.data.map( (obj) =>{ return  {'label': obj.seria, 'value': obj.seria } })}}",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "bfinimxb7v",

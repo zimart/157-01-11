@@ -1,1 +1,1 @@
-DELETE FROM inventory_main WHERE inventory_main.id_wiersz = {{tabela_screeny_inventory_id.triggeredRow.id}}
+DELETE FROM inventory_main WHERE inventory_main.id_wiersz = {{tabela_markizy_inventory_id.triggeredRow.id}}

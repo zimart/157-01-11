@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 27,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tabela_screeny_inventory_id.triggeredRow.rodzajpomiaru))(edit_rodzaj_pomiaru.options, edit_rodzaj_pomiaru.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( tabela_markizy_inventory_id.triggeredRow.rodzajpomiaru))(edit_rodzaj_pomiaru.options, edit_rodzaj_pomiaru.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

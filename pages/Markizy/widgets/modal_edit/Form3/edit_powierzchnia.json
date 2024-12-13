@@ -6,7 +6,7 @@
   "bottomRow": 93,
   "bottomRowBeforeCollapse": 86,
   "boxShadow": "none",
-  "defaultText": "{{powierzchnian.m2_form.data||tabela_screeny_inventory_id.triggeredRow.powierzchnia}}",
+  "defaultText": "{{powierzchnian.m2_form.data||tabela_markizy_inventory_id.triggeredRow.powierzchnia}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

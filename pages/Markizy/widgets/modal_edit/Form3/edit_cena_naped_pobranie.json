@@ -6,7 +6,7 @@
   "bottomRow": 74,
   "bottomRowBeforeCollapse": 67,
   "boxShadow": "none",
-  "defaultText": "{{FORM_cenanapeduwybranego.data[0].cenakatalogowanaped||tabela_screeny_inventory_id.triggeredRow.price_motor}}",
+  "defaultText": "{{FORM_cenanapeduwybranego.data[0].cenakatalogowanaped||tabela_markizy_inventory_id.triggeredRow.price_motor}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
