@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 312,
+  "bottomRow": 328,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -33,8 +33,8 @@
   "mobileRightColumn": 15,
   "mobileTopRow": 302,
   "needsErrorInfo": false,
-  "originalBottomRow": 312,
-  "originalTopRow": 307,
+  "originalBottomRow": 328,
+  "originalTopRow": 323,
   "overflow": "NONE",
   "parentColumnSpace": 20.5625,
   "parentId": "0",
@@ -46,7 +46,7 @@
   "text": "{{razemnetto_de.text}}\n{{podatek_de.text}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 307,
+  "topRow": 323,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
