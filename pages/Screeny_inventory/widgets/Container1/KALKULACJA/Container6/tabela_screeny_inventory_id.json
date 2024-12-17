@@ -75,7 +75,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1731621625422,
+  "columnUpdatedAt": 1734431314562,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -375,6 +375,9 @@
     },
     {
       "key": "primaryColumns.tkanina.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.powierzchnia.isCellVisible"
     }
   ],
   "dynamicPropertyPathList": [
@@ -443,6 +446,9 @@
     },
     {
       "key": "primaryColumns.tkanina.isCellVisible"
+    },
+    {
+      "key": "primaryColumns.powierzchnia.isCellVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -1321,13 +1327,13 @@
       "id": "powierzchnia",
       "index": 25,
       "isCellEditable": false,
-      "isCellVisible": true,
+      "isCellVisible": "{{tabela_screeny_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
       "isDerived": false,
       "isDisabled": false,
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": false,
+      "isVisible": true,
       "label": "Powierzchnia",
       "notation": "standard",
       "originalId": "powierzchnia",
