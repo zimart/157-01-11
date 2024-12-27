@@ -50,31 +50,31 @@ return doplatatkanina2;
 	
 	
 	 
-wkladka: function () {
+//wkladka: function () {
 //var wartoscdoplaty = doplatakolorinput.text;
-var cenametra = Input19.text;
-var klipsy = kosztklipsow.text;
+//var cenametra = Input19.text;
+//var klipsy = kosztklipsow.text;
 //var skrzynka = Select8.selectedOptionValue;
-var dlugoscprowadnic = dlugosprowadnic.text;
-var doplatawkladkacena;
-if (wkladkaselect.selectedOptionLabel === 'NZIPS' && szerokosc_input.text>1200) {doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
-else doplatawkladkacena = '0';
+//var dlugoscprowadnic = dlugosprowadnic.text;
+//var doplatawkladkacena;
+//if (wkladkaselect.selectedOptionLabel === 'NZIPS' && szerokosc_input.text>1200) /////{doplatawkladkacena = (dlugoscprowadnic * cenametra)+klipsy; }
+//else doplatawkladkacena = '0';
 
 
-return doplatawkladkacena;
-},
+//return doplatawkladkacena;
+//},
 	
-wkladka_form: function () {
+//wkladka_form: function () {
 //var wartoscdoplaty = doplatakolorinput.text;
-var cenametra2 = Input19.text;
-var klipsy2 = edit_kosztklipsow.text;
+//var cenametra2 = Input19.text;
+//var klipsy2 = edit_kosztklipsow.text;
 //var skrzynka = Select8.selectedOptionValue;
-var dlugoscprowadnic2 = edit_dlugosprowadnic.text;
-var doplatawkladkacena2;
-if (edit_wkladkaselect.selectedOptionLabel === 'NZIPS' && edit_szerokosc.text >1200) {doplatawkladkacena2 = (dlugoscprowadnic2 * cenametra2)+klipsy2; }
-else doplatawkladka2 = '0';
-return doplatawkladkacena2;
-},
+//var dlugoscprowadnic2 = edit_dlugosprowadnic.text;
+//var doplatawkladkacena2;
+//if (edit_wkladkaselect.selectedOptionLabel === 'NZIPS' && edit_szerokosc.text >1200) {doplatawkladkacena2 = (dlugoscprowadnic2 * cenametra2)+klipsy2; }
+//else doplatawkladka2 = '0';
+//return doplatawkladkacena2;
+//},
 	
 kolor_form: function () {
 //var wartoscdoplaty = doplatakolorinput.text;

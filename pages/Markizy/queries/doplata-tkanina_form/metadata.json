@@ -1,5 +1,5 @@
 {
-  "gitSyncId": "67252580698c850488983504_2988c5fc-3728-4426-8a40-c01b044426f8",
+  "gitSyncId": "67252580698c850488983504_1cce4680-29dd-4be7-ae91-ff15c7fa03c3",
   "id": "Markizy_doplata.tkanina_form",
   "pluginId": "js-plugin",
   "pluginType": "JS",
@@ -26,6 +26,6 @@
     "fullyQualifiedName": "doplata.tkanina_form",
     "name": "tkanina_form",
     "pageId": "Markizy",
-    "userSetOnLoad": true
+    "userSetOnLoad": false
   }
 }

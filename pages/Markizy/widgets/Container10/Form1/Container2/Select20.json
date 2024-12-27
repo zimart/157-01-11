@@ -63,7 +63,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 239,
   "needsErrorInfo": false,
-  "onDropdownOpen": "{{resetWidget(\"Select18\", true);}}",
+  "onDropdownOpen": "",
   "onOptionChange": "{{Markizy_wybranynaped.run()}}",
   "optionLabel": "label",
   "optionValue": "value",

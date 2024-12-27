@@ -60,7 +60,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_typnaped.run().then(() => {\n  resetWidget(\"Select18\", true);\n});}}",
+  "onOptionChange": "{{Markizy_typnaped.run().then(() => {});}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 6,
