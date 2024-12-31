@@ -1,0 +1,2 @@
+DELETE FROM markizy_tabelaindeksy
+  WHERE id = {{data_table.triggeredRow.id}};

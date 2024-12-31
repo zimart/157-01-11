@@ -169,6 +169,10 @@
     {
       "id": "Markizy_napedy",
       "isDefault": false
+    },
+    {
+      "id": "Markizy_tabelaindeksy",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

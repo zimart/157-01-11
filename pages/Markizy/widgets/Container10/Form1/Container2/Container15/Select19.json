@@ -34,7 +34,7 @@
       "key": "onDropdownOpen"
     }
   ],
-  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}\n",
+  "isDisabled": "{{Select17.selectedOptionLabel!==\"Elektryczne\"}}\n",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,

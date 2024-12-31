@@ -1,0 +1,1 @@
+SELECT indeks FROM markizy_tabelaindeksy WHERE {{wysieg.selectedOptionLabel}} = szermin and kategoria = "wys";

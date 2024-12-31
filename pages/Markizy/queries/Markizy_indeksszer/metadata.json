@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_f14e3dd8-9dfb-489c-8dfd-5cac66317228",
-  "id": "Markizy_skrotsystem",
+  "gitSyncId": "67252580698c850488983504_41ff59ea-ae35-4607-8d65-5497ce0a1485",
+  "id": "Markizy_Markizy_indeksszer",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT valueindeks FROM screeny_system where system={{system_select.selectedOptionValue}};",
+      "body": "SELECT `indeks` FROM `markizy_tabelaindeksy` WHERE {{szerokosc_input.text}} <= szermax AND {{szerokosc_input.text}} > szermin and kategoria = \"szer\";",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,8 +28,8 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "skrotsystem",
+    "name": "Markizy_indeksszer",
     "pageId": "Markizy",
-    "userSetOnLoad": false
+    "userSetOnLoad": true
   }
 }

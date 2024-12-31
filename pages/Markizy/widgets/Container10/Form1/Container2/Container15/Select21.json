@@ -36,7 +36,7 @@
     }
   ],
   "dynamicTriggerPathList": [],
-  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
+  "isDisabled": "{{Select17.selectedOptionLabel!==\"Elektryczne\"}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,

@@ -1,12 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_5cd60423-e49b-4eb5-aacc-e8bb6cc302e4",
+  "gitSyncId": "67252580698c850488983504_ea9156a0-3c48-41e1-90d6-799ad550d959",
   "unpublishedPage": {
-    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 2690,
+          "bottomRow": 890,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -27,7 +26,7 @@
         }
       }
     ],
-    "name": "Markizy",
-    "slug": "markizy"
+    "name": "Markizy_tabelaindeksy",
+    "slug": "markizy-tabelaindeksy"
   }
 }

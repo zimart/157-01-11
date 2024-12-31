@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_f14e3dd8-9dfb-489c-8dfd-5cac66317228",
-  "id": "Markizy_skrotsystem",
+  "gitSyncId": "67252580698c850488983504_fff6678c-a22b-44bb-a1fd-07ceaf5c974f",
+  "id": "Markizy_tabelaindeksy_DeleteQuery",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT valueindeks FROM screeny_system where system={{system_select.selectedOptionValue}};",
+      "body": "DELETE FROM markizy_tabelaindeksy\n  WHERE id = {{data_table.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,14 +22,9 @@
       "name": "app-sigma",
       "pluginId": "mysql-plugin"
     },
-    "dynamicBindingPathList": [
-      {
-        "key": "body"
-      }
-    ],
     "executeOnLoad": false,
-    "name": "skrotsystem",
-    "pageId": "Markizy",
+    "name": "DeleteQuery",
+    "pageId": "Markizy_tabelaindeksy",
     "userSetOnLoad": false
   }
 }

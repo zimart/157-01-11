@@ -3,10 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 255,
-  "bottomRowBeforeCollapse": 255,
+  "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "{{podajidusera.data[0].id||userdane.text}}",
+  "defaultText": "{{appsmith.store.sku_value}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,47 +15,64 @@
       "key": "borderRadius"
     },
     {
+      "key": "isVisible"
+    },
+    {
       "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicTriggerPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
-  "isDisabled": false,
+  "isDisabled": true,
   "isLoading": false,
-  "isRequired": false,
-  "isVisible": false,
-  "key": "x35xvlsqbo",
-  "label": "Label",
+  "isRequired": true,
+  "isSpellCheck": true,
+  "isVisible": "{{Select8.selectedOptionValue > 0}}",
+  "key": "iyb187w358",
+  "label": "SKU",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 41,
+  "leftColumn": 33,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 112,
+  "mobileBottomRow": 8,
   "mobileLeftColumn": 16,
   "mobileRightColumn": 36,
-  "mobileTopRow": 105,
+  "mobileTopRow": 1,
   "needsErrorInfo": false,
-  "originalBottomRow": 255,
-  "originalTopRow": 248,
-  "parentColumnSpace": 20.5625,
-  "parentId": "0",
+  "onTextChanged": "",
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
+  "parentColumnSpace": 19.59375,
+  "parentId": "ry9szsq8oq",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 50,
+  "rightColumn": 43,
   "showStepArrows": false,
-  "topRow": 248,
-  "topRowBeforeCollapse": 248,
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "548rou4rtj",
-  "widgetName": "Input18"
+  "widgetId": "yvewe93g7x",
+  "widgetName": "sku_input"
 }

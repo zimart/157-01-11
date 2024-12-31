@@ -1,0 +1,1 @@
+SELECT katalogmarkiza FROM markizy_cennik where skumarkiza = {{appsmith.store.sku_value}};

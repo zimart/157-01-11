@@ -329,8 +329,7 @@
           "label": "INTRA",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "INTRA",
-          "position": 11,
-          "sourceData": null
+          "position": 11
         },
         "SAKHO": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -351,8 +350,7 @@
           "label": "SAKHO",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "SAKHO",
-          "position": 13,
-          "sourceData": null
+          "position": 13
         },
         "SURI": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -373,8 +371,7 @@
           "label": "SURI",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "SURI",
-          "position": 12,
-          "sourceData": null
+          "position": 12
         },
         "TAKSYA": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -395,8 +392,7 @@
           "label": "TAKSYA",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "TAKSYA",
-          "position": 14,
-          "sourceData": null
+          "position": 14
         },
         "THOR": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -417,8 +413,7 @@
           "label": "THOR",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "THOR",
-          "position": 15,
-          "sourceData": null
+          "position": 15
         },
         "cenakatalogowanaped": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -439,8 +434,7 @@
           "label": "Cenakatalogowanaped",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "cenakatalogowanaped",
-          "position": 4,
-          "sourceData": null
+          "position": 4
         },
         "indeks": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -483,8 +477,7 @@
           "label": "Moc",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "moc",
-          "position": 2,
-          "sourceData": null
+          "position": 2
         },
         "model": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -549,8 +542,7 @@
           "label": "Opis",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "opis",
-          "position": 6,
-          "sourceData": null
+          "position": 6
         },
         "rabat": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -571,8 +563,7 @@
           "label": "Rabat",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "rabat",
-          "position": 9,
-          "sourceData": null
+          "position": 9
         },
         "rodzaj": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(insert_form.sourceData, insert_form.formData, insert_form.fieldState)}}",
@@ -659,8 +650,7 @@
           "label": "Typ",
           "labelTextSize": "0.875rem",
           "originalIdentifier": "typ",
-          "position": 5,
-          "sourceData": null
+          "position": 5
         }
       },
       "dataType": "object",
