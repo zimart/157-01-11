@@ -188,15 +188,6 @@
       "key": "schema.__root_schema__.children.opis.accentColor"
     },
     {
-      "key": "schema.__root_schema__.children.indeks.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.indeks.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.indeks.accentColor"
-    },
-    {
       "key": "schema.__root_schema__.children.rabat.defaultValue"
     },
     {
@@ -267,6 +258,15 @@
     },
     {
       "key": "schema.__root_schema__.children.TAKSYA.accentColor"
+    },
+    {
+      "key": "schema.__root_schema__.children.indeksnaped.defaultValue"
+    },
+    {
+      "key": "schema.__root_schema__.children.indeksnaped.borderRadius"
+    },
+    {
+      "key": "schema.__root_schema__.children.indeksnaped.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -455,27 +455,27 @@
           "position": 5,
           "sourceData": 1993
         },
-        "indeks": {
+        "indeksnaped": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "indeks",
+          "accessor": "indeksnaped",
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "null",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.indeks))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Select",
-          "identifier": "indeks",
+          "dataType": "string",
+          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.indeksnaped))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
+          "fieldType": "Text Input",
+          "iconAlign": "left",
+          "identifier": "indeksnaped",
           "isCustomField": false,
           "isDisabled": false,
-          "isFilterable": false,
           "isRequired": false,
+          "isSpellCheck": false,
           "isVisible": true,
-          "label": "Indeks",
+          "label": "Indeksnaped",
           "labelTextSize": "0.875rem",
-          "options": "[\n  {\n    \"label\": \"INTRA\",\n    \"value\": \"INTRA\"\n  },\n\t{\n    \"label\": \"SURI\",\n    \"value\": \"SURI\"\n  },\n  {\n    \"label\": \"SAKHO\",\n    \"value\": \"SAKHO\"\n  },\n\t{\n    \"label\": \"TAKSYA\",\n    \"value\": \"TAKSYA\"\n  },\n\t{\n    \"label\": \"THOR\",\n    \"value\": \"THOR\"\n  }\n]",
-          "originalIdentifier": "indeks",
-          "position": 4,
-          "serverSideFiltering": false
+          "originalIdentifier": "indeksnaped",
+          "position": 15,
+          "sourceData": "INTRA"
         },
         "moc": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",

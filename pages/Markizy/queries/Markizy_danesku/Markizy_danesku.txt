@@ -1,1 +1,1 @@
-SELECT katalogmarkiza FROM markizy_cennik where skumarkiza = {{appsmith.store.sku_value}};
+SELECT katalogmarkiza FROM markizy_cennik where sku = {{appsmith.store.sku_value}};

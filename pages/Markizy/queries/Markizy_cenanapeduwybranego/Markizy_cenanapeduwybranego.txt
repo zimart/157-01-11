@@ -1,0 +1,1 @@
+SELECT cenakatalogowanaped FROM markizy_napedy where model={{Select21.selectedOptionLabel}} and indeksnaped = {{typmarkizy.selectedOptionLabel}};

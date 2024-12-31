@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
-  "defaultText": "{{cenanapeduwybranego.data[0].cenakatalogowanaped}}",
+  "defaultText": "{{Markizy_cenanapeduwybranego.data[0].cenakatalogowanaped||0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -45,7 +45,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 8,
   "needsErrorInfo": false,
-  "onTextChanged": "",
+  "onTextChanged": "{{storeValue(\"\", \"\")}}",
   "originalBottomRow": 17,
   "originalTopRow": 10,
   "parentColumnSpace": 26.945571899414062,

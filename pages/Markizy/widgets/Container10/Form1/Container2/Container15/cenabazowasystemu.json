@@ -18,25 +18,18 @@
       "key": "defaultText"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{sku_input.isValid}}",
+  "isVisible": true,
   "key": "2t39cnlom2",
   "label": "{{i18n.translate(\"Cena bazowa PLN\")}}",
   "labelAlignment": "left",

@@ -35,7 +35,11 @@
       "key": "isVisible"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": "{{Select17.selectedOptionLabel!==\"Elektryczne\"}}",
   "isFilterable": true,
   "isLoading": false,
@@ -56,6 +60,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 239,
   "needsErrorInfo": false,
+  "onOptionChange": "{{Markizy_cenanapeduwybranego.run();\nstoreValue('cenanapedu', cenanapedu.text);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

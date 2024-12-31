@@ -44,7 +44,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 123,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_rodzaj.rodzaj();\nMarkizy_rodzajsterowania.run();\nresetWidget(\"szerokosc_input\", true);\nresetWidget(\"Select17\", true);\nresetWidget(\"Select18\", true);\nresetWidget(\"Select19\", true);\nresetWidget(\"Select20\", true);\nresetWidget(\"Select21\", true);}}",
+  "onOptionChange": "{{Markizy_rodzaj.rodzaj();\nMarkizy_rodzajsterowania.run();\nresetWidget(\"szerokosc_input\", true);\nresetWidget(\"Select17\", true);\nresetWidget(\"Select18\", true);\nresetWidget(\"Select19\", true);\nresetWidget(\"Select20\", true);\nresetWidget(\"Select21\", true);\nclearStore()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 32,

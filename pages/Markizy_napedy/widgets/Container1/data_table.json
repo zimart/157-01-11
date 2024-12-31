@@ -30,7 +30,6 @@
     "cenakatalogowanaped",
     "typ",
     "opis",
-    "indeks",
     "rabat",
     "INTRA",
     "SURI",
@@ -40,14 +39,15 @@
     "rodzajsterowania",
     "TAKSYA",
     "customColumn1",
-    "customColumn2"
+    "customColumn2",
+    "indeksnaped"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1733860684816,
+  "columnUpdatedAt": 1735646420272,
   "columnWidthMap": {
     "model": 301
   },
@@ -121,9 +121,6 @@
       "key": "primaryColumns.opis.computedValue"
     },
     {
-      "key": "primaryColumns.indeks.computedValue"
-    },
-    {
       "key": "primaryColumns.rabat.computedValue"
     },
     {
@@ -164,6 +161,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.buttonColor"
+    },
+    {
+      "key": "primaryColumns.indeksnaped.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -530,20 +530,20 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "indeks": {
-      "alias": "indeks",
+    "indeksnaped": {
+      "alias": "indeksnaped",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"indeks\"]))}}",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"indeksnaped\"]))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
       "fontStyle": "",
       "horizontalAlignment": "LEFT",
-      "id": "indeks",
+      "id": "indeksnaped",
       "index": 9,
       "isCellEditable": false,
       "isCellVisible": true,
@@ -553,9 +553,9 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "indeks",
+      "label": "indeksnaped",
       "notation": "standard",
-      "originalId": "indeks",
+      "originalId": "indeksnaped",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

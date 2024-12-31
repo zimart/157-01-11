@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_2acab149-d20e-42ab-be8d-50a71b36efec",
-  "id": "Markizy_napedwybrany",
+  "gitSyncId": "67252580698c850488983504_13eee1d1-824d-4d70-910d-2e8a39fcd57f",
+  "id": "Markizy_Markizy_cenanapeduwybranego",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT model,cenakatalogowanaped FROM screeny_napedy where moc >={{appsmith.store.wymaganynaped}} and seria = {{naped_seria_select.selectedOptionLabel}} and rodzaj = {{rodzaj_nap.selectedOptionLabel}} and typ = \"naped\" ORDER BY moc ASC LIMIT 1;",
+      "body": "SELECT cenakatalogowanaped FROM markizy_napedy where model={{Select21.selectedOptionLabel}} and indeksnaped = {{typmarkizy.selectedOptionLabel}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "napedwybrany",
+    "name": "Markizy_cenanapeduwybranego",
     "pageId": "Markizy",
     "userSetOnLoad": false
   }

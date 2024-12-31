@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "{{Number(appsmith.store.cenanapedu).toFixed(2)}}",
+  "defaultText": "{{Number(appsmith.store.cenanapedu).toFixed(2)||0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,25 +18,18 @@
       "key": "defaultText"
     },
     {
-      "key": "isVisible"
-    },
-    {
       "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
+  "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{sku_input.isValid}}",
+  "isVisible": true,
   "key": "2t39cnlom2",
   "label": "{{i18n.translate(\"Cena napędu\")}}",
   "labelAlignment": "left",
@@ -62,6 +55,7 @@
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
   "rightColumn": 57,
+  "shouldAllowAutofill": false,
   "showStepArrows": false,
   "topRow": 0,
   "topRowBeforeCollapse": 0,
