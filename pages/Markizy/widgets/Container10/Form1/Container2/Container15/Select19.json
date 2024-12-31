@@ -2,14 +2,11 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
-  "bottomRowBeforeCollapse": 7,
+  "bottomRow": 6,
+  "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
-    {
-      "key": "sourceData"
-    },
     {
       "key": "accentColor"
     },
@@ -18,9 +15,6 @@
     },
     {
       "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -30,9 +24,6 @@
     },
     {
       "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,44 +34,45 @@
       "key": "onDropdownOpen"
     }
   ],
-  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
+  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}\n",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{Select17.selectedOptionLabel===\"Elektryczne\"}}",
+  "isVisible": true,
   "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Typ napędu",
+  "labelText": "Awaryjne otwieranie",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 55,
+  "leftColumn": 7,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 246,
-  "mobileLeftColumn": 0,
-  "mobileRightColumn": 20,
-  "mobileTopRow": 239,
+  "mobileBottomRow": 15,
+  "mobileLeftColumn": 27,
+  "mobileRightColumn": 47,
+  "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
   "onOptionChange": "{{Markizy_wybranynaped.run()}}",
-  "optionLabel": "label",
-  "optionValue": "value",
-  "originalBottomRow": 7,
+  "optionLabel": "name",
+  "optionValue": "code",
+  "originalBottomRow": 6,
   "originalTopRow": 0,
-  "parentId": "76671vu120",
+  "parentColumnSpace": 19.625,
+  "parentId": "ry9szsq8oq",
   "parentRowSpace": 10,
-  "placeholderText": "Typ napędu",
+  "placeholderText": "Select option",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 64,
+  "rightColumn": 14,
   "serverSideFiltering": false,
-  "sourceData": "{{Markizy_typnaped.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
+  "sourceData": "[\n  {\n    \"name\": \"NIE\",\n    \"code\": \"NIE\"\n  },\n  {\n    \"name\": \"TAK\",\n    \"code\": \"TAK\"\n  }\n]",
   "topRow": 0,
   "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "sp0smwdfc9",
-  "widgetName": "Select20"
+  "widgetId": "6i1c7kth9u",
+  "widgetName": "Select19"
 }

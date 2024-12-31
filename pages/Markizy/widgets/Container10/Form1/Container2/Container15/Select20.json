@@ -1,11 +1,15 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": false,
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 9,
+  "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
-  "defaultOptionValue": "COPACO SERGE 600",
+  "defaultOptionValue": "",
   "dynamicBindingPathList": [
+    {
+      "key": "sourceData"
+    },
     {
       "key": "accentColor"
     },
@@ -13,7 +17,7 @@
       "key": "borderRadius"
     },
     {
-      "key": "labelText"
+      "key": "isDisabled"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -22,7 +26,7 @@
       "key": "sourceData"
     },
     {
-      "key": "onOptionChange"
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -33,43 +37,44 @@
       "key": "onDropdownOpen"
     }
   ],
-  "isDisabled": false,
+  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
   "isVisible": true,
-  "key": "ki1dwtwiw3",
+  "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "{{i18n.translate(\"Tkanina\")}}",
+  "labelText": "Typ napędu",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 14,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 105,
+  "mobileBottomRow": 246,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 98,
+  "mobileTopRow": 239,
   "needsErrorInfo": false,
-  "onDropdownOpen": "{{}}",
-  "onOptionChange": "{{removeValue('sku_value');\ntkaninawybor.run();\ndoplata.tkanina();}}",
+  "onDropdownOpen": "",
+  "onOptionChange": "{{Markizy_wybranynaped.run()}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 14,
-  "originalTopRow": 10,
-  "parentId": "er5qa5lbjh",
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
+  "parentId": "ry9szsq8oq",
   "parentRowSpace": 10,
-  "placeholderText": "Tkanina",
+  "placeholderText": "Typ napędu",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 24,
+  "rightColumn": 20,
   "serverSideFiltering": false,
-  "sourceData": "[\n   \t\n  {\n    \"label\": \"DICKSON ORCHESTRA\",\n    \"value\": \"DICKSON ORCHESTRA\"\n  },\n  {\n    \"label\": \"DICKSON MAX\",\n    \"value\": \"DICKSON MAX\"\n  }\n]",
-  "topRow": 5,
+  "sourceData": "{{Markizy_typnaped.data.map( (obj) =>{ return  {'label': obj.rodzaj, 'value': obj.rodzaj } })}}",
+  "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "jvfoo2ygy6",
-  "widgetName": "Select9"
+  "widgetId": "sp0smwdfc9",
+  "widgetName": "Select20"
 }

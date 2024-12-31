@@ -1,15 +1,11 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
+  "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
-  "bottomRowBeforeCollapse": 6,
+  "bottomRow": 4,
   "boxShadow": "none",
-  "defaultOptionValue": "",
+  "defaultOptionValue": "DICKSON ORCHESTRA",
   "dynamicBindingPathList": [
-    {
-      "key": "sourceData"
-    },
     {
       "key": "accentColor"
     },
@@ -17,10 +13,7 @@
       "key": "borderRadius"
     },
     {
-      "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
+      "key": "labelText"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -29,54 +22,54 @@
       "key": "sourceData"
     },
     {
-      "key": "isDisabled"
-    },
-    {
-      "key": "isVisible"
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "onDropdownOpen"
     }
   ],
-  "isDisabled": "{{Select17.selectedOptionLabel===\"Ręczne\"}}",
+  "isDisabled": false,
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": "{{Select17.selectedOptionLabel===\"Elektryczne\"}}",
-  "key": "3lm2lz6c15",
+  "isVisible": true,
+  "key": "ki1dwtwiw3",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Seria napędu",
+  "labelText": "{{i18n.translate(\"Tkanina\")}}",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 41,
+  "leftColumn": 53,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 242,
+  "mobileBottomRow": 105,
   "mobileLeftColumn": 0,
   "mobileRightColumn": 20,
-  "mobileTopRow": 235,
+  "mobileTopRow": 98,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_typnaped.run().then(() => {});}}",
+  "onDropdownOpen": "{{}}",
+  "onOptionChange": "{{removeValue('sku_value');\ntkaninawybor.run();\ndoplata.tkanina();}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 6,
-  "originalTopRow": 0,
+  "originalBottomRow": 14,
+  "originalTopRow": 10,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
-  "placeholderText": "Wybierz napęd",
+  "placeholderText": "Tkanina",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 48,
+  "rightColumn": 64,
   "serverSideFiltering": false,
-  "sourceData": "{{Markizy_markanaped.data.map( (obj) =>{ return  {'label': obj.seria, 'value': obj.seria } })}}",
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"DICKSON ORCHESTRA\",\n    \"value\": \"DICKSON ORCHESTRA\"\n  },\n  {\n    \"label\": \"DICKSON MAX\",\n    \"value\": \"DICKSON MAX\"\n  }\n]",
   "topRow": 0,
-  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
-  "widgetId": "bfinimxb7v",
-  "widgetName": "Select18"
+  "widgetId": "jvfoo2ygy6",
+  "widgetName": "Select9"
 }

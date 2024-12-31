@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
+  "bottomRowBeforeCollapse": 7,
   "boxShadow": "none",
   "defaultOptionValue": "",
   "dynamicBindingPathList": [
@@ -14,12 +15,18 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [
     {
       "key": "sourceData"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -31,14 +38,14 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": "{{wysieg.isValid}}",
   "key": "3lm2lz6c15",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "Rodzaj sterowania",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 33,
+  "leftColumn": 34,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -47,20 +54,21 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_przelicz_naped.przelicz_naped();}}",
+  "onOptionChange": "{{Markizy_przelicz_naped.przelicz_naped();\nresetWidget(\"Select18\", true);\nresetWidget(\"Select19\", true);\nresetWidget(\"Select20\", true);\nresetWidget(\"Select21\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 239,
-  "originalTopRow": 232,
+  "originalBottomRow": 7,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Rodzaj sterowania",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 41,
+  "rightColumn": 43,
   "serverSideFiltering": false,
   "sourceData": "{{Markizy_rodzajsterowania.data.map( (obj) =>{ return  {'label': obj.rodzajsterowania, 'value': obj.rodzajsterowania } })}}",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "hhcyaosvdr",

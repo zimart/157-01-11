@@ -3,6 +3,7 @@
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 4,
+  "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
   "defaultOptionValue": "ANTRACYT",
   "dynamicBindingPathList": [
@@ -14,6 +15,9 @@
     },
     {
       "key": "labelText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -23,6 +27,9 @@
     },
     {
       "key": "onOptionChange"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicTriggerPathList": [
@@ -34,7 +41,7 @@
   "isFilterable": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
+  "isVisible": "{{wysieg.isValid}}",
   "key": "q6bew8sxi9",
   "labelAlignment": "left",
   "labelPosition": "Top",
@@ -53,17 +60,18 @@
   "onOptionChange": "{{clearStore()\n.then(() => \nczydoplatakolor.run())\n.then(() => \ndoplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor())\n}}",
   "optionLabel": "label",
   "optionValue": "value",
-  "originalBottomRow": 180,
-  "originalTopRow": 173,
+  "originalBottomRow": 4,
+  "originalTopRow": 0,
   "parentId": "76671vu120",
   "parentRowSpace": 10,
   "placeholderText": "Wybierz kolor",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 33,
+  "rightColumn": 34,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"label\": \"BIAŁY\",\n    \"value\": \"BIAŁY\"\n  },\n\t{\n    \"label\": \"BEŻ\",\n    \"value\": \"BEŻ\"\n  },\n  {\n    \"label\": \"ANTRACYT\",\n    \"value\": \"ANTRACYT\"\n  },\n\t{\n    \"label\": \"SPECJALNY\",\n    \"value\": \"SPECJALNY\"\n  }\n]",
   "topRow": 0,
+  "topRowBeforeCollapse": 0,
   "type": "SELECT_WIDGET",
   "version": 1,
   "widgetId": "ai7kcb1lmq",
