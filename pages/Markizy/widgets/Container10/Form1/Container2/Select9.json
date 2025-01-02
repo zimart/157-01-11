@@ -54,7 +54,7 @@
   "mobileTopRow": 98,
   "needsErrorInfo": false,
   "onDropdownOpen": "{{}}",
-  "onOptionChange": "{{removeValue('sku_value');\ntkaninawybor.run();\ndoplata.tkanina();}}",
+  "onOptionChange": "{{removeValue('sku_value');\ntkaninawybor.run();\nMarkizy_doplata.tkaninamax();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 14,

@@ -21,6 +21,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -33,6 +36,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "isRequired"
     }
   ],
   "dynamicTriggerPathList": [
@@ -43,7 +49,7 @@
   "isDisabled": "{{Select17.selectedOptionLabel!==\"Elektryczne\"}}",
   "isFilterable": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": "{{Markizy_doplata.czywymagane.data}}",
   "isVisible": "{{Select20.isValid}}",
   "key": "3lm2lz6c15",
   "labelAlignment": "left",

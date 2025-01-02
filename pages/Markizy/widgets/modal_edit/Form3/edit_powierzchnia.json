@@ -47,7 +47,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 28,
   "needsErrorInfo": false,
-  "onTextChanged": "{{storeValue('edit_powierzchnia', edit_powierzchnia.text).then(() => {\n  doplata.tkanina_form();\n});}}",
+  "onTextChanged": "{{storeValue('edit_powierzchnia', edit_powierzchnia.text).then(() => {\n  Markizy_doplata.tkanina_form();\n});}}",
   "originalBottomRow": 93,
   "originalTopRow": 86,
   "parentColumnSpace": 18.40625,

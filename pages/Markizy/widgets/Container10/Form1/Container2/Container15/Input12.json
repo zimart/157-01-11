@@ -6,7 +6,7 @@
   "bottomRow": 4,
   "bottomRowBeforeCollapse": 4,
   "boxShadow": "none",
-  "defaultText": "{{Number(appsmith.store.cenanapedu).toFixed(2)||0}}",
+  "defaultText": "{{Number(appsmith.store.cenanapedu).toFixed(2)|0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -19,16 +19,23 @@
     },
     {
       "key": "label"
+    },
+    {
+      "key": "isRequired"
     }
   ],
   "dynamicHeight": "FIXED",
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isRequired"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "NUMBER",
+  "inputType": "TEXT",
   "isDisabled": true,
   "isLoading": false,
-  "isRequired": true,
+  "isRequired": "{{Markizy_doplata.czywymagane.data}}",
   "isVisible": true,
   "key": "2t39cnlom2",
   "label": "{{i18n.translate(\"Cena napędu\")}}",

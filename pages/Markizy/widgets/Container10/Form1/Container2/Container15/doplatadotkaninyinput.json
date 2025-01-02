@@ -6,7 +6,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultText": "{{Number.parseFloat(doplata.tkanina.data).toFixed(2)|0}}",
+  "defaultText": "{{Number(Markizy_doplata.tkaninamax.data).toFixed(4)|0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

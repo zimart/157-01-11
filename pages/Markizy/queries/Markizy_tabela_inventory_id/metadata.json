@@ -1,6 +1,6 @@
 {
   "gitSyncId": "67252580698c850488983504_7c878008-c4b9-4f5e-8713-6a9d1903bb0b",
-  "id": "Markizy_tabela_inventory_id_new",
+  "id": "Markizy_Markizy_tabela_inventory_id",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": true,
-    "name": "tabela_inventory_id_new",
+    "name": "Markizy_tabela_inventory_id",
     "pageId": "Markizy",
     "userSetOnLoad": true
   }

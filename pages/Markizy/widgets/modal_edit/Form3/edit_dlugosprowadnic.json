@@ -46,7 +46,7 @@
   "mobileRightColumn": 33,
   "mobileTopRow": 6,
   "needsErrorInfo": false,
-  "onTextChanged": "{{doplata.wkladka();}}",
+  "onTextChanged": "{{Markizy_doplata.wkladka();}}",
   "originalBottomRow": 67,
   "originalTopRow": 60,
   "parentColumnSpace": 19.9375,

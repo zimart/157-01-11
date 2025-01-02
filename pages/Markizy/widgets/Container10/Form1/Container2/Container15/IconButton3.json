@@ -42,7 +42,7 @@
   "mobileRightColumn": 33,
   "mobileTopRow": 3,
   "needsErrorInfo": false,
-  "onClick": "{{\nremoveValue('sku_value')\n.then(() => \nstoreValue('sku_value', tymczasowy.text))\n.then(() => Markizy_danesku.run())\n.then(() => \nstoreValue('cenasystemu', cena_systemu.text))\n.then(() => Markizy_cenanapeduwybranego.run())\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n}}",
+  "onClick": "{{\nremoveValue('sku_value')\n.then(() => \nstoreValue('sku_value', tymczasowy.text))\n.then(() => Markizy_danesku.run())\n.then(() => \nstoreValue('cenasystemu', cena_systemu.text))\n.then(() => Markizy_cenanapeduwybranego.run())\n.then(() => \nstoreValue('cenanapedu', cenanapedu.text))\n.then(() => \nMarkizy_doplata.tkaninamax())\n}}",
   "originalBottomRow": 6,
   "originalTopRow": 2,
   "parentColumnSpace": 18.6884765625,

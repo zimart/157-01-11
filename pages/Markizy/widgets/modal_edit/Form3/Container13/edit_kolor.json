@@ -70,7 +70,7 @@
   "mobileRightColumn": 49,
   "mobileTopRow": 22,
   "needsErrorInfo": false,
-  "onOptionChange": "{{\nFORM_czydoplatakolor.run()\n.then(() => \nFORM_doplatakolorzapytaj.run())\n.then(() => \ndoplata.kolor_form())\n.then(() => \nFORM_cena_zapytaj.run())\t\n}}",
+  "onOptionChange": "{{\nFORM_czydoplatakolor.run()\n.then(() => \nFORM_doplatakolorzapytaj.run())\n.then(() => \nMarkizy_doplata.kolor_form())\n.then(() => \nFORM_cena_zapytaj.run())\t\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,

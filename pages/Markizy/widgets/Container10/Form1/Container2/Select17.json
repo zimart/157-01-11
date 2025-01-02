@@ -27,6 +27,9 @@
     },
     {
       "key": "isVisible"
+    },
+    {
+      "key": "onOptionChange"
     }
   ],
   "dynamicTriggerPathList": [
@@ -54,7 +57,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_przelicz_naped.przelicz_naped();\nresetWidget(\"Select18\", true);\nresetWidget(\"Select19\", true);\nresetWidget(\"Select20\", true);\nresetWidget(\"Select21\", true);}}",
+  "onOptionChange": "{{Markizy_przelicz_naped.przelicz_naped();\nMarkizy_doplata.czywymagane();\nclearStore();\nresetWidget(\"Select18\", true);\nresetWidget(\"Select19\", true);\nresetWidget(\"Select20\", true);\nresetWidget(\"Select21\", true);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 7,

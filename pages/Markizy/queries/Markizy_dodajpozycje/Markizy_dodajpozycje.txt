@@ -1,0 +1,17 @@
+INSERT INTO inventory_markizy (wysokosc, szerokosc,skugen, cena,  doplatatkanina,system, kolor, tkanina, naped, price_motor,
+															 rodzajmotor, fk_oferty_inventory_id, ilosc, concat,komentarz)
+  VALUES ('{{wysieg.selectedOptionLabel}}',
+					'{{szerokosc_input.text}}', 
+					'{{sku_input.text}}',
+					'{{cenabazowasystemu.text}}',
+					'{{doplatadotkaninyinput.text}}',
+					'{{typmarkizy.selectedOptionLabel}}',
+					'{{kolor_select.selectedOptionLabel}}',
+					'{{Select9.selectedOptionLabel}}',
+					'{{Select17.selectedOptionLabel}}',
+					'{{Input12.text}}',
+					'{{Select21.selectedOptionLabel}}',
+					'{{appsmith.URL.queryParams.id_oferta}}',
+					'{{Input2.text}}',
+					'',
+					'{{opispozycji.text}}');

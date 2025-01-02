@@ -6,7 +6,7 @@
   "bottomRow": 62,
   "bottomRowBeforeCollapse": 55,
   "boxShadow": "none",
-  "defaultText": "{{doplata.kolor_form();}}",
+  "defaultText": "{{Markizy_doplata.kolor_form();}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

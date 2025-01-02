@@ -36,7 +36,7 @@
   "mobileRightColumn": 47,
   "mobileTopRow": 10,
   "needsErrorInfo": false,
-  "onClick": "{{tabela_inventory_id_new.run()}}",
+  "onClick": "{{Markizy_tabela_inventory_id.run()}}",
   "originalBottomRow": 8,
   "originalTopRow": 4,
   "parentColumnSpace": 20.25,

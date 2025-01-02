@@ -60,7 +60,7 @@
   "mobileRightColumn": 64,
   "mobileTopRow": 2,
   "needsErrorInfo": false,
-  "onOptionChange": "{{FORM_tkaninawybor.run();\ndoplata.tkanina_form();}}",
+  "onOptionChange": "{{FORM_tkaninawybor.run();\nMarkizy_doplata.tkanina_form();}}",
   "optionLabel": "label",
   "optionValue": "value",
   "parentColumnSpace": 18.09375,

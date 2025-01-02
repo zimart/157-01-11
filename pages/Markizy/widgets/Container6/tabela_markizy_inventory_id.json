@@ -613,6 +613,9 @@
     },
     {
       "key": "primaryColumns.rabatmotor.textColor"
+    },
+    {
+      "key": "tableData"
     }
   ],
   "dynamicTriggerPathList": [
@@ -674,11 +677,11 @@
   "label": "Data",
   "labelTextSize": "0.875rem",
   "leftColumn": 0,
-  "onPageChange": "{{tabela_inventory_id_new.run()}}",
-  "onPageSizeChange": "{{tabela_inventory_id_new.run()}}",
+  "onPageChange": "{{Markizy_tabela_inventory_id.run()}}",
+  "onPageSizeChange": "{{Markizy_tabela_inventory_id.run()}}",
   "onRowSelected": "{{storeValue('numerkoloru', tabela_markizy_inventory_id.selectedRow.kolor);}}",
-  "onSearchTextChanged": "{{tabela_inventory_id_new.run()}}",
-  "onSort": "{{tabela_inventory_id_new.run()}}",
+  "onSearchTextChanged": "{{Markizy_tabela_inventory_id.run()}}",
+  "onSort": "{{Markizy_tabela_inventory_id.run()}}",
   "originalBottomRow": 111,
   "originalTopRow": 88,
   "parentColumnSpace": 16.3125,
@@ -1860,7 +1863,7 @@
       "isVisible": true,
       "label": "Rabat automatyka",
       "notation": "standard",
-      "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  tabela_inventory_id_new.run();\n});}}",
+      "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  Markizy_tabela_inventory_id.run();\n});}}",
       "originalId": "rabatmotor",
       "sticky": "",
       "textColor": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatmotor >0 ? \"#B71C1C\" : \"#000000\"))}}",
@@ -1897,7 +1900,7 @@
       "isVisible": true,
       "label": "Rabat system",
       "notation": "standard",
-      "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  tabela_inventory_id_new.run();\n}).catch(() => {});}}",
+      "onSubmit": "{{przeliczofertepojedynczo_new.run().then(() => {\n  przeliczpozycje.run();\n  Markizy_tabela_inventory_id.run();\n}).catch(() => {});}}",
       "originalId": "rabatsystem",
       "sticky": "",
       "textColor": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow.rabatsystem >0 ? \"#B71C1C\" : \"#000000\"))}}",
@@ -2529,7 +2532,7 @@
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
-  "tableData": "{{tabela_inventory_id_new.data}}",
+  "tableData": "{{Markizy_tabela_inventory_id.data}}",
   "textSize": "0.875rem",
   "topRow": 0,
   "topRowBeforeCollapse": 50,
