@@ -54,7 +54,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 235,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_typnaped.run().then(() => {});}}",
+  "onOptionChange": "{{Markizy_typnaped.run().then(() => {});\nclearStore()}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 6,

@@ -55,7 +55,7 @@
   "mobileTopRow": 8,
   "needsErrorInfo": false,
   "onDropdownOpen": "",
-  "onOptionChange": "{{Markizy_wybranynaped.run()}}",
+  "onOptionChange": "{{Markizy_wybranynaped.run();\nclearStore()}}",
   "optionLabel": "name",
   "optionValue": "code",
   "originalBottomRow": 6,

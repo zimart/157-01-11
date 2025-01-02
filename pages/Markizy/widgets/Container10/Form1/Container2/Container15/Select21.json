@@ -60,7 +60,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 239,
   "needsErrorInfo": false,
-  "onOptionChange": "{{Markizy_cenanapeduwybranego.run();\nstoreValue('cenanapedu', cenanapedu.text);}}",
+  "onOptionChange": "{{Markizy_cenanapeduwybranego.run();\nclearStore();\nstoreValue('cenanapedu', cenanapedu.text);}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 5,
