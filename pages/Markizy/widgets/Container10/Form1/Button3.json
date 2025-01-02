@@ -34,7 +34,7 @@
   "mobileRightColumn": 62,
   "mobileTopRow": 33,
   "needsErrorInfo": false,
-  "onClick": "{{Markizy_dodajpozycje.run().then(() => przeliczpozycje.run()).then(() => resetWidget(\"szerokosc_input\", true)).then(() => resetWidget(\"sku_input\", true)).then(() => resetWidget(\"cenabazowasystemu\", true)).then(() => \nresetWidget(\"opispozycji\", true)).then(() => \nresetWidget(\"stronanapedu\", true)).then(() => \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \nresetWidget(\"szerokosc_input\", true)).then(() => przeliczpozycje.run()).then(() => Markizy_tabela_inventory_id.run())\n.then(() => \nremoveValue('sku_value'))}}",
+  "onClick": "{{Markizy_dodajpozycje.run().then(() => Markizy_przeliczpozycje.run()).then(() => resetWidget(\"szerokosc_input\", true)).then(() => resetWidget(\"sku_input\", true)).then(() => resetWidget(\"cenabazowasystemu\", true)).then(() => \nresetWidget(\"opispozycji\", true)).then(() => \nresetWidget(\"stronanapedu\", true)).then(() => \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t \nresetWidget(\"szerokosc_input\", true)).then(() => Markizy_przeliczpozycje.run()).then(() => Markizy_tabela_inventory_id.run())\n.then(() => \nremoveValue('sku_value'))}}",
   "originalBottomRow": 39,
   "originalTopRow": 35,
   "parentId": "8jwyu0isum",

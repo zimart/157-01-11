@@ -1,4 +1,4 @@
-UPDATE inventory_screeny SET 
+UPDATE inventory_markizy SET 
     kwotarabatsystem = systemzdoplata*(rabatsystem/100),
 		doplatakolor = (procentdoplatakolor/100)*cena,
 		
@@ -8,7 +8,7 @@ UPDATE inventory_screeny SET
 		cenanetto = systemporabacie + priceall,
 		kwotarabatmotor = price_motor*(rabatmotor/100),
 	  razemnetto = cenanetto * ilosc,
-		moc = "Roleta SCREEN",
+		moc = "Markiza",
 		komentarz = concat(system,"/",skrzynka,"/",kolor,"/",CHAR(13),CHAR(10), szerokosc,"x",wysokosc,CHAR(13),CHAR(10),"/",tkanina,"-",referencja,"/",naped),
 		
 		opisbezrabatow = CONCAT("Opis pozycji: ",indexszer,CHAR(13),"| System:",system," | Skrzynka: ",skrzynka," | Kolor: ",kolor," Szerokość: ", szerokosc," | Wys: ",wysokosc," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata kolor: ",procentdoplatakolor,"%"," | Kwota doplaty: ",doplatakolor," | Doplata tkanina: ",doplatatkanina," | Doplata do wkladki: ",doplatawkladka," | Cena rolety z doplatami: ",systemzdoplata," | Cena napedu: ",priceall,"| Roleta kompletna: ", cenanetto,"| Strona napędu:",indexwys),

@@ -7,7 +7,7 @@ przelicz_screeny: async () => {
 //await showModal(LanguageLoading.name)
 await edit_update_screeny.run();
 //.then(() => 
-await przeliczpozycje.run();
+await Markizy_przeliczpozycje.run();
 //.then(() => 
 await Markizy_tabela_inventory_id.run();
 //.then(() => 

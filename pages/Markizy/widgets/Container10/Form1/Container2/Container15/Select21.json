@@ -76,7 +76,7 @@
   "placeholderText": "wybierz model napędu",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 29,
+  "rightColumn": 27,
   "serverSideFiltering": false,
   "sourceData": "{{Markizy_wybranynaped.data.map( (obj) =>{ return  {'label': obj.model, 'value': obj.model } })}}",
   "topRow": 0,

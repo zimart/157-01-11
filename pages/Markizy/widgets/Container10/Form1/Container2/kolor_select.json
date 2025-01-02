@@ -57,7 +57,7 @@
   "mobileRightColumn": 20,
   "mobileTopRow": 173,
   "needsErrorInfo": false,
-  "onOptionChange": "{{clearStore()\n.then(() => \nczydoplatakolor.run())\n.then(() => \ndoplatakolorzapytaj.run())\n.then(() => \nMarkizy_doplata.kolor())\n}}",
+  "onOptionChange": "{{clearStore()\n.then(() => \nMarkizy_doplata.kolor())\n}}",
   "optionLabel": "label",
   "optionValue": "value",
   "originalBottomRow": 4,

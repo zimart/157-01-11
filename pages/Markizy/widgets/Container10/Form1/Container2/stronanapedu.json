@@ -54,7 +54,7 @@
   "placeholderText": "Wybierz stronę",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 53,
+  "rightColumn": 51,
   "serverSideFiltering": false,
   "sourceData": "[\n  {\n    \"name\": \"Prawa\",\n    \"code\": \"Prawa\"\n  },\n  {\n    \"name\": \"Lewa\",\n    \"code\": \"Lewa\"\n  }\n  \n]",
   "topRow": 0,
