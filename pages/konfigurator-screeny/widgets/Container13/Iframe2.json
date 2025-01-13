@@ -1,5 +1,5 @@
 {
-  "animateLoading": false,
+  "animateLoading": true,
   "borderOpacity": "0",
   "borderRadius": "0px",
   "borderWidth": "0",
@@ -14,7 +14,11 @@
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onURLChanged"
+    }
+  ],
   "flexVerticalAlignment": "start",
   "isLoading": false,
   "isVisible": true,
@@ -26,13 +30,14 @@
   "mobileTopRow": 0,
   "needsErrorInfo": false,
   "onSrcDocChanged": "{{}}",
+  "onURLChanged": "{{}}",
   "parentColumnSpace": 16.7158203125,
   "parentId": "74ng7dd1ha",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "source": "https://serwer.hosting-sanok.pl/suri.html?tkanina={{tkanina_list.klik.data}}",
+  "source": "https://app.sigma.sanok.pl/konfigurator/suri.html?model-konstrukcja=2&model-tkanina={{Text42.text}}",
   "topRow": 0,
   "type": "IFRAME_WIDGET",
   "version": 1,

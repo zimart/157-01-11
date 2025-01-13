@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "tkanina_list.klik",
     "name": "klik",
     "pageId": "konfigurator-screeny",
