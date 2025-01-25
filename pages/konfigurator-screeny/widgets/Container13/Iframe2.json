@@ -1,5 +1,5 @@
 {
-  "animateLoading": true,
+  "animateLoading": "true",
   "borderOpacity": "0",
   "borderRadius": "0px",
   "borderWidth": "0",
@@ -13,7 +13,11 @@
       "key": "source"
     }
   ],
-  "dynamicPropertyPathList": [],
+  "dynamicPropertyPathList": [
+    {
+      "key": "animateLoading"
+    }
+  ],
   "dynamicTriggerPathList": [
     {
       "key": "onURLChanged"
@@ -37,7 +41,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 64,
-  "source": "https://app.sigma.sanok.pl/konfigurator/suri.html?model-konstrukcja=2&model-tkanina={{Text42.text}}",
+  "source": "https://app.sigma.sanok.pl/konfigurator/suri.html?model-konstrukcja=1&model-tkanina={{Text42.text}}",
   "topRow": 0,
   "type": "IFRAME_WIDGET",
   "version": 1,
