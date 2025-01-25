@@ -32,7 +32,7 @@
   ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
-  "inputType": "TEXT",
+  "inputType": "NUMBER",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": "{{Markizy_doplata.czywymagane.data}}",
