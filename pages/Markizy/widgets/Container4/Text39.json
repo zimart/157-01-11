@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 224,
+  "bottomRow": 39,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -24,7 +24,7 @@
   "isLoading": false,
   "isVisible": true,
   "key": "39lt31rz6o",
-  "leftColumn": 40,
+  "leftColumn": 31,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
@@ -37,16 +37,16 @@
   "originalTopRow": 217,
   "overflow": "NONE",
   "parentColumnSpace": 19.9287109375,
-  "parentId": "0",
+  "parentId": "esfh9fxray",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 56,
+  "rightColumn": 47,
   "shouldTruncate": false,
   "text": "{{Markizy_rodzaj.rodzaj.data}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 220,
+  "topRow": 35,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

@@ -3,10 +3,10 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 233,
-  "bottomRowBeforeCollapse": 30,
+  "bottomRow": 47,
+  "bottomRowBeforeCollapse": 244,
   "boxShadow": "none",
-  "defaultText": "{{Markizy_indekswys.data[0].indeks}}",
+  "defaultText": "{{appsmith.store.modelnapedu}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,47 +16,57 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
+    },
+    {
+      "key": "label"
     }
   ],
   "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
   "dynamicTriggerPathList": [],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": true,
   "isLoading": false,
   "isRequired": true,
-  "isVisible": true,
-  "key": "k0srx2q35d",
-  "label": "indeks_wys",
+  "isVisible": "{{sku_input.isValid}}",
+  "key": "2t39cnlom2",
+  "label": "{{i18n.translate(\"Napęd\")}}",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelStyle": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 10,
+  "leftColumn": 42,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
-  "mobileBottomRow": 33,
-  "mobileLeftColumn": 1,
-  "mobileRightColumn": 21,
-  "mobileTopRow": 26,
+  "mobileBottomRow": 16,
+  "mobileLeftColumn": 19,
+  "mobileRightColumn": 39,
+  "mobileTopRow": 9,
   "needsErrorInfo": false,
-  "originalBottomRow": 230,
-  "originalTopRow": 223,
-  "parentColumnSpace": 19.59375,
-  "parentId": "0",
+  "originalBottomRow": 244,
+  "originalTopRow": 238,
+  "parentColumnSpace": 18.6884765625,
+  "parentId": "esfh9fxray",
   "parentRowSpace": 10,
   "renderMode": "CANVAS",
   "resetOnSubmit": true,
   "responsiveBehavior": "fill",
-  "rightColumn": 18,
-  "shouldAllowAutofill": false,
+  "rightColumn": 49,
   "showStepArrows": false,
-  "topRow": 226,
-  "topRowBeforeCollapse": 23,
+  "topRow": 41,
+  "topRowBeforeCollapse": 238,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "hwb7s21j5v",
-  "widgetName": "index_wys_input"
+  "widgetId": "uwcxe00or9",
+  "widgetName": "Input13"
 }

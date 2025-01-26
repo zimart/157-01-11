@@ -8,21 +8,21 @@ UPDATE inventory_markizy SET
 		kwotarabatmotor = price_motor*(rabatmotor/100),
 	  razemnetto = cenanetto * ilosc,
 		moc = "Markiza",
-		komentarz = concat(skugen,"/",naped),
+		komentarz = concat(skugen,"/",sterowanie,"/",naped),
 		
-		opisbezrabatow = CONCAT("Opis pozycji: ",opis),
+		opisbezrabatow = CONCAT("Opis pozycji: ",opis,CHAR(13),"Rodzaj markizy: ",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system:  ",rabatsystem," %"," | Markiza po rabacie: ",systemporabacie, " | Cena napedu: ",price_motor," | Rabat na napęd: ",rabatmotor," %"," | Napęd po rabacie: ",priceall," | Markiza kompletna po rabacie: ", cenanetto," | Strona napędu: ", strona),
 		
-		opiszrabatami = CONCAT("Opis pozycji: ",CHAR(13),"| System:",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system: ",rabatsystem," %"," | Cena napedu: ",priceall," | Rabat na napęd: ",rabatmotor," %"," | Markiza kompletna: ", cenanetto,"| Strona napędu:", strona),
+		opiszrabatami = CONCAT("Opis pozycji: ",opis,CHAR(13),"Rodzaj markizy: ",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system:  ",rabatsystem," %"," | Markiza po rabacie: ",systemporabacie, " | Cena napedu: ",price_motor," | Rabat na napęd: ",rabatmotor," %"," | Napęd po rabacie: ",priceall," | Markiza kompletna po rabacie: ", cenanetto," | Strona napędu: ", strona),
 		
-		opiszrabatami_de = CONCAT("Opis pozycji: ",opis),
+		opiszrabatami_de = CONCAT("Opis pozycji: ",opis,CHAR(13),"Rodzaj markizy: ",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system:  ",rabatsystem," %"," | Markiza po rabacie: ",systemporabacie, " | Cena napedu: ",price_motor," | Rabat na napęd: ",rabatmotor," %"," | Napęd po rabacie: ",priceall," | Markiza kompletna po rabacie: ", cenanetto," | Strona napędu: ", strona),
 		
-		opisbezrabatow_de = CONCAT("Opis pozycji: ",opis),
+		opisbezrabatow_de = CONCAT("Opis pozycji: ",opis,CHAR(13),"Rodzaj markizy: ",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system:  ",rabatsystem," %"," | Markiza po rabacie: ",systemporabacie, " | Cena napedu: ",price_motor," | Rabat na napęd: ",rabatmotor," %"," | Napęd po rabacie: ",priceall," | Markiza kompletna po rabacie: ", cenanetto," | Strona napędu: ", strona),
 		
 		
 		
-		opisbezrabatow_en = CONCAT("Opis pozycji: ",opis),
+		opisbezrabatow_en = CONCAT("Opis pozycji: ",opis,CHAR(13),"Rodzaj markizy: ",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system:  ",rabatsystem," %"," | Markiza po rabacie: ",systemporabacie, " | Cena napedu: ",price_motor," | Rabat na napęd: ",rabatmotor," %"," | Napęd po rabacie: ",priceall," | Markiza kompletna po rabacie: ", cenanetto," | Strona napędu: ", strona),
 		
-		opiszrabatami_en = CONCAT("Opis pozycji: ",opis)
+		opiszrabatami_en = CONCAT("Opis pozycji: ",opis,CHAR(13),"Rodzaj markizy: ",system," | Szerokość: ",szerokosc," | Wysięg: ",wysokosc," | Sterowanie: ",sterowanie," | Napęd: ",naped," | Kolor: ", kolor," | Tkanina: ",tkanina," | Cena bazowa: ",cena," | Doplata tkanina: ",doplatatkanina," | Cena markizy z doplatami: ",systemzdoplata," | Rabat na system:  ",rabatsystem," %"," | Markiza po rabacie: ",systemporabacie, " | Cena napedu: ",price_motor," | Rabat na napęd: ",rabatmotor," %"," | Napęd po rabacie: ",priceall," | Markiza kompletna po rabacie: ", cenanetto," | Strona napędu: ", strona)
 	
 			
 WHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};

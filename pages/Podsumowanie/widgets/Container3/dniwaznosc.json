@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 54,
+  "bottomRow": 60,
   "boxShadow": "none",
   "defaultText": "{{dane_oferty_main.data[0].datawaznosci||7}}",
   "dynamicBindingPathList": [
@@ -54,7 +54,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "showStepArrows": false,
-  "topRow": 48,
+  "topRow": 54,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "i3nipje3pi",

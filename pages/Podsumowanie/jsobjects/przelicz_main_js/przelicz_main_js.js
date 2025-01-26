@@ -17,6 +17,7 @@ await updateopismainkursmoskitiery.run();
 //.then(() => 
 	
 await updateopismainkursplisy.run();
+await updateopismainkursmarkizy.run();
 //.then(() =>
 await tabela_glowna.run();
 //.then(() => 

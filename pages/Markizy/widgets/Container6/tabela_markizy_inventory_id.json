@@ -84,7 +84,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1737915726848,
+  "columnUpdatedAt": 1737916505268,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -2138,7 +2138,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "sterowanie",
       "notation": "standard",
       "originalId": "sterowanie",
@@ -2172,7 +2172,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "strona",
       "notation": "standard",
       "originalId": "strona",

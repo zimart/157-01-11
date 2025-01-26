@@ -1,7 +1,7 @@
 {
   "animateLoading": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 158,
+  "bottomRow": 155,
   "dynamicBindingPathList": [
     {
       "key": "truncateButtonColor"
@@ -43,7 +43,7 @@
   "text": "{{daneuzytkownik.data[0].nazwafirmy||\"uzupełnij dane\"}}\n{{daneuzytkownik.data[0].ulicainumer||\"\"}} {{daneuzytkownik.data[0].kod||\"\"}} {{daneuzytkownik.data[0].miejscowosc||\"\"}}\ntel:{{daneuzytkownik.data[0].telefonfirma||\"\"}} | {{daneuzytkownik.data[0].strona||\"\"}}\nVAT ID: {{daneuzytkownik.data[0].nip||\"\"}}\nBDO:{{daneuzytkownik.data[0].bdo||\"\"}}",
   "textAlign": "LEFT",
   "textColor": "#231F20",
-  "topRow": 148,
+  "topRow": 145,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,

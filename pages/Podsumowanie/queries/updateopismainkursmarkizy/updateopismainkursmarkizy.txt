@@ -1,0 +1,12 @@
+UPDATE inventory_main
+JOIN inventory_markizy ON inventory_main.fk_oferty_inventory_id = inventory_markizy.fk_oferty_inventory_id
+SET inventory_main.opiszrabatami = CONCAT("Opis: ",inventory_markizy.opis,CHAR(13),"Typ: ",inventory_markizy.system),								
+
+
+inventory_main.opisbezrabatow = CONCAT("Opis: "),
+
+inventory_main.opiszrabatami_de = CONCAT("Artikelbeschreibung: "),
+
+inventory_main.opisbezrabatow_de = CONCAT("Artikelbeschreibung: ")
+
+ WHERE inventory_main.id_wiersz = inventory_markizy.id and inventory_main.fk_oferty_inventory_id={{idoferty_appsmith.text}};
