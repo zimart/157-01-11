@@ -1,11 +1,11 @@
 {
   "gitSyncId": "67252580698c850488983504_888ab0fd-5655-4eef-af74-d288345f2561",
-  "id": "Markizy_ustawrabatautomatyka",
+  "id": "Markizy_Markizy_ustawrabatautomatyka",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE inventory_screeny SET\n    rabatmotor = '{{rabatautomatyka.text}}',\n\t  priceall = price_motor-(price_motor*(rabatmotor/100)),\n\t\tcenanetto = priceall+systemporabacie,\t\n\t\trazemnetto = cenanetto * ilosc,\n\t\tkwotarabatmotor = price_motor*(rabatmotor/100)\t\t\n\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
+      "body": "UPDATE inventory_markizy SET\n    \n    rabatmotor = '{{rabatautomatyka.text}}',\n\t\tkwotarabatmotor = price_motor*(rabatmotor/100),\t\t\n\t  priceall = price_motor-(price_motor*(rabatmotor/100)),\n\t\tcenanetto = priceall+systemporabacie,\t\n\t\trazemnetto = cenanetto * ilosc\t\n\t\t\n\t\tWHERE fk_oferty_inventory_id = {{appsmith.URL.queryParams.id_oferta}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -28,7 +28,7 @@
       }
     ],
     "executeOnLoad": false,
-    "name": "ustawrabatautomatyka",
+    "name": "Markizy_ustawrabatautomatyka",
     "pageId": "Markizy",
     "userSetOnLoad": false
   }

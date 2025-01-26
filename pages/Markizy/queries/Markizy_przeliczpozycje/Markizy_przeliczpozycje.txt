@@ -1,8 +1,9 @@
 UPDATE inventory_markizy SET 
+    systemzdoplata = cena + doplatatkanina,
     kwotarabatsystem = systemzdoplata*(rabatsystem/100),
 		doplatakolor = (procentdoplatakolor/100)*cena,
 		
-		systemzdoplata = cena + doplatatkanina + doplatakolor + doplatawkladka,
+	
 		systemporabacie = systemzdoplata-kwotarabatsystem,
     priceall = price_motor - (price_motor*(rabatmotor/100)),
 		cenanetto = systemporabacie + priceall,
