@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 229,
+  "bottomRow": 232,
   "boxShadow": "none",
   "defaultText": "{{Markizy_moc.data[0].wymaganamoc}}",
   "dynamicBindingPathList": [
@@ -51,7 +51,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 59,
   "showStepArrows": false,
-  "topRow": 222,
+  "topRow": 225,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "ndcqvwrcnk",

@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 222,
+  "bottomRow": 225,
   "boxShadow": "none",
   "defaultText": "{{Input31.text+500}}",
   "dynamicBindingPathList": [
@@ -52,7 +52,7 @@
   "rightColumn": 21,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 215,
+  "topRow": 218,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "gsmicd1de6",

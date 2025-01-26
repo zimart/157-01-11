@@ -2,7 +2,7 @@
   "accentColor": "#231f20",
   "alignWidget": "LEFT",
   "animateLoading": true,
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "defaultSwitchState": false,
   "dynamicBindingPathList": [],

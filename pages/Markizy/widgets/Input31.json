@@ -3,7 +3,7 @@
   "animateLoading": true,
   "autoFocus": false,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 222,
+  "bottomRow": 225,
   "boxShadow": "none",
   "defaultText": "{{wysieg.selectedOptionLabel}}",
   "dynamicBindingPathList": [
@@ -57,7 +57,7 @@
   "rightColumn": 12,
   "shouldAllowAutofill": false,
   "showStepArrows": false,
-  "topRow": 215,
+  "topRow": 218,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "etm6yu3xsb",

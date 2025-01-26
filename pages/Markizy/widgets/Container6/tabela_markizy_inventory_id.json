@@ -42,7 +42,6 @@
     "doplatatkanina",
     "procentdoplatakolor",
     "doplatakolor",
-    "doplatawkladka",
     "systemzdoplata",
     "rabatsystem",
     "kwotarabatsystem",
@@ -54,11 +53,8 @@
     "priceall",
     "vat",
     "brutto",
-    "skrzynka",
     "tkanina",
     "rodzajmotor",
-    "wkladka",
-    "powierzchnia",
     "rodzajpomiaru",
     "indexszer",
     "indexwys",
@@ -78,14 +74,17 @@
     "opiszrabatami_de",
     "opisbezrabatow_en",
     "opiszrabatami_en",
-    "komentarz"
+    "komentarz",
+    "opis",
+    "strona",
+    "sterowanie"
   ],
   "columnSizeMap": {
     "status": 75,
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1737827883589,
+  "columnUpdatedAt": 1737915726848,
   "columnWidthMap": {
     "cena": 111,
     "cenanetto": 265,
@@ -190,16 +189,10 @@
       "key": "primaryColumns.system.computedValue"
     },
     {
-      "key": "primaryColumns.skrzynka.computedValue"
-    },
-    {
       "key": "primaryColumns.kolor.computedValue"
     },
     {
       "key": "primaryColumns.tkanina.computedValue"
-    },
-    {
-      "key": "primaryColumns.wkladka.computedValue"
     },
     {
       "key": "primaryColumns.moc.computedValue"
@@ -217,9 +210,6 @@
       "key": "primaryColumns.priceall.computedValue"
     },
     {
-      "key": "primaryColumns.doplatawkladka.computedValue"
-    },
-    {
       "key": "primaryColumns.rodzajmotor.computedValue"
     },
     {
@@ -227,9 +217,6 @@
     },
     {
       "key": "primaryColumns.fk_oferty_inventory_id.computedValue"
-    },
-    {
-      "key": "primaryColumns.powierzchnia.computedValue"
     },
     {
       "key": "primaryColumns.ilosc.computedValue"
@@ -307,9 +294,6 @@
       "key": "primaryColumns.procentdoplatakolor.isCellVisible"
     },
     {
-      "key": "primaryColumns.doplatawkladka.isCellVisible"
-    },
-    {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
     },
     {
@@ -331,12 +315,6 @@
       "key": "primaryColumns.kwotarabatmotor.isCellVisible"
     },
     {
-      "key": "primaryColumns.wkladka.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.skrzynka.isCellVisible"
-    },
-    {
       "key": "primaryColumns.rodzajpomiaru.isCellVisible"
     },
     {
@@ -352,13 +330,7 @@
       "key": "cellBackground"
     },
     {
-      "key": "primaryColumns.doplatawkladka.cellBackground"
-    },
-    {
       "key": "primaryColumns.moc.cellBackground"
-    },
-    {
-      "key": "primaryColumns.powierzchnia.cellBackground"
     },
     {
       "key": "primaryColumns.skugen.cellBackground"
@@ -383,9 +355,6 @@
     },
     {
       "key": "primaryColumns.fk_oferty_inventory_id.cellBackground"
-    },
-    {
-      "key": "primaryColumns.skrzynka.cellBackground"
     },
     {
       "key": "primaryColumns.brutto.cellBackground"
@@ -431,9 +400,6 @@
     },
     {
       "key": "primaryColumns.customColumn1.cellBackground"
-    },
-    {
-      "key": "primaryColumns.wkladka.cellBackground"
     },
     {
       "key": "primaryColumns.concat.cellBackground"
@@ -530,6 +496,15 @@
     },
     {
       "key": "primaryColumns.rabatmotor.textColor"
+    },
+    {
+      "key": "primaryColumns.opis.computedValue"
+    },
+    {
+      "key": "primaryColumns.strona.computedValue"
+    },
+    {
+      "key": "primaryColumns.sterowanie.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -547,9 +522,6 @@
     },
     {
       "key": "primaryColumns.procentdoplatakolor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.doplatawkladka.isCellVisible"
     },
     {
       "key": "primaryColumns.systemzdoplata.isCellVisible"
@@ -574,12 +546,6 @@
     },
     {
       "key": "primaryColumns.kwotarabatmotor.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.wkladka.isCellVisible"
-    },
-    {
-      "key": "primaryColumns.skrzynka.isCellVisible"
     },
     {
       "key": "primaryColumns.rodzajpomiaru.isCellVisible"
@@ -1013,40 +979,6 @@
       "label": "Dopłata tkanina",
       "notation": "standard",
       "originalId": "doplatatkanina",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "doplatawkladka": {
-      "alias": "doplatawkladka",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Number(currentRow.doplatawkladka).toFixed(2)))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "doplatawkladka",
-      "index": 21,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Dopłata do wkładki",
-      "notation": "standard",
-      "originalId": "doplatawkladka",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -1498,6 +1430,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "opis": {
+      "alias": "opis",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"opis\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "opis",
+      "index": 46,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "opis",
+      "notation": "standard",
+      "originalId": "opis",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "opisbezrabatow": {
       "alias": "opisbezrabatow",
       "allowCellWrapping": false,
@@ -1694,40 +1660,6 @@
       "label": "opiszrabatami_en",
       "notation": "standard",
       "originalId": "opiszrabatami_en",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "powierzchnia": {
-      "alias": "powierzchnia",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "number",
-      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"powierzchnia\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "powierzchnia",
-      "index": 25,
-      "isCellEditable": false,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Powierzchnia",
-      "notation": "standard",
-      "originalId": "powierzchnia",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -2150,40 +2082,6 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
-    "skrzynka": {
-      "alias": "skrzynka",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"skrzynka\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "skrzynka",
-      "index": 12,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Skrzynka",
-      "notation": "standard",
-      "originalId": "skrzynka",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
     "skugen": {
       "alias": "skugen",
       "allowCellWrapping": false,
@@ -2210,6 +2108,74 @@
       "label": "SKU",
       "notation": "standard",
       "originalId": "skugen",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "sterowanie": {
+      "alias": "sterowanie",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"sterowanie\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "sterowanie",
+      "index": 48,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "sterowanie",
+      "notation": "standard",
+      "originalId": "sterowanie",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "strona": {
+      "alias": "strona",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "#ffffff",
+      "columnType": "text",
+      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"strona\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "strona",
+      "index": 47,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "strona",
+      "notation": "standard",
+      "originalId": "strona",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -2450,40 +2416,6 @@
       "label": "Waluta",
       "notation": "standard",
       "originalId": "waluta",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "wkladka": {
-      "alias": "wkladka",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "{{rabatsystem.text.length < 1 ? \"#22c55e\" : \"#ffffff\"}}",
-      "columnType": "text",
-      "computedValue": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"wkladka\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "CENTER",
-      "id": "wkladka",
-      "index": 15,
-      "isCellEditable": false,
-      "isCellVisible": "{{tabela_markizy_inventory_id.processedTableData.map((currentRow, currentIndex) => ( Switch1.isSwitchedOn))}}",
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": false,
-      "isSaveVisible": true,
-      "isVisible": false,
-      "label": "Wkładka",
-      "notation": "standard",
-      "originalId": "wkladka",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",

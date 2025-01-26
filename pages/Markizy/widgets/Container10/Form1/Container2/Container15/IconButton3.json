@@ -30,7 +30,7 @@
       "key": "onClick"
     }
   ],
-  "iconName": "plus",
+  "iconName": "refresh",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "{{wysieg.isValid&&Select17.selectedOptionLabel===\"Ręczne\"||wysieg.isValid&&Select17.selectedOptionLabel===\"Elektryczne\"&&Select21.isValid}}",
