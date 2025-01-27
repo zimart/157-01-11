@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 15,
   "boxShadow": "none",
-  "defaultText": "{{tabela_markizy_inventory_id.triggeredRow.indexszer}}",
+  "defaultText": "{{tabela_markizy_inventory_id.triggeredRow.opis}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -41,7 +41,7 @@
   "mobileRightColumn": 8.000000000000002,
   "mobileTopRow": 7,
   "needsErrorInfo": false,
-  "originalBottomRow": 17,
+  "originalBottomRow": 15,
   "originalTopRow": 7,
   "parentColumnSpace": 17.65,
   "parentId": "s3307hquwf",

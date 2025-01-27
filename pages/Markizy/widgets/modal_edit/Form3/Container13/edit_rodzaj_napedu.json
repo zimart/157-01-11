@@ -5,7 +5,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].rodzajnapedu))(edit_rodzaj_napedu.options, edit_rodzaj_napedu.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_markizy_trigered.data[0].rodzajnapedu))(edit_rodzaj_napedu.options, edit_rodzaj_napedu.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -57,9 +57,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Rodzaj napędu - {{form_screeny_trigered.data[0].rodzajnapedu}}",
+  "labelText": "Rodzaj napędu - {{form_markizy_trigered.data[0].rodzajnapedu}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Rodzaj napędu - {{form_screeny_trigered.data[0].rodzajnapedu}}",
+  "labelTooltip": "Rodzaj napędu - {{form_markizy_trigered.data[0].rodzajnapedu}}",
   "labelWidth": 5,
   "leftColumn": 52,
   "maxDynamicHeight": 9000,

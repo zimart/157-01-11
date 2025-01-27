@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "67252580698c850488983504_ee60290c-df8b-4ead-8cc5-e21a102f896d",
-  "id": "Markizy_FORM_cena_zapytaj",
+  "gitSyncId": "67252580698c850488983504_40d5e151-3a4f-4d0e-9e19-43c2385a70d3",
+  "id": "Markizy_form_markizy_trigered",
   "pluginId": "mysql-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT cenakatalogowa FROM markizy_cennik WHERE indeks={{appsmith.store.edit_sku_value}};",
+      "body": "SELECT * FROM inventory_markizy WHERE id={{tabela_markizy_inventory_id.triggeredRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,8 +27,8 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": false,
-    "name": "FORM_cena_zapytaj",
+    "executeOnLoad": true,
+    "name": "form_markizy_trigered",
     "pageId": "Markizy",
     "userSetOnLoad": false
   }

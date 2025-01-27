@@ -22,7 +22,7 @@
         "key": "body"
       }
     ],
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "fullyQualifiedName": "powierzchnian.m2_form",
     "name": "m2_form",
     "pageId": "Markizy",

@@ -1,0 +1,1 @@
+SELECT wysieg FROM markizy_wysieg where typmarkizy = {{edit_system.selectedOptionLabel}} and minimalnaszer <= {{edit_szerokosc.text}};

@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 12,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_markizy_trigered.data[0].tkanina))(edit_tkanina.options, edit_tkanina.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -47,9 +47,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
+  "labelText": "Tkanina -{{form_markizy_trigered.data[0].tkanina}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Tkanina -{{form_screeny_trigered.data[0].tkanina}}",
+  "labelTooltip": "Tkanina -{{form_markizy_trigered.data[0].tkanina}}",
   "labelWidth": 5,
   "leftColumn": 0,
   "maxDynamicHeight": 9000,
@@ -69,9 +69,9 @@
   "placeholderText": "{{i18n.translate(\"Tkanina\")}}",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 13,
+  "rightColumn": 12,
   "serverSideFiltering": false,
-  "sourceData": "[\n   \t\n  {\n    \"label\": \"COPACO SERGE 600\",\n    \"value\": \"COPACO SERGE 600\"\n  },\n  {\n    \"label\": \"COPACO SERGE 1%\",\n    \"value\": \"COPACO SERGE 1%\"\n  },\n\t{\n    \"label\": \"COPACO LUNAR\",\n    \"value\": \"COPACO LUNAR\"\n  }\n]",
+  "sourceData": "[\n   \t\n  {\n    \"label\": \"DICKSON ORCHESTRA\",\n    \"value\": \"DICKSON ORCHESTRA\"\n  },\n  {\n    \"label\": \"DICKSON MAX\",\n    \"value\": \"DICKSON MAX\"\n  }\n]",
   "topRow": 7,
   "type": "SELECT_WIDGET",
   "version": 1,

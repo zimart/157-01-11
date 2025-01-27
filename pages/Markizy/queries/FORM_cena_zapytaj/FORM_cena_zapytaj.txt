@@ -1,1 +1,1 @@
-SELECT cenakatalogowa FROM screeny_cennik WHERE indeks={{appsmith.store.edit_sku_value}};
+SELECT cenakatalogowa FROM markizy_cennik WHERE indeks={{appsmith.store.edit_sku_value}};

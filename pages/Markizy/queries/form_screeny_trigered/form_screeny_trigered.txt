@@ -1,1 +1,0 @@
-SELECT * FROM inventory_screeny WHERE id={{tabela_markizy_inventory_id.triggeredRow.id}};

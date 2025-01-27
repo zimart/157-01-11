@@ -5,7 +5,7 @@
   "bottomRow": 6,
   "bottomRowBeforeCollapse": 6,
   "boxShadow": "none",
-  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_screeny_trigered.data[0].serianapedu))(edit_seria_napedu.options, edit_seria_napedu.serverSideFiltering) }}",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( form_markizy_trigered.data[0].serianapedu))(edit_seria_napedu.options, edit_seria_napedu.serverSideFiltering) }}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -57,9 +57,9 @@
   "key": "2eaywto8sv",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Seria napędu - {{form_screeny_trigered.data[0].serianapedu}}",
+  "labelText": "Seria napędu - {{form_markizy_trigered.data[0].serianapedu}}",
   "labelTextSize": "0.875rem",
-  "labelTooltip": "Seria napędu - {{form_screeny_trigered.data[0].serianapedu}}",
+  "labelTooltip": "Seria napędu - {{form_markizy_trigered.data[0].serianapedu}}",
   "labelWidth": 5,
   "leftColumn": 40,
   "maxDynamicHeight": 9000,
